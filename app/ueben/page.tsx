@@ -3,6 +3,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import { FONTS, getTheme } from '../lib/theme';
+import { trackEvent } from '../lib/activity';
 
 type ExerciseType = 'fill' | 'scramble' | 'choice';
 
@@ -256,6 +257,7 @@ export default function UebenPage() {
   function next() {
     if (idx + 1 >= exercises.length) {
       setDone(true);
+      trackEvent('practice');
     } else {
       setIdx(idx + 1);
     }

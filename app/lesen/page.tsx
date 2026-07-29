@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { FONTS, getTheme, CEFR_LEVELS } from '../lib/theme';
+import { trackEvent } from '../lib/activity';
 
 // Graded readings — A1 through C2
 const READINGS = [
@@ -111,6 +112,7 @@ export default function LesenPage() {
     setTranslated(new Set());
     setShowTranslations(false);
     localStorage.setItem('dein-deutsch-lesen-idx', newIdx.toString());
+    trackEvent('read');
   }
 
   if (!mounted) return null;

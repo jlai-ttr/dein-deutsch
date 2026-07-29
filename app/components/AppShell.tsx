@@ -18,6 +18,7 @@ const PRIMARY = [
   { id: 'grammatik',   label: 'Grammatik', en: 'Grammar',   href: '/grammatik' },
   { id: 'kultur',      label: 'Kultur',    en: 'Culture',   href: '/kultur' },
   { id: 'fortschritt', label: 'Fortschritt', en: 'Progress', href: '/fortschritt' },
+  { id: 'settings', label: 'Settings', en: 'Settings', href: '/settings' },
 ];
 
 export default function AppShell({ children }: { children: React.ReactNode }) {

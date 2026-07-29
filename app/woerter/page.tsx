@@ -3,6 +3,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import { FONTS, getTheme, CEFR_LEVELS } from '../lib/theme';
+import { trackEvent } from '../lib/activity';
 
 // SM-2 Spaced Repetition Algorithm
 // Based on SuperMemo SM-2: https://super-memory.com/english/ol/sm2.htm
@@ -283,6 +284,7 @@ export default function WoerterPage() {
     if (stillDue.length === 0) {
       setSessionDone(true);
     }
+    trackEvent('vocab');
   }
 
   function addCustomCard(word: string, translation: string, example: string) {

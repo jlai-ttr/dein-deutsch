@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { FONTS, getTheme } from '../lib/theme';
+import { trackEvent } from '../lib/activity';
 
 interface Lesson {
   id: string;
@@ -128,6 +129,7 @@ export default function HoerenPage() {
   }
 
   function checkDictation() {
+    trackEvent('listen');
     const correct = lesson.sentences[sentenceIdx];
     const userWords = userInput.trim().toLowerCase().split(/\s+/).filter(Boolean);
     const correctWords = correct.de.toLowerCase().replace(/[.,!?]/g, '').split(/\s+/).filter(Boolean);

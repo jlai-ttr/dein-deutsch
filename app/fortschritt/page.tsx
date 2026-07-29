@@ -3,13 +3,10 @@
 import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import { FONTS, getTheme, CEFR_LEVELS, MODULES } from '../lib/theme';
+import { getActivityRange, getStreak, getTotalDaysStudied } from '../lib/activity';
 
 // Maps vocab mastery + lesson completion + writing quality → CEFR estimate
-function estimateCEFR(mastered: number, learning: number, total: number, xp: number): { level: string; pct: number; nextLevel: string; wordsToNext: number } {
-  const masteryRatio = total > 0 ? mastered / total : 0;
-  const learningRatio = total > 0 ? learning / total : 0;
-
-  // Heuristics based on Goethe/Goethe-Institut vocab thresholds
+function estimateCEFR(mastered: number, total: number): { level: string; pct: number; nextLevel: string; wordsToNext: number } {
   if (mastered >= 5800) return { level: 'C2', pct: 100, nextLevel: '', wordsToNext: 0 };
   if (mastered >= 5000) return { level: 'C1', pct: ((mastered - 5000) / 800) * 100, nextLevel: 'C2', wordsToNext: 5800 - mastered };
   if (mastered >= 3500) return { level: 'B2', pct: ((mastered - 3500) / 1500) * 100, nextLevel: 'C1', wordsToNext: 5000 - mastered };
@@ -22,7 +19,7 @@ export default function FortschrittPage() {
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
   const [mounted, setMounted] = useState(false);
   const [progress, setProgress] = useState<any>({});
-  const [woerterStats, setWoerterStats] = useState<{ total: number; mastered: number; learning: number }>({ total: 0, mastered: 0, learning: 0 });
+  const [woerterStats, setWoerterStats] = useState<{ total: number; mastered: number; learning: number; reviews: number }>({ total: 0, mastered: 0, learning: 0, reviews: 0 });
   const [writingHistory, setWritingHistory] = useState<Array<{ date: string; prompt: string; text: string }>>([]);
 
   useEffect(() => {
@@ -45,7 +42,8 @@ export default function FortschrittPage() {
         setWoerterStats({
           total: cards.length,
           mastered: cards.filter((c: any) => c.interval >= 90).length,
-          learning: cards.filter((c: any) => c.repetition < 3).length,
+          learning: cards.filter((c: any) => c.repetition < 3 && c.totalReviews > 0).length,
+          reviews: cards.reduce((s: number, c: any) => s + c.totalReviews, 0),
         });
       }
     } catch (e) {}
@@ -56,7 +54,7 @@ export default function FortschrittPage() {
     } catch (e) {}
   }, []);
 
-  const cefr = useMemo(() => estimateCEFR(woerterStats.mastered, woerterStats.learning, woerterStats.total, progress.xp || 0), [woerterStats, progress]);
+  const cefr = useMemo(() => estimateCEFR(woerterStats.mastered, woerterStats.total), [woerterStats]);
 
   // Mastery breakdown
   const masteryBreakdown = useMemo(() => {
@@ -77,27 +75,10 @@ export default function FortschrittPage() {
     }
   }, [woerterStats]);
 
-  // Streak calculation
-  const streak = useMemo(() => {
-    return progress.streakDays || 0;
-  }, [progress]);
-
-  // Activity (last 30 days — simple visualization)
-  const activity = useMemo(() => {
-    const days = 30;
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
-    return Array.from({ length: days }, (_, i) => {
-      const day = new Date(today);
-      day.setDate(today.getDate() - (days - 1 - i));
-      // For demo: mark based on if user has done anything on that day
-      // In real app, would track per-day activity
-      return {
-        date: day.toISOString().slice(0, 10),
-        active: Math.random() > 0.4, // mock for now
-      };
-    });
-  }, []);
+  // Activity — REAL data from activity log
+  const activity = useMemo(() => getActivityRange(30), [mounted]);
+  const streak = useMemo(() => getStreak(), [mounted]);
+  const totalDays = useMemo(() => getTotalDaysStudied(), [mounted]);
 
   if (!mounted) return null;
   const t = getTheme(theme);
@@ -105,7 +86,6 @@ export default function FortschrittPage() {
   const currentLevel = CEFR_LEVELS.find(l => l.code === cefr.level);
   const totalWords = woerterStats.total;
   const daysStudied = activity.filter(a => a.active).length;
-  const hoursThisWeek = Math.round(daysStudied * 0.75); // rough estimate
 
   return (
     <div className="animate-fade-in" style={{ maxWidth: 1100, margin: '0 auto' }}>
@@ -185,7 +165,6 @@ export default function FortschrittPage() {
           })}
         </div>
 
-        {/* Progress to next level */}
         <div style={{
           height: 8, background: t.bg, borderRadius: 4,
           overflow: 'hidden', border: '1px solid ' + t.border,
@@ -208,14 +187,14 @@ export default function FortschrittPage() {
         gap: 12, marginBottom: 24,
       }}>
         <StatTile label="Tag" value={progress.currentDay || 0} sub="von 540" t={t} icon="📅" />
-        <StatTile label="Streak" value={streak} sub="Tage" t={t} icon="🔥" highlight={streak > 0} />
+        <StatTile label="Streak" value={streak} sub="Tage in Folge" t={t} icon="🔥" highlight={streak > 0} />
         <StatTile label="XP" value={progress.xp || 0} sub="gesammelt" t={t} icon="✨" />
         <StatTile label="Mastered" value={woerterStats.mastered} sub={`von ${totalWords}`} t={t} icon="🪶" highlight />
         <StatTile label="Writing" value={writingHistory.length} sub="Texte" t={t} icon="✒️" />
         <StatTile label="Reviews" value={masteryBreakdown.reviews} sub="total" t={t} icon="🔁" />
       </div>
 
-      {/* Mastery breakdown */}
+      {/* Mastery breakdown + activity */}
       <div style={{
         background: t.cardBg, border: '1px solid ' + t.border, borderRadius: 12,
         padding: 24, marginBottom: 20, boxShadow: t.shadow,
@@ -224,25 +203,24 @@ export default function FortschrittPage() {
           Vokabel-Reife · Vocabulary Mastery
         </h2>
 
-        {/* Mastery bar */}
         {woerterStats.total > 0 && (
-          <div style={{ marginBottom: 16 }}>
+          <div style={{ marginBottom: 20 }}>
             <div style={{ display: 'flex', height: 32, borderRadius: 6, overflow: 'hidden', border: '1px solid ' + t.border, fontSize: '0.75rem' }}>
-              <div style={{ width: (masteryBreakdown.mastered / woerterStats.total) * 100 + '%', background: t.success, color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 600, minWidth: masteryBreakdown.mastered > 0 ? 40 : 0 }}>
-                {masteryBreakdown.mastered > 0 && masteryBreakdown.mastered}
+              <div style={{ width: (masteryBreakdown.mastered / woerterStats.total) * 100 + '%', background: t.success, color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 600 }}>
+                {masteryBreakdown.mastered > 0 ? masteryBreakdown.mastered : ''}
               </div>
-              <div style={{ width: (masteryBreakdown.known / woerterStats.total) * 100 + '%', background: t.accent, color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 600, minWidth: masteryBreakdown.known > 0 ? 40 : 0 }}>
-                {masteryBreakdown.known > 0 && masteryBreakdown.known}
+              <div style={{ width: (masteryBreakdown.known / woerterStats.total) * 100 + '%', background: t.accent, color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 600 }}>
+                {masteryBreakdown.known > 0 ? masteryBreakdown.known : ''}
               </div>
-              <div style={{ width: (masteryBreakdown.learning / woerterStats.total) * 100 + '%', background: t.warning, color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 600, minWidth: masteryBreakdown.learning > 0 ? 40 : 0 }}>
-                {masteryBreakdown.learning > 0 && masteryBreakdown.learning}
+              <div style={{ width: (masteryBreakdown.learning / woerterStats.total) * 100 + '%', background: t.warning, color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 600 }}>
+                {masteryBreakdown.learning > 0 ? masteryBreakdown.learning : ''}
               </div>
-              <div style={{ width: (masteryBreakdown.new / woerterStats.total) * 100 + '%', background: t.bg, color: t.textMuted, display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 600, minWidth: masteryBreakdown.new > 0 ? 40 : 0 }}>
-                {masteryBreakdown.new > 0 && masteryBreakdown.new}
+              <div style={{ width: (masteryBreakdown.new / woerterStats.total) * 100 + '%', background: t.bg, color: t.textMuted, display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 600 }}>
+                {masteryBreakdown.new > 0 ? masteryBreakdown.new : ''}
               </div>
             </div>
 
-            <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 8, fontSize: '0.8rem', color: t.textMuted, fontFamily: FONTS.reading }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 8, fontSize: '0.8rem', color: t.textMuted, fontFamily: FONTS.reading, flexWrap: 'wrap', gap: 8 }}>
               <span><span style={{ display: 'inline-block', width: 10, height: 10, background: t.success, borderRadius: 2, marginRight: 4, verticalAlign: 'middle' }} />Mastered <strong style={{ color: t.text }}>(90+ days)</strong></span>
               <span><span style={{ display: 'inline-block', width: 10, height: 10, background: t.accent, borderRadius: 2, marginRight: 4, verticalAlign: 'middle' }} />Known <strong style={{ color: t.text }}>(3+ reviews)</strong></span>
               <span><span style={{ display: 'inline-block', width: 10, height: 10, background: t.warning, borderRadius: 2, marginRight: 4, verticalAlign: 'middle' }} />Learning</span>
@@ -251,21 +229,42 @@ export default function FortschrittPage() {
           </div>
         )}
 
-        {/* Activity heatmap */}
+        {/* Activity heatmap - REAL DATA */}
         <div style={{ marginTop: 24 }}>
-          <div style={{ fontSize: '0.75rem', color: t.textMuted, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 12 }}>
-            Aktivität · Last 30 Days ({daysStudied} days)
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12, flexWrap: 'wrap', gap: 8 }}>
+            <div style={{ fontSize: '0.75rem', color: t.textMuted, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+              Aktivität · Letzte 30 Tage ({daysStudied} Tage)
+            </div>
+            <div style={{ fontSize: '0.75rem', color: t.accent, fontFamily: FONTS.reading, fontStyle: 'italic' }}>
+              {totalDays} Studientage insgesamt · {streak} Tage am Stück
+            </div>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(15, 1fr)', gap: 4 }}>
-            {activity.map((a, i) => (
-              <div key={i} title={a.date} style={{
-                aspectRatio: '1',
-                background: a.active ? t.accent : t.bg,
-                borderRadius: 3,
-                border: '1px solid ' + t.border,
-                opacity: a.active ? 1 : 0.3,
-              }} />
-            ))}
+            {activity.map((a, i) => {
+              const count = a.events.length;
+              const intensity = Math.min(1, count / 4);
+              return (
+                <div key={i} title={a.date + ' · ' + (a.events.join(', ') || 'keine Aktivität')} style={{
+                  aspectRatio: '1',
+                  background: a.active
+                    ? 'rgba(45, 80, 22, ' + (0.3 + intensity * 0.7) + ')'
+                    : t.bg,
+                  borderRadius: 3,
+                  border: '1px solid ' + t.border,
+                  opacity: a.active ? 1 : 0.3,
+                  cursor: 'help',
+                }} />
+              );
+            })}
+          </div>
+          <div style={{ display: 'flex', gap: 6, marginTop: 12, fontSize: '0.7rem', color: t.textMuted, fontFamily: FONTS.reading, alignItems: 'center', justifyContent: 'flex-end' }}>
+            <span>Weniger</span>
+            <div style={{ display: 'flex', gap: 2 }}>
+              {[0.3, 0.5, 0.7, 0.9].map((alpha, i) => (
+                <div key={i} style={{ width: 12, height: 12, background: 'rgba(45, 80, 22, ' + alpha + ')', borderRadius: 2, border: '1px solid ' + t.border }} />
+              ))}
+            </div>
+            <span>Mehr</span>
           </div>
         </div>
       </div>
@@ -276,7 +275,7 @@ export default function FortschrittPage() {
         padding: 24, marginBottom: 20, boxShadow: t.shadow,
       }}>
         <h2 style={{ fontFamily: FONTS.display, fontSize: '1.4rem', color: t.text, margin: '0 0 16px' }}>
-          Module · Module Status
+          Module · Modul-Status
         </h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: 12 }}>
           {MODULES.map(m => (
@@ -290,7 +289,7 @@ export default function FortschrittPage() {
                 padding: 12,
                 textDecoration: 'none',
                 color: t.text,
-                opacity: m.done ? 1 : 0.5,
+                opacity: m.done ? 1 : 0.6,
                 display: 'flex',
                 alignItems: 'center',
                 gap: 12,

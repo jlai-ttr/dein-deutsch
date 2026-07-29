@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { FONTS, getTheme, CEFR_LEVELS } from '../lib/theme';
+import { trackEvent } from '../lib/activity';
 
 export default function HeutePage() {
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
@@ -63,6 +64,7 @@ export default function HeutePage() {
     localStorage.setItem('dein-deutsch-last-completed', today);
     setCompleted(true);
     setDay(p.currentDay);
+    trackEvent('lesson');
   }
 
   function nextDay() {

@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { FONTS, getTheme, CEFR_LEVELS } from '../lib/theme';
+import { trackEvent } from '../lib/activity';
 
 const PROMPTS = [
   { level: 'A1', topic: 'Über dich', en: 'About yourself', de: 'Stelle dich vor. Wie heißt du? Wo wohnst du? Was ist dein Hobby?', minWords: 30 },
@@ -67,6 +68,7 @@ export default function SchreibenPage() {
 
   function submit() {
     if (!text.trim()) return;
+    trackEvent('write');
     const prompt = PROMPTS[promptIdx];
     const entry = {
       prompt: prompt.de,
