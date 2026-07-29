@@ -178,6 +178,10 @@ export default function WoerterPage() {
   const [showAddCard, setShowAddCard] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [supportsTTS, setSupportsTTS] = useState(false);
+  const [ttsError, setTTSError] = useState<string | null>(null);
+  const [germanVoices, setGermanVoices] = useState<SpeechSynthesisVoice[]>([]);
+  const [showHelp, setShowHelp] = useState(false);
+  const [deVoice, setDeVoice] = useState<string>('');
 
   useEffect(() => {
     setMounted(true);
@@ -189,6 +193,17 @@ export default function WoerterPage() {
 
     if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
       setSupportsTTS(true);
+      const loadVoices = () => {
+        const all = window.speechSynthesis.getVoices();
+        const de = all.filter(v => v.lang && v.lang.toLowerCase().startsWith('de'));
+        setGermanVoices(de);
+        if (de.length > 0 && !deVoice) {
+          const prefer = de.find(v => v.lang === 'de-DE') || de[0];
+          setDeVoice(prefer.name);
+        }
+      };
+      loadVoices();
+      window.speechSynthesis.onvoiceschanged = loadVoices;
     }
 
     // Load or seed
@@ -221,12 +236,35 @@ export default function WoerterPage() {
   const currentCard = dueCards[0];
 
   function speak(de: string) {
-    if (!supportsTTS) return;
-    window.speechSynthesis.cancel();
-    const u = new SpeechSynthesisUtterance(de);
-    u.lang = 'de-DE';
-    u.rate = 0.85;
-    window.speechSynthesis.speak(u);
+    if (!supportsTTS) {
+      console.error('[TTS] speechSynthesis not supported in this browser');
+      setTTSError('Your browser does not support text-to-speech. Try Chrome or Edge.');
+      return;
+    }
+    try {
+      window.speechSynthesis.cancel();
+      const u = new SpeechSynthesisUtterance(de);
+      u.lang = 'de-DE';
+      u.rate = 0.85;
+      if (deVoice) {
+        const v = window.speechSynthesis.getVoices().find(x => x.name === deVoice);
+        if (v) u.voice = v;
+      }
+      u.onerror = (e: any) => {
+        console.error('[TTS] error:', e);
+        setTTSError('Could not play audio. Check German voice is installed (see Help).');
+      };
+      const utterance = u;
+      window.speechSynthesis.speak(utterance);
+      // Check if voices are loaded yet — sometimes you need to wait
+      const voices = window.speechSynthesis.getVoices();
+      if (voices.length === 0) {
+        setTTSError('Loading voices... try again in a second.');
+      }
+    } catch (e: any) {
+      console.error('[TTS] exception:', e);
+      setTTSError('Audio error: ' + (e?.message || 'unknown'));
+    }
   }
 
   function rate(quality: number) {
@@ -395,17 +433,23 @@ export default function WoerterPage() {
 
         <button
           onClick={() => speak(currentCard.word)}
-          disabled={!supportsTTS}
+          disabled={!supportsTTS || germanVoices.length === 0}
           style={{
             marginTop: 8, padding: '6px 12px', background: 'transparent',
             color: t.accent, border: '1px solid ' + t.accent, borderRadius: 6,
-            cursor: supportsTTS ? 'pointer' : 'not-allowed', fontSize: '0.85rem',
+            cursor: supportsTTS && germanVoices.length > 0 ? 'pointer' : 'not-allowed',
+            fontSize: '0.85rem',
             fontFamily: FONTS.body,
           }}
-          title="Hear pronunciation"
+          title={germanVoices.length === 0 ? 'No German voice installed' : 'Hear pronunciation'}
         >
           🔊 Anhören
         </button>
+        {germanVoices.length === 0 && supportsTTS && (
+          <div style={{ fontSize: '0.75rem', color: t.warning, marginTop: 8, fontStyle: 'italic', fontFamily: FONTS.reading }}>
+            ⚠️ No German voice detected. Install one in your OS settings.
+          </div>
+        )}
 
         {/* Answer */}
         {showAnswer ? (
