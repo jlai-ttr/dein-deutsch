@@ -1,0 +1,7 @@
+fix: rewrite home page with static Tailwind, clean Duolingo look
+
+- Remove dynamic class concatenation (was breaking Tailwind JIT)
+- Add proper unit pills between lesson rows
+- Use Crown icon for boss battles
+- Cleaner tab structure: Learn / Practice / Stats / Profile
+- All Tailwind colors via static hex codes that compile
