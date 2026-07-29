@@ -169,6 +169,26 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
           >
             {theme === 'light' ? '🌙' : '☀️'}
           </button>
+          {/* Logout */}
+          <button
+            onClick={async () => {
+              await fetch('/api/auth/logout', { method: 'POST' });
+              window.location.href = '/login';
+            }}
+            style={{
+              padding: '6px 12px',
+              background: 'transparent',
+              color: t.textMuted,
+              border: '1px solid ' + t.border,
+              borderRadius: 6,
+              cursor: 'pointer',
+              fontSize: '0.85rem',
+              fontFamily: FONTS.body,
+            }}
+            title="Abmelden"
+          >
+            🚪
+          </button>
         </div>
 
         {/* Mobile dropdown menu */}
