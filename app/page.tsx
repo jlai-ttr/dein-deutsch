@@ -18,6 +18,7 @@ interface DaProps {
   gems: number;
   streakFreezes: number;
   lastLessonDate: string;
+  todayCompleted?: boolean;
 }
 
 export default function Home() {
