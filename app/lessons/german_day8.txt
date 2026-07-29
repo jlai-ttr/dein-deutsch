@@ -1,0 +1,101 @@
+GERMAN A1 — DAY 8 OF 90
+Verbs: sein, haben, basic conjugation
+======================================
+
+Welcome to Week 2! Last week you learned greetings, numbers, and the
+pronunciation cheat sheet. This week we begin grammar.
+
+Today: the two most important verbs in German — sein (to be) and haben (to have).
+
+WHY THESE TWO?
+-------------
+Almost every German sentence needs one of these. "I am happy" uses "bin".
+"I have a book" uses "habe". Learn these first, everything else builds on top.
+
+VERB 1: SEIN (TO BE)
+--------------------
+
+Conjugation in the present tense (Präsens):
+
+| Person    | German    | English           |
+|-----------|-----------|-------------------|
+| ich       | bin       | I am              |
+| du        | bist      | you (informal) am |
+| er/sie/es | ist       | he/she/it is      |
+| wir       | sind      | we are            |
+| ihr       | seid      | you (pl.) are     |
+| sie/Sie   | sind      | they/You (formal) are |
+
+Notice: NO ending for "ich" and "wir/sie" — only "du" gets -st, "er/sie/es"
+gets -t, "ihr" gets -d.
+
+VERB 2: HABEN (TO HAVE)
+------------------------
+
+| Person    | German    | English           |
+|-----------|-----------|-------------------|
+| ich       | habe      | I have            |
+| du        | hast      | you (informal) have |
+| er/sie/es | hat       | he/she/it has     |
+| wir       | haben     | we have           |
+| ihr       | habt      | you (pl.) have    |
+| sie/Sie   | haben     | they/You (formal) have |
+
+Pattern: stem = "hab-", then personal endings -e, -st, -t, -en, -t, -en.
+This pattern applies to MOST verbs. Memorize the endings, not every verb.
+
+EXAMPLES IN CONTEXT
+-------------------
+
+SEIN examples:
+- Ich bin Student. (I am a student.)
+- Du bist müde. (You are tired.)
+- Er ist heute zu Hause. (He is at home today.)
+- Wir sind Freunde. (We are friends.)
+- Ihr seid spät! (You are late!)
+
+HABEN examples:
+- Ich habe Zeit. (I have time.)
+- Du hast Glück. (You have luck / are lucky.)
+- Sie hat ein Auto. (She has a car.)
+- Wir haben Hunger. (We are hungry. — lit. "We have hunger")
+- Ihr habt Recht. (You are right.)
+
+NEW VOCABULARY (10 words)
+--------------------------
+1. der Student — student (m)
+2. müde — tired
+3. zu Hause — at home
+4. der Freund — friend (m)
+5. spät — late
+6. die Zeit — time (f)
+7. das Glück — luck (n) / happiness
+8. das Auto — car (n)
+9. der Hunger — hunger (m)
+10. das Recht — right (n) / justice
+
+CULTURE NOTE
+------------
+"Hunger haben" (to have hunger) is the German idiom. English says "I am
+hungry" — German says "I have hunger." Same for "Durst haben" (thirst).
+This pattern is common in German — emotions and conditions are things you
+"HAVE" rather than things you "ARE."
+
+EXERCISE (try this week)
+-------------------------
+1. Introduce yourself with "Ich bin [name]. Ich bin [profession]. Ich habe [hobby]."
+   (Example: "Ich bin Max. Ich bin Student. Ich habe Hunger.")
+2. Describe 3 family members using sein + haben.
+3. Listen to a German podcast (Coffee Break German, episode 1-3) and write
+   down every "bin", "bist", "ist", "sind", "seid", "habe", "hast", "hat",
+   "habt" you hear.
+
+NEXT: Day 9 — regular verbs (Pattern like "machen", "wohnen", "kommen")
+Today we learned the two irregular verbs. Day 9 introduces the regular
+verb pattern, which covers 90% of German verbs.
+
+Vocabulary streak so far: 80 words across Days 1-7.
+Adding today: 10 words.
+Total: 90 words.
+
+Bis morgen! (See you tomorrow!)

@@ -1,0 +1,115 @@
+GERMAN A1 — DAY 9 OF 90
+Regular verbs: the pattern that covers 90% of verbs
+====================================================
+
+Yesterday you learned "sein" and "haben" — irregular.
+Today: regular verbs. Memorize this pattern and you unlock thousands of verbs.
+
+THE PATTERN
+-----------
+
+Regular verbs in present tense follow this formula:
+
+  STEM (from infinitive - "en") + personal ending
+  = conjugated form
+
+Example: "machen" (to do/make)
+  STEM = "mach" (drop the "-en")
+  + ich → mache
+  + du → machst
+  + er/sie/es → macht
+  + wir → machen
+  + ihr → macht
+  + sie/Sie → machen
+
+Personal endings (memorize these ONCE):
+  ich    → -e
+  du     → -st
+  er/sie → -t
+  wir    → -en
+  ihr    → -t
+  sie    → -en
+
+TRY IT: "wohnen" (to live/dwell)
+  stem = "wohn"
+  ich wohne, du wohnst, er wohnt, wir wohnen, ihr wohnt, sie wohnen
+
+TRY IT: "kommen" (to come)
+  stem = "komm"
+  ich komme, du kommst, er kommt, wir kommen, ihr kommt, sie kommen
+
+PRACTICE VERBS (today's 8)
+---------------------------
+
+1. machen (to do/make)    — ich mache, du machst, er macht
+2. wohnen (to live)       — ich wohne, du wohnst, er wohnt
+3. kommen (to come)       — ich komme, du kommst, er kommt
+4. heißen (to be called)  — ich heiße, du heißt, er heißt
+5. lernen (to learn)      — ich lerne, du lernst, er lernt
+6. arbeiten (to work)     — ich arbeite, du arbeitest, er arbeitet
+   (note: "arbeiten" → stem "arbeit"; -e- kept before -st/-t for pronunciation)
+7. spielen (to play)      — ich spiele, du spielst, er spielt
+8. kaufen (to buy)        — ich kaufe, du kaufst, er kauft
+
+STEM-CHANGING VERBS (forbidden in English — common in German)
+---------------------------------------------------------------
+Some verbs change their vowel in du/er forms. Memorize them as you encounter:
+
+- fahren → du fährst, er fährt (a → ä)
+- schlafen → du schläfst, er schläft (a → ä)
+- lesen → du liest, er liest (e → ie)
+- sehen → du siehst, er sieht (e → ie)
+- essen → du isst, er isst (e → i)
+- sprechen → du sprichst, er spricht (e → i)
+
+This is the "stem-vowel change" — happens only in DU and ER/SIE/ES forms.
+"ich", "wir", "ihr", "sie" use the standard stem.
+
+EXAMPLES IN CONTEXT
+--------------------
+
+- Ich wohne in Berlin. (I live in Berlin.)
+- Du lernst Deutsch. (You are learning German.)
+- Er kommt aus Malaysia. (He comes from Malaysia.)
+- Wir arbeiten jeden Tag. (We work every day.)
+- Was machst du? (What are you doing?)
+  → Ich mache Hausaufgaben. (I'm doing homework.)
+
+NEW VOCABULARY (10 words)
+--------------------------
+1. wohnen — to live/dwell (verb)
+2. kommen — to come (verb)
+3. heißen — to be called (verb)
+4. lernen — to learn (verb)
+5. arbeiten — to work (verb)
+6. spielen — to play (verb)
+7. kaufen — to buy (verb)
+8. die Hausaufgaben — homework (pl.)
+9. jeden Tag — every day
+10. aus — from (preposition + dative)
+
+CULTURE NOTE
+------------
+In German addresses: "Ich wohne in Berlin" is more common than "Ich lebe
+in Berlin" for everyday places. "Leben" is more philosophical ("to be
+alive/to exist"). Both work, "wohnen" is the default for where you live.
+
+ALSO: the question word "Wo?" (where?) is used for location.
+  "Wo wohnst du?" (Where do you live?)
+  "Ich wohne in Kuala Lumpur."
+
+EXERCISE
+--------
+1. Conjugate "lernen" in all 6 persons. Write each one.
+2. Write 5 sentences using the new verbs:
+   - 2 with "wohnen"
+   - 2 with "arbeiten"
+   - 1 with "spielen"
+3. Use "fahren" in 3 sentences — see how the vowel changes.
+
+NEXT: Day 10 — Numbers + Time (Wie spät ist es?)
+
+Total vocab today: +10 words
+Grand total: 100 words.
+
+Bis morgen!
