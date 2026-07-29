@@ -2,56 +2,204 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Forest + Parchment + Ink — Theme Tokens */
 :root {
-  --eagle: #1cb0f6;
-  --frog: #58cc02;
-  --flame: #ff9600;
-  --heart: #ff4b4b;
-  --gold: #ffc800;
-  --cream: #f7f7f7;
-  --duo-gray: #4b4b4b;
-  --epic: #ce82ff;
-  --legend: #ff4b4b;
+  /* Light mode — parchment in the sun */
+  --bg-page: #F4ECD8;
+  --bg-card: #FBF7E9;
+  --bg-elevated: #FFFFFF;
+  --bg-input: #FFFCF2;
+  --bg-hover: #EFE6CD;
+
+  --text-primary: #2A2520;
+  --text-muted: #5C5347;
+  --text-faint: #8B8170;
+  --text-on-accent: #FBF7E9;
+
+  --accent: #2D5016;
+  --accent-hover: #1F3A0E;
+  --accent-light: #C8D5B9;
+  --accent-soft: #E5ECD9;
+
+  --border: #D9CFB8;
+  --border-strong: #B5A88A;
+
+  --success: #4A7C2E;
+  --warning: #C2410C;
+  --error: #7F1D1D;
+
+  --shadow-page: 0 1px 3px rgba(42, 37, 32, 0.08), 0 1px 2px rgba(42, 37, 32, 0.04);
+  --shadow-card: 0 2px 8px rgba(42, 37, 32, 0.06), 0 1px 2px rgba(42, 37, 32, 0.04);
+  --shadow-raised: 0 4px 16px rgba(42, 37, 32, 0.10), 0 2px 4px rgba(42, 37, 32, 0.06);
+}
+
+.dark {
+  /* Dark mode — midnight forest */
+  --bg-page: #1A1814;
+  --bg-card: #25221D;
+  --bg-elevated: #2D2A24;
+  --bg-input: #1F1D18;
+  --bg-hover: #2A2620;
+
+  --text-primary: #F4ECD8;
+  --text-muted: #B8AC92;
+  --text-faint: #7A6F5C;
+  --text-on-accent: #F4ECD8;
+
+  --accent: #6B8E4E;
+  --accent-hover: #7FA85B;
+  --accent-light: #2D3A1F;
+  --accent-soft: #3A4530;
+
+  --border: #3A332A;
+  --border-strong: #4F4639;
+
+  --success: #7FA85B;
+  --warning: #D97757;
+  --error: #B85450;
+
+  --shadow-page: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-raised: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
-  background: white;
-  color: var(--duo-gray);
-  font-family: 'Nunito', system-ui, sans-serif;
+  background: var(--bg-page);
+  color: var(--text-primary);
+  font-family: 'Source Serif Pro', Georgia, serif;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   margin: 0;
+  line-height: 1.6;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+}
+
+code, pre, kbd {
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 @layer components {
+  /* Card — feels like a page from a book */
   .duo-card {
-    @apply rounded-2xl border-2 border-gray-200 hover:border-gray-300 transition-all;
+    @apply rounded-xl border transition-all;
+    background: var(--bg-card);
+    border-color: var(--border);
+    box-shadow: var(--shadow-card);
   }
+  .duo-card:hover {
+    border-color: var(--border-strong);
+    box-shadow: var(--shadow-raised);
+  }
+
+  /* Buttons — pressed wax seal feel */
   .duo-btn {
-    @apply rounded-2xl font-bold uppercase tracking-wide text-sm shadow-[0_4px_0_0_rgba(0,0,0,0.2)] active:shadow-[0_2px_0_0_rgba(0,0,0,0.2)] active:translate-y-[2px] transition-all;
+    @apply rounded-lg font-bold uppercase tracking-wider text-sm transition-all;
+    padding: 0.625rem 1.25rem;
+    border: 1px solid var(--border);
+    background: var(--bg-card);
+    color: var(--text-primary);
+    cursor: pointer;
   }
-  .duo-btn-green {
-    @apply bg-frog text-white border-2 border-b-[#58a700] border-b-2;
+  .duo-btn:hover {
+    background: var(--bg-hover);
+    border-color: var(--border-strong);
   }
-  .duo-btn-blue {
-    @apply bg-eagle text-white border-b-[#1899d6];
+  .duo-btn:active {
+    transform: translateY(1px);
   }
-  .duo-btn-gold {
-    @apply bg-gold text-duo-gray border-b-[#e9a000];
+
+  .duo-btn-primary {
+    background: var(--accent);
+    color: var(--text-on-accent);
+    border-color: var(--accent-hover);
   }
-  .duo-btn-red {
-    @apply bg-heart text-white border-b-[#d63838];
+  .duo-btn-primary:hover {
+    background: var(--accent-hover);
+    border-color: var(--accent-hover);
   }
-  .duo-btn-disabled {
-    @apply bg-gray-200 text-gray-400 border-b-[#cdcdcd] cursor-not-allowed;
+
+  .duo-btn-success {
+    background: var(--success);
+    color: var(--text-on-accent);
+    border-color: var(--success);
   }
+
+  .duo-btn-danger {
+    background: var(--error);
+    color: var(--text-on-accent);
+    border-color: var(--error);
+  }
+
+  .duo-btn-ghost {
+    background: transparent;
+    border-color: transparent;
+  }
+  .duo-btn-ghost:hover {
+    background: var(--bg-hover);
+  }
+
+  /* Inputs — handwritten in a journal */
+  .duo-input {
+    @apply rounded-md transition-all;
+    padding: 0.625rem 0.875rem;
+    background: var(--bg-input);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+    font-size: 0.95rem;
+  }
+  .duo-input:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-soft);
+  }
+
+  /* Reading area — for German text passages */
+  .duo-reading {
+    font-family: 'Crimson Text', Georgia, serif;
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+  }
+
+  /* Progress ring */
   .progress-ring {
     transform: rotate(-90deg);
   }
+
+  /* Mastery badge */
+  .mastery-new {
+    background: var(--bg-hover);
+    color: var(--text-muted);
+  }
+  .mastery-learning {
+    background: var(--accent-soft);
+    color: var(--accent-hover);
+  }
+  .mastery-known {
+    background: var(--accent);
+    color: var(--text-on-accent);
+  }
 }
 
+/* Animations */
 @keyframes pop {
   0% { transform: scale(1); }
-  50% { transform: scale(1.1); }
+  50% { transform: scale(1.05); }
   100% { transform: scale(1); }
 }
 .animate-pop { animation: pop 0.3s ease-in-out; }
@@ -61,3 +209,24 @@ body {
   to { transform: translateY(0); opacity: 1; }
 }
 .animate-slide-up { animation: slide-up 0.3s ease-out; }
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.animate-fade-in { animation: fade-in 0.4s ease-out; }
+
+/* Scrollbar — subtle, parchment-friendly */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--bg-page); }
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--text-faint); }
+
+/* Selection — gold ink */
+::selection {
+  background: var(--accent-light);
+  color: var(--text-primary);
+}
