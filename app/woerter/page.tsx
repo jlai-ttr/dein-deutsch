@@ -120,6 +120,178 @@ const SEED_VOCAB: Omit<VocabCard, 'interval' | 'repetition' | 'ef' | 'due' | 'la
   { id: 'f6', word: 'der Vater', translation: 'father', pos: 'noun', gender: 'm', level: 'A1', example: 'Mein Vater arbeitet.', exampleEn: 'My father works.' },
   { id: 'f7', word: 'der Bruder', translation: 'brother', pos: 'noun', gender: 'm', level: 'A1', example: 'Mein Bruder ist Student.', exampleEn: 'My brother is a student.' },
   { id: 'f8', word: 'die Schwester', translation: 'sister', pos: 'noun', gender: 'f', level: 'A1', example: 'Meine Schwester lernt.', exampleEn: 'My sister studies.' },
+
+  // ===== A2 — Elementary (50 cards) =====
+  // Travel & places
+  { id: 'a2-p1', word: 'der Bahnhof', translation: 'train station', pos: 'noun', gender: 'm', level: 'A2', example: 'Der Bahnhof ist in der Stadtmitte.', exampleEn: 'The train station is downtown.' },
+  { id: 'a2-p2', word: 'der Flughafen', translation: 'airport', pos: 'noun', gender: 'm', level: 'A2', example: 'Ich fahre zum Flughafen.', exampleEn: 'I am driving to the airport.' },
+  { id: 'a2-p3', word: 'das Hotel', translation: 'hotel', pos: 'noun', gender: 'n', level: 'A2', example: 'Das Hotel ist teuer.', exampleEn: 'The hotel is expensive.' },
+  { id: 'a2-p4', word: 'die Straße', translation: 'street', pos: 'noun', gender: 'f', level: 'A2', example: 'Die Straße ist breit.', exampleEn: 'The street is wide.' },
+  { id: 'a2-p5', word: 'die Brücke', translation: 'bridge', pos: 'noun', gender: 'f', level: 'A2', example: 'Die Brücke ist alt.', exampleEn: 'The bridge is old.' },
+  { id: 'a2-p6', word: 'die Kirche', translation: 'church', pos: 'noun', gender: 'f', level: 'A2', example: 'Die Kirche ist im Zentrum.', exampleEn: 'The church is in the center.' },
+  { id: 'a2-p7', word: 'der Park', translation: 'park', pos: 'noun', gender: 'm', level: 'A2', example: 'Wir gehen im Park spazieren.', exampleEn: 'We walk in the park.' },
+  { id: 'a2-p8', word: 'das Restaurant', translation: 'restaurant', pos: 'noun', gender: 'n', level: 'A2', example: 'Das Restaurant hat gutes Essen.', exampleEn: 'The restaurant has good food.' },
+  // Travel verbs
+  { id: 'a2-v1', word: 'fliegen', translation: 'to fly', pos: 'verb', level: 'A2', example: 'Ich fliege nach Berlin.', exampleEn: 'I am flying to Berlin.' },
+  { id: 'a2-v2', word: 'fahren', translation: 'to drive/travel', pos: 'verb', level: 'A2', example: 'Wir fahren mit dem Zug.', exampleEn: 'We travel by train.' },
+  { id: 'a2-v3', word: 'laufen', translation: 'to run/walk', pos: 'verb', level: 'A2', example: 'Ich laufe jeden Morgen.', exampleEn: 'I run every morning.' },
+  { id: 'a2-v4', word: 'steigen', translation: 'to climb/get on', pos: 'verb', level: 'A2', example: 'Wir steigen in den Bus.', exampleEn: 'We get on the bus.' },
+  { id: 'a2-v5', word: 'umsteigen', translation: 'to transfer', pos: 'verb', level: 'A2', example: 'Ich muss in Köln umsteigen.', exampleEn: 'I have to transfer in Cologne.' },
+  { id: 'a2-v6', word: 'buchen', translation: 'to book', pos: 'verb', level: 'A2', example: 'Ich buche ein Hotel.', exampleEn: 'I book a hotel.' },
+  { id: 'a2-v7', word: 'reservieren', translation: 'to reserve', pos: 'verb', level: 'A2', example: 'Ich reserviere einen Tisch.', exampleEn: 'I reserve a table.' },
+  { id: 'a2-v8', word: 'mitbringen', translation: 'to bring along', pos: 'verb', level: 'A2', example: 'Bring bitte das Buch mit.', exampleEn: 'Please bring the book along.' },
+  // Daily life
+  { id: 'a2-d1', word: 'der Urlaub', translation: 'vacation', pos: 'noun', gender: 'm', level: 'A2', example: 'Ich brauche Urlaub.', exampleEn: 'I need a vacation.' },
+  { id: 'a2-d2', word: 'die Ferien', translation: 'school holidays (pl)', pos: 'noun', gender: 'f', level: 'A2', example: 'Die Ferien beginnen im Juli.', exampleEn: 'The holidays start in July.' },
+  { id: 'a2-d3', word: 'die Arbeit', translation: 'work/job', pos: 'noun', gender: 'f', level: 'A2', example: 'Die Arbeit macht Spaß.', exampleEn: 'Work is fun.' },
+  { id: 'a2-d4', word: 'das Geld', translation: 'money', pos: 'noun', gender: 'n', level: 'A2', example: 'Ich habe kein Geld.', exampleEn: 'I have no money.' },
+  { id: 'a2-d5', word: 'die Rechnung', translation: 'bill/check', pos: 'noun', gender: 'f', level: 'A2', example: 'Die Rechnung, bitte.', exampleEn: 'The check, please.' },
+  { id: 'a2-d6', word: 'der Schlüssel', translation: 'key', pos: 'noun', gender: 'm', level: 'A2', example: 'Wo ist mein Schlüssel?', exampleEn: 'Where is my key?' },
+  { id: 'a2-d7', word: 'das Handy', translation: 'mobile phone', pos: 'noun', gender: 'n', level: 'A2', example: 'Mein Handy ist kaputt.', exampleEn: 'My phone is broken.' },
+  { id: 'a2-d8', word: 'der Computer', translation: 'computer', pos: 'noun', gender: 'm', level: 'A2', example: 'Mein Computer ist neu.', exampleEn: 'My computer is new.' },
+  // Health
+  { id: 'a2-h1', word: 'der Arzt', translation: 'doctor (m)', pos: 'noun', gender: 'm', level: 'A2', example: 'Ich gehe zum Arzt.', exampleEn: 'I go to the doctor.' },
+  { id: 'a2-h2', word: 'die Ärztin', translation: 'doctor (f)', pos: 'noun', gender: 'f', level: 'A2', example: 'Die Ärztin ist nett.', exampleEn: 'The doctor is nice.' },
+  { id: 'a2-h3', word: 'das Krankenhaus', translation: 'hospital', pos: 'noun', gender: 'n', level: 'A2', example: 'Das Krankenhaus ist groß.', exampleEn: 'The hospital is big.' },
+  { id: 'a2-h4', word: 'die Apotheke', translation: 'pharmacy', pos: 'noun', gender: 'f', level: 'A2', example: 'Die Apotheke ist neben dem Café.', exampleEn: 'The pharmacy is next to the café.' },
+  { id: 'a2-h5', word: 'wehtun', translation: 'to hurt', pos: 'verb', level: 'A2', example: 'Mein Kopf tut weh.', exampleEn: 'My head hurts.' },
+  { id: 'a2-h6', word: 'husten', translation: 'to cough', pos: 'verb', level: 'A2', example: 'Er hustet viel.', exampleEn: 'He coughs a lot.' },
+  { id: 'a2-h7', word: 'fühlen', translation: 'to feel', pos: 'verb', level: 'A2', example: 'Wie fühlst du dich?', exampleEn: 'How do you feel?' },
+  // A2 adjectives & adverbs
+  { id: 'a2-a1', word: 'teuer', translation: 'expensive', pos: 'adj', level: 'A2', example: 'Das Auto ist teuer.', exampleEn: 'The car is expensive.' },
+  { id: 'a2-a2', word: 'billig', translation: 'cheap', pos: 'adj', level: 'A2', example: 'Das Hotel ist billig.', exampleEn: 'The hotel is cheap.' },
+  { id: 'a2-a3', word: 'langsam', translation: 'slow', pos: 'adj', level: 'A2', example: 'Der Zug ist langsam.', exampleEn: 'The train is slow.' },
+  { id: 'a2-a4', word: 'schnell', translation: 'fast', pos: 'adj', level: 'A2', example: 'Das Auto ist schnell.', exampleEn: 'The car is fast.' },
+  { id: 'a2-a5', word: 'leise', translation: 'quiet', pos: 'adj', level: 'A2', example: 'Sei leise!', exampleEn: 'Be quiet!' },
+  { id: 'a2-a6', word: 'laut', translation: 'loud', pos: 'adj', level: 'A2', example: 'Die Musik ist laut.', exampleEn: 'The music is loud.' },
+  { id: 'a2-a7', word: 'früh', translation: 'early', pos: 'adj', level: 'A2', example: 'Ich stehe früh auf.', exampleEn: 'I get up early.' },
+  { id: 'a2-a8', word: 'spät', translation: 'late', pos: 'adj', level: 'A2', example: 'Es ist schon spät.', exampleEn: 'It is already late.' },
+  { id: 'a2-a9', word: 'lustig', translation: 'funny', pos: 'adj', level: 'A2', example: 'Der Film ist lustig.', exampleEn: 'The movie is funny.' },
+  { id: 'a2-a10', word: 'langweilig', translation: 'boring', pos: 'adj', level: 'A2', example: 'Das Buch ist langweilig.', exampleEn: 'The book is boring.' },
+  { id: 'a2-a11', word: 'interessant', translation: 'interesting', pos: 'adj', level: 'A2', example: 'Das Thema ist interessant.', exampleEn: 'The topic is interesting.' },
+  { id: 'a2-a12', word: 'wichtig', translation: 'important', pos: 'adj', level: 'A2', example: 'Das ist wichtig.', exampleEn: 'That is important.' },
+  // A2 connectors
+  { id: 'a2-c1', word: 'weil', translation: 'because', pos: 'conj', level: 'A2', example: 'Ich bleibe, weil es regnet.', exampleEn: 'I stay because it rains.' },
+  { id: 'a2-c2', word: 'dass', translation: 'that', pos: 'conj', level: 'A2', example: 'Ich weiß, dass du kommst.', exampleEn: 'I know that you are coming.' },
+  { id: 'a2-c3', word: 'wenn', translation: 'when/if', pos: 'conj', level: 'A2', example: 'Wenn ich Zeit habe, komme ich.', exampleEn: 'If I have time, I come.' },
+  { id: 'a2-c4', word: 'obwohl', translation: 'although', pos: 'conj', level: 'A2', example: 'Obwohl es regnet, gehe ich.', exampleEn: 'Although it rains, I go.' },
+  { id: 'a2-c5', word: 'deshalb', translation: 'therefore', pos: 'conj', level: 'A2', example: 'Ich bin müde, deshalb schlafe ich.', exampleEn: 'I am tired, therefore I sleep.' },
+  { id: 'a2-c6', word: 'trotzdem', translation: 'nevertheless', pos: 'conj', level: 'A2', example: 'Es regnet. Trotzdem gehe ich.', exampleEn: 'It rains. Nevertheless I go.' },
+  // More food / meals
+  { id: 'a2-f1', word: 'das Frühstück', translation: 'breakfast', pos: 'noun', gender: 'n', level: 'A2', example: 'Das Frühstück ist um 8.', exampleEn: 'Breakfast is at 8.' },
+  { id: 'a2-f2', word: 'das Mittagessen', translation: 'lunch', pos: 'noun', gender: 'n', level: 'A2', example: 'Das Mittagessen ist um 12.', exampleEn: 'Lunch is at noon.' },
+  { id: 'a2-f3', word: 'das Abendessen', translation: 'dinner', pos: 'noun', gender: 'n', level: 'A2', example: 'Das Abendessen ist um 19 Uhr.', exampleEn: 'Dinner is at 7 PM.' },
+  { id: 'a2-f4', word: 'der Apfel', translation: 'apple', pos: 'noun', gender: 'm', level: 'A2', example: 'Ich esse einen Apfel.', exampleEn: 'I eat an apple.' },
+  { id: 'a2-f5', word: 'die Milch', translation: 'milk', pos: 'noun', gender: 'f', level: 'A2', example: 'Die Milch ist frisch.', exampleEn: 'The milk is fresh.' },
+
+  // ===== B1 — Intermediate (50 cards) =====
+  // Abstract nouns
+  { id: 'b1-n1', word: 'die Erfahrung', translation: 'experience', pos: 'noun', gender: 'f', level: 'B1', example: 'Ich habe viel Erfahrung.', exampleEn: 'I have a lot of experience.' },
+  { id: 'b1-n2', word: 'die Meinung', translation: 'opinion', pos: 'noun', gender: 'f', level: 'B1', example: 'Das ist meine Meinung.', exampleEn: 'That is my opinion.' },
+  { id: 'b1-n3', word: 'die Möglichkeit', translation: 'possibility', pos: 'noun', gender: 'f', level: 'B1', example: 'Es gibt viele Möglichkeiten.', exampleEn: 'There are many possibilities.' },
+  { id: 'b1-n4', word: 'die Gelegenheit', translation: 'opportunity', pos: 'noun', gender: 'f', level: 'B1', example: 'Das ist eine gute Gelegenheit.', exampleEn: 'This is a good opportunity.' },
+  { id: 'b1-n5', word: 'der Unterschied', translation: 'difference', pos: 'noun', gender: 'm', level: 'B1', example: 'Was ist der Unterschied?', exampleEn: 'What is the difference?' },
+  { id: 'b1-n6', word: 'die Beziehung', translation: 'relationship', pos: 'noun', gender: 'f', level: 'B1', example: 'Wir haben eine gute Beziehung.', exampleEn: 'We have a good relationship.' },
+  { id: 'b1-n7', word: 'die Gesellschaft', translation: 'society', pos: 'noun', gender: 'f', level: 'B1', example: 'Die Gesellschaft verändert sich.', exampleEn: 'Society is changing.' },
+  { id: 'b1-n8', word: 'die Zukunft', translation: 'future', pos: 'noun', gender: 'f', level: 'B1', example: 'Die Zukunft ist ungewiss.', exampleEn: 'The future is uncertain.' },
+  { id: 'b1-n9', word: 'die Vergangenheit', translation: 'past', pos: 'noun', gender: 'f', level: 'B1', example: 'Die Vergangenheit war anders.', exampleEn: 'The past was different.' },
+  { id: 'b1-n10', word: 'die Erinnerung', translation: 'memory', pos: 'noun', gender: 'f', level: 'B1', example: 'Ich habe schöne Erinnerungen.', exampleEn: 'I have beautiful memories.' },
+  // B1 verbs (more nuanced)
+  { id: 'b1-v1', word: 'erklären', translation: 'to explain', pos: 'verb', level: 'B1', example: 'Kannst du das erklären?', exampleEn: 'Can you explain that?' },
+  { id: 'b1-v2', word: 'erzählen', translation: 'to tell/narrate', pos: 'verb', level: 'B1', example: 'Erzähl mir eine Geschichte.', exampleEn: 'Tell me a story.' },
+  { id: 'b1-v3', word: 'beschreiben', translation: 'to describe', pos: 'verb', level: 'B1', example: 'Beschreib dein Haus.', exampleEn: 'Describe your house.' },
+  { id: 'b1-v4', word: 'vergleichen', translation: 'to compare', pos: 'verb', level: 'B1', example: 'Ich vergleiche die Preise.', exampleEn: 'I am comparing the prices.' },
+  { id: 'b1-v5', word: 'entscheiden', translation: 'to decide', pos: 'verb', level: 'B1', example: 'Ich entscheide mich.', exampleEn: 'I decide.' },
+  { id: 'b1-v6', word: 'sich bewerben', translation: 'to apply', pos: 'verb', level: 'B1', example: 'Ich bewerbe mich um die Stelle.', exampleEn: 'I am applying for the position.' },
+  { id: 'b1-v7', word: 'einladen', translation: 'to invite', pos: 'verb', level: 'B1', example: 'Ich lade dich ein.', exampleEn: 'I invite you.' },
+  { id: 'b1-v8', word: 'sich vorstellen', translation: 'to introduce/imagine', pos: 'verb', level: 'B1', example: 'Ich stelle mir das vor.', exampleEn: 'I imagine that.' },
+  { id: 'b1-v9', word: 'sich interessieren für', translation: 'to be interested in', pos: 'verb', level: 'B1', example: 'Ich interessiere mich für Kunst.', exampleEn: 'I am interested in art.' },
+  { id: 'b1-v10', word: 'sich freuen auf', translation: 'to look forward to', pos: 'verb', level: 'B1', example: 'Ich freue mich auf den Urlaub.', exampleEn: 'I look forward to the vacation.' },
+  { id: 'b1-v11', word: 'sich ärgern über', translation: 'to be annoyed about', pos: 'verb', level: 'B1', example: 'Ich ärgere mich über den Lärm.', exampleEn: 'I am annoyed about the noise.' },
+  { id: 'b1-v12', word: 'versuchen', translation: 'to try', pos: 'verb', level: 'B1', example: 'Ich versuche es.', exampleEn: 'I try it.' },
+  { id: 'b1-v13', word: 'gelingen', translation: 'to succeed', pos: 'verb', level: 'B1', example: 'Es ist mir gelungen.', exampleEn: 'I succeeded.' },
+  { id: 'b1-v14', word: 'empfehlen', translation: 'to recommend', pos: 'verb', level: 'B1', example: 'Ich empfehle das Restaurant.', exampleEn: 'I recommend the restaurant.' },
+  { id: 'b1-v15', word: 'bedeuten', translation: 'to mean', pos: 'verb', level: 'B1', example: 'Was bedeutet das?', exampleEn: 'What does that mean?' },
+  // B1 adjectives
+  { id: 'b1-a1', word: 'erfolgreich', translation: 'successful', pos: 'adj', level: 'B1', example: 'Sie ist erfolgreich.', exampleEn: 'She is successful.' },
+  { id: 'b1-a2', word: 'zuverlässig', translation: 'reliable', pos: 'adj', level: 'B1', example: 'Er ist zuverlässig.', exampleEn: 'He is reliable.' },
+  { id: 'b1-a3', word: 'fleißig', translation: 'hardworking', pos: 'adj', level: 'B1', example: 'Sie ist fleißig.', exampleEn: 'She is hardworking.' },
+  { id: 'b1-a4', word: 'faul', translation: 'lazy', pos: 'adj', level: 'B1', example: 'Er ist faul.', exampleEn: 'He is lazy.' },
+  { id: 'b1-a5', word: 'höflich', translation: 'polite', pos: 'adj', level: 'B1', example: 'Sei höflich!', exampleEn: 'Be polite!' },
+  { id: 'b1-a6', word: 'unhöflich', translation: 'impolite', pos: 'adj', level: 'B1', example: 'Das ist unhöflich.', exampleEn: 'That is impolite.' },
+  { id: 'b1-a7', word: 'pünktlich', translation: 'punctual', pos: 'adj', level: 'B1', example: 'Er ist immer pünktlich.', exampleEn: 'He is always punctual.' },
+  { id: 'b1-a8', word: 'zufrieden', translation: 'satisfied', pos: 'adj', level: 'B1', example: 'Ich bin zufrieden.', exampleEn: 'I am satisfied.' },
+  { id: 'b1-a9', word: 'unzufrieden', translation: 'dissatisfied', pos: 'adj', level: 'B1', example: 'Sie ist unzufrieden.', exampleEn: 'She is dissatisfied.' },
+  { id: 'b1-a10', word: 'verrückt', translation: 'crazy', pos: 'adj', level: 'B1', example: 'Das ist verrückt!', exampleEn: 'That is crazy!' },
+  // B1 work / education
+  { id: 'b1-w1', word: 'die Stelle', translation: 'position/job', pos: 'noun', gender: 'f', level: 'B1', example: 'Ich suche eine Stelle.', exampleEn: 'I am looking for a job.' },
+  { id: 'b1-w2', word: 'der Beruf', translation: 'profession', pos: 'noun', gender: 'm', level: 'B1', example: 'Was ist Ihr Beruf?', exampleEn: 'What is your profession?' },
+  { id: 'b1-w3', word: 'das Gehalt', translation: 'salary', pos: 'noun', gender: 'n', level: 'B1', example: 'Das Gehalt ist gut.', exampleEn: 'The salary is good.' },
+  { id: 'b1-w5', word: 'der Kollege', translation: 'colleague (m)', pos: 'noun', gender: 'm', level: 'B1', example: 'Mein Kollege hilft mir.', exampleEn: 'My colleague helps me.' },
+  { id: 'b1-w6', word: 'die Kollegin', translation: 'colleague (f)', pos: 'noun', gender: 'f', level: 'B1', example: 'Meine Kollegin ist nett.', exampleEn: 'My colleague is nice.' },
+  { id: 'b1-w7', word: 'das Studium', translation: 'studies', pos: 'noun', gender: 'n', level: 'B1', example: 'Das Studium ist schwer.', exampleEn: 'Studies are hard.' },
+  { id: 'b1-w8', word: 'die Universität', translation: 'university', pos: 'noun', gender: 'f', level: 'B1', example: 'Die Universität ist alt.', exampleEn: 'The university is old.' },
+  { id: 'b1-w9', word: 'der Abschluss', translation: 'degree/conclusion', pos: 'noun', gender: 'm', level: 'B1', example: 'Ich habe meinen Abschluss.', exampleEn: 'I have my degree.' },
+  { id: 'b1-w10', word: 'die Prüfung', translation: 'exam', pos: 'noun', gender: 'f', level: 'B1', example: 'Die Prüfung ist morgen.', exampleEn: 'The exam is tomorrow.' },
+  // B1 media & function words
+  { id: 'b1-m1', word: 'die Nachricht', translation: 'news/message', pos: 'noun', gender: 'f', level: 'B1', example: 'Ich habe eine Nachricht.', exampleEn: 'I have a message.' },
+  { id: 'b1-m2', word: 'die Zeitung', translation: 'newspaper', pos: 'noun', gender: 'f', level: 'B1', example: 'Ich lese die Zeitung.', exampleEn: 'I read the newspaper.' },
+  { id: 'b1-m3', word: 'der Film', translation: 'film', pos: 'noun', gender: 'm', level: 'B1', example: 'Der Film ist spannend.', exampleEn: 'The film is exciting.' },
+  { id: 'b1-m4', word: 'die Musik', translation: 'music', pos: 'noun', gender: 'f', level: 'B1', example: 'Die Musik ist laut.', exampleEn: 'The music is loud.' },
+  { id: 'b1-f1', word: 'außerdem', translation: 'besides/furthermore', pos: 'conj', level: 'B1', example: 'Außerdem habe ich Zeit.', exampleEn: 'Besides, I have time.' },
+  { id: 'b1-f2', word: 'allerdings', translation: 'however/indeed', pos: 'conj', level: 'B1', example: 'Allerdings ist es teuer.', exampleEn: 'However, it is expensive.' },
+  { id: 'b1-f3', word: 'sogar', translation: 'even', pos: 'adv', level: 'B1', example: 'Sogar ich kann das.', exampleEn: 'Even I can do that.' },
+  { id: 'b1-f4', word: 'meistens', translation: 'mostly', pos: 'adv', level: 'B1', example: 'Meistens esse ich zu Hause.', exampleEn: 'I mostly eat at home.' },
+  { id: 'b1-f5', word: 'manchmal', translation: 'sometimes', pos: 'adv', level: 'B1', example: 'Manchmal gehe ich ins Kino.', exampleEn: 'Sometimes I go to the cinema.' },
+
+  // ===== B2 — Upper-Intermediate (30 cards) =====
+  // Abstract concepts
+  { id: 'b2-n1', word: 'die Herausforderung', translation: 'challenge', pos: 'noun', gender: 'f', level: 'B2', example: 'Das ist eine Herausforderung.', exampleEn: 'That is a challenge.' },
+  { id: 'b2-n2', word: 'die Voraussetzung', translation: 'prerequisite', pos: 'noun', gender: 'f', level: 'B2', example: 'Das ist eine Voraussetzung.', exampleEn: 'That is a prerequisite.' },
+  { id: 'b2-n3', word: 'die Auswirkung', translation: 'consequence/impact', pos: 'noun', gender: 'f', level: 'B2', example: 'Die Auswirkungen sind groß.', exampleEn: 'The consequences are big.' },
+  { id: 'b2-n4', word: 'der Zusammenhang', translation: 'connection/context', pos: 'noun', gender: 'm', level: 'B2', example: 'Das hat einen Zusammenhang.', exampleEn: 'That has a connection.' },
+  { id: 'b2-n5', word: 'die Einstellung', translation: 'attitude/setting', pos: 'noun', gender: 'f', level: 'B2', example: 'Meine Einstellung hat sich geändert.', exampleEn: 'My attitude has changed.' },
+  { id: 'b2-n6', word: 'der Eindruck', translation: 'impression', pos: 'noun', gender: 'm', level: 'B2', example: 'Ich habe einen guten Eindruck.', exampleEn: 'I have a good impression.' },
+  { id: 'b2-n7', word: 'die Vermutung', translation: 'assumption', pos: 'noun', gender: 'f', level: 'B2', example: 'Das ist nur eine Vermutung.', exampleEn: 'That is only an assumption.' },
+  { id: 'b2-n8', word: 'der Gesichtspunkt', translation: 'point of view', pos: 'noun', gender: 'm', level: 'B2', example: 'Aus meinem Gesichtspunkt...', exampleEn: 'From my point of view...' },
+  // B2 verbs
+  { id: 'b2-v1', word: 'überzeugen', translation: 'to convince', pos: 'verb', level: 'B2', example: 'Er überzeugt mich.', exampleEn: 'He convinces me.' },
+  { id: 'b2-v2', word: 'sich beschäftigen mit', translation: 'to engage with', pos: 'verb', level: 'B2', example: 'Ich beschäftige mich damit.', exampleEn: 'I engage with it.' },
+  { id: 'b2-v3', word: 'berücksichtigen', translation: 'to take into account', pos: 'verb', level: 'B2', example: 'Bitte berücksichtigen Sie das.', exampleEn: 'Please take that into account.' },
+  { id: 'b2-v4', word: 'sich herausstellen', translation: 'to turn out', pos: 'verb', level: 'B2', example: 'Es stellte sich heraus, dass...', exampleEn: 'It turned out that...' },
+  { id: 'b2-v5', word: 'sich lohnen', translation: 'to be worth it', pos: 'verb', level: 'B2', example: 'Das lohnt sich.', exampleEn: 'That is worth it.' },
+  { id: 'b2-v6', word: 'missverstehen', translation: 'to misunderstand', pos: 'verb', level: 'B2', example: 'Habe ich dich missverstanden?', exampleEn: 'Did I misunderstand you?' },
+  { id: 'b2-v7', word: 'widersprechen', translation: 'to contradict', pos: 'verb', level: 'B2', example: 'Ich muss widersprechen.', exampleEn: 'I must contradict.' },
+  // B2 idiomatic / informal adverbs
+  { id: 'b2-i1', word: 'eigentlich', translation: 'actually', pos: 'adv', level: 'B2', example: 'Eigentlich habe ich keine Zeit.', exampleEn: 'Actually, I have no time.' },
+  { id: 'b2-i2', word: 'jedenfalls', translation: 'in any case', pos: 'adv', level: 'B2', example: 'Jedenfalls komme ich.', exampleEn: 'In any case, I am coming.' },
+  { id: 'b2-i3', word: 'womöglich', translation: 'possibly', pos: 'adv', level: 'B2', example: 'Womöglich ist es wahr.', exampleEn: 'It might be true.' },
+  { id: 'b2-i4', word: 'nämlich', translation: 'namely/because', pos: 'adv', level: 'B2', example: 'Ich habe keine Zeit, ich muss nämlich arbeiten.', exampleEn: 'I have no time because I must work.' },
+  // B2 complex adjectives
+  { id: 'b2-a1', word: 'verantwortlich', translation: 'responsible', pos: 'adj', level: 'B2', example: 'Wer ist verantwortlich?', exampleEn: 'Who is responsible?' },
+  { id: 'b2-a2', word: 'begeistert von', translation: 'enthusiastic about', pos: 'adj', level: 'B2', example: 'Ich bin begeistert!', exampleEn: 'I am enthusiastic!' },
+  { id: 'b2-a3', word: 'skeptisch', translation: 'skeptical', pos: 'adj', level: 'B2', example: 'Ich bin skeptisch.', exampleEn: 'I am skeptical.' },
+  { id: 'b2-a4', word: 'deutlich', translation: 'clear/obvious', pos: 'adj', level: 'B2', example: 'Das ist deutlich besser.', exampleEn: 'That is clearly better.' },
+  { id: 'b2-a5', word: 'allgemein', translation: 'general', pos: 'adj', level: 'B2', example: 'Im Allgemeinen stimmt das.', exampleEn: 'In general, that is true.' },
+  { id: 'b2-a6', word: 'ziemlich', translation: 'quite', pos: 'adv', level: 'B2', example: 'Das ist ziemlich gut.', exampleEn: 'That is quite good.' },
+
+  // ===== C1 — Advanced (20 cards) =====
+  { id: 'c1-n1', word: 'die Verantwortung', translation: 'responsibility', pos: 'noun', gender: 'f', level: 'C1', example: 'Ich übernehme die Verantwortung.', exampleEn: 'I take the responsibility.' },
+  { id: 'c1-n2', word: 'die Auseinandersetzung', translation: 'confrontation/discussion', pos: 'noun', gender: 'f', level: 'C1', example: 'Die Auseinandersetzung war intensiv.', exampleEn: 'The discussion was intense.' },
+  { id: 'c1-n3', word: 'die Berücksichtigung', translation: 'consideration', pos: 'noun', gender: 'f', level: 'C1', example: 'Unter Berücksichtigung von...', exampleEn: 'Taking into consideration...' },
+  { id: 'c1-n4', word: 'die Kenntnis', translation: 'knowledge (formal)', pos: 'noun', gender: 'f', level: 'C1', example: 'Ich habe gute Kenntnisse.', exampleEn: 'I have good knowledge.' },
+  { id: 'c1-n5', word: 'die Förderung', translation: 'support/promotion', pos: 'noun', gender: 'f', level: 'C1', example: 'Die Förderung der Bildung.', exampleEn: 'The promotion of education.' },
+  { id: 'c1-v1', word: 'gewährleisten', translation: 'to ensure', pos: 'verb', level: 'C1', example: 'Wir gewährleisten die Qualität.', exampleEn: 'We ensure the quality.' },
+  { id: 'c1-v2', word: 'sich auseinandersetzen mit', translation: 'to engage with/deal with', pos: 'verb', level: 'C1', example: 'Ich setze mich damit auseinander.', exampleEn: 'I engage with it.' },
+  { id: 'c1-v3', word: 'in Frage stellen', translation: 'to question', pos: 'verb', level: 'C1', example: 'Ich stelle das in Frage.', exampleEn: 'I question that.' },
+  { id: 'c1-v4', word: 'etwas unternehmen', translation: 'to take action', pos: 'verb', level: 'C1', example: 'Wir müssen etwas unternehmen.', exampleEn: 'We must take action.' },
+  { id: 'c1-v5', word: 'zur Verfügung stellen', translation: 'to provide', pos: 'verb', level: 'C1', example: 'Ich stelle Ihnen die Daten zur Verfügung.', exampleEn: 'I provide you the data.' },
+  // C1 register / advanced adverbs
+  { id: 'c1-r1', word: 'folglich', translation: 'consequently', pos: 'adv', level: 'C1', example: 'Folg lich müssen wir handeln.', exampleEn: 'Consequently we must act.' },
+  { id: 'c1-r2', word: 'infolgedessen', translation: 'as a result', pos: 'adv', level: 'C1', example: 'Infolgedessen steigen die Preise.', exampleEn: 'As a result, prices rise.' },
+  { id: 'c1-r3', word: 'demzufolge', translation: 'accordingly', pos: 'adv', level: 'C1', example: 'Demzufolge ist es richtig.', exampleEn: 'Accordingly, it is correct.' },
+  { id: 'c1-r4', word: 'zweifellos', translation: 'undoubtedly', pos: 'adv', level: 'C1', example: 'Zweifellos ist das wichtig.', exampleEn: 'Undoubtedly that is important.' },
+  { id: 'c1-r5', word: 'keineswegs', translation: 'by no means', pos: 'adv', level: 'C1', example: 'Das ist keineswegs einfach.', exampleEn: 'That is by no means easy.' },
 ];
 
 function newCard(c: Omit<VocabCard, 'interval' | 'repetition' | 'ef' | 'due' | 'lapses' | 'totalReviews' | 'correctReviews'>): VocabCard {
@@ -183,6 +355,7 @@ export default function WoerterPage() {
   const [germanVoices, setGermanVoices] = useState<SpeechSynthesisVoice[]>([]);
   const [showHelp, setShowHelp] = useState(false);
   const [deVoice, setDeVoice] = useState<string>('');
+  const [activeLevel, setActiveLevel] = useState<'all' | 'A1' | 'A2' | 'B1' | 'B2' | 'C1'>('all');
 
   useEffect(() => {
     setMounted(true);
@@ -230,9 +403,9 @@ export default function WoerterPage() {
   const dueCards = useMemo(() => {
     const now = Date.now();
     return cards
-      .filter(c => c.due <= now)
+      .filter(c => c.due <= now && (activeLevel === 'all' || c.level === activeLevel))
       .sort((a, b) => a.due - b.due);
-  }, [cards]);
+  }, [cards, activeLevel]);
 
   const currentCard = dueCards[0];
 
@@ -403,6 +576,31 @@ export default function WoerterPage() {
           <span><strong style={{ color: t.accent }}>{reviewed}</strong> überprüft</span>
           <span>Accuracy: <strong style={{ color: t.success }}>{stats.avgAccuracy}%</strong></span>
           <span>Mastered: <strong style={{ color: t.accent }}>{stats.mastered}/{stats.total}</strong></span>
+        </div>
+
+        {/* Level filter chips */}
+        <div style={{ display: 'flex', gap: 6, marginTop: 14, flexWrap: 'wrap' }}>
+          {(['all', 'A1', 'A2', 'B1', 'B2', 'C1'] as const).map(lvl => {
+            const count = lvl === 'all' ? cards.length : cards.filter(c => c.level === lvl).length;
+            const active = activeLevel === lvl;
+            return (
+              <button
+                key={lvl}
+                onClick={() => setActiveLevel(lvl)}
+                style={{
+                  padding: '5px 12px', borderRadius: 999,
+                  border: '1px solid ' + (active ? t.accent : t.border),
+                  background: active ? t.accent : t.bg,
+                  color: active ? t.onAccent : t.textMuted,
+                  fontSize: '0.8rem', fontWeight: active ? 700 : 500,
+                  cursor: 'pointer', fontFamily: FONTS.body,
+                  letterSpacing: '0.05em',
+                }}
+              >
+                {lvl === 'all' ? 'Alle' : lvl} <span style={{ opacity: 0.7, marginLeft: 4, fontSize: '0.7rem' }}>{count}</span>
+              </button>
+            );
+          })}
         </div>
       </div>
 
