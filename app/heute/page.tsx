@@ -11,14 +11,16 @@ export default function HeutePage() {
 
   useEffect(() => {
     const stored = localStorage.getItem('dein-progress');
+    let dayNum = 1;
     if (stored) {
       try {
         const p = JSON.parse(stored);
-        setDay(p.currentDay || 1);
+        dayNum = p.currentDay || 1;
+        setDay(dayNum);
         setCompleted(p.todayCompleted || false);
       } catch (e) {}
     }
-    loadLesson(p.currentDay || 1);
+    loadLesson(dayNum);
   }, []);
 
   async function loadLesson(dayNum: number) {
