@@ -1,0 +1,168 @@
+GERMAN A1 — DAY 18 OF 90
+Connectors (Konnektoren) + Building complex sentences
+====================================================
+
+Today: the words that connect ideas — und, aber, oder, denn, weil, dass, wenn.
+
+COORDINATING CONJUNCTIONS (NO verb change)
+------------------------------------------
+
+1. und (and)
+   "Ich lerne Deutsch UND mein Bruder lernt Englisch."
+   Just adds clauses. Verb position is normal in each clause.
+
+2. aber (but)
+   "Ich möchte kommen, ABER ich habe keine Zeit."
+   Pure contrast. No verb change.
+
+3. oder (or)
+   "Möchtest du Kaffee ODER Tee?"
+   Question form. No verb change.
+
+4. sondern (but rather / instead)
+   "Nicht Kaffee, SONDERN Tee."
+   Used after negation. Only one negate, sondern cancels: "Er kommt nicht heute, sondern morgen."
+
+5. denn (for / because — casual)
+   "Ich bleibe zu Hause, DENN ich bin müde."
+   "Denn" = because. Goes BEFORE the verb-position clause.
+
+SUBORDATING CONJUNCTIONS (VERB GOES TO END!)
+---------------------------------------------
+
+After these, the verb is the LAST element of the subordinate clause:
+
+1. weil (because)
+   "Ich lerne Deutsch, WEIL ich in Deutschland arbeiten möchte."
+   Verb "möchte" goes to the END.
+
+2. dass (that)
+   "Ich weiß, DASS du kommst."
+   "kommst" at the end.
+
+3. wenn (when/if)
+   "WENN ich Zeit habe, gehe ich ins Kino."
+   "habe" at the end.
+
+4. als (when — past tense only)
+   "ALS ich ein Kind war, lebte ich in Berlin."
+   Only for past. "Als ich war Kind" — was a child, lived in Berlin.
+
+5. ob (whether)
+   "Ich weiß nicht, OB er kommt."
+   Comes at end of subordinate.
+
+6. obwohl (although)
+   "OBWOHL es regnet, gehen wir spazieren."
+   "regnet" at end.
+
+THE VERB-AT-END RULE
+--------------------
+
+After weil, dass, wenn, als, ob, obwohl, damit (so that), etc.:
+THE CONJUGATED VERB goes to the END of the clause.
+
+Compare:
+  Main clause: "Ich lerne Deutsch."  (verb 2nd: lerne)
+  Subordinate: "WEIL ich in Berlin lebe." (verb end: lebe)
+
+This is the famous German word-order feature.
+
+ONE-WORD CONNECTORS (sentence-level adverbs)
+---------------------------------------------
+
+These don't change verb position but reorder the sentence:
+
+  dann (then) — "Er kommt. DANN gehen wir."
+  deshalb/deswegen (therefore) — "Es regnet; DESHALB bleibe ich."
+  außerdem (besides) — "Ich mag Kaffee. AUßerdem mag ich Tee."
+  trotzdem (still/nevertheless) — "Es regnet. TROTZdem gehe ich raus."
+  vielleicht (maybe) — "VIELLEICHT kommt er morgen."
+  eigentlich (actually) — "EIGENTLICH habe ich keine Zeit."
+
+These typically go at position 1 (sentence start) or position 3 (after subject):
+  "Dann gehen wir ins Kino."
+  "Wir GEHEN dann ins Kino." (with stress)
+
+EXAMPLES IN CONTEXT
+-------------------
+
+WEIL (because):
+- Ich bleibe zu Hause, WEIL ich krank bin.
+- Sie lernt Deutsch, WEIL sie in Berlin studieren möchte.
+
+DASS (that):
+- Ich glaube, DASS er kommt.
+- Weißt du, DASS sie morgen heiratet?
+
+WENN (when/if):
+- WENN ich Geld habe, kaufe ich ein Auto.
+- Ich komme, WENN du mich einlädst.
+
+ALS (when — past):
+- ALS ich klein war, hatte ich einen Hund.
+- ALS wir nach Deutschland kamen, war es kalt.
+
+OBWOHL (although):
+- OBWOHL er müde ist, arbeitet er weiter.
+- Sie geht spazieren, OBWOHL es regnet.
+
+TWO-CLAUSE SENTENCES
+--------------------
+
+Comma + verb position determines the structure.
+
+Pattern A: Main-then-subordinate
+  "Ich gehe ins Kino, WEIL ich einen Film sehen möchte."
+  Position: [main] [verb-final subordinate]
+
+Pattern B: Subordinate-then-main (verb-first in main)
+  "WEIL ich müde bin, GEHE ich nach Hause."
+  Position: [verb-final subordinate] [verb-first main]
+
+In Pattern B, when the subordinate clause comes first, the main clause starts with the VERB (inversion: verb before subject).
+
+EXAMPLES OF PATTERN B:
+- WEIL ich müde bin, GEHE ich nach Hause.
+- WENN du kommst, RUFE ich dich an.
+- ALS ich ankam, WAR das Wetter schön.
+
+PUZZLE (correct these sentences)
+--------------------------------
+
+Wrong: "Ich gehe ins Kino weil ich möchte einen Film sehen."
+Right: "Ich gehe ins Kino, WEIL ich einen Film SEHEN möchte."
+
+Wrong: "Weißt du dass er kommt?"
+Right: "Weißt du, DASS er KOMMT?"
+
+Wrong: "Ich bleibe zu Hause obwohl ich gehe gern spazieren."
+Right: "Ich bleibe zu Hause, OBWOHL ich GERNE spazieren gehe."
+
+NEW VOCABULARY (8 words)
+-------------------------
+1. und — and (conj)
+2. aber — but (conj)
+3. oder — or (conj)
+4. weil — because (conj)
+5. dass — that (conj)
+6. wenn — when/if (conj)
+7. ob — whether (conj)
+8. obwohl — although (conj)
+
+EXERCISE
+--------
+1. Join these with weil:
+   - "Ich lerne Deutsch." + "Ich möchte in Berlin arbeiten." → ___
+2. Join with obwohl:
+   - "Es regnet." + "Wir gehen spazieren." → ___
+3. Translate: "I know that he comes tomorrow."
+4. Use denn correctly:
+   - "I'm staying home because I'm tired." → ___
+
+NEXT: Day 19 — Adjective declension (the famous "adjective endings" topic)
+
+Total vocab today: +8 words
+Grand total: 174 words
+
+Bis morgen!

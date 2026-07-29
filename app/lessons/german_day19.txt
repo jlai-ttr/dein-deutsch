@@ -1,0 +1,161 @@
+GERMAN A1 — DAY 19 OF 90
+Adjective Declension — The Infamous German Adjective Endings
+============================================================
+
+The topic every German learner dreads: German adjectives change their ending
+based on case, gender, and number. But — there's a pattern.
+
+THE THREE DECLENSION TYPES
+---------------------------
+
+1. STRONG (after ein/eine/ein or no article at all)
+   Adjective takes the article's ending.
+   "Ein alter Mann" — here "alter" takes -er ending (masc nom).
+
+2. WEAK (after der/die/das)
+   Adjective always takes -en or -e.
+   "Der alte Mann" — here "alte" takes -e ending (masc nom after "der").
+
+3. MIXED (after mein/dein/sein... or indefinite article)
+   Adjective takes -en except in nominative masculine and nominative/neuter.
+   This is for possessive pronouns (mein/dein/sein/ihr/unser/euer) and "ein" (when it means "a" not "one").
+
+THE FULL TABLE (definite article — der/die/das)
+-----------------------------------------------
+
+|            | Masc | Fem | Neut | Plural |
+|------------|------|-----|------|--------|
+| Nom        | -e   | -e  | -e   | -en    |
+| Akk        | -en  | -e  | -e   | -en    |
+| Dat        | -en  | -en | -en  | -en    |
+| Gen        | -en  | -en | -en  | -en    |
+
+After "der/die/das", adjective endings are mostly -en or -e.
+This is the easiest pattern.
+
+EXAMPLES:
+- "Der KLEINE Junge spielt." (The small boy plays.)
+- "Ich sehe den KLEINEN Jungen." (I see the small boy.)
+- "Mit dem KLEINEN Jungen spiele ich." (I play with the small boy.)
+- "Das Haus des ALTEN Mannes." (The house of the old man.)
+
+Notice: -en everywhere EXCEPT nominative masculine singular.
+
+THE FULL TABLE (indefinite article — ein/eine/ein)
+--------------------------------------------------
+
+|            | Masc | Fem | Neut | Plural |
+|------------|------|-----|------|--------|
+| Nom        | -er  | -e  | -es  | -en    |
+| Akk        | -en  | -e  | -es  | -en    |
+| Dat        | -en  | -en | -en  | -en    |
+| Gen        | -en  | -en | -en  | -en    |
+
+After "ein/eine/ein" (or no article), adjective endings mirror the missing article.
+
+EXAMPLES:
+- "Ein KLEINER Junge spielt." (A small boy plays.) — er mirrors der
+- "Ich sehe einen KLEINEN Jungen." — en mirrors den
+- "Ein KLEINES Haus ist rot." (A small house is red.) — es mirrors das
+- "Eine SCHÖNE Frau singt." (A beautiful woman sings.) — e mirrors die
+
+THE FULL TABLE (possessive — mein/dein/sein/ihr/unser/euer)
+-----------------------------------------------------------
+
+Same as indefinite article (above).
+
+EXAMPLES:
+- "Mein ALTER Freund kommt." (My old friend comes.) — er mirrors der
+- "Mein SCHÖNES Haus ist groß." (My beautiful house is big.)
+- "Ich helfe MEINER ALTEN Mutter." (I help my old mother.)
+
+"NO ARTICLE" CASES
+-------------------
+
+When there's NO article (just noun + adjective):
+
+|            | Masc | Fem | Neut | Plural |
+|------------|------|-----|------|--------|
+| Nom        | -er  | -e  | -es  | -e     |
+| Akk        | -en  | -e  | -es  | -e     |
+| Dat        | -em  | -er | -em  | -en    |
+| Gen        | -en  | -er | -en  | -er    |
+
+Examples:
+- "Kaltes Wasser ist gut." (Cold water is good.) — n + es
+- "Ich trinke kalten Kaffee." (I drink cold coffee.) — masculine akk: -en
+- "Mit kaltem Wasser wasche ich." (With cold water I wash.) — masculine dat: -em
+
+PATTERN SUMMARY
+---------------
+
+The RULES OF THUMB (you can get 80% right with these):
+
+1. After "der/die/das": adjective mostly takes -en or -e.
+2. After "ein/eine/mein/dein/...": adjective mirrors what the article WOULD be.
+3. In dative plural: always -en (regardless of article).
+4. In genitive: usually -en (sometimes -es after some strong endings).
+
+VERBAL REASONING:
+- The adjective ending essentially communicates the case/gender that's NOT shown by the article.
+- If you can see the article, adjective is just adding flavor (-en/-e).
+- If you can't see the article (or it's "ein"), adjective carries the case signal.
+
+DATIVE ADJECTIVE PATTERN
+------------------------
+After "dem" (dative masculine/neuter), adjective ends in -en:
+- "Ich helfe dem KLEINEN Jungen." (I help the small boy.) — Jungen is dat
+- "Mit dem SCHÖNEN Haus." (With the beautiful house.) — Haus is dat masc
+
+After "der" (dative feminine), adjective ends in -en:
+- "Ich gratuliere der ALTEN Frau." (I congratulate the old woman.) — Frau is dat
+
+This is the famous "schwache Deklination" (weak declension) table again.
+
+PRACTICE
+--------
+
+Translate these adjective + noun phrases (with correct endings):
+
+1. The big house → das ___ Haus (groß) → "das große Haus"
+2. A red car → ein ___ Auto (rot) → "ein rotes Auto"
+3. The small boy → der ___ Junge (klein) → "der kleine Junge"
+4. Of the small boy → des ___ Jungen (klein) → "des kleinen Jungen"
+5. With a cold coffee → mit ___ Kaffee (kalt) → "mit kaltem Kaffee"
+6. The nice woman helps → die ___ Frau (nett) hilft → "die nette Frau hilft"
+7. Without a hot meal → ohne ___ Essen (heiß) → "ohne heißes Essen"
+
+CULTURE NOTE
+------------
+German schoolchildren get this table tattooed into their brains from age 10.
+Foreign adults usually catch it eventually but mix up dat/gen frequently. Don't panic.
+
+NEW VOCABULARY (10 common adjectives)
+---------------------------------------
+1. groß — big
+2. klein — small
+3. alt — old
+4. neu — new
+5. schön — beautiful
+6. gut — good
+7. schlecht — bad
+8. schnell — fast
+9. langsam — slow
+10. teuer — expensive
+
+EXERCISE
+--------
+1. Translate these adjective + noun phrases with correct endings:
+   - "a small child" → ___
+   - "the beautiful city" → ___
+   - "with my old friend" → ___
+   - "without hot water" → ___
+2. Write 5 sentences using "Ich habe ein ___" (I have a ___) — pick adjectives.
+3. Write 5 sentences using "Das ist ein ___ ___" (That is a ___) — adjective + noun.
+
+NEXT: Day 20 — Final A1 grammar: Comparisons (größer als / so groß wie)
+
+Total vocab today: +10 (mostly known but reinforced)
+Grand total: 184 words
+
+Bis morgen!

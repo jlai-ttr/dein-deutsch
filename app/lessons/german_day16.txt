@@ -1,0 +1,135 @@
+GERMAN A1 — DAY 16 OF 90
+Pronouns in Dative + Review
+============================
+
+Yesterday you learned dative articles (DEM/DER/DEM/DEN+n).
+Today: dative PRONOUNS — what happens to "ich", "du", etc. when used in dative.
+
+THE DATIVE PRONOUNS
+-------------------
+
+| Person        | Pronoun (Nom) | Pronoun (Dat) |
+|---------------|---------------|---------------|
+| ich           | ich           | mir           |
+| du            | du            | dir           |
+| er            | er            | ihm           |
+| sie (she)     | sie           | ihr           |
+| es            | es            | ihm           |
+| wir           | wir           | uns           |
+| ihr           | ihr           | euch          |
+| sie (they)    | sie           | ihnen         |
+| Sie (formal)  | Sie           | Ihnen         |
+
+EXAMPLES IN CONTEXT
+-------------------
+
+Single dative pronoun:
+- "Ich helfe IHM." (I help HIM.)
+- "Das Buch gehört MIR." (The book belongs to ME.)
+- "Wir danken UNS." (We thank ourselves.)
+- "Sie hilft IHNEN." (She helps THEM.)
+
+Pronoun + noun combo (possessive "mein" with dative):
+- "Ich helfe MEINEM Bruder." (I help my brother.) — mein + em (masc dat)
+- "Das Buch gefällt MEINER Schwester." (The book pleases my sister.) — mein + er (fem dat)
+- "Ich gehe mit MEINEM Freund." (I'm going with my friend.) — mein + em
+
+ACCUSATIVE + DATIVE PRONOUNS TOGETHER
+--------------------------------------
+When you have BOTH in the same sentence, there's a famous order:
+
+DATIVE pronoun comes BEFORE accusative pronoun.
+
+- "Ich gebe IHM (Dat) ES (Akk)." (I give him it.)
+- "Sie schickt IHNEN (Dat) das Buch (Akk)." (She sends them the book.)
+- "Er bringt MIR (Dat) einen Kaffee (Akk)." (He brings me a coffee.)
+
+Mnemonic: "Dat-Akk" or "Ihm-es" (give HIM it) is the natural order.
+Native Germans struggle with this in English ("give it me" → "gib mir es").
+
+VERB GOBBLES (PRACTICE)
+------------------------
+Common dative-verb sentences:
+
+- "Wie geht es DIR?" (How are you? — lit. "How goes it you?")
+  Answer: "Mir geht es gut." (I'm doing well.)
+
+- "Was fehlt DIR?" (What's wrong with you?)
+  Answer: "Mir fehlt nichts." (Nothing's wrong with me.)
+
+- "Das gefällt MIR nicht." (I don't like that.)
+- "Wie schmeckt es DIR?" (How does it taste to you?)
+
+These short phrases are everywhere. Memorize them.
+
+DAILY QUESTION DRILL
+--------------------
+Answer each question out loud:
+
+Q: Wie geht es dir? → A: ___
+Q: Was hilfst du mir? → A: ___
+Q: Wem gehört das Buch? → A: ___
+Q: Wie schmeckt dir das Essen? → A: ___
+
+PATTERN: ALL dative verbs follow the rule: who? what? receives the action.
+
+NOUNS + DATIV — DECLENSION ENDINGS
+------------------------------------
+When you have an adjective BETWEEN article and noun in dative:
+
+"der alten Frau helfen"
+  der = article
+  alten = adjective ending (same as article: -en for dative)
+  Frau = noun
+
+In dative, BOTH article and adjective end in -en or -em depending on gender:
+
+| Gender    | Article (masc/neut) | Article (fem/pl) | Adj ending |
+|-----------|---------------------|-------------------|------------|
+| maskulin  | dem                 | —                 | -en        |
+| feminin   | —                   | der               | -en        |
+| neutral   | dem                 | —                 | -en        |
+| plural    | —                   | den + n           | -en        |
+
+This is "schwache Deklination" (weak declension) — the -en ending is everywhere after der/die/das/ein/etc.
+
+EXAMPLES WITH ADJECTIVES
+-------------------------
+- Ich helfe DEM ALTEN Mann. (I help the old man.)
+- Das Geschenk gefällt MEINER NETTEN Schwester. (The gift pleases my nice sister.)
+- Wir gehen mit DEN KINDERN. (We go with the children.) [plural adds -n]
+
+CULTURE NOTE
+------------
+"Ihm" and "ihr" are risky because they sound similar in some dialects.
+  "Ich helfe IHM" (him) vs "Ich helfe IHR" (her)
+In standard German, these are clearly different. In Bavarian/Saxony dialects, they might both sound like "am". Germans in those areas will know what you mean from context. Learners should focus on the written form.
+
+NEW VOCABULARY (10 words)
+--------------------------
+1. mir — to me (pronoun)
+2. dir — to you (pronoun, informal)
+3. ihm — to him/it (pronoun)
+4. ihr — to her (pronoun)
+5. uns — to us (pronoun)
+6. euch — to you (pronoun, plural)
+7. ihnen — to them (pronoun)
+8. fehlen — to be missing (verb)
+9. schicken — to send (verb)
+10. bringen — to bring (verb)
+
+EXERCISE
+--------
+1. Translate to German using dative pronouns:
+   - "I help him." → ___
+   - "She thanks you (pl.)." → ___
+   - "We send them the book." → ___
+2. Write 4 sentences using the daily question drill pattern.
+3. Pick 3 of the new verbs and write one sentence each.
+
+NEXT: Day 17 — Dative verbs deep dive + show/give pattern
+
+Total vocab today: +10 words
+Grand total: 158 words
+
+Bis morgen!

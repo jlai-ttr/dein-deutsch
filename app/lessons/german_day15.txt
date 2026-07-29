@@ -1,0 +1,131 @@
+GERMAN A1 — DAY 15 OF 90
+DATIV — The Indirect Object Case
+================================
+
+Today we add the THIRD case. After Nominativ and Akkusativ, here comes Dativ.
+Dativ marks the INDIRECT OBJECT — the recipient of an action.
+
+"Ich gebe DEM MANN ein Buch."
+(I give THE MAN [indirect] a book.)
+  dem Mann = dative (recipient)
+  ein Buch = accusative (direct object)
+
+THE BIG SHIFT
+-------------
+For masculine + neuter, the ARTICLE changes in dative:
+
+| Gender    | Nom | Akk | DAT       |
+|-----------|-----|-----|-----------|
+| maskulin  | der | den | DEM ✨     |
+| feminin   | die | die | DER       |
+| neutral   | das | das | DEM ✨     |
+| plural    | die | die | DEN + -n   |
+
+Masculine and neuter both shift der/das → DEM in dative.
+Feminine (die) stays the same.
+Plural gets -n added: "den" + n = "den Männer**n**"
+
+Mnemonic: "DEM" = Dativ Emphatic Memory.
+Think: "I give the man a present" — the man (DEM) receives the present.
+
+VERB GOBBLES (DATIVE VERBS)
+-----------------------------
+Some verbs REQUIRE dative — the object is dative by default, not accusative:
+
+  helfen (to help) — "Ich helfe DIR." (I help YOU = dative)
+  danken (to thank) — "Ich danke DIR."
+  gefallen (to please) — "Das Buch gefällt MIR." (The book pleases ME)
+  gehören (to belong to) — "Das Buch gehört MIR."
+  schmecken (to taste good to) — "Das Essen schmeckt MIR." (The food tastes good to me)
+  stehen (to suit/look good on) — "Der Hut steht DIR gut." (The hat looks good on you)
+  schaden (to harm) — "Rauchen schadet DER Gesundheit." (Smoking harms health)
+
+These verbs ALWAYS take dative. Memorize them as set phrases.
+
+DATIVE PREPOSITIONS
+-------------------
+A small set of prepositions ALWAYS take dative:
+
+- mit (with) — "mit dem Auto" (with the car)
+- nach (after, to) — "nach der Arbeit" (after work)
+- bei (at, near, with) — "bei meiner Mutter" (at my mother's)
+- von (from, of) — "von meinem Vater" (from my father)
+- zu (to) — "zu meiner Schwester" (to my sister)
+- seit (since, for) — "seit einer Woche" (for a week)
+- aus (out of, from) — "aus dem Haus" (out of the house)
+
+ACCUSATIVE-OR-DATIVE PREPOSITIONS (Wechselpräpositionen)
+--------------------------------------------------------
+Some prepositions can be EITHER accusative or dative depending on context:
+
+- in (in/into)
+- an (at/on, to)
+- auf (on, onto)
+- über (over)
+- unter (under)
+- vor (in front of, ago)
+- hinter (behind)
+- neben (next to)
+- zwischen (between)
+
+Rule:
+  ACCUSATIVE when motion TOWARD ("Ich gehe IN das Haus" — going INTO)
+  DATIVE when location AT ("Ich bin IN dem Haus" — already INSIDE)
+
+"The two-way prepositions tell you movement (Wo? → Wo...hin?)"
+
+EXAMPLES IN CONTEXT
+-------------------
+
+Simple dative sentences:
+- Ich helfe MEINEM Bruder. (I help my brother.)
+- Sie dankt DEM Lehrer. (She thanks the teacher.)
+- Das Geschenk gefällt MEINER Schwester. (The gift pleases my sister.)
+- Der Hund gehört DEM MANN. (The dog belongs to the man.)
+
+Preposition + dative:
+- Ich fahre MIT DEM Bus. (I'm going by bus.)
+- NACH DEM Essen gehe ich. (After the meal, I'll go.)
+- Das Buch ist BEI MEINER Mutter. (The book is at my mother's.)
+- VON WEM hast du das? (From whom did you get that?)
+
+Two-way prepositions:
+- Ich gehe IN DIE Küche. (I'm going INTO the kitchen.) — motion
+- Ich bin IN DER Küche. (I'm IN the kitchen.) — location
+- Er legt das Buch AUF DEN Tisch. (He puts the book ON the table.) — motion
+- Das Buch liegt AUF DEM Tisch. (The book is lying ON the table.) — location
+
+CULTURE NOTE
+------------
+In casual German, people use dative everywhere. Hamburgers who learn dialect might say "Ich geh zu meine Mutter" (correctly: "zu meiner Mutter"). You WILL hear informal dative in real life. Both forms are heard. The polite/standard form always uses correct case.
+
+NEW VOCABULARY (10 words)
+--------------------------
+1. helfen — to help (verb)
+2. danken — to thank (verb)
+3. gefallen — to please (verb)
+4. gehören — to belong to (verb)
+5. schmecken — to taste good (verb)
+6. das Geschenk — gift (n)
+7. der Bus — bus (m)
+8. die Küche — kitchen (f)
+9. der Tisch — table (m)
+10. die Gesundheit — health (f)
+
+EXERCISE
+--------
+1. Translate to German (use dative where needed):
+   - "I help my mother." → Ich helfe ___ Mutter.
+   - "She thanks the teacher." → Sie dankt ___ Lehrer.
+   - "We are going by train." → Wir fahren ___ Zug.
+2. Use two-way prepositions correctly:
+   - "I go into the house." (motion) → Ich gehe ___ Haus.
+   - "I am in the house." (location) → Ich bin ___ Haus.
+3. Pick 3 new verbs from "VERB GOBBLES" and write one sentence each.
+
+NEXT: Day 16 — Pronouns in Dativ (mir, dir, ihm, ihr, ihm, uns, euch, ihnen)
+
+Total vocab today: +10 words
+Grand total: 148 words
+
+Bis morgen!

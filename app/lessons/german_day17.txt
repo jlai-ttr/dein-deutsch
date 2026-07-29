@@ -1,0 +1,148 @@
+GERMAN A1 — DAY 17 OF 90
+Two-way prepositions + Accusative/Dative contrast
+=================================================
+
+Yesterday you met Wechselpräpositionen. Today: drilling the motion-vs-location rule.
+
+THE TWO-WAY RULE
+----------------
+
+A small set of prepositions respond to TWO questions:
+  Wo? (Where? — location)
+  Wohin? (Where to? — motion/direction)
+
+If the answer to "Wo?" = DATIVE
+If the answer to "Wohin?" = ACCUSATIVE
+
+The 9 Wechselpräpositionen (mnemonic: "VOW HINAUS"):
+  in, an, auf, über, unter, vor, hinter, neben, zwischen
+
+PRACTICE WITH "IN"
+------------------
+
+"Ich gehe in die Schule." (I go into the school.) [motion: Wohin? = in die (Akk)]
+"Ich bin in der Schule." (I am in the school.) [location: Wo? = in der (Dat)]
+
+"Ich stelle das Buch in das Regal." (I put the book into the shelf.)
+"Das Buch steht in dem Regal." (The book stands in the shelf.)
+
+ADDITIONAL VERBS THAT PAIR WITH THESE
+--------------------------------------
+
+Verbs that trigger motion (always accusative):
+  gehen, fahren, fliegen, kommen, rennen (location moves)
+  stellen (set up), legen (lay down), hängen (hang — verb), setzen (sit)
+
+Verbs that trigger location (always dative):
+  sein, bleiben (stay), wohnen (live), stehen (stand), liegen (lie), sitzen (sit), hängen (hang — state)
+
+The verb ITSELF can tell you: motion verb = accusative, location verb = dative.
+
+EXAMPLES WITH VARIOUS PREPOSITIONS
+-----------------------------------
+
+an (at/on):
+- Wohin? Ich hänge das Bild AN DIE Wand. (I hang the picture ON the wall.) [Akk]
+- Wo? Das Bild hängt AN DER Wand. (The picture hangs ON the wall.) [Dat]
+
+auf (on top of):
+- Wohin? Er legt das Buch AUF DEN Tisch. (He lays the book ON the table.) [Akk]
+- Wo? Das Buch liegt AUF DEM Tisch. (The book lies ON the table.) [Dat]
+
+unter (under):
+- Wohin? Die Katze kriecht UNTER DAS Bett. (The cat crawls UNDER the bed.)
+- Wo? Die Katze schläft UNTER DEM Bett. (The cat sleeps UNDER the bed.)
+
+vor (in front of, ago):
+- Wohin? Er stellt sich VOR DAS Haus. (He stands in front of the house.)
+- Wo? Er steht VOR DEM Haus. (He stands in front of the house.)
+- "vor drei Tagen" = "three days ago" (always dative — uses dative form)
+
+hinter (behind):
+- Wohin? Das Auto fährt HINTER DAS Haus. (The car drives behind the house.)
+- Wo? Das Auto steht HINTER DEM Haus. (The car is behind the house.)
+
+neben (next to):
+- Wohin? Sie setzt sich NEBEN IHN. (She sits down next to HIM.)
+- Wo? Sie sitzt NEBEN IHM. (She sits next to him.)
+
+zwischen (between):
+- Wohin? Der Tisch kommt ZWISCHEN DIE Stühle. (The table goes between the chairs.)
+- Wo? Der Tisch steht ZWISCHEN DEN Stühlen. (The table stands between the chairs.)
+
+TRICKY CONTRACTIONS
+-------------------
+In spoken German, these are common contractions:
+
+in dem → im
+in das → ins
+an dem → am
+an das → ans
+bei dem → beim
+von dem → vom
+zu dem → zum
+zu der → zur
+
+"Es liegt AUF DEM Tisch." sounds like "...AUF'M Tisch." (informal)
+But in writing, the full form is preferred for clarity.
+
+PRACTICE SENTENCES
+------------------
+
+1. "Die Katze sitzt UNTER DEM Tisch." (The cat sits under the table.) [location, Dat]
+2. "Ich lege das Buch AUF DEN Tisch." (I lay the book on the table.) [motion, Akk]
+3. "Wir gehen IN DIE Stadt." (We go into the city.) [motion, Akk]
+4. "Wir wohnen IN DER Stadt." (We live in the city.) [location, Dat]
+5. "Das Bild hängt AN DER Wand." (The picture hangs on the wall.) [location, Dat]
+6. "Ich hänge das Bild AN DIE Wand." (I hang the picture on the wall.) [motion, Akk]
+7. "Sie stellt sich VOR DIE Tür." (She stands in front of the door.) [motion, Akk]
+8. "Sie steht VOR DER Tür." (She stands in front of the door.) [location, Dat]
+
+CHOOSE THE CORRECT CASE
+------------------------
+
+For each, identify: motion or location?
+
+a) Ich gehe ___ (in/auf/an + den/die/das) Supermarkt. → motion
+b) Ich bin ___ (in/auf/an + dem/der/das) Supermarkt. → location
+c) Das Buch liegt ___ (auf/unter/vor + dem/der/die) Tisch.
+d) Ich stelle das Glas ___ (auf/unter/hinter + den/die/das) Tisch.
+
+ANSWERS:
+a) in den Supermarkt (Akk) — motion
+b) in dem Supermarkt (Dat) / im Supermarkt — location
+c) auf dem Tisch (Dat) — lying = location
+d) auf den Tisch (Akk) — putting = motion
+
+CULTURE NOTE
+------------
+"Über" can also mean "about" as in "about a topic" — but that's a different grammatical use.
+
+NEW VOCABULARY (8 words)
+-------------------------
+1. die Wand — wall (f)
+2. das Bett — bed (n)
+3. der Stuhl — chair (m)
+4. die Stadt — city (already known)
+5. der Supermarkt — supermarket (m)
+6. legen — to lay (verb)
+7. stellen — to set/place (verb)
+8. hängen — to hang (verb)
+
+EXERCISE
+--------
+1. Translate to German:
+   - "The cat is under the table." → ___
+   - "I put the book on the table." → ___
+   - "We live in the city." → ___
+2. Write 5 of your own motion/location pairs:
+   - Pick any 5 nouns.
+   - Write them in both accusative (motion) and dative (location) sentences.
+3. Identify the verbs that ALWAYS take dative (state) vs ALWAYS accusative (motion).
+
+NEXT: Day 18 — Konnektoren (connectors) + first complex sentences
+
+Total vocab today: +8 words
+Grand total: 166 words
+
+Bis morgen!

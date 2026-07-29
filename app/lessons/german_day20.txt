@@ -1,0 +1,161 @@
+GERMAN A1 — DAY 20 OF 90
+Comparisons + Review + Week 3 outlook
+=====================================
+
+Halfway through A1! Today: comparatives and superlatives.
+
+THE THREE FORMS
+---------------
+
+POSITIVE:    klein (small)
+COMPARATIVE:  kleiner (smaller)
+SUPERLATIVE:  am kleinsten (smallest) / der kleinste (the smallest, as a noun)
+
+COMPARATIVE FORMATION
+----------------------
+
+Add -er to the adjective stem:
+  groß → größer (note: vowel change a → ä)
+  klein → kleiner
+  alt → älter (note: vowel change a → ä, also drops -t)
+  teuer → teurer (no umlaut on eu)
+
+WITH UMLAUT (vowel change a/au/o → ä/äu/ö):
+  alt → älter
+  jung → jünger
+  groß → größer
+  klug → klüger
+  kurz → kürzer
+  lang → länger
+
+WITHOUT UMLAUT:
+  schnell → schneller
+  teuer → teurer
+  interessant → interessanter
+
+IRREGULAR COMPARATIVES (must memorize):
+  gut → besser (NOT "guter")
+  viel → mehr
+  gern → lieber (preference, not "more gladly")
+
+EXAMPLES IN CONTEXT
+-------------------
+
+- Mein Auto ist SCHNELLER als deines. (My car is FASTER than yours.)
+- Berlin ist GRÖSSER als München. (Berlin is BIGGER than Munich.)
+- Du bist ÄLTER als ich. (You are OLDER than me.)
+- Ich bin JÜNGER als mein Bruder. (I am YOUNGER than my brother.)
+- Dieser Film ist BESSER als jener. (This film is BETTER than that one.)
+- Ich habe MEHR Geld als Zeit. (I have MORE money than time.)
+
+PATTERN: als (than)
+  "A ist X-er ALS B"
+
+"As ... as" pattern:
+  "A ist SO X wie B" (A is as X as B)
+- Du bist SO ALT WIE ich. (You are AS OLD AS me.)
+- Mein Haus ist SO GROSS WIE dein Haus. (My house is AS BIG AS your house.)
+
+Wait — "als" vs "wie":
+  - COMPARATIVE: "größer ALS" (bigger THAN)
+  - EQUALITY:   "so groß WIE" (as big AS)
+Native speakers occasionally mix these up. Both directions = common error.
+
+SUPERLATIVE FORMATION
+---------------------
+
+Add -st or -est to the adjective stem:
+  klein → kleinste
+  groß → größte (note: still has umlaut)
+  alt → älteste
+  kurz → kürzeste
+  schnell → schnellste
+  interessant → interessanteste (long adjective adds -est)
+
+As PREDICATIVE (after "sein"): "X ist am Y-sten"
+  - Berlin ist am GRÖSSTEN. (Berlin is the BIGGEST.)
+  - Dieser Weg ist am KÜRZESTEN. (This way is the SHORTEST.)
+
+As ATTRIBUTIVE (before noun): "der/die/das Y-ste"
+  - Das ist der GRÖSSTE See Deutschlands. (That's the BIGGEST lake in Germany.)
+  - Sie ist die SCHÖNSTE Frau. (She's the MOST BEAUTIFUL woman.)
+
+SUPERLATIVE ENDINGS:
+| Gender | Article becomes | Adjective ending |
+|--------|-----------------|------------------|
+| masc   | der             | -ste             |
+| fem    | die             | -ste             |
+| neut   | das             | -ste             |
+| plural | die             | -sten            |
+
+Examples:
+- Die BERÜHMTESTE Stadt (f) — The most famous city
+- Das SCHÖNSTE Haus (n) — The most beautiful house
+- Die BESTEN Freunde (pl) — The best friends
+
+SPECIAL VERBS IN COMPARISON
+---------------------------
+
+Like/love:
+  Ich mag Äpfel. (I like apples.)
+  Ich mag Äpfel lieber als Birnen. (I like apples MORE THAN pears.)
+  Mein Bruder MAG Äpfel am LIEBSTEN. (My brother likes apples MOST.)
+
+"Ich mag X lieber als Y"
+"Ich mag X am liebsten von allem"
+
+Heiß/kalt etc. are typical comparatives:
+- Heißer vs hitzebeständig? "Heiß" is normal adjective, no special form.
+
+OTHER COMPARE STRUCTURES
+------------------------
+
+"mehr/weniger + noun": use of quantity comparatives
+- Ich habe MEHR Zeit als du. (I have MORE time than you.)
+- Wir haben WENIGER Geld als sie. (We have LESS money than them.)
+
+Comparing VERBS:
+- Ich gehe SCHNELLER als er. (I walk FASTER than he.)
+- Sie kommt ÖFTER als ich. (She comes MORE OFTEN than me.)
+- Du arbeitest HÄUFIGER. (You work MORE FREQUENTLY.)
+
+Negative comparison:
+- Das ist NICHT SO GUT WIE das andere. (This is NOT AS GOOD AS the other.)
+- Er ist NICHT ÄLTER ALS sie. (He is NOT OLDER THAN her.)
+
+CULTURE NOTE
+------------
+Adjective comparisons are said with stress on the comparative ending. "SCHÖNER" not "schöner." This rhythm distinguishes "comparative" from "positive" in rapid speech.
+
+NEW VOCABULARY (10 words — comparison/quantity)
+-----------------------------------------------
+1. mehr — more
+2. weniger — less
+3. am meisten — most
+4. am wenigsten — least
+5. besser — better
+6. schlechter — worse
+7. größer — bigger
+8. kleiner — smaller
+9. der Unterschied — difference (m)
+10. vergleichen — to compare (verb)
+
+EXERCISE
+--------
+1. Translate (comparative):
+   - "My car is faster than yours." → ___
+   - "Berlin is bigger than Munich." → ___
+   - "I have more time than money." → ___
+2. Translate (superlative):
+   - "This is the best." → ___
+   - "She is the most beautiful." → ___
+3. Translate (equality):
+   - "You are as old as I am." → ___
+   - "My house is as big as yours." → ___
+
+NEXT: Day 21 — Week 3 review + first past tense practice with regular verbs
+
+Total vocab today: +10 words
+Grand total: 194 words (almost 200!)
+
+Bis morgen!
