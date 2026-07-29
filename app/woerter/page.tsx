@@ -4,6 +4,7 @@ import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import { FONTS, getTheme, CEFR_LEVELS } from '../lib/theme';
 import { trackEvent } from '../lib/activity';
+import { TOPIC_BUSINESS } from '../lib/topic-business';
 
 // SM-2 Spaced Repetition Algorithm
 // Based on SuperMemo SM-2: https://super-memory.com/english/ol/sm2.htm
@@ -45,6 +46,7 @@ const STORAGE_KEY = 'dein-deutsch-woerter-v2';
 
 // Seed vocab — A1 starter pack (50 words across categories)
 const SEED_VOCAB: Omit<VocabCard, 'interval' | 'repetition' | 'ef' | 'due' | 'lapses' | 'totalReviews' | 'correctReviews'>[] = [
+  ...TOPIC_BUSINESS,
   // Greetings & Basics
   { id: 'g1', word: 'Hallo', translation: 'hello', pos: 'interj', level: 'A1', example: 'Hallo, wie geht es dir?', exampleEn: 'Hello, how are you?' },
   { id: 'g2', word: 'Tschüss', translation: 'bye', pos: 'interj', level: 'A1', example: 'Tschüss, bis morgen!', exampleEn: 'Bye, see you tomorrow!' },
@@ -1263,6 +1265,7 @@ export default function WoerterPage() {
   const [showHelp, setShowHelp] = useState(false);
   const [deVoice, setDeVoice] = useState<string>('');
   const [activeLevel, setActiveLevel] = useState<'all' | 'A1' | 'A2' | 'B1' | 'B2' | 'C1'>('all');
+  const [activeTopic, setActiveTopic] = useState<'all' | 'freq' | 'business'>('all');
 
   useEffect(() => {
     setMounted(true);
@@ -1310,9 +1313,9 @@ export default function WoerterPage() {
   const dueCards = useMemo(() => {
     const now = Date.now();
     return cards
-      .filter(c => c.due <= now && (activeLevel === 'all' || c.level === activeLevel))
+      .filter(c => c.due <= now && (activeLevel === 'all' || c.level === activeLevel) && (activeTopic === 'all' || c.id.startsWith(activeTopic + '-')))
       .sort((a, b) => a.due - b.due);
-  }, [cards, activeLevel]);
+  }, [cards, activeLevel, activeTopic]);
 
   const currentCard = dueCards[0];
 
@@ -1505,6 +1508,37 @@ export default function WoerterPage() {
                 }}
               >
                 {lvl === 'all' ? 'Alle' : lvl} <span style={{ opacity: 0.7, marginLeft: 4, fontSize: '0.7rem' }}>{count}</span>
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Topic deck chips */}
+        <div style={{ display: 'flex', gap: 6, marginTop: 8, flexWrap: 'wrap', alignItems: 'center' }}>
+          <span style={{ fontSize: '0.7rem', color: t.textFaint, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', marginRight: 4 }}>
+            Topic:
+          </span>
+          {[
+            { id: 'all' as const, label: 'Alle' },
+            { id: 'freq' as const, label: 'Frequency' },
+            { id: 'business' as const, label: '💼 Business' },
+          ].map(tp => {
+            const count = tp.id === 'all' ? cards.length : cards.filter(c => c.id.startsWith(tp.id + '-')).length;
+            const active = activeTopic === tp.id;
+            return (
+              <button
+                key={tp.id}
+                onClick={() => setActiveTopic(tp.id)}
+                style={{
+                  padding: '4px 10px', borderRadius: 999,
+                  border: '1px solid ' + (active ? t.accent : t.border),
+                  background: active ? t.accent : t.bg,
+                  color: active ? t.onAccent : t.textMuted,
+                  fontSize: '0.75rem', fontWeight: active ? 700 : 500,
+                  cursor: 'pointer', fontFamily: FONTS.body,
+                }}
+              >
+                {tp.label} <span style={{ opacity: 0.7, marginLeft: 3, fontSize: '0.65rem' }}>{count}</span>
               </button>
             );
           })}
