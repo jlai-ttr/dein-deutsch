@@ -42,7 +42,7 @@ interface VocabCard {
   correctReviews: number;
 }
 
-const STORAGE_KEY = 'dein-deutsch-woerter-v2';
+const STORAGE_KEY = 'dein-deutsch-woerter-v3';
 
 // Seed vocab — A1 starter pack (50 words across categories)
 const SEED_VOCAB: Omit<VocabCard, 'interval' | 'repetition' | 'ef' | 'due' | 'lapses' | 'totalReviews' | 'correctReviews'>[] = [
