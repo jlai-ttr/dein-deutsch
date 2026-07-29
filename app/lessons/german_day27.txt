@@ -1,0 +1,206 @@
+GERMAN A1 — DAY 27 OF 90
+ALL 4 CASES — Quick Reference Card + Grammar Consolidation
+==========================================================
+
+Day 27 = 70% through A1. Today is the BIG review.
+
+German has 4 grammatical cases. Each marks the FUNCTION of a noun in a sentence:
+  Nominativ: subject (who does it?)
+  Akkusativ: direct object (what is acted upon?)
+  Dativ: indirect object (to/for whom?)
+  Genitiv: possession (whose?)
+
+Here is everything in one place.
+
+NOMINATIV (subject)
+-------------------
+
+Articles:
+  der / die / das / die
+  (masc) / (fem) / (neut) / (pl)
+
+Indefinite:
+  ein / eine / ein / -
+
+Used for the SUBJECT of the sentence — the doer of the verb.
+  "Der Mann liest ein Buch." (The man reads a book.)
+  "Das Kind spielt." (The child plays.)
+
+Verbs that take nominative:
+  sein (to be)
+  werden (to become)
+  bleiben (to stay)
+  heißen (to be called)
+
+Tip: Most verbs in German take nominative SUBJECT + (sometimes) accusative/dative OBJECTS.
+
+AKKUSATIV (direct object)
+--------------------------
+
+Articles change ONLY for masculine singular:
+  der → den
+  die → die (no change)
+  das → das (no change)
+  die → die (no change)
+
+Indefinite:
+  ein → einen (only for masc)
+  eine → eine (no change)
+  ein → ein (no change)
+
+PRONOUNS:
+  ich → mich
+  du → dich
+  er → ihn
+  sie → sie
+  es → es
+  wir → uns
+  ihr → euch
+  sie → sie
+
+Used for the DIRECT OBJECT — what the verb acts upon.
+  "Ich sehe DEN Mann." (I see the man.)
+  "Sie liest DAS Buch." (She reads the book.)
+
+Verbs that take accusative of the thing acted upon:
+  haben, essen, trinken, kaufen, lesen, sehen, hören, verstehen, suchen, brauchen, lernen, schreiben, ...
+
+Mnemonic: "what gets VERBed"
+
+DATIV (indirect object)
+-------------------------
+
+Articles change for masculine/neuter/feminine/plural:
+  der → dem
+  die → der
+  das → dem
+  die → den + n
+
+Indefinite:
+  ein → einem (masc, neut)
+  eine → einer (fem)
+  ein → einem (masc, neut)
+
+PRONOUNS:
+  ich → mir
+  du → dir
+  er → ihm
+  sie → ihr
+  es → ihm
+  wir → uns
+  ihr → euch
+  sie → ihnen
+
+Used for the INDIRECT OBJECT — to/for whom the action is done.
+  "Ich gebe DEM MANN ein Buch." (I give the man a book.)
+    dem Mann = dative (recipient)
+    ein Buch = accusative (gift)
+
+Verbs that REQUIRE dative:
+  helfen (to help), danken (to thank), gefallen (to please), gehören (to belong to), schmecken (to taste good), schaden (to harm), stehen (to suit), ...
+
+Dative prepositions (always take dative):
+  mit, nach, bei, von, zu, seit, aus, gegenüber
+
+Two-way prepositions (case depends on Wo? vs Wohin?):
+  in, an, auf, über, unter, vor, hinter, neben, zwischen
+
+GENITIV (possession)
+----------------------
+
+Articles change:
+  der → des
+  die → der
+  das → des
+  die → der
+
+Indefinite:
+  ein → eines (masc, neut)
+  eine → einer (fem)
+  ein → eines (masc, neut)
+
+PRONOUNS:
+  ich → meiner
+  du → deiner
+  er → seiner
+  sie → ihrer
+  es → seiner
+  wir → unser
+  ihr → eurer
+  sie → ihrer
+
+Used for POSSESSION — whose? Less common in spoken German.
+  "Das Auto DES MANNES ist rot." (The man's car is red.)
+  "Das Buch meiner Schwester" (my sister's book)
+
+Genitive prepositions (take genitive):
+  während (during), trotz (despite), wegen (because of), statt (instead of)
+
+ALSO: masc + neut plurals add -s in genitive:
+  "des Tages" (of the day), "des Kindes" (of the child)
+  "der Männer" (of the men) — plural does NOT add -s, ends in -r
+
+QUICK DECISION TREE
+---------------------
+
+When you see "der/die/das" + verb + ... :
+  Is the noun = subject? → NOMINATIV (der/die/das)
+  Is the noun = direct object? → AKKUSATIV (der/die/das → den/die/das)
+  Is the noun = recipient/to whom? → DATIV (der/die/das → dem/der/dem)
+  Is the noun = possessive? → GENITIV (der/die/das → des/der/des)
+
+THE 5 COMMANDMENTS OF GERMAN CASES
+------------------------------------
+
+1. NOMINATIV is the default — stays.
+2. AKKUSATIV changes ONLY masculine.
+3. DATIV changes masculine + neuter + feminine.
+4. GENITIV is mostly formal/written.
+5. When in doubt: pick the case that makes the sentence understandable. Germans figure it out from context.
+
+TROUBLESHOOTING COMMON ERRORS
+-------------------------------
+
+Error: "Ich helfe den Mann."
+Should be: "Ich helfe dem Mann." (dative after helfen)
+
+Error: "Sie gibt mich das Buch."
+Should be: "Sie gibt mir das Buch." (dative before accusative in pronoun stack)
+
+Error: "Ich komme aus das Haus."
+Should be: "Ich komme aus dem Haus." (dative after "aus")
+
+Error: "Ich sehe das Kind Augen."
+Should be: "Ich sehe die Augen des Kindes." (genitive for possession)
+
+Error: "Mein Bruder kommt am die Arbeit."
+Should be: "Mein Bruder kommt in die Arbeit." (motion: accusative, with motion to)
+
+CULTURE NOTE
+------------
+
+In casual speech, Germans sometimes use nominative instead of dative:
+  "Ich helfe der Mann" instead of "Ich helfe dem Mann" — this is non-standard but you'll hear it.
+  "Das ist meiner Schwester ihr Buch" instead of "Das ist das Buch meiner Schwester" — colloquial alternative.
+
+The standard forms above are what you should write and what you should aim for in speech.
+
+EXERCISE
+--------
+
+1. Identify the case of "den Mann" in each:
+   - "Ich sehe den Mann." → ___
+   - "Ich helfe den Mann." (correct: ... dem Mann) → ___
+   - "Das ist das Auto des Mannes." → ___
+2. Correct the errors:
+   - "Ich helfe die Frau." → ___
+   - "Er gibt mich das Buch." → ___
+   - "Ich komme aus das Kino." → ___
+3. Write 5 sentences using each case.
+
+NEXT: Day 28 — Verb forms quick reference (conjugated vs infinitive vs past participle)
+
+Total vocab today: reviewed
+Grand total: 259 words
+
+Bis morgen!

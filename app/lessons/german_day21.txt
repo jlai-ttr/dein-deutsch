@@ -1,0 +1,152 @@
+GERMAN A1 — DAY 21 OF 90
+Perfekt practice + Wechselpräpositionen deep dive + Daily routine vocab
+=======================================================================
+
+NEW VOCABULARY (15 words · Daily routine + body + time of day)
+--------------------------------------------------------------
+Body parts:
+  der Kopf — head
+  das Auge — eye
+  das Ohr — ear
+  der Mund — mouth
+  die Nase — nose
+  die Hand — hand
+  der Arm — arm
+  der Fuß — foot
+
+Daily routine verbs:
+  aufwachen — to wake up
+  aufstehen — to get up
+  duschen — to shower
+  sich anziehen — to get dressed (reflexive)
+  frühstücken — to eat breakfast (verb from Frühstück = breakfast)
+  arbeiten — already known
+  zu Mittag essen — to eat lunch
+  zu Abend essen — to eat dinner
+  sich ausruhen — to rest (reflexive)
+  Zähneputzen — to brush teeth (one verb, capitalized! Yes, it's a verb)
+  einschlafen — to fall asleep
+
+  (Some languages have a verb "to brush teeth." German does too — Zähneputzen. The infinitive is one word.)
+
+DAILY ROUTINE TEMPLATE
+---------------------
+
+Sample narrative — your typical Tuesday:
+
+  Ich wache um 7 Uhr auf. (I wake up at 7.)
+  Ich stehe um 7:15 auf. (I get up at 7:15.)
+  Ich dusche. (I shower.)
+  Ich ziehe mich an. (I get dressed.)
+  Ich frühstücke um 8 Uhr. (I have breakfast at 8.)
+  Ich gehe zur Arbeit. (I go to work.)
+  Ich arbeite von 9 bis 17 Uhr. (I work from 9 to 5.)
+  Ich esse zu Mittag. (I have lunch.)
+  Ich ruhe mich aus. (I rest a bit.)
+  Ich esse zu Abend. (I have dinner.)
+  Ich putze die Zähne. (I brush my teeth.)
+  Ich schlafe um 23 Uhr ein. (I fall asleep at 11pm.)
+
+PERFEKT — PAST NARRATIVE
+-------------------------
+
+To DESCRIBE YESTERDAY's routine in past tense:
+
+"Ich bin um 7 Uhr aufgewacht. Ich habe geduscht. Ich habe gefrühstückt. Ich bin zur Arbeit gegangen. Ich habe von 9 bis 17 Uhr gearbeitet. Ich habe zu Mittag gegessen. Ich bin um 18 Uhr nach Hause gekommen. Ich habe zu Abend gegessen. Ich habe die Zähne geputzt. Ich bin um 23 Uhr eingeschlafen."
+
+Notice the pattern:
+  Movement verbs (gehen, kommen, aufwachen, einschlafen) → SEIN
+  Action verbs (duschen, essen, arbeiten, frühstücken, Zähneputzen) → HABEN
+
+REFLEXIVE VERBS
+---------------
+
+Verbs where the action "reflects" back on the subject. The pronoun changes based on who is doing it:
+
+  ich ziehe mich an (I get myself dressed)
+  du ziehst dich an (you get yourself dressed)
+  er zieht sich an (he gets himself dressed)
+  wir ziehen uns an (we get ourselves dressed)
+  ihr zieht euch an (you [pl.] get yourselves dressed)
+  sie ziehen sich an (they get themselves dressed)
+
+"Akkusativ reflexive" (most reflexive verbs): reflexive pronoun is accusative.
+"Dativ reflexive" (some verbs): reflexive pronoun is dative — usually when there's another object.
+
+Reflexive verbs common in daily routine:
+  sich anziehen (to get dressed) - accusative reflexive
+  sich ausziehen (to get undressed) - accusative
+  sich waschen (to wash oneself) - accusative
+  sich freuen (to be happy) - accusative
+  sich ausruhen (to rest) - accusative
+
+CONJUGATION OF REFLEXIVE VERBS
+-------------------------------
+
+Pattern: verb stem + reflexive pronoun
+
+  sich anziehen (to get dressed):
+    ich ziehe mich an
+    du ziehst dich an
+    er/sie/es zieht sich an
+    wir ziehen uns an
+    ihr zieht euch an
+    sie/Sie ziehen sich an
+
+Reflexive pronoun position:
+- Main clause: AFTER the verb (standard) or close to it
+- Subordinate clause: BEFORE the verb
+- Imperative: AFTER the verb (e.g., "Zieh dich an!" = Get dressed!)
+
+EXAMPLES WITH REFLEXIVE VERBS
+-------------------------------
+
+"Ich freue mich auf das Wochenende." (I am looking forward to the weekend.)
+"Sie ruht sich nach der Arbeit aus." (She rests after work.)
+"Wir waschen uns jeden Morgen." (We wash [ourselves] every morning.)
+
+BODY PARTS IN SENTENCES
+------------------------
+
+Body parts normally take the definite article (der/die/das) because there's only one per person:
+"Ich wasche MIR die Hände." (I wash MY [dative] hands.) — dative possession
+"Er wäscht SICH die Haare." (He washes HIS hair.)
+
+Or "Ich wasche MEINE Hände." — that's also correct.
+
+The MIR/SICH construction is the "dative possession" pattern (more advanced).
+
+TIME PHRASES FOR ROUTINE
+------------------------
+
+um + clock time: "um 8 Uhr"
+am + day: "am Montag"
+am Morgen/Mittag/Abend: in the morning/noon/evening
+in der Nacht: at night
+
+Examples:
+  "Ich stehe um 7 Uhr auf."
+  "Am Montag gehe ich arbeiten."
+  "Am Abend esse ich."
+  "Morgens dusche ich, abends nicht."
+
+DURATION: "von ... bis"
+  "Ich arbeite von 9 bis 17 Uhr."
+  "Die Sitzung dauert von 14:00 bis 15:30 Uhr."
+
+EXERCISE
+--------
+
+1. Write your daily routine in PRESENT tense using the new verbs.
+2. Now rewrite YESTERDAY's routine using Perfekt.
+3. Conjugate "sich freuen auf" in 3 forms:
+   - ich ___
+   - sie ___
+   - wir ___
+
+NEXT: Day 22 — Modal particles (doch, mal, halt, eben, ja) — the soul of spoken German
+
+Total vocab today: +15 words (body parts + routine verbs)
+Grand total: 209 words
+
+Bis morgen!

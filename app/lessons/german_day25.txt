@@ -1,0 +1,209 @@
+GERMAN A1 — DAY 25 OF 90
+Days 25-30: A1 GRADUATION WEEK
+Big Numbers + Time + Final Review
+===============================
+
+Day 25 of 90 — that's one quarter of A1! Time to consolidate. This is also the launch of GRADUATION WEEK — Days 25-30 will wrap up everything we've covered so far, get you ready for the A1 final.
+
+TODAY: All the numbers, prices, dates, and time you'll ever need.
+
+NUMBERS 100 - 1 MILLION
+-------------------------
+
+  100 = hundert
+  200 = zweihundert
+  300 = dreihundert
+  500 = fünfhundert
+  1.000 = tausend (ein tausend)
+  2.500 = zweitausendfünfhundert (two thousand five hundred)
+  100.000 = hunderttausend (one hundred thousand)
+  1.000.000 = eine Million
+
+Notice: No "and" in German numbers!
+  523 = fünfhundertdreiundzwanzig (five hundred three and twenty)
+  1.999 = eintausendneunhundertneunundneunzig
+
+The order BACKWARDS from English:
+  English: five hundred and twenty-three
+  German: fünfhundert drei und zwanzig (drei=3, und=and, zwanzig=20)
+  Then twenty-three becomes its own unit: drei+und+zwanzig
+
+FORMAL vs COLLOQUIAL NUMBERS
+-----------------------------
+
+In formal speech/spelling:
+  1 = eins
+  2 = zwei (never "zwo" in formal)
+
+In colloquial speech (especially phone numbers):
+  2 = zwo (clearer pronunciation, no confusion with "drei")
+  3 = drei / sometimes "drü"  
+  7 = sieben / sometimes "siebn"
+
+"Es ist zwei Uhr zehn." (= It's 2:10.)  
+"Er ist zwei Jahre alt." (= He's two years old.)
+
+VS
+
+"Zwo-drei-vier-fünf-sechs" - when saying numbers fast like phone numbers
+
+DECIMAL NUMBERS
+----------------
+
+  0,5 = null Komma fünf (zero point five)
+  1,5 = eins Komma fünf (one point five)
+  3,14 = drei Komma eins vier
+  9,99 = neun Komma neunundneunzig
+  100,50 = hundert Komma fünf
+
+In German, the decimal POINT is a COMMA:
+  English: 3.14
+  German: 3,14
+
+Read as: "drei Komma eins vier"
+"Komma" = "comma" (also means "comma")
+
+PRICES (Preise)
+----------------
+
+  1,99 € = eins neunundneunzig (one ninety-nine) — like a price
+  €0,99 = neunundneunzig Cent
+  "Wie viel kostet das?" (How much does that cost?)
+  "Das kostet 5 Euro fünfzig." (That costs 5 euros fifty.)
+  "Es kostet nichts." (It costs nothing.)
+  "Es ist umsonst." (It's free — formal)
+
+DIFFERENT CURRENCIES AND UNITS
+--------------------------------
+
+Euro:
+  1 € = ein Euro
+  2 € = zwei Euro
+  0,50 € = fünfzig Cent
+
+Formal vs spoken:
+  Formal: "Der Preis beträgt 19,99 Euro." (The price is...)
+  Casual: "Macht 19,99." (That makes 19.99.)
+
+Cent pronounced:
+  5 Cent = fünf Cent (pronounced "tsent")
+  50 Cent = fünfzig Cent
+  In casual speech, often "fuffzig" or "fuffzich" (slang).
+
+MASS / WEIGHT (metric system)
+-------------------------------
+
+  1 kg = ein Kilo / ein Kilogramm
+  500 g = fünfhundert Gramm / ein halbes Kilo
+  1,5 kg = eineinhalb Kilo / anderthalb Kilo
+  2,5 kg = zweieinhalb Kilo
+
+  "Eineinhalb" (one-and-a-half) and "anderthalb" (1.5x as much) are different but both mean 1.5.
+
+DISTANCE
+---------
+
+  1 km = ein Kilometer  
+  100 m = hundert Meter
+  5 km = fünf Kilometer
+  "Wie weit ist es?" / "Wie viele Kilometer?"
+
+TEMPERATURE
+-------------
+
+  20 °C = zwanzig Grad (Celsius)
+  -5 °C = minus fünf Grad
+  "Es ist 25 Grad." (It's 25 degrees.) — note: NO "Celsius" needed in casual speech
+
+DATES (Datum)
+--------------
+
+Format:
+  "der 15. März" (15 March) — month in 3rd case (genitive, technically), but noun stays same
+  In spoken German: "der fünfzehnte März" or "der fünfzehnte dritte" (fifteenth of March)
+  Or just: "fünfzehnten März" (15th March)
+
+Dates in writing:
+  15.03.2026 (day.month.year)
+  15. März 2026 (formal)
+  15/03/26 (US style sometimes)
+
+Days and months are MASCULINE: "der Montag," "der März" — always "der"
+
+Common date phrases:
+  "Welches Datum haben wir heute?" (What's today's date?)
+  "Heute ist der 15. März." (Today is 15 March.)
+  "Wann bist du geboren?" (When were you born?)
+  "Ich bin am 15. März geboren." (I was born on 15 March.)
+  "Im Jahr 1990." (In the year 1990.)
+
+TIME EXTENSIONS
+---------------
+
+Time durations:
+  "Eine Stunde" = an hour
+  "Einen Tag" = a day
+  "Eine Woche" = a week
+  "Einen Monat" = a month
+  "Ein Jahr" = a year
+
+"How long" answers:
+  "Wie lange lernst du?" (How long do you study?)
+  "Seit wann lernst du?" (Since when?)
+  "Ich lerne seit drei Monaten." (I've been learning for 3 months.)
+  "Ich lerne seit einem Jahr Deutsch." (I've been learning German for a year.)
+
+Duration phrases with "für" (for):
+  "Ich lerne für drei Monate." (I'm learning for 3 months.)
+  "Ich gehe für zwei Wochen nach Deutschland." (I'm going to Germany for 2 weeks.)
+
+CULTURE NOTE
+------------
+
+In shops, prices are usually labeled with a comma decimal:
+  "1,99 €" — one euro and 99 cents
+
+When you PAY (Pronouns matter):
+  "Ich bezahle 5 Euro." — I pay 5 euros.
+  "Er bezahlt mit Karte." — He pays by card.
+  "Sie zahlt bar." — She pays cash.
+
+"Bezahlen" = to pay (transactional)
+"Zahlen" = to pay (number, also to count)
+Same in past: bezahlte / zahlte
+
+NEW VOCABULARY (10 numbers / units)
+-----------------------------------
+1. hundert — hundred
+2. tausend — thousand
+3. Million (fem) — million
+4. Euro (masc) — euro
+5. Cent (masc) — cent
+6. Kilo — kilogram (Kilo)
+7. halb — half
+8. das Jahr — year
+9. der Monat — month  
+10. die Woche — week
+
+EXERCISE
+--------
+
+1. Read these prices aloud:
+   - 4,99 €
+   - 0,25 €
+   - 12,50 €
+2. Translate:
+   - "When were you born?" → ___
+   - "I was born in 1990." → ___
+   - "How much does it cost?" → ___
+3. Read these temperatures:
+   - 5 Grad
+   - minus 10 Grad
+   - 30 Grad
+
+NEXT: Day 26 — Prepositions: temporal (vor, nach, bei, in, seit, bis, während)
+
+Total vocab today: +10 words
+Grand total: 249 words
+
+Bis morgen!

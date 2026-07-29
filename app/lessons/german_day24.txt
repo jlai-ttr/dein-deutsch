@@ -1,0 +1,191 @@
+GERMAN A1 — DAY 24 OF 90
+W-Questions — Interrogative words (W-Fragen)
+==============================================
+
+Welcome to Day 24 — QUESTION WORDS.
+
+German W-questions work just like English Wh-questions: they use a question word + verb + subject + rest.
+
+"Wie spät ist es?" — What time is it?
+"Wann kommt der Zug?" — When does the train come?
+"Wo wohnst du?" — Where do you live?
+"Warum lernst du Deutsch?" — Why are you learning German?
+
+THE 12 KEY W-WORDS
+-------------------
+
+1. WER (who — nominativ, animate only)
+
+   "Wer bist du?" (Who are you?)
+   "Wer kommt heute?" (Who is coming today?)
+   "Wer hat das gemacht?" (Who did that?)
+
+   Wer-declension: same as "er/sie" — nominative (default), accusative = WEN, dative = WEM
+   "Wen hast du gesehen?" (Whom did you see?) — accusative
+   "Mit wem sprichst du?" (With whom are you talking?) — dative
+
+2. WAS (what — nominativ + akkusativ, things)
+
+   "Was ist das?" (What is that?)
+   "Was machst du?" (What are you doing?)
+   "Was hast du gekauft?" (What did you buy?)
+
+3. WELCH- (which — declines like "dies-" + adjective)
+
+   "Welches Buch liest du?" (Which book are you reading?)
+   "Welche Farbe magst du?" (Which color do you like?)
+   "Welchen Film schauen wir an?" (Which movie shall we watch?)
+
+   Welcher/welche/welches — like "this" but for question. Declines fully.
+
+4. WO (where — location)
+
+   "Wo wohnst du?" (Where do you live?)
+   "Wo ist die Bibliothek?" (Where is the library?)
+   "Wo geht das Bier hin?" (Where's the beer going?) [colloquial]
+
+5. WOHIN (where to — motion/direction)
+
+   "Wohin gehst du?" (Where are you going?)
+   "Wohin fährt dieser Bus?" (Where does this bus go?)
+   "Wohin soll ich das Buch legen?" (Where should I put the book?)
+
+6. WOHER (where from — origin)
+
+   "Woher kommst du?" (Where do you come from?)
+   "Woher hast du das?" (Where did you get that?)
+   "Woher weißt du das?" (How do you know that?)
+
+7. WARUM / WESHALB / WIESO (why — three variations)
+
+   "Warum lernst du Deutsch?" (Why are you learning German?)
+   "Weshalb bist du so traurig?" (Why are you so sad?) — more formal
+   "Wieso lachst du?" (Why are you laughing?) — colloquial, "for what reason"
+
+8. WANN (when — time)
+
+   "Wann kommst du?" (When are you coming?)
+   "Wann beginnt das Konzert?" (When does the concert start?)
+   "Seit wann bist du hier?" (Since when have you been here?)
+   "Bis wann bleibst du?" (Until when will you stay?)
+
+9. WIE (how — manner)
+
+   "Wie geht es dir?" (How are you?)
+   "Wie heißt du?" (What is your name?) — "heißen" is "to be called"
+   "Wie kommst du zur Arbeit?" (How do you get to work?)
+
+10. WIE LANGE / WIE OFT / WIE WEIT / WIE SPÄT (specific how)
+
+    "Wie lange dauert das?" (How long does that take?)
+    "Wie oft gehst du ins Kino?" (How often do you go to the cinema?)
+    "Wie weit ist es?" (How far is it?)
+    "Wie spät ist es?" (What time is it?) — literally "how late is it?"
+
+11. WAS FÜR (what kind of — descriptive)
+
+    "Was für ein Auto fährst du?" (What kind of car do you drive?)
+    "Was für Musik hörst du?" (What kind of music do you listen to?)
+    "Was für einen Film schauen wir?" (What kind of film are we watching?)
+
+    "Was für" + ein + noun (singular) OR noun plural:
+    "Was für eine Tasche?" (What kind of bag?)
+    "Was für Bücher?" (What kind of books?)
+
+12. WESHALB / WIESO / WARUM variations
+
+    "Weshalb" = more formal than "warum"
+    "Wieso" = colloquial, more like "for what reason"
+    In casual German, all three are interchangeable.
+
+JA/NEIN QUESTIONS (no question word)
+-------------------------------------
+
+  "Kommst du morgen?" (Are you coming tomorrow?)
+  "Hast du Zeit?" (Do you have time?)
+  "Magst du Kaffee?" (Do you like coffee?)
+  "Bist du müde?" (Are you tired?)
+
+Answer:
+  "Ja." / "Ja, ich komme."
+  "Nein." / "Nein, ich komme nicht."
+  "Doch!" (formal yes, contradicting expectation of no)
+
+ANSWER PATTERNS
+-----------------
+
+Wer kommt? → Peter kommt.
+Was hast du gemacht? → Ich habe Deutsch gelernt.
+Wo wohnst du? → Ich wohne in Berlin.
+Wohin gehst du? → Ich gehe zur Arbeit.
+Woher kommst du? → Ich komme aus Malaysia.
+Wann lernst du? → Ich lerne am Abend.
+Warum bist du müde? → Weil ich wenig geschlafen habe.
+Wie heißt du? → Ich heiße Jasper.
+Was für ein Buch? → Es ist ein Krimi.
+
+EXAMPLES IN CONTEXT
+-------------------
+
+Friendly small talk:
+  A: "Hallo! Wer bist du?"
+  B: "Ich bin Anna. Und du?"
+  A: "Ich heiße Ben. Woher kommst du?"
+  B: "Ich komme aus Stuttgart. Was machst du hier?"
+  A: "Ich lerne hier Deutsch. Seit wann?"
+  B: "Seit drei Monaten. Wie geht es dir?"
+
+Direction + reason:
+  A: "Wohin gehst du?"
+  B: "Ich gehe zur Arbeit. Und du?"
+  A: "Ich gehe nach Hause. Warum so früh?"
+  B: "Ich bin müde. Wie lange dauert dein Tag?"
+  A: "Bis 18 Uhr."
+
+CULTURE NOTE
+------------
+
+Germans often think Americans are "always smiling." This is because German questions are usually DIRECT. "Wer bist du?" without soft preamble feels normal in German but blunt in English.
+You can be direct with W-questions in German. It's how people ask.
+
+In restaurants:
+  "Was darf's sein?" (What'll it be?) — formal "may it be"
+  "Was möchten Sie?" (What would you like?)
+
+In shops:
+  "Was für einen möchten Sie?" (What kind would you like?)
+
+NEW VOCABULARY (10 question response fillers + connectors)
+----------------------------------------------------------
+1. weil — because
+2. deshalb — therefore
+3. deswegen — for that reason
+4. trotzdem — nevertheless
+5. außerdem — besides, in addition
+6. allerdings — however, indeed
+7. schließlich — after all
+8. natürlich — of course
+9. bestimmt — certainly
+10. wahrscheinlich — probably
+
+EXERCISE
+--------
+
+1. Build a question for each scenario:
+   - Asking about a friend: "Wo ist Lisa?" 
+   - Asking about a choice: "Welches Buch?" 
+   - Asking about time: "___ bist du fertig?"
+   - Asking about reason: "___ lernst du nicht?"
+2. Translate:
+   - "Which train are you taking?" → ___
+   - "Where are you from?" → ___
+   - "What kind of music do you like?" → ___
+3. Pair questions with answers:
+   Q: "Wohin fährst du im Urlaub?"  → A: ___
+
+NEXT: Day 25 — Numbers 100+ + price reading + date/time format
+
+Total vocab today: +10 words
+Grand total: 239 words
+
+Bis morgen!

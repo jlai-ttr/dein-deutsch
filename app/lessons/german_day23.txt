@@ -1,0 +1,188 @@
+GERMAN A1 — DAY 23 OF 90
+Imperative — Commands, Requests, Suggestions
+==============================================
+
+Today: how to TELL someone what to do (politely or otherwise).
+
+THE 4 IMPERATIVE FORMS
+-----------------------
+
+1. DU-IMPERATIVE (informal singular)
+   "du" form, but you drop the pronoun.
+   Rule: stem with NO ending (like "ich" + "er" forms)
+
+   du gehst → GEH! (Go!)
+   du machst → MACH! (Do!)
+   du kommst → KOMM! (Come!)
+   du liest → LIES! (Read!) — note: stem vowel change e → ie
+   du isst → ISS! (Eat!) — stem vowel change e → i
+   du nimmst → NIMM! (Take!)
+   du fährst → FAHR! (Drive!) — but often with ä
+
+2. IHR-IMPERATIVE (informal plural — "you all")
+   "ihr" form, no pronoun.
+   Rule: same as "ihr" present conjugation, with no pronoun.
+
+   ihr geht → GEHT! (Go!)
+   ihr macht → MACHT! (Do!)
+   ihr kommt → KOMMT! (Come!)
+
+   "Ihr-imperative" is rare because plural-you is uncommon in casual speech. But family/teachers use it.
+
+3. SIE-IMPERATIVE (formal singular AND plural — "Sie")
+   Same as Sie present conjugation + pronoun.
+
+   Sie gehen → GEHEN SIE! (Go!)
+   Sie kommen → KOMMEN SIE! (Come!)
+   Sie machen → MACHEN SIE! (Do!)
+
+4. WIR-IMPERATIVE (let's)
+   "wir" present, with pronoun "wir" + "doch mal" or similar softener.
+
+   Wir gehen! (Let's go! — direct)
+   Gehen wir! (Let's go! — verb-first inversion)
+   Lass uns gehen! (Let us go! — common alternative)
+
+   Note: "Lass uns" is super common in conversation:
+   "Lass uns essen." (Let's eat.)
+   "Lass uns ins Kino gehen." (Let's go to the cinema.)
+
+VERBS WITH SPECIAL IMPERATIVES
+--------------------------------
+
+STEM-VOWEL CHANGING VERBS in du-imperative use the changed stem + ending-less form:
+
+  fahren (a→ä): du fährst → FAHR! or FÄHR!
+  schlafen: du schläfst → SCHLAF!
+  lesen (e→ie): du liest → LIES!
+  sehen: du siehst → SIEH! (Note: somewhat formal now)
+  essen (e→i): du isst → ISS!
+  sprechen (e→i): du sprichst → SPRICH!
+  nehmen: du nimmst → NIMM!
+
+SEIN verbs (irregular imperative):
+  sein: du bist → SEI! (Be!)
+  tun: du tust → TU! (Do!)
+
+HABEN, WERDEN, etc.:
+  haben: du hast → HAB! or just "HABEN SIE" (formal)
+  werden: du wirst → WERDE!
+
+VERBS ENDING IN -ELN, -ERN (drop the e):
+  du sammelst → SAMMLE!
+  du arbeitest → ARBEITE! (keeps the e for pronunciation)
+
+THE SUBJECT PRONOUN IS OPTIONAL
+---------------------------------
+
+In German imperative, the pronoun is IMPLIED:
+  "GEH!" = "(you, informal singular) GO!"
+  "GEHT!" = "(you all) GO!"
+  "GEHEN SIE!" = "(you, formal) GO!"
+
+Native speakers rarely include the pronoun. Adding it sounds unusual:
+  "Geh du!" / "Gehst du!" = "YOU go!" (emphasis or irritation)
+
+POLITENESS
+-----------
+
+Softening the imperative:
+
+  Direct: "GEH!" (Go!)
+  Slightly softer: "GEH MAL!" (Just go! / Here, go.)
+  Casual request: "GEH DOCH!" (Just go, please.)
+  Casual enough: "GEH SCHON!" (Go on, go.)
+  Formal: "GEHEN SIE BITTE." (Please go.) — actually formal is "Gehen Sie bitte"
+  Most polite: "KÖNNTEN SIE BITTE GEHEN?" (Could you please go?)
+
+Adding "bitte" (please) makes it polite. Use liberally for any request.
+Adding "doch" or "mal" or "schon" makes it casual/friendly.
+
+NEGATIVE COMMANDS
+-----------------
+
+To forbid something, use "nicht" + infinitive, or "kein" + noun:
+
+  "Komm nicht!" (Don't come!) — direct negation
+  "Rauchen Sie nicht!" (Do not smoke!) — formal "don't"
+  "Lauf nicht so schnell!" (Don't run so fast!)
+  "Iss kein Eis mehr!" (Don't eat any more ice cream.)
+
+EXAMPLES IN CONTEXT
+-------------------
+
+Casual chat between friends:
+  Anna: "Komm mal mit!" (Come along!)
+  Ben: "Wohin?" (Where to?)
+  Anna: "Lass uns ins Café gehen." (Let's go to the café.)
+
+Parent to child:
+  "Iss dein Gemüse!" (Eat your vegetables!)
+  "Trink dein Wasser!" (Drink your water!)
+  "Höre mit dem Handy auf!" (Stop with the phone!)
+
+Teacher to student:
+  "Öffne das Buch!" (Open the book!)
+  "Lies den Text!" (Read the text!)
+  "Schreibe den Satz!" (Write the sentence!)
+  "Setzen Sie sich!" (Sit down! — formal)
+
+Friend encouraging friend:
+  "Mach schon!" (Come on, do it!)
+  "Komm schon!" (Come on!)
+  "Trau dich!" (Have courage / Dare!)
+
+DIRECT vs INDIRECT COMMANDS
+------------------------------
+
+You can also use infinitives as commands (impersonal "let's"):
+
+  "Aufgepasst!" (Pay attention!) — imperative of "aufpassen"
+  "Stillgestanden!" (Stand still!) — formal salute
+  "Weitergemacht!" (Keep going! / Continue!) — colloquial
+
+These are common in announcements, military, sports coaching.
+
+CULTURE NOTE
+------------
+
+Germans often use the imperative more directly than English speakers would. "Komm!" alone is normal, but "Could you possibly come when convenient?" is the English equivalent of "Könntest du vielleicht kommen, wenn es dir gerade passt?"
+
+You can use direct imperatives with friends and family without it being rude. With strangers, soften with "bitte" or "doch/mal".
+
+NEW VOCABULARY (10 verbs strong enough to use in imperative)
+-------------------------------------------------------------
+1. warten — to wait
+2. passen — to fit / to suit / to pay attention
+3. hören — to listen / hear
+4. antworten — to answer
+5. fragen — to ask
+6. schicken — to send
+7. vergessen — to forget
+8. erzählen — to tell (a story)
+9. erklären — to explain
+10. zeigen — to show
+
+EXERCISE
+--------
+
+1. Convert these to du-imperative:
+   - du gehst → ___
+   - du isst → ___
+   - du liest → ___
+   - du nimmst → ___
+2. Convert to Sie-imperative:
+   - Sie kommen → ___
+   - Sie machen → ___
+   - Sie helfen → ___
+3. Make requests polite:
+   - "Geh!" → softer: "___ doch ___!"
+   - "Hilf!" → softer: "Hilf ___!"
+   - "Sprich!" → softer: "Sprich ___!"
+
+NEXT: Day 24 — Question words + interrogative pronouns (W-Fragen)
+
+Total vocab today: +10 verbs
+Grand total: 229 words
+
+Bis morgen!

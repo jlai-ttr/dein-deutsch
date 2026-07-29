@@ -1,0 +1,196 @@
+GERMAN A1 — DAY 28 OF 90
+Verb Forms — Complete Reference
+================================
+
+Welcome to Day 28. Today: ALL the verb forms. Everything you'll need to look up correctly.
+
+THE 6 VERB FORMS (per German verb)
+------------------------------------
+
+1. INFINITIVE (the dictionary form)
+   Ends in -en (sometimes -n after e)
+   Examples: gehen, machen, lesen, sein, haben, werden
+
+2. PRESENT TENSE (Präsens) — what's happening now
+   The conjugated form for each person: ich gehe, du gehst, er geht, ...
+
+3. SIMPLE PAST (Präteritum) — formal past, used in writing
+   "Ich ging" / "Ich machte" / "Ich las"
+   Used in news, novels, formal writing.
+
+4. PRESENT PERFECT (Perfekt) — conversational past
+   haben/sein + past participle
+   "Ich BIN gegangen" / "Ich HABE gemacht"
+
+5. PAST PARTICIPLE (Partizip II) — used with haben/sein in Perfekt
+   ge- + stem + -t (regular verbs)
+   ge- + stem + -en (irregular/stem-changing verbs)
+
+6. IMPERATIVE — command form
+   "Geh!" / "Gehen Sie!" / "Geht!"
+
+WEAK (REGULAR) VERBS
+---------------------
+
+Pattern: stem doesn't change (or only drops ending + adds)
+Examples: machen, lernen, wohnen, kaufen, arbeiten
+
+Present (drops -en ending, adds personal ending):
+  ich mache, du machst, er macht, wir machen, ihr macht, sie machen
+
+Simple past (stem + te + personal ending):
+  ich machte, du machtest, er machte, wir machten, ihr machtet, sie machten
+
+Past participle (ge + stem + t):
+  gemacht, gelernt, gewohnt, gekauft, gearbeitet (with -e- for pronunciation)
+
+STRONG (IRREGULAR) VERBS
+--------------------------
+
+Pattern: stem may change (a→ä, e→ie/ihr, etc.)
+Examples: gehen, sehen, essen, fahren, schlafen, helfen, lesen
+
+Present: same as weak (drops -en + adds personal ending)
+  ich gehe, du gehst, er geht (no vowel change in ich/wir/sie forms)
+
+Simple past: stem + personal ending (changes the stem!)
+  ich ging, du gingst, er ging, wir gingen, ihr gingt, sie gingen
+  ich aß, du aßest, er aß, wir aßen, ihr aßt, sie aßen
+  ich las, du last, er las, wir lasen, ihr last, sie lasen
+
+Past participle: ge + stem + en (with stem change!)
+  gegangen, gesehen, gegessen, gefahren, geschlafen, geholfen, gelesen
+
+KEY STRONG VERBS TO MEMORIZE
+------------------------------
+
+| Infinitive    | Meaning     | Past          | Participle    |
+|---------------|-------------|---------------|---------------|
+| gehen         | to go       | ging          | gegangen      |
+| sehen         | to see      | sah           | gesehen       |
+| essen         | to eat      | aß            | gegessen      |
+| fahren        | to drive    | fuhr          | gefahren      |
+| schlafen      | to sleep    | schlief       | geschlafen    |
+| lesen         | to read     | las           | gelesen       |
+| helfen        | to help     | half          | geholfen      |
+| sprechen      | to speak    | sprach        | gesprochen    |
+| nehmen        | to take     | nahm          | genommen      |
+| kommen        | to come     | kam           | gekommen      |
+| bleiben       | to stay     | blieb         | geblieben     |
+| finden        | to find     | fand          | gefunden      |
+| geben         | to give     | gab           | gegeben       |
+| vergessen      | to forget   | vergaß        | vergessen     |
+| wissen        | to know     | wusste        | gewusst       |
+| tragen        | to carry    | trug          | getragen      |
+| fallen        | to fall     | fiel          | gefallen      |
+| lassen        | to let      | ließ          | gelassen      |
+| laufen        | to run      | lief          | gelaufen      |
+| rufen         | to call     | rief          | gerufen       |
+
+IRREGULAR VERBS (must memorize separately)
+----------------------------------------------
+
+| Infinitive  | Meaning      | Past       | Participle   | Notes                  |
+|-------------|--------------|------------|--------------|------------------------|
+| sein        | to be        | war        | gewesen      | totally irregular     |
+| haben       | to have      | hatte      | gehabt       | common but irregular  |
+| werden      | to become    | wurde      | geworden     | common but irregular  |
+| tun         | to do        | tat        | getan        | literary               |
+| gehen       | see above    | ging       | gegangen     |                        |
+| wissen      | to know      | wusste     | gewusst      | "to know a fact"       |
+| kennen      | to know      | kannte     | gekannt      | "to know person/place" |
+| mögen       | to like      | mochte     | gemocht      |                        |
+| denken      | to think     | dachte     | gedacht      |                        |
+| bringen     | to bring     | brachte    | gebracht     |                        |
+
+VERBS WITH SEPARABLE PREFIXES
+--------------------------------
+
+Many verbs have separable prefixes that split off in main clauses:
+  aufschreiben (to write down): "Ich schreibe das auf."
+  aufmachen (to open): "Ich mache die Tür auf."
+  einkaufen (to shop): "Ich kaufe heute ein."
+
+In Perfekt: ge- comes BETWEEN the prefix and the stem:
+  aufschreiben → aufgeschrieben
+  einkaufen → eingekauft
+  ankommen → angekommen (no ge- because betone on prefix)
+
+VERBS WITH INSEPARABLE PREFIXES
+----------------------------------
+
+These prefixes are stressed DIFFERENTLY and stay attached:
+  be- (beginnen, bekommen): begonnen, bekommen
+  ent- (entdecken): entdeckt
+  ge- (gefallen): gefallen
+  ver- (verstehen): verstanden
+  zer- (zerbrechen): zerbrochen
+
+Past participle: NO extra "ge-" prefix.
+  verstehen → verstanden (NOT "geverstanden")
+
+MODAL VERBS RECAP
+-----------------
+
+| Infinitive | Stem | Past  | Participle | Meaning               |
+|------------|------|-------|------------|-----------------------|
+| können     | kann | konnte| gekonnt    | can, to be able       |
+| müssen     | muss | musste| gemusst    | must, to have to      |
+| wollen     | will | wollte| gewollt    | want, to want to      |
+| dürfen     | darf | durfte| gedurft    | may, to be allowed    |
+| sollen     | soll | sollte| gesollt    | should, supposed to   |
+| mögen      | mag  | mochte| gemocht    | to like               |
+| möchten    | möcht| möchte| gemocht    | would like (polite)   |
+
+PAST TENSE USAGE
+------------------
+
+PRÄTERITUM (simple past):
+- News, books, formal writing
+- "Er ging zur Schule." (He went to school. — written German)
+- Most common for SEIN and HABEN:
+  "Es war schön." (It was nice.)
+  "Ich hatte keine Zeit." (I had no time.)
+
+PERFEKT (present perfect):
+- Conversation, informal speech
+- "Er ist zur Schule gegangen."
+- Always with haben for action verbs, with sein for motion/state change
+
+EXAMPLES WITH BOTH
+-------------------
+
+Situation: she went home yesterday.
+
+Conversational: "Sie ist gestern nach Hause gegangen."
+Formal/written: "Sie ging gestern nach Hause."
+Perfect tense narrative: "Gestern ist sie nach Hause gegangen."
+
+REPORTED SPEECH
+-----------------
+
+In reported speech, use Konjunktiv I or simple past:
+- Direct: "Ich komme morgen." (I am coming tomorrow.)
+- Reported: "Er sagte, er komme morgen." (He said he was coming tomorrow.)
+
+This is B1+ territory, so just be aware of it.
+
+CULTURE NOTE
+------------
+
+Each German verb pattern (regular/irregular) has thousands of verbs following it. The patterns are predictable; only the stems change for irregulars. After learning ~50 common irregular verbs, you've covered 90% of spoken German.
+
+EXERCISE
+--------
+
+1. Conjugate "machen" in all 6 persons, present + simple past.
+2. Give the past participle for: gehen, fahren, schlafen, lesen, helfen, machen, wohnen, kaufen.
+3. List the 5 verbs that take SEIN in Perfekt.
+4. Translate: "Er hat das Buch gelesen."
+
+NEXT: Day 29 — A1 exam preparation + mock test
+
+Total vocab today: reviewed (50+ verb forms)
+Grand total: 259 words
+
+Bis morgen!
