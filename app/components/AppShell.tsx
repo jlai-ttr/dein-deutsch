@@ -19,6 +19,7 @@ const PRIMARY = [
   { id: 'kultur',      label: 'Kultur',    en: 'Culture',   href: '/kultur' },
   { id: 'fortschritt', label: 'Fortschritt', en: 'Progress', href: '/fortschritt' },
   { id: 'settings', label: 'Settings', en: 'Settings', href: '/settings' },
+  { id: 'profile', label: 'Profil', en: 'Profile', href: '/profile' },
 ];
 
 export default function AppShell({ children }: { children: React.ReactNode }) {
