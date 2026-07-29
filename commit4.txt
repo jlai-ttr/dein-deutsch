@@ -1,1 +1,0 @@
-feat: bundle 7 german lesson files into app + fix API path for deploy
