@@ -1,0 +1,206 @@
+GERMAN A1 — DAY 6 OF 90
+Regular Verbs in Present Tense
+==============================
+
+Day 5 review: possessives (mein/dein/sein/ihr/unser).
+Day 6 goal: conjugate regular verbs — describe actions.
+
+THE GOLDEN RULE FOR REGULAR VERBS
+---------------------------------
+German regular verbs follow a predictable pattern:
+
+1. Take the verb's INFINITIVE (basic form): e.g. "machen" (to do)
+2. Remove the "-en" ending to get the STEM: "mach"
+3. Add the correct ending based on the subject:
+
+  ich          -e       = mache
+  du           -st      = machst
+  er/sie/es    -t       = macht
+  wir          -en      = machen
+  ihr          -t       = macht
+  sie/Sie      -en      = machen
+
+Same pattern for ALL regular verbs. Learn this once, use it forever.
+
+VERB: MACHEN (TO DO / TO MAKE)
+-------------------------------
+  ich mache      = I do/make        = ISH MAH-kheh
+  du machst      = you do/make (c)  = DOO MAHKHST
+  er macht       = he does          = AIR MAHKHT
+  sie macht      = she does         = ZEE MAKHHT
+  es macht       = it does          = ESS MAKHHT
+  wir machen     = we do            = VEER MAH-khen
+  ihr macht      = you (pl) do      = EER MAKHHT
+  sie machen     = they do          = ZEE MAH-khen
+  Sie machen     = you (fml) do     = ZEE MAH-khen
+
+Examples:
+  "Ich mache meine Arbeit."   = I do my work.
+  "Was machst du?"            = What are you doing? (casual)
+  "Er macht das gut."         = He does that well.
+  "Wir machen eine Pause."    = We take a break.
+
+VERB: LERNEN (TO LEARN)
+-----------------------
+  ich lerne      = I learn
+  du lernst      = you learn
+  er lernt       = he learns
+  wir lernen     = we learn
+  ihr lernt      = you (pl) learn
+  sie lernen     = they learn
+
+  "Ich lerne Deutsch."        = I learn German.
+  "Lernst du Deutsch?"        = Are you learning German? (casual)
+  "Wir lernen viel."          = We learn a lot.
+
+VERB: ARBEITEN (TO WORK)
+------------------------
+Note: stem is "arbeit-" (drop the -en, keep the t)
+  ich arbeite    = I work           = ISH AR-by-teh
+  du arbeitest   = you work
+  er arbeitet    = he works
+  wir arbeiten   = we work
+  ihr arbeitet   = you (pl) work
+
+  "Ich arbeite in Kuala Lumpur."
+  = ISH AR-by-teh IN KWAH-lah LOOM-poor
+  (I work in Kuala Lumpur.)
+
+  "Wo arbeitest du?" = Where do you work?
+
+VERB: SPRECHEN (TO SPEAK) — IRREGULAR STEM
+-------------------------------------------
+"Sprechen" drops the "e" in the stem for du/er forms:
+  ich spreche    = I speak
+  du sprichst    = you speak (note: sprichst, NOT sprechst)
+  er spricht     = he speaks
+  wir sprechen   = we speak
+
+  "Ich spreche Englisch und Deutsch."
+  = ISH SHPREH-kheh ENG-lish oont DOYTSH
+  (I speak English and German.)
+
+  "Sprechen Sie Deutsch?" = Do you speak German? (formal)
+
+VERB: KOMMEN (TO COME)
+----------------------
+Also irregular stem (drop e for du/er):
+  ich komme      = I come
+  du kommst      = you come
+  er kommt       = he comes
+  wir kommen     = we come
+
+  "Ich komme aus Malaysia." = I come from Malaysia.
+  "Woher kommen Sie?"      = Where do you come from? (formal)
+  "Er kommt aus Berlin."   = He comes from Berlin.
+
+  Pronunciation: "kommen" = "KOM-men" (short o)
+
+VERB: WOHNEN (TO LIVE / TO RESIDE)
+-----------------------------------
+  ich wohne      = I live
+  du wohnst      = you live
+  er wohnt       = he lives
+  wir wohnen     = we live
+
+  "Ich wohne in Kuala Lumpur." = I live in Kuala Lumpur.
+  "Wo wohnen Sie?"             = Where do you live? (formal)
+
+  Important: use "in" + city name. NO article. "Ich wohne in Berlin."
+
+VERB: HEISSEN (TO BE CALLED) — REVIEW
+---------------------------------------
+  "Wie heißen Sie?" = VEE HAY-sen ZEE? (What is your name? — formal)
+  "Ich heiße Jasper." = ISH HAY-seh Jasper.
+  "Er heißt Henry."  = AIR HAYST HEN-ree.
+
+VERB: GEHEN (TO GO) — IMPORTANT + IRREGULAR
+--------------------------------------------
+  ich gehe       = I go
+  du gehst       = you go
+  er geht        = he goes
+  wir gehen      = we go
+
+  "Ich gehe nach Hause."   = ISH GAY-eh NAHK HOW-zeh
+    (I am going home.)
+  "Wohin gehst du?"        = Where are you going?
+  "Wir gehen ins Büro."    = We go to the office.
+
+30% BUSINESS LAYER — DAY 6
+---------------------------
+  "Ich arbeite bei TTRacing." = ISH AR-by-teh BY TTRacing
+    (I work at TTRacing.)
+
+  "Wo arbeiten Sie?" = Where do you work? (formal)
+
+  "Ich brauche das morgen." = ISH BROW-kheh DAS MOR-gen
+    (I need that tomorrow.)
+  "Wir brauchen mehr Zeit." = We need more time.
+
+  "Ich verstehe das nicht." = ISH fer-SHTAY-eh DAS NISHT
+    (I don't understand that.)
+  "Verstehen Sie?"         = Do you understand?
+
+  "Wir suchen einen Lieferanten in Deutschland."
+  = VEER ZOO-khen AYN-en LEE-fehr-an-ten IN DOYTSH-lant
+  (We are looking for a supplier in Germany.)
+
+  "Ich rufe Sie morgen an." = ISH ROO-feh ZEE MOR-gen AN
+  (I will call you tomorrow.)
+
+  "Können Sie mir helfen?" = KUR-nen ZEE MEER HEL-fen?
+    (Can you help me? — formal)
+
+  "Ich schicke Ihnen die E-Mail."
+  = ISH SHIK-eh EE-nen DEE EE-mayl
+  (I will send you the email.)
+
+EXERCISES (5 min)
+-----------------
+1. Conjugate "lernen" (to learn):
+   a) ich __________    b) du __________
+   c) er __________    d) wir __________
+   e) ihr __________   f) sie (they) __________
+
+2. Conjugate "kommen" (to come) — note the irregular du/er:
+   a) ich __________    b) du __________
+   c) er __________    d) wir __________
+
+3. Translate:
+   a) I work in Kuala Lumpur.    = ________________
+   b) He speaks English.         = ________________
+   c) We learn German.           = ________________
+   d) Do you understand? (fml)   = ________________
+   e) Where do you live? (casual)= ________________
+   f) I need more time.          = ________________
+
+ANSWERS
+=======
+1. a) lerne    b) lernst    c) lernt
+   d) lernen   e) lernt     f) lernen
+
+2. a) komme    b) kommst    c) kommt    d) kommen
+
+3. a) Ich arbeite in Kuala Lumpur.
+   b) Er spricht Englisch.
+   c) Wir lernen Deutsch.
+   d) Verstehen Sie?
+   e) Wo wohnst du?
+   f) Ich brauche mehr Zeit.
+
+DAILY SCORE: ___ / 16
+
+TOMORROW — DAY 7
+================
+Weekly review + Week 2 preview. Day 7 is a "consolidation day":
+review of pronouns, sein, haben, articles, possessives, and the
+verb system. Includes a self-test covering everything from Days 1–6.
+
+Tipp des Tages:
+  "On Day 7, take 30 minutes to write a 5-line paragraph in
+  German about yourself. Use everything you know:
+  name, age, where you live, family, work, hobbies.
+  Even if 50% is wrong, you just wrote your FIRST German
+  paragraph. Most learners can't do that for months."
+
+— Dialga 🐉

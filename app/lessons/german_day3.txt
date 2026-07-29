@@ -1,0 +1,186 @@
+GERMAN A1 — DAY 3 OF 90
+Personal Pronouns + Verb "sein" (to be)
+========================================
+
+Day 2 review: numbers 0–100, prices, dates.
+Day 3 goal: form your first complete sentences using "to be".
+
+PERSONAL PRONOUNS — DIE PERSONALPRONOMEN
+----------------------------------------
+English          German           Pronunciation
+I                ich              ISH
+you (casual)     du               DOO
+you (formal)     Sie              ZEE
+he               er               AIR
+she              sie              ZEE  (same as "Sie" but lowercase = "she")
+it               es               ESS
+we               wir              VEER
+you (plural)     ihr              EER
+they             sie              ZEE  (same word!)
+
+WARNING: "sie" means 3 different things:
+  sie = she
+  Sie = you (formal)
+  sie = they
+Context tells you which. Lowercase "sie" = she/they. Capitalized "Sie" = you.
+
+VERB "SEIN" — TO BE (the most important verb)
+--------------------------------------------
+German verbs conjugate based on the subject. Here is "sein":
+
+  ich bin         = I am          = ISH BIN
+  du bist         = you are (cas) = DOO BIST
+  Sie sind        = you are (fml) = ZEE ZINT
+  er ist          = he is         = AIR IST
+  sie ist         = she is        = ZEE IST
+  es ist          = it is         = ESS IST
+  wir sind        = we are        = VEER ZINT
+  ihr seid        = you (pl) are  = EER ZAIT
+  sie sind        = they are      = ZEE ZINT
+
+Memory trick: 4 forms of "sind" (sind) for all plural + formal you.
+Singular: bin, bist, ist, ist, ist.
+
+EXAMPLES
+--------
+  Ich bin Jasper.              = I am Jasper.
+  Du bist nett.                = You are nice. (casual)
+  Sie sind sehr freundlich.     = You are very kind. (formal)
+  Er ist Student.              = He is a student.
+  Sie ist Lehrerin.            = She is a teacher.
+  Es ist kalt.                 = It is cold.
+  Wir sind aus Malaysia.       = We are from Malaysia.
+  Ihr seid spät.               = You (plural) are late.
+  Sie sind müde.               = They are tired. (context = "they")
+
+KEY ADJECTIVES — WICHTIGE ADJEKTIVE
+-----------------------------------
+  gut            = good         = GOOT
+  schlecht       = bad          = SHLEKHT
+  groß           = big/tall     = GROSS
+  klein          = small        = KLAYNE
+  alt            = old          = ALT
+  jung           = young        = YOONG
+  neu            = new          = NOY
+  schön          = beautiful    = SHOON
+  hässlich       = ugly         = HESS-lich
+  schnell        = fast         = SHNEL
+  langsam        = slow         = LANG-zahm
+  teuer          = expensive    = TOY-er
+  billig         = cheap        = BIL-lich
+  kalt           = cold         = KALT
+  heiß           = hot          = HAYCE
+  warm           = warm         = VARM
+  müde           = tired        = MOO-deh
+  glücklich      = happy        = GLOOK-lich
+  traurig        = sad          = TROW-rich
+  hungrig        = hungry       = HOONG-rich
+  durstig        = thirsty      = DOORS-tich
+  krank          = sick         = KRAHNK
+  gesund         = healthy      = geh-ZOONT
+  reich          = rich         = RAYSH
+  arm            = poor         = ARM
+  wichtig        = important    = VICH-tich
+
+COUNTRIES + NATIONALITIES
+-------------------------
+  Deutschland         = Germany         = DOYTSH-lant
+  Malaysia            = Malaysia        = Ma-lay-zia
+  Singapur            = Singapore       = ZING-a-poor
+  Thailand            = Thailand        = TIE-lant
+  Philippinen         = Philippines     = Fil-ip-PEE-nen
+  Indonesien          = Indonesia       = In-doh-ZEE-zien
+  Australien          = Australia       = Ows-TRAH-li-en
+  England             = England         = ENG-lant
+  USA / Amerika       = USA/America     = ZOO-za / a-MAIR-i-ka
+  China               = China           = HEE-na
+  Japan               = Japan           = YAH-pan
+
+Saying where you are from (review + new):
+  Ich bin aus Deutschland.    = I am from Germany.
+  Ich bin Deutscher.          = I am German (male).
+  Ich bin Deutsche.           = I am German (female).
+  Ich bin Malaysier.          = I am Malaysian (male).
+  Ich bin Malaysierin.        = I am Malaysian (female).
+
+  Note: female forms add "-in" usually.
+
+30% BUSINESS LAYER — DAY 3
+---------------------------
+Introducing yourself in a business setting:
+  "Guten Tag, ich bin Jasper Lai, Geschäftsführer von TTRacing."
+  = GOO-ten TAHK, ISH BIN Jasper Lai, ge-SHEFTS-foo-rer FUN TTRacing
+  (Good day, I am Jasper Lai, CEO of TTRacing.)
+
+  "Er ist unser CFO." = AIR IST OON-zer TAY-EF-OH
+  (He is our CFO.)
+
+  "Sie ist unsere Finanzchefin." = ZEE IST OON-zeh-reh Fin-ANTS-she-fin
+  (She is our CFO — female.)
+
+  "Wir sind ein E-Commerce-Unternehmen mit Sitz in Kuala Lumpur."
+  = VEER ZINT AYN eh-KOM-merts oont-air-NEH-men MIT ZITS IN KWAH-lah LOOM-poor
+  (We are an e-commerce company based in Kuala Lumpur.)
+
+  "Das ist eine gute Frage." = DAS IST AY-neh GOO-teh FAHR-geh
+  (That is a good question.)
+
+  "Das ist sehr wichtig." = DAS IST ZAYR VICH-tich
+  (That is very important.)
+
+EXERCISES (5 min)
+-----------------
+1. Fill in the blank with the correct form of "sein":
+   a) Ich _____ müde.                          (I am tired)
+   b) Er _____ ein Student.                    (He is a student)
+   c) Wir _____ aus Malaysia.                  (We are from Malaysia)
+   d) Du _____ sehr nett!                      (You are very nice — casual)
+   e) Sie _____ sehr freundlich. (formal you)  (You are very kind)
+   f) Das Auto _____ teuer.                    (The car is expensive)
+
+2. Translate to German:
+   a) She is a teacher.           = ________________
+   b) We are from Singapore.      = ________________
+   c) They are tired.             = ________________
+   d) The hotel is expensive.     = ________________
+   e) I am the CEO.               = ________________
+
+3. Translate to English:
+   a) "Es ist kalt."       = ________________
+   b) "Du bist spät."      = ________________
+   c) "Sie sind wichtig."  = ________________ (this could be 2 meanings)
+   d) "Ihr seid reich."    = ________________
+   e) "Wir sind glücklich."= ________________
+
+ANSWERS
+=======
+1. a) bin      b) ist     c) sind
+   d) bist     e) sind    f) ist
+
+2. a) Sie ist Lehrerin.
+   b) Wir sind aus Singapur.
+   c) Sie sind müde. (sie = they, lowercase)
+   d) Das Hotel ist teuer.
+   e) Ich bin der Geschäftsführer.
+
+3. a) It is cold.
+   b) You are late. (casual)
+   c) You are important. (formal) OR They are important. (context)
+   d) You (plural) are rich.
+   e) We are happy.
+
+DAILY SCORE: ___ / 15
+
+TOMORROW — DAY 4
+================
+Verb "haben" (to have) + the indefinite article "ein/eine"
+"Have" is your second essential verb. After Day 4, you can form
+~50 basic German sentences on your own.
+
+Tipp des Tages:
+  "Today, describe your family in German out loud:
+  'Mein Vater ist...' 'Meine Mutter ist...'
+  You don't know these words yet? Perfect. Look them up
+  and you learn 10x faster than silent study."
+
+— Dialga 🐉

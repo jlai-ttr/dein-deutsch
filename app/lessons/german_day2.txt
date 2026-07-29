@@ -1,0 +1,204 @@
+GERMAN A1 — DAY 2 OF 90
+Numbers 1–100 + Money
+======================
+
+Day 1 review: greetings, introductions, please/thank you, business openings.
+Day 2 goal: count in German, say prices, give phone numbers and dates.
+
+NUMBERS 0–20 (memorize these first)
+-----------------------------------
+0 = null       = NOOL
+1 = eins       = AYNS
+2 = zwei       = TSVAY
+3 = drei       = DRAY
+4 = vier       = FEER
+5 = fünf       = FOONF
+6 = sechs      = ZEKSS
+7 = sieben     = ZEE-ben
+8 = acht       = AKHT
+9 = neun       = NOYN
+10 = zehn      = TSAYN
+11 = elf       = ELF
+12 = zwölf     = TSVURLF
+13 = dreizehn  = DRAY-tsayn
+14 = vierzehn  = FEER-tsayn
+15 = fünfzehn  = FOONF-tsayn
+16 = sechzehn  = ZEKH-tsayn
+17 = siebzehn  = ZEEP-tsayn
+18 = achtzehn  = AKH-tsayn
+19 = neunzehn  = NOYN-tsayn
+20 = zwanzig   = TSVAN-tsich
+
+NUMBERS 21–99 (pattern: ones + "und" + tens)
+---------------------------------------------
+21 = einundzwanzig   = AYN-oont-tsvan-tsich
+22 = zweiundzwanzig  = TSVAY-oont-tsvan-tsich
+...
+30 = dreißig         = DRAY-sich
+40 = vierzig         = FEER-tsich
+50 = fünfzig         = FOONF-tsich
+60 = sechzig         = ZEKH-tsich
+70 = siebzig         = ZEEP-tsich
+80 = achtzig         = AKH-tsich
+90 = neunzig         = NOYN-tsich
+100 = hundert        = HOON-dert
+1000 = tausend       = TAW-zent
+1,000,000 = eine Million = AY-neh mil-YON
+
+TRICK: 23 = "drei-und-zwanzig" (three-and-twenty). The "und" goes in
+the middle. This is a German pattern — the tens come LAST.
+
+PRACTICE: 35 = fünf-und-dreißig
+         47 = sieben-und-viertig
+         58 = acht-und-fünfzig
+         62 = zwei-und-sechzig
+         71 = ein-und-siebzig
+         84 = vier-und-achtzig
+         96 = sechs-und-neunzig
+         99 = neun-und-neunzig
+
+TELEPHONE NUMBERS
+-----------------
+Read phone numbers digit by digit. 012-345-6789:
+"null eins zwei - drei vier fünf - sechs sieben acht neun"
+= NOOL AYNS TSVAY - DRAY FEER FOONF - ZEKSS ZEE-ben AKHT NOYN
+
+For double digits, use the normal number word:
+012-345 = "null zwölf - drei fünf und vierzig"
+
+MONEY — DAS GELD
+----------------
+Euro is the standard currency in Germany.
+1 Euro = 1 €
+100 cents = 100 Cent (but "Cent" is rarely used in speech)
+
+Saying prices:
+  1 €     = ein Euro                          = AYN OY-ro
+  2,50 €  = zwei Euro fünfzig                 = TSVAY OY-ro FOONF-tsich
+  17,95 € = siebzehn Euro fünfundneunzig     = ZEEP-tsayn OY-ro FOONF-oont-NOYN-tsich
+  100 €   = hundert Euro                      = HOON-dert OY-ro
+  1500 €  = tausendfünfhundert Euro
+          = TAW-zent FOONF-hoon-dert OY-ro
+
+  "Wie viel kostet das?" = VEE FEEL KOS-tet DAS
+    (How much does that cost?)
+
+  "Das kostet ___ Euro." = DAS KOS-tet ___ OY-ro
+    (That costs ___ Euro.)
+
+  "Der Preis ist ___ Euro." = DAIR PRYCE IST ___ OY-ro
+    (The price is ___ Euro.)
+
+NEGOTIATION PHRASES (Business 30%)
+----------------------------------
+  "Was ist Ihr bester Preis?" = VAS IST EER BESS-ter PRYCE
+    (What's your best price?)
+
+  "Können Sie 10% Rabatt geben?" = KUR-nen ZEE TSAYN PRO-tsent RA-bat GAY-ben
+    (Can you give 10% discount?)
+
+  "Wir akzeptieren ___ Euro." = VEER AK-tsep-TEE-ren ___ OY-ro
+    (We accept ___ Euro.)
+
+  "Ist das der beste Preis?" = IST DAS DAIR BESS-teh PRYCE
+    (Is that the best price?)
+
+  "Vielen Dank für das Angebot." = FEE-len DANK FOOR DAS AN-geh-bot
+    (Thank you for the offer.)
+
+  "Ich melde mich bei Ihnen." = ISH MEL-deh MISH BAY EE-nen
+    (I'll get back to you.)
+
+DATES
+-----
+Days of the week:
+  Montag (Mon)     = MOHN-tahk
+  Dienstag (Tue)   = DEENS-tahk
+  Mittwoch (Wed)   = MIT-vokh
+  Donnerstag (Thu) = DON-ers-tahk
+  Freitag (Fri)    = FRY-tahk
+  Samstag (Sat)    = ZAMS-tahk
+  Sonntag (Sun)    = ZON-tahk
+
+Months:
+  Januar, Februar, März, April, Mai, Juni, Juli, August,
+  September, Oktober, November, Dezember
+  = YAH-noo-ar, FEB-roo-ar, MERTS, AH-pril, MY, YOO-ni, YOO-li,
+    AW-gust, ZEP-tem-ber, OK-toh-ber, NO-vem-ber, DE-tsem-ber
+
+  All months are masculine: der Januar, der Februar...
+
+Saying a date: 15. März 2026 = "der fünfzehnte März zweitausendsechsundzwanzig"
+  - the day becomes ordinal: 15. = fünfzehnte (FIVE-tsayn-teh)
+  - "der ___te" (1-19) or "der ___ste" (20+)
+  - 1. = der erste (first)
+  - 2. = der zweite
+  - 3. = der dritte
+  - 7. = der siebte
+  - 8. = der achte
+  - 16. = der sechzehnte
+  - 20. = der zwanzigste
+
+  "Wann ist das Meeting?" = VAN IST DAS MEE-ting
+    (When is the meeting?)
+  "Es ist am fünfzehnten März." = ESS IST AM FOONF-tsayn-ten MERTS
+    (It's on the 15th of March.)
+
+YEARS
+  2026 = zweitausendsechsundzwanzig
+       = TSVAY-taw-zent ZEKSS-oont-TSVAN-tsich
+  2025 = zweitausendfünfundzwanzig
+  2000 = zweitausend
+  1990 = neunzehnhundertneunzig
+
+EXERCISES (5 min)
+-----------------
+1. Write in German:
+   a) 47 = ___________________
+   b) 89 = ___________________
+   c) 100 = __________________
+   d) 2,50 € = ________________
+   e) 1.250 € = ________________
+   f) 17. März 2026 = ________________
+
+2. Translate:
+   a) How much does that cost? = ________________________
+   b) Can you give 10% discount? = ______________________
+   c) We'll accept 2,500 Euro. = ________________________
+   d) When is the meeting? = __________________________
+
+3. Read aloud 3 times:
+   a) "fünfundvierzig" (45)
+   b) "dreiundsiebzig" (73)
+   c) "zweihundertsechsundachtzig" (286)
+   d) "tausend Euro"
+
+ANSWERS
+=======
+1. a) siebenundvierzig
+   b) neunundachtzig
+   c) hundert
+   d) zwei Euro fünfzig
+   e) tausendzweihundertfünfzig Euro (or eintausendzweihundertfünfzig)
+   f) der siebzehnte März zweitausendsechsundzwanzig
+
+2. a) Wie viel kostet das?
+   b) Können Sie zehn Prozent Rabatt geben?
+   c) Wir akzeptieren zweitausendfünfhundert Euro.
+   d) Wann ist das Meeting?
+
+3. (Out loud only.)
+
+DAILY SCORE: ___ / 13
+
+TOMORROW — DAY 3
+================
+Personal pronouns + the verb "sein" (to be) — building your first
+real sentences: "I am...", "You are...", "We are..."
+
+Tipp des Tages:
+  "Count backwards from 100 by sevens tonight before bed:
+  93, 86, 79, 72... Your brain will lock in the German number
+  pattern while you fall asleep."
+
+— Dialga 🐉

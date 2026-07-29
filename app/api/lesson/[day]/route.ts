@@ -11,15 +11,8 @@ export async function GET(
     return NextResponse.json({ error: 'Invalid day' }, { status: 400 });
   }
 
-  const filePath = path.join(
-    'C:',
-    'Users',
-    'user',
-    '.openclaw',
-    'workspace-dialga',
-    'scripts',
-    `german_day${day}.txt`
-  );
+  // Lessons are bundled in the app at /app/lessons/
+  const filePath = path.join(process.cwd(), 'app', 'lessons', `german_day${day}.txt`);
 
   try {
     const content = await readFile(filePath, 'utf-8');
