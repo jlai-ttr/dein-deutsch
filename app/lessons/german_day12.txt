@@ -1,0 +1,100 @@
+GERMAN A1 — DAY 12 OF 90
+Indefinite articles (ein words) + Accusative
+=============================================
+
+Yesterday you learned the accusative for definite articles (der/die/das).
+Today: indefinite articles (ein/eine) — German doesn't have "a/an" as separate words.
+
+EIN/EINE BASICS
+----------------
+"ein" is used for masculine and neuter
+"eine" is used for feminine and plural
+
+| Gender    | Nominativ | Akkusativ |
+|-----------|-----------|-----------|
+| maskulin  | ein       | EINEN     |
+| feminin   | eine      | eine      |
+| neutral   | ein       | ein       |
+
+Notice: same pattern as definite articles — only MASCULINE changes!
+The rest stay the same in both cases.
+
+EXAMPLES
+--------
+- Ich habe EINEN Bruder. (I have a brother.) — masculine, accusative
+- Ich habe EINE Schwester. (I have a sister.) — feminine, accusative (no change)
+- Ich habe EIN Auto. (I have a car.) — neuter, accusative (no change)
+- Ich habe EIN Buch. (I have a book.)
+- Ich habe EINE Tasche. (I have a bag.)
+
+POSSESSIVE ARTICLES (mein, dein, sein, ihr...)
+-----------------------------------------------
+Same pattern — masc accusative gets -en ending:
+
+| Person        | masc-Nom | masc-Akk |
+|---------------|----------|----------|
+| ich (my)      | mein     | meinen   |
+| du (your)     | dein     | deinen   |
+| er (his)      | sein     | seinen   |
+| sie (her)     | ihr      | ihren    |
+| es (its)      | sein     | seinen   |
+| wir (our)     | unser    | unseren  |
+| ihr (your-pl) | euer     | euren    |
+| sie (their)   | ihr      | ihren    |
+
+For feminine, neuter, plural — same in nominative and accusative.
+
+EXAMPLES WITH POSSESSIVE
+-------------------------
+- MEIN Bruder kommt heute. (MY brother comes today.) — Nom
+- Ich sehe MEINEN Bruder. (I see MY brother.) — Akk
+- DEINE Schwester ist nett. (YOUR sister is nice.) — Nom
+- Ich kenne DEINE Schwester. (I know YOUR sister.) — Akk (no change)
+
+NEGATIVE: "kein/keine" (no, not a, not any)
+--------------------------------------------
+The negative of "ein" is "kein." Same ending rules.
+
+- Ich habe KEIN Auto. (I don't have a car.)
+- Ich habe KEINE Zeit. (I have no time.)
+- Ich sehe KEINEN Mann. (I see no man.) — masc accusative
+
+WORD ORDER: ACCUSATIVE IN THE SENTENCE
+---------------------------------------
+Standard word order with accusative object:
+SUBJECT + VERB + (TIME) + (MANNER) + (PLACE) + ACCUSATIVE OBJECT
+
+"Ich lerne jeden Tag (T) Deutsch (Akk)."
+Wait — that's unusual. "Deutsch" is accusative here (what I'm learning).
+
+Actually "lernen" takes accusative of what is being learned:
+"Ich lerne DEUTSCH." — I learn GERMAN (Akk).
+
+But "Ich lerne MEINEN Bruder kennen." — "I get to know MY brother" — two verbs.
+
+VERB GOBBLES (common accusative verbs)
+---------------------------------------
+These verbs take accusative of what they act on:
+- haben (to have)
+- sehen (to see)
+- hören (to hear)
+- lesen (to read)
+- verstehen (to understand)
+- brauchen (to need)
+- kaufen (to buy)
+- suchen (to search for)
+- essen (to eat) — what you eat
+- trinken (to drink) — what you drink
+
+Pattern: most ACTION VERBS take accusative of the thing acted upon.
+
+EXERCISE
+--------
+1. Make 5 sentences with "Ich habe ___." Use: Bruder, Schwester, Auto, Buch, Zeit.
+2. Make 5 sentences with "Ich möchte ___." (I would like)
+3. Make 5 negative sentences with "kein/keine."
+
+TOTAL VOCABULARY TODAY: +10 words
+GRAND TOTAL: 130 words
+NEXT: Day 13 — Modal verbs (können, müssen, wollen, dürfen, sollen, mögen)
+Bis morgen!

@@ -1,0 +1,85 @@
+GERMAN A1 — DAY 11 OF 90
+Greetings throughout the day + Accusative case (first case after Nominativ)
+==========================================================================
+
+NEW VOCABULARY (10 words)
+--------------------------
+1. der Morgen — morning
+2. der Mittag — noon / midday
+3. der Abend — evening
+4. die Nacht — night
+5. der Vormittag — late morning
+6. der Nachmittag — afternoon
+7. die Guten — (in greetings) "good"
+8. Tschüss — bye (informal)
+9. Auf Wiedersehen — goodbye (formal)
+10. die Frage — question
+
+GREETINGS BY TIME OF DAY
+-------------------------
+- Guten Morgen (07:00-10:00, until ~noon) — Good morning
+- Guten Tag (10:00-18:00, but used most of the day) — Good day / Hello
+- Guten Abend (18:00-22:00) — Good evening
+- Gute Nacht (going to bed, 22:00+) — Good night
+
+GOODBYES
+--------
+- Tschüss / Tschüß — informal, among friends
+- Auf Wiedersehen — formal, polite
+- Bis später — see you later
+- Bis morgen — see you tomorrow
+- Bis dann — see you then
+
+SAYING YOUR NAME
+-----------------
+"Ich heiße [name]." — My name is [name].
+"Ich bin [name]." — I'm [name].
+"Mein Name ist [name]." — My name is [name].
+
+GREETINGS IN A FULL CONVERSATION
+----------------------------------
+A: Guten Tag! Ich heiße Anna. Und Sie?
+B: Guten Tag, Anna. Ich bin Max.
+A: Freut mich! (Pleased to meet you!)
+B: Freut mich auch! (Pleased to meet you too!)
+
+WHEN TO USE "DU" VS "SIE"
+---------------------------
+- "du" = you (informal, family, close friends, children)
+- "Sie" = you (formal, strangers, work colleagues, anyone older)
+
+Default to "Sie" until invited otherwise.
+German switches to "du" with: "Wir können 'du' sagen" or "Duzen wir uns?"
+
+FIRST CASE: AKKUSATIV (ACCUSATIVE)
+-----------------------------------
+The accusative marks the DIRECT OBJECT — what is being acted upon.
+
+"Ich sehe DEN mann." (I see THE man.)
+"Hast du DAS buch?" (Do you have THE book?)
+
+ARTICLE CHANGES (Nominativ → Akkusativ):
+| Gender    | Nominativ | Akkusativ |
+|-----------|-----------|-----------|
+| maskulin  | der       | DEN       |  ← ONLY masculine changes
+| feminin   | die       | die       |
+| neutral   | das       | das       |
+| plural    | die       | die       |
+
+Mnemonic: "Der Mann → den Mann" — only masculine articles change.
+
+"Akkusativ" comes from Latin ("accusation" = accusation = what you're charged WITH).
+The direct object is WHAT something is happening to.
+
+EXERCISE
+--------
+1. Write a self-introduction using time-appropriate greeting.
+2. Find 5 nouns in your house. Identify their gender (der/die/das).
+3. Make 3 sentences with accusative masculine.
+
+NEXT: Day 12 — More accusative + introduction to "ein" words (indefinite article)
+
+Total vocab today: +10 words
+Grand total: 120 words.
+
+Bis morgen!

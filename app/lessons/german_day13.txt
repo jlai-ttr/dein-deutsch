@@ -1,0 +1,106 @@
+GERMAN A1 — DAY 13 OF 90
+Modal verbs: können, müssen, wollen, dürfen, sollen, mögen
+=============================================================
+
+Welcome to Day 13! Modal verbs change the meaning of the main verb.
+"Ich kann schwimmen" = "I can swim" — "kann" modifies "schwimmen."
+
+THE SIX MODAL VERBS (THE BIG SIX)
+-----------------------------------
+1. können (can, to be able to)
+2. müssen (must, to have to)
+3. wollen (want, to want to)
+4. dürfen (may, to be allowed to)
+5. sollen (should, supposed to)
+6. mögen (to like)
+
+These are IRREGULAR — they change their stem in singular:
+kann, muss, will, darf, soll, mag
+
+CONJUGATION (present tense)
+----------------------------
+
+| Person | können | müssen | wollen | dürfen | sollen | mögen |
+|--------|--------|--------|--------|--------|--------|-------|
+| ich    | kann   | muss   | will   | darf   | soll   | mag   |
+| du     | kannst | musst  | willst | darfst | sollst | magst |
+| er     | kann   | muss   | will   | darf   | soll   | mag   |
+| wir    | können | müssen | wollen | dürfen | sollen | mögen |
+| ihr    | könnt  | müsst  | wollt  | dürft  | sollt  | mögt  |
+| sie    | können | müssen | wollen | dürfen | sollen | mögen |
+
+Notice the pattern: ich/er use the changed stem, no ending.
+du adds -st. wir/sie add -en. ihr adds -t.
+
+WORD ORDER: INFINIT GOES TO THE END
+------------------------------------
+Modal + main verb:
+"Ich kann SCHWIMMEN." — I can SWIM (infinitive at end)
+"Sie muss ARBEITEN." — She must WORK
+
+This is the famous German "verb-final" rule for compound verbs:
+main verb always goes to the END of the clause.
+
+EXAMPLES IN CONTEXT
+-------------------
+
+KÖNNEN (can):
+- Ich kann Deutsch sprechen. (I can speak German.)
+- Kannst du schwimmen? (Can you swim?)
+- Wir können morgen kommen. (We can come tomorrow.)
+
+MÜSSEN (must):
+- Ich muss arbeiten. (I must work.)
+- Du musst jetzt gehen. (You must go now.)
+- Wir müssen lernen. (We must learn.)
+
+WOLLEN (want):
+- Ich will nach Hause gehen. (I want to go home.)
+- Was willst du machen? (What do you want to do?)
+- Sie will ein Eis kaufen. (She wants to buy ice cream.)
+
+DÜRFEN (may):
+- Darf ich hier sitzen? (May I sit here?)
+- Du darfst nicht rauchen. (You may not smoke.)
+- Wir dürfen heute gehen. (We are allowed to go today.)
+
+SOLLEN (should):
+- Ich soll um 8 Uhr kommen. (I'm supposed to come at 8.)
+- Was soll ich machen? (What should I do?)
+- Du sollst Deutsch lernen. (You should learn German.)
+
+MÖGEN (like):
+- Ich mag Deutsch. (I like German.)
+- Magst du Pizza? (Do you like pizza?)
+- Wir mögen den neuen Film. (We like the new film.)
+
+GOOD/BAD NEWS
+-------------
+GOOD: You already learned "möchten" (Day 11). It's the polite form of "wollen":
+"Ich möchte ein Eis" (I would like an ice cream).
+
+NICE THINGS TO KNOW
+-------------------
+"können" = can / to be able to (capability)
+"dürfen" = may / to be allowed to (permission)
+"müssen" = must / to have to (obligation)
+"sollen" = should / supposed to (advice, instructions)
+"wollen" = want / to want to (desire)
+"mögen" = to like (preference, not for polite requests)
+"möchten" = would like (polite form of wollen)
+
+EXERCISE
+--------
+1. Rewrite these English sentences with modals:
+   - "I can swim" → Ich kann schwimmen.
+   - "You must work" → ___
+   - "We want to learn German" → ___
+2. Make 6 sentences, one for each modal.
+3. Translate: "Soll ich dir helfen?" (Should I help you?)
+
+NEXT: Day 14 — Combining modal verbs with past tense (Ich konnte nicht kommen)
+
+Total vocab today: 8 modals
+Grand total: 138 words
+
+Bis morgen!

@@ -1,0 +1,110 @@
+GERMAN A1 — DAY 14 OF 90
+Review + First past tense (Perfekt with "haben")
+================================================
+
+Today: WEEK 2 REVIEW + introduce the past tense (Perfekt).
+
+HOW DO WE SAY "I WENT" IN GERMAN?
+-----------------------------------
+There are TWO past tenses:
+1. Perfekt (conversational past) — used in SPEECH
+2. Präteritum (simple past) — used in WRITING (news, literature)
+
+For now, focus on Perfekt — it's what you'll hear and use most.
+
+THE FORMULA
+-----------
+   haben/sein (conjugated) + main verb (as PAST PARTICIPLE)
+   "I have walked" = "I walked" in meaning
+
+EXAMPLE:
+"Ich BIN gegangen" = "I went" — uses "sein" because "gehen" is motion
+"Ich HABE gegessen" = "I ate" — uses "haben" because "essen" is not motion
+
+WHICH VERBS USE SEIN?
+---------------------
+- Movement: gehen, kommen, fahren, fliegen, laufen, fallen, steigen
+- State change: aufwachen, einschlafen, sterben, werden
+- Both options: sein (irregular verb itself)
+
+RULE OF THUMB: if you COULD use "to go to [place]" with the verb, use "sein."
+"Ich bin gegangen" (I went) — yes, motion. "Ich bin gefahren" (I drove) — yes.
+
+If no motion or state change → use "haben":
+"Ich habe gegessen" (I ate) — no motion to a place.
+
+PAST PARTICIPLE PATTERNS
+-------------------------
+
+REGULAR (weak) verbs: ge- + stem + -t
+  machen → gemacht
+  lernen → gelernt
+  arbeiten → gearbeitet (note: e before -t for pronunciation)
+  spielen → gespielt
+  kaufen → gekauft
+
+IRREGULAR (strong) verbs: ge- + stem (changed!) + -en
+  gehen → gegangen (a → a)
+  kommen → gekommen (o → o)
+  fahren → gefahren (a → ä)
+  sehen → gesehen (e → e)
+  essen → gegessen (e → e)
+  lesen → gelesen (e → e)
+  trinken → getrunken (i → u — stem vowel changes!)
+
+MIXED verbs: ge- + stem (often same as infinitive) + -t
+  kennen → gekannt (irregular: vowel doesn't change)
+  bringen → gebracht
+  denken → gedacht
+  wissen → gewusst
+
+INSEPARABLE PREFIX verbs: NO ge- prefix
+  machen (to make) → but VER- prefix: besuchen → besucht (not: besucht)
+  These verbs don't get the "ge-" because the prefix is part of the root.
+
+CONJUGATION OF "HABEN" AND "SEIN" IN PERFEKT
+-------------------------------------------
+haben:    ich habe ge..., du hast ge..., er hat ge..., wir haben ge..., ihr habt ge..., sie haben ge...
+sein:     ich bin ge..., du bist ge..., er ist ge..., wir sind ge..., ihr seid ge..., sie sind ge...
+
+EXAMPLES IN CONTEXT
+-------------------
+- Ich HABE Deutsch gelernt. (I learned German.)
+- Du HAST das Buch gelesen. (You read the book.)
+- Er IST nach Hause GEFAHREN. (He drove home.)
+- Wir HABEN Pizza gegessen. (We ate pizza.)
+- Sie SIND nach Berlin GEFLIEGEN. (They flew to Berlin.)
+
+TIME EXPRESSIONS FOR PERFEKT
+-----------------------------
+Words that often signal past:
+- gestern — yesterday
+- letzte Woche — last week
+- letzten Monat — last month
+- vor einer Stunde — an hour ago
+- schon — already (present perfect notion)
+
+"Ich HABE gestern Deutsch gelernt."
+
+EXERCISE
+--------
+1. Make 5 Perfekt sentences with "haben":
+   - (lernen) Ich habe ___.
+   - (machen) Du hast ___.
+   - (essen) Er hat ___.
+   - (trinken) Sie hat ___.
+   - (lesen) Wir haben ___.
+2. Make 5 Perfekt sentences with "sein":
+   - (gehen) Ich bin ___.
+   - (kommen) Du bist ___.
+   - (fahren) Er ist ___.
+   - (fliegen) Wir sind ___.
+   - (laufen) Sie ist ___.
+
+NEXT: Day 15 — Review Day (consolidate weeks 1-2)
+              + introduce "Dativ" (the SECOND case)
+
+Total vocab today: Reviewed
+Grand total: 138 words
+
+Bis morgen!
