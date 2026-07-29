@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --eagle: #1cb0f6;
+  --frog: #58cc02;
+  --flame: #ff9600;
+  --heart: #ff4b4b;
+  --gold: #ffc800;
+  --cream: #f7f7f7;
+  --duo-gray: #4b4b4b;
+  --epic: #ce82ff;
+  --legend: #ff4b4b;
+}
+
+body {
+  background: white;
+  color: var(--duo-gray);
+  font-family: 'Nunito', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+}
+
+@layer components {
+  .duo-card {
+    @apply rounded-2xl border-2 border-gray-200 hover:border-gray-300 transition-all;
+  }
+  .duo-btn {
+    @apply rounded-2xl font-bold uppercase tracking-wide text-sm shadow-[0_4px_0_0_rgba(0,0,0,0.2)] active:shadow-[0_2px_0_0_rgba(0,0,0,0.2)] active:translate-y-[2px] transition-all;
+  }
+  .duo-btn-green {
+    @apply bg-frog text-white border-2 border-b-[#58a700] border-b-2;
+  }
+  .duo-btn-blue {
+    @apply bg-eagle text-white border-b-[#1899d6];
+  }
+  .duo-btn-gold {
+    @apply bg-gold text-duo-gray border-b-[#e9a000];
+  }
+  .duo-btn-red {
+    @apply bg-heart text-white border-b-[#d63838];
+  }
+  .duo-btn-disabled {
+    @apply bg-gray-200 text-gray-400 border-b-[#cdcdcd] cursor-not-allowed;
+  }
+  .progress-ring {
+    transform: rotate(-90deg);
+  }
+}
+
+@keyframes pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+.animate-pop { animation: pop 0.3s ease-in-out; }
+
+@keyframes slide-up {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.animate-slide-up { animation: slide-up 0.3s ease-out; }
