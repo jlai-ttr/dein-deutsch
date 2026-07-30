@@ -1,11 +1,35 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import { FONTS, getTheme } from '../lib/theme';
 
-// Build a lookup dictionary from common A1 vocab
-// (Real apps would call Gemini/DeepL here. We use a static demo set.)
+interface SheetVocabRow {
+  id: string;
+  de: string;
+  en: string;
+  pos: string;
+  level: string;
+  pronunciation?: string;
+  ipa?: string;
+  gender?: string;
+  plural?: string;
+  example_de?: string;
+  example_en?: string;
+}
+
+interface Translation {
+  text: string;
+  pronunciation: string;
+  example?: string;
+  source: 'sheet' | 'dictionary' | 'fallback';
+  matchedId?: string;
+  pos?: string;
+  level?: string;
+  gender?: string;
+  plural?: string;
+}
+
 const DICT_DE_TO_EN: Record<string, { en: string; pronunciation: string; example?: string }> = {
   'hallo': { en: 'hello', pronunciation: 'HAH-loh', example: 'Hallo, wie geht es dir?' },
   'tschuess': { en: 'bye', pronunciation: 'CHOOSS', example: 'Tschüss, bis morgen!' },
@@ -161,54 +185,18 @@ const DICT_EN_TO_DE: Record<string, { de: string; pronunciation: string; example
   'red': { de: 'rot', pronunciation: 'ROAT' },
   'blue': { de: 'blau', pronunciation: 'BLOW' },
   'green': { de: 'grün', pronunciation: 'GROON' },
+  'son': { de: 'der Sohn', pronunciation: 'dair ZOHN' },
+  'daughter': { de: 'die Tochter', pronunciation: 'dee TOKH-ter' },
 };
 
-interface Translation {
-  text: string;
-  pronunciation: string;
-  example?: string;
-  source: 'dictionary' | 'fallback';
+// Strip leading article + gender for matching ("der Mann" → "mann")
+function stripArticle(s: string): string {
+  return s.replace(/^(der|die|das|ein|eine|einen|einem|einer)\s+/i, '').trim();
 }
 
-function translate(text: string, direction: 'en-de' | 'de-en'): Translation | null {
-  const cleaned = text.toLowerCase().trim();
-  const dict = direction === 'en-de' ? DICT_EN_TO_DE : DICT_DE_TO_EN;
-
-  if (dict[cleaned]) {
-    const result = dict[cleaned];
-    return {
-      text: direction === 'en-de' ? (result as any).de : (result as any).en,
-      pronunciation: result.pronunciation,
-      example: result.example,
-      source: 'dictionary',
-    };
-  }
-
-  // Try removing punctuation
-  const noPunct = cleaned.replace(/[.,!?;:]/g, '');
-  if (dict[noPunct]) {
-    const result = dict[noPunct];
-    return {
-      text: direction === 'en-de' ? (result as any).de : (result as any).en,
-      pronunciation: result.pronunciation,
-      example: result.example,
-      source: 'dictionary',
-    };
-  }
-
-  // Try first word (in case phrase)
-  const firstWord = cleaned.split(/\s+/)[0];
-  if (dict[firstWord]) {
-    const result = dict[firstWord];
-    return {
-      text: direction === 'en-de' ? (result as any).de : (result as any).en,
-      pronunciation: result.pronunciation,
-      example: result.example,
-      source: 'dictionary',
-    };
-  }
-
-  return null;
+// Normalize string for fuzzy matching: lowercase, trim, drop punctuation
+function normalize(s: string): string {
+  return s.toLowerCase().trim().replace(/[.,!?;:]/g, '');
 }
 
 export default function TranslatePage() {
@@ -219,6 +207,9 @@ export default function TranslatePage() {
   const [notFound, setNotFound] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [history, setHistory] = useState<Array<{ input: string; dir: 'en-de' | 'de-en'; result: Translation }>>([]);
+  const [sheetVocab, setSheetVocab] = useState<SheetVocabRow[]>([]);
+  const [sheetLoading, setSheetLoading] = useState(true);
+  const [myVocabIds, setMyVocabIds] = useState<Set<string>>(new Set());
 
   useEffect(() => {
     setMounted(true);
@@ -231,7 +222,127 @@ export default function TranslatePage() {
       const h = localStorage.getItem('dein-deutsch-translate-history');
       if (h) setHistory(JSON.parse(h));
     } catch (e) {}
+    try {
+      const v = localStorage.getItem('dein-deutsch-woerter-v3');
+      if (v) {
+        const parsed = JSON.parse(v);
+        const ids = new Set<string>();
+        if (Array.isArray(parsed)) parsed.forEach((c: any) => { if (c.id) ids.add(c.id); });
+        setMyVocabIds(ids);
+      }
+    } catch (e) {}
+
+    // Fetch Sheet vocab in background
+    fetch('/api/vocab')
+      .then(r => r.ok ? r.json() : null)
+      .then(data => {
+        if (data?.ok && Array.isArray(data.vocab)) {
+          // Filter to single-word entries (skip phrases for clean lookup)
+          const single = (data.vocab as SheetVocabRow[]).filter(v => {
+            if (!v.de || !v.en) return false;
+            // Skip if de has space AND no article ("im büro", etc.)
+            // Keep nouns with articles (strip on lookup)
+            return true;
+          });
+          setSheetVocab(single);
+        }
+      })
+      .catch(() => { /* silent — fall back to hardcoded dict */ })
+      .finally(() => setSheetLoading(false));
   }, []);
+
+  // Build lookup maps for Sheet vocab
+  const sheetDeIndex = useMemo(() => {
+    const m = new Map<string, SheetVocabRow>();
+    for (const row of sheetVocab) {
+      const de = normalize(row.de);
+      m.set(de, row);
+      // Also index without article
+      const stripped = normalize(stripArticle(row.de));
+      if (stripped && stripped !== de) m.set(stripped, row);
+    }
+    return m;
+  }, [sheetVocab]);
+
+  const sheetEnIndex = useMemo(() => {
+    const m = new Map<string, SheetVocabRow>();
+    for (const row of sheetVocab) {
+      const en = normalize(row.en);
+      // EN side may have "the man" → also index "man"
+      const stripped = normalize(en.replace(/^(a|an|the)\s+/i, ''));
+      if (stripped && stripped !== en) m.set(stripped, row);
+      m.set(en, row);
+    }
+    return m;
+  }, [sheetVocab]);
+
+  function lookupSheet(text: string, dir: 'en-de' | 'de-en'): SheetVocabRow | null {
+    const n = normalize(text);
+    const stripped = normalize(stripArticle(text));
+    const idx = dir === 'en-de' ? sheetEnIndex : sheetDeIndex;
+    return idx.get(n) || idx.get(stripped) || null;
+  }
+
+  function translate(text: string, direction: 'en-de' | 'de-en'): Translation | null {
+    const cleaned = normalize(text);
+    const dict = direction === 'en-de' ? DICT_EN_TO_DE : DICT_DE_TO_EN;
+
+    // 1) Sheet first (your real vocab, larger + curated)
+    const sheetHit = lookupSheet(text, direction);
+    if (sheetHit) {
+      const de = sheetHit.de;
+      const en = sheetHit.en;
+      // Build pronunciation from ipa or pronunciation, fallback to nothing
+      const pronunciation = sheetHit.ipa || sheetHit.pronunciation || '';
+      const example = sheetHit.example_de || sheetHit.example_en
+        ? `${sheetHit.example_de || ''}${sheetHit.example_en ? ' — ' + sheetHit.example_en : ''}`
+        : undefined;
+      return {
+        text: direction === 'en-de' ? de : en,
+        pronunciation,
+        example,
+        source: 'sheet',
+        matchedId: sheetHit.id,
+        pos: sheetHit.pos,
+        level: sheetHit.level,
+        gender: sheetHit.gender,
+        plural: sheetHit.plural,
+      };
+    }
+
+    // 2) Hardcoded A1 dictionary fallback
+    if (dict[cleaned]) {
+      const result = dict[cleaned];
+      return {
+        text: direction === 'en-de' ? (result as any).de : (result as any).en,
+        pronunciation: result.pronunciation,
+        example: result.example,
+        source: 'dictionary',
+      };
+    }
+    const noPunct = cleaned.replace(/[.,!?;:]/g, '');
+    if (dict[noPunct]) {
+      const result = dict[noPunct];
+      return {
+        text: direction === 'en-de' ? (result as any).de : (result as any).en,
+        pronunciation: result.pronunciation,
+        example: result.example,
+        source: 'dictionary',
+      };
+    }
+    const firstWord = cleaned.split(/\s+/)[0];
+    if (dict[firstWord]) {
+      const result = dict[firstWord];
+      return {
+        text: direction === 'en-de' ? (result as any).de : (result as any).en,
+        pronunciation: result.pronunciation,
+        example: result.example,
+        source: 'dictionary',
+      };
+    }
+
+    return null;
+  }
 
   function doTranslate() {
     if (!input.trim()) return;
@@ -249,6 +360,47 @@ export default function TranslatePage() {
     }
   }
 
+  function addToMyVocab() {
+    if (!result || result.source !== 'sheet' || !result.matchedId) return;
+    const id = result.matchedId;
+    const de = result.text;
+    const en = direction === 'en-de' ? input : result.text;
+    const rawDe = direction === 'en-de' ? result.text : input;
+    // Use the sheet row's pos/gender/etc.
+    const sheetRow = sheetVocab.find(r => r.id === id);
+    const newCard = {
+      id,
+      word: rawDe,
+      translation: en,
+      pos: sheetRow?.pos || 'noun',
+      gender: sheetRow?.gender || '',
+      level: sheetRow?.level || 'A1',
+      example: sheetRow?.example_de || '',
+      exampleEn: sheetRow?.example_en || '',
+      audio: undefined,
+      interval: 0,
+      repetition: 0,
+      ef: 2.5,
+      due: Date.now(),
+      lapses: 0,
+      totalReviews: 0,
+      lastReviewed: undefined,
+      addedAt: Date.now(),
+    };
+    try {
+      const raw = localStorage.getItem('dein-deutsch-woerter-v3');
+      const arr = raw ? JSON.parse(raw) : [];
+      // Avoid duplicates
+      if (!arr.some((c: any) => c.id === id)) {
+        const next = [newCard, ...arr];
+        localStorage.setItem('dein-deutsch-woerter-v3', JSON.stringify(next));
+        setMyVocabIds(prev => new Set([...prev, id]));
+      }
+    } catch (e) {
+      // ignore — localStorage may be unavailable
+    }
+  }
+
   function clearAll() {
     setInput('');
     setResult(null);
@@ -257,6 +409,7 @@ export default function TranslatePage() {
 
   if (!mounted) return null;
   const t = getTheme(theme);
+  const inMyVocab = result?.matchedId ? myVocabIds.has(result.matchedId) : false;
 
   return (
     <div className="animate-fade-in" style={{ maxWidth: 760, margin: '0 auto' }}>
@@ -269,15 +422,27 @@ export default function TranslatePage() {
         background: t.cardBg, border: '1px solid ' + t.border, borderRadius: 12,
         padding: 24, marginBottom: 20, boxShadow: t.shadow,
       }}>
-        <div style={{ fontSize: '0.7rem', color: t.textMuted, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 4 }}>
-          Translate · Wörterbuch
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: 8 }}>
+          <div>
+            <div style={{ fontSize: '0.7rem', color: t.textMuted, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 4 }}>
+              Translate · Wörterbuch
+            </div>
+            <h1 style={{ fontFamily: FONTS.display, fontSize: '2rem', fontWeight: 700, color: t.text, margin: '0 0 8px', letterSpacing: '-0.02em' }}>
+              English ↔ German
+            </h1>
+            <p style={{ fontFamily: FONTS.reading, fontSize: '1rem', color: t.textMuted, fontStyle: 'italic', margin: 0 }}>
+              {sheetLoading ? 'Loading your vocab…' : `${sheetVocab.length} words from your Sheet · ${Object.keys(DICT_DE_TO_EN).length} A1 starters`}
+            </p>
+          </div>
+          {sheetVocab.length > 0 && (
+            <span style={{
+              padding: '4px 10px', background: t.success + '22', color: t.success,
+              borderRadius: 4, fontSize: '0.75rem', fontWeight: 700, fontFamily: FONTS.mono,
+            }}>
+              ● SHEET LIVE
+            </span>
+          )}
         </div>
-        <h1 style={{ fontFamily: FONTS.display, fontSize: '2rem', fontWeight: 700, color: t.text, margin: '0 0 8px', letterSpacing: '-0.02em' }}>
-          English ↔ German
-        </h1>
-        <p style={{ fontFamily: FONTS.reading, fontSize: '1rem', color: t.textMuted, fontStyle: 'italic', margin: 0 }}>
-          {Object.keys(DICT_DE_TO_EN).length}+ common words. Pronunciation guide included.
-        </p>
       </div>
 
       {/* Direction toggle */}
@@ -324,7 +489,7 @@ export default function TranslatePage() {
           value={input}
           onChange={e => setInput(e.target.value)}
           onKeyDown={e => e.key === 'Enter' && doTranslate()}
-          placeholder={direction === 'en-de' ? 'Type English word (e.g., hello, mother, beautiful)' : 'Tippe deutsches Wort (z.B. hallo, Mutter, schön)'}
+          placeholder={direction === 'en-de' ? 'Type English word (e.g., son, mother, learn)' : 'Tippe deutsches Wort (z.B. Sohn, Mutter, lernen)'}
           style={{
             width: '100%', padding: '14px 16px',
             background: t.inputBg, color: t.text,
@@ -368,26 +533,62 @@ export default function TranslatePage() {
       {/* Result */}
       {result && (
         <div style={{
-          background: t.accentSoft, border: '1px solid ' + t.accent,
+          background: result.source === 'sheet' ? t.accentSoft : t.cardBg,
+          border: '1px solid ' + t.accent,
           borderRadius: 12, padding: 24, marginBottom: 20,
           boxShadow: t.shadowStrong,
         }}>
-          <div style={{ fontSize: '0.7rem', color: t.accent, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 8 }}>
-            {direction === 'en-de' ? '🇩🇪 Deutsch' : '🇬🇧 English'}
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12, flexWrap: 'wrap', gap: 8 }}>
+            <div style={{ fontSize: '0.7rem', color: t.accent, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+              {direction === 'en-de' ? '🇩🇪 Deutsch' : '🇬🇧 English'}
+            </div>
+            <div style={{ display: 'flex', gap: 6 }}>
+              {result.level && (
+                <span style={{ padding: '2px 8px', background: t.bg, color: t.accent, borderRadius: 3, fontSize: '0.7rem', fontWeight: 700, fontFamily: FONTS.mono }}>
+                  {result.level}
+                </span>
+              )}
+              {result.pos && (
+                <span style={{ padding: '2px 8px', background: t.bg, color: t.textMuted, borderRadius: 3, fontSize: '0.7rem', fontFamily: FONTS.mono }}>
+                  {result.pos}
+                </span>
+              )}
+              <span style={{
+                padding: '2px 8px', borderRadius: 3, fontSize: '0.7rem', fontWeight: 600,
+                background: result.source === 'sheet' ? t.success + '22' : t.bg,
+                color: result.source === 'sheet' ? t.success : t.textMuted,
+                fontFamily: FONTS.mono,
+              }}>
+                {result.source === 'sheet' ? '📚 YOUR SHEET' : '📖 A1 STARTER'}
+              </span>
+            </div>
           </div>
+
           <div style={{
             fontFamily: FONTS.display, fontSize: '2.4rem', fontWeight: 700,
             color: t.text, marginBottom: 8, letterSpacing: '-0.01em',
           }}>
             {result.text}
           </div>
-          <div style={{
-            fontFamily: FONTS.mono, fontSize: '0.95rem', color: t.textMuted,
-            padding: '6px 12px', background: t.bg, borderRadius: 6,
-            display: 'inline-block', letterSpacing: '0.05em',
-          }}>
-            {result.pronunciation}
-          </div>
+
+          {(result.gender || result.plural) && (
+            <div style={{ marginBottom: 8, fontFamily: FONTS.reading, color: t.textMuted, fontStyle: 'italic' }}>
+              {result.gender && <span style={{ marginRight: 12 }}><strong>{result.gender}</strong> {result.text}</span>}
+              {result.plural && <span>pl: {result.plural}</span>}
+            </div>
+          )}
+
+          {result.pronunciation && (
+            <div style={{
+              fontFamily: FONTS.mono, fontSize: '0.95rem', color: t.textMuted,
+              padding: '6px 12px', background: t.bg, borderRadius: 6,
+              display: 'inline-block', letterSpacing: '0.05em',
+              marginTop: 4,
+            }}>
+              {result.pronunciation}
+            </div>
+          )}
+
           {result.example && (
             <div style={{
               marginTop: 16, padding: 12, background: t.cardBg,
@@ -399,6 +600,34 @@ export default function TranslatePage() {
               <div style={{ fontFamily: FONTS.reading, fontSize: '0.95rem', color: t.text, fontStyle: 'italic' }}>
                 {result.example}
               </div>
+            </div>
+          )}
+
+          {/* Add to my vocab (only for Sheet hits not already in my vocab) */}
+          {result.source === 'sheet' && result.matchedId && (
+            <div style={{ marginTop: 16, paddingTop: 12, borderTop: '1px dashed ' + t.border }}>
+              {inMyVocab ? (
+                <div style={{
+                  display: 'flex', alignItems: 'center', gap: 8,
+                  fontSize: '0.85rem', color: t.success, fontFamily: FONTS.body, fontWeight: 600,
+                }}>
+                  ✓ Already in your vocab ({myVocabIds.size} total)
+                </div>
+              ) : (
+                <button
+                  onClick={addToMyVocab}
+                  style={{
+                    padding: '8px 16px',
+                    background: t.success, color: 'white',
+                    border: 'none', borderRadius: 6,
+                    fontSize: '0.85rem', fontWeight: 600,
+                    fontFamily: FONTS.body, cursor: 'pointer',
+                    boxShadow: '0 2px 0 ' + t.success + 'cc',
+                  }}
+                >
+                  ＋ Add to my vocab
+                </button>
+              )}
             </div>
           )}
         </div>
@@ -415,7 +644,7 @@ export default function TranslatePage() {
             "<strong style={{ color: t.text }}>{input}</strong>" nicht gefunden.
           </p>
           <p style={{ fontSize: '0.85rem', color: t.textFaint, fontFamily: FONTS.reading, marginTop: 8 }}>
-            Diese Demo-Bibliothek hat {Object.keys(DICT_DE_TO_EN).length} gängige A1-Wörter. Add words to /woerter to build your own.
+            {sheetVocab.length} words in your Sheet + {Object.keys(DICT_DE_TO_EN).length} A1 starters checked. Try <Link href="/admin/vocab" style={{ color: t.accent }}>adding to Sheet</Link>.
           </p>
         </div>
       )}
@@ -447,10 +676,11 @@ export default function TranslatePage() {
                   color: t.text, textAlign: 'left',
                 }}
               >
-                <span style={{ color: t.textMuted, fontSize: '0.75rem', minWidth: 24 }}>{h.dir === 'en-de' ? 'EN→' : 'DE→'}</span>
+                <span style={{ color: t.textMuted, fontSize: '0.75rem', minWidth: 30 }}>{h.dir === 'en-de' ? 'EN→' : 'DE→'}</span>
                 <span style={{ fontWeight: 600 }}>{h.input}</span>
                 <span style={{ color: t.textFaint }}>→</span>
-                <span style={{ color: t.accent }}>{h.result.text}</span>
+                <span style={{ color: t.accent, flex: 1 }}>{h.result.text}</span>
+                <span style={{ fontSize: '0.7rem', color: t.textFaint }}>{h.result.source === 'sheet' ? '📚' : '📖'}</span>
               </button>
             ))}
           </div>
@@ -458,7 +688,7 @@ export default function TranslatePage() {
       )}
 
       <p style={{ textAlign: 'center', fontSize: '0.8rem', color: t.textFaint, marginTop: 20, fontFamily: FONTS.reading, fontStyle: 'italic' }}>
-        💡 Real apps use Gemini or DeepL for full coverage. This demo covers ~70 common A1 words.
+        💡 Real apps use Gemini or DeepL for full coverage. Sheet-backed lookup covers your curated vocab.
       </p>
     </div>
   );
