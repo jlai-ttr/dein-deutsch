@@ -1,6 +1,5 @@
 // Middleware: protect all routes with session cookie
 // Allow /login (the entry point) + /api/auth/* (login/logout endpoints)
-
 import { NextResponse } from 'next/server';
 
 const COOKIE_NAME = 'dein_session';
