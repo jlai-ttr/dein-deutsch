@@ -1,7 +1,9 @@
 // scripts/consolidate-from-existing-tabs.cjs
-// One-shot: reads 4 existing tabs (noun, adj, adverb, verbs) from user's Sheet,
-// outputs a vocab_master TSV they can paste into a NEW unified tab.
-// Run with: node scripts/consolidate-from-existing-tabs.cjs
+// One-shot: reads 3 existing tabs from user's Sheet, outputs vocab_master TSV.
+// Schemas (verified via /api/debug/sheet-samples on 2026-07-30):
+//   Nouns:        Article | Singular | Plural | English | Example DE | Example EN
+//   Adjectives+:  German | Word Type | English | Example DE | Example EN
+//   Verbs:        Infinitive | 3rd Person | Past | Perfect | English | Example DE | Example EN
 
 const fs = require('fs');
 const path = require('path');
@@ -26,12 +28,7 @@ const auth = new google.auth.JWT({
 
 const sheets = google.sheets({ version: 'v4', auth });
 
-const POS_MAP = {
-  'German Vocabulary - Nouns (Die Nomen)': { pos: 'noun', table: 'noun' },
-  'German Vocabulary - Adjectives, Adverbs & Others': { pos: 'mixed', table: 'mixed' },
-  'German Vocabulary - Verbs (Die Verben)': { pos: 'verb', table: 'verb' },
-};
-
+// Final schema for vocab_master (29 cols)
 const HEADERS = [
   'id', 'level', 'topic', 'is_active',
   'de', 'pos', 'en', 'pronunciation', 'ipa',
@@ -48,6 +45,10 @@ function tsvEscape(v) {
   return String(v).replace(/[\t\r\n]/g, ' ').replace(/\s+/g, ' ');
 }
 
+function emptyRow() {
+  return HEADERS.map(() => '');
+}
+
 async function readTab(tabName) {
   const res = await sheets.spreadsheets.values.get({
     spreadsheetId: SHEET_ID,
@@ -56,65 +57,143 @@ async function readTab(tabName) {
   return (res.data.values || []);
 }
 
+// Convert German Word Type to our POS slug
+function normalizePos(wordType) {
+  if (!wordType) return '';
+  const t = String(wordType).toLowerCase().trim();
+  if (t.includes('adj')) return 'adjective';
+  if (t.includes('adv')) return 'adverb';
+  if (t.includes('verb')) return 'verb';
+  if (t.includes('noun')) return 'noun';
+  if (t.includes('pronoun')) return 'pronoun';
+  if (t.includes('prep')) return 'preposition';
+  if (t.includes('conj')) return 'conjunction';
+  if (t.includes('interj')) return 'interjection';
+  return t;
+}
+
+function buildNounRow(id, row) {
+  // row = [article, singular, plural, english, example_de, example_en]
+  const r = emptyRow();
+  r[0] = id;        // id
+  r[1] = 'A1';      // level
+  r[2] = 'noun';    // topic
+  r[3] = 'TRUE';    // is_active
+  r[4] = (row[1] || '').trim();   // de (singular)
+  r[5] = 'noun';    // pos
+  r[6] = (row[3] || '').trim();   // en
+  // pronunciation, ipa — skip
+  r[9] = (row[0] || '').trim();   // gender (der/die/das)
+  r[10] = (row[2] || '').trim();  // plural
+  // genitive — skip (not in source)
+  // verb fields — skip
+  // comparative/superlative — skip
+  r[25] = (row[4] || '').trim();  // example_de
+  r[26] = (row[5] || '').trim();  // example_en
+  r[28] = '2026-07-30';           // updated_at
+  return r;
+}
+
+function buildAdjRow(id, row) {
+  // row = [german, word_type, english, example_de, example_en]
+  const r = emptyRow();
+  r[0] = id;
+  r[1] = 'A1';
+  r[2] = 'adjective';
+  r[3] = 'TRUE';
+  r[4] = (row[0] || '').trim();
+  r[5] = normalizePos(row[1]);
+  r[6] = (row[2] || '').trim();
+  r[25] = (row[3] || '').trim();
+  r[26] = (row[4] || '').trim();
+  r[28] = '2026-07-30';
+  return r;
+}
+
+function buildVerbRow(id, row) {
+  // row = [infinitive, 3rd, past, perfect, english, example_de, example_en]
+  const r = emptyRow();
+  r[0] = id;
+  r[1] = 'A1';
+  r[2] = 'verb';
+  r[3] = 'TRUE';
+  r[4] = (row[0] || '').trim();
+  r[5] = 'verb';
+  r[6] = (row[4] || '').trim();
+  r[14] = 'hat';                  // verb_aux
+  r[15] = (row[2] || '').trim();  // verb_praeteritum
+  r[16] = (row[3] || '').trim();  // verb_partizip_ii
+  // conjugation_ich — leave blank (could derive from infinitive + 3rd person)
+  r[25] = (row[5] || '').trim();  // example_de
+  r[26] = (row[6] || '').trim();  // example_en
+  r[28] = '2026-07-30';
+  return r;
+}
+
 async function main() {
-  // 1. List all tabs
   const meta = await sheets.spreadsheets.get({
     spreadsheetId: SHEET_ID,
     fields: 'sheets.properties.title',
   });
   const allTabs = (meta.data.sheets || []).map(s => s.properties?.title || '');
-  console.log('Tabs in Sheet:', allTabs);
+  console.log('Tabs:', allTabs);
 
-  // 2. Read each of the 4 expected tabs
   const outRows = [HEADERS];
-  let totalRows = 0;
   const seenByTab = {};
 
-  for (const [tabName, { pos, table }] of Object.entries(POS_MAP)) {
-    if (!allTabs.includes(tabName)) {
-      console.log(`Skip: tab "${tabName}" not found in Sheet`);
-      continue;
-    }
-    const rows = await readTab(tabName);
-    if (rows.length === 0) continue;
-    const dataRows = rows.slice(1); // skip header
+  // Nouns
+  const NOUN_TAB = 'German Vocabulary - Nouns (Die Nomen)';
+  if (allTabs.includes(NOUN_TAB)) {
+    const rows = await readTab(NOUN_TAB);
+    const data = rows.slice(1);
     let count = 0;
-    for (let i = 0; i < dataRows.length; i++) {
-      const row = dataRows[i];
-      if (!row || row.length === 0) continue;
-      // Heuristic for now: col A = German word, col B = English
-      // Will be refined once we see actual samples
-      const de = (row[0] || '').trim();
-      const en = (row[1] || '').trim();
-      if (!de) continue;
-      const id = `${table}-${String(i + 1).padStart(4, '0')}`;
-      const newRow = [
-        id,
-        'A1', // level default — user updates later
-        table,
-        'TRUE',
-        de,
-        pos === 'mixed' ? '' : pos, // pos — leave blank for mixed tab, user fills
-        en,
-        '', '', '', '', '',
-        '', '', pos === 'verb' ? 'haben' : '', '', '',
-        '', '', '', '', '', '',
-        '', '',
-        '', '',
-        '',
-        '2026-07-30',
-      ];
-      outRows.push(newRow);
+    for (let i = 0; i < data.length; i++) {
+      const row = data[i];
+      if (!row || !row[1]) continue;
+      const id = `noun-${String(i + 1).padStart(4, '0')}`;
+      outRows.push(buildNounRow(id, row));
       count++;
     }
-    seenByTab[tabName] = count;
-    totalRows += count;
+    seenByTab[NOUN_TAB] = count;
+  }
+
+  // Adj+Adv+Others (one tab)
+  const ADJ_TAB = 'German Vocabulary - Adjectives, Adverbs & Others';
+  if (allTabs.includes(ADJ_TAB)) {
+    const rows = await readTab(ADJ_TAB);
+    const data = rows.slice(1);
+    let count = 0;
+    for (let i = 0; i < data.length; i++) {
+      const row = data[i];
+      if (!row || !row[0]) continue;
+      const pos = normalizePos(row[1]);
+      const table = pos === 'adverb' ? 'adverb' : pos === 'adjective' ? 'adjective' : 'other';
+      const id = `${table}-${String(i + 1).padStart(4, '0')}`;
+      outRows.push(buildAdjRow(id, row));
+      count++;
+    }
+    seenByTab[ADJ_TAB] = count;
+  }
+
+  // Verbs
+  const VERB_TAB = 'German Vocabulary - Verbs (Die Verben)';
+  if (allTabs.includes(VERB_TAB)) {
+    const rows = await readTab(VERB_TAB);
+    const data = rows.slice(1);
+    let count = 0;
+    for (let i = 0; i < data.length; i++) {
+      const row = data[i];
+      if (!row || !row[0]) continue;
+      const id = `verb-${String(i + 1).padStart(4, '0')}`;
+      outRows.push(buildVerbRow(id, row));
+      count++;
+    }
+    seenByTab[VERB_TAB] = count;
   }
 
   console.log('Rows per tab:', seenByTab);
-  console.log('Total rows:', totalRows);
+  console.log('Total:', outRows.length - 1);
 
-  // 3. Write to TSV
   const tsv = outRows.map(r => r.map(tsvEscape).join('\t')).join('\n');
   const outPath = path.join(__dirname, '..', 'out', 'vocab_master_consolidated.tsv');
   fs.mkdirSync(path.dirname(outPath), { recursive: true });
