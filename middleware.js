@@ -18,6 +18,11 @@ export function middleware(request) {
     return NextResponse.next();
   }
 
+  // Allow public read endpoints (in-app data fetches, no session needed)
+  if (pathname === '/api/vocab' || pathname === '/api/wort-des-tages') {
+    return NextResponse.next();
+  }
+
   // Allow GET requests on debug endpoints (diagnostic tools, no session needed)
   if (pathname.startsWith('/api/debug/') && request.method === 'GET') {
     return NextResponse.next();
