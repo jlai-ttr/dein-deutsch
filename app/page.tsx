@@ -3,8 +3,10 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { THEMES, CEFR_LEVELS, MODULES, FONTS, getTheme } from './lib/theme';
+import { getWortDesTages } from './lib/wort-des-tages';
 
 export default function Home() {
+  const wortDesTages = getWortDesTages();
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
   const [progress, setProgress] = useState({
     currentDay: 1,
@@ -261,16 +263,19 @@ export default function Home() {
         boxShadow: t.shadow,
       }}>
         <div style={{ fontSize: '0.75rem', color: t.textMuted, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 8 }}>
-          Wort des Tages
+          Wort des Tages · {new Date().toLocaleDateString('de-DE', { weekday: 'long', day: 'numeric', month: 'long' })}
         </div>
         <div style={{ fontFamily: FONTS.display, fontSize: '2.4rem', fontWeight: 600, color: t.accent, marginBottom: 4 }}>
-          Wanderlust
+          {wortDesTages.word}
+        </div>
+        <div style={{ fontSize: '0.8rem', color: t.textFaint, fontFamily: FONTS.mono, letterSpacing: '0.05em', marginBottom: 6 }}>
+          {wortDesTages.pos} · /{wortDesTages.pronunciation}/
         </div>
         <div style={{ fontFamily: FONTS.reading, fontSize: '1.05rem', color: t.text, fontStyle: 'italic', marginBottom: 8 }}>
-          <em>f.</em> — die Sehnsucht nach fernen Orten
+          {wortDesTages.meaning}
         </div>
         <div style={{ fontSize: '0.85rem', color: t.textMuted }}>
-          <span style={{ fontFamily: FONTS.reading, color: t.text }}>Wanderlust</span> treibt Reisende seit Jahrhunderten an, neue Horizonte zu entdecken.
+          <span style={{ fontFamily: FONTS.reading, color: t.text }}>“{wortDesTages.word}”</span> — {wortDesTages.example.replace(wortDesTages.word, '').replace('Wanderlust', '')}
         </div>
       </section>
     </div>
