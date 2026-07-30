@@ -58,7 +58,7 @@ export default function SettingsPage() {
   function resetAll() {
     if (confirm('Alle Fortschritt-Daten löschen? This cannot be undone.')) {
       localStorage.removeItem('dein-deutsch-progress');
-      localStorage.removeItem('dein-deutsch-woerter-v2');
+      localStorage.removeItem('dein-deutsch-woerter-v3');
       localStorage.removeItem('dein-deutsch-schreiben-history');
       localStorage.removeItem('dein-deutsch-activity');
       localStorage.removeItem('dein-deutsch-lesen-idx');
@@ -343,3 +343,4 @@ function Toggle({ value, onChange, t }: { value: boolean; onChange: (v: boolean)
     </button>
   );
 }
+

@@ -52,7 +52,7 @@ export default function ProfilePage() {
     } catch (e) {}
 
     try {
-      const w = localStorage.getItem('dein-deutsch-woerter-v2');
+      const w = localStorage.getItem('dein-deutsch-woerter-v3');
       if (w) {
         const cards = JSON.parse(w);
         setVocabStats({
@@ -258,3 +258,4 @@ function StatBlock({ icon, label, value, sub, t, highlight }: any) {
     </div>
   );
 }
+

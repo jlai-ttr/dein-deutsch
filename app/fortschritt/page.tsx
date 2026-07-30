@@ -36,7 +36,7 @@ export default function FortschrittPage() {
     } catch (e) {}
 
     try {
-      const w = localStorage.getItem('dein-deutsch-woerter-v2');
+      const w = localStorage.getItem('dein-deutsch-woerter-v3');
       if (w) {
         const cards = JSON.parse(w);
         setWoerterStats({
@@ -59,7 +59,7 @@ export default function FortschrittPage() {
   // Mastery breakdown
   const masteryBreakdown = useMemo(() => {
     try {
-      const w = localStorage.getItem('dein-deutsch-woerter-v2');
+      const w = localStorage.getItem('dein-deutsch-woerter-v3');
       if (!w) return { new: 0, learning: 0, known: 0, mastered: 0, reviews: 0 };
       const cards = JSON.parse(w);
       const breakdown = {
@@ -350,3 +350,4 @@ function StatTile({ label, value, sub, t, icon, highlight }: any) {
     </div>
   );
 }
+
