@@ -3,7 +3,17 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { THEMES, CEFR_LEVELS, MODULES, FONTS, getTheme } from './lib/theme';
-import { getWortDesTages } from './lib/wort-des-tages';
+import { getWortDesTages, getArticle, formatNounDeclension, WortDesTages } from './lib/wort-des-tages';
+
+function stripWord(sentence: string, word: string): string {
+  // Strip the target word (case-insensitive) from a sentence to avoid duplication
+  const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return sentence.replace(new RegExp(escaped, 'gi'), '').replace(/\s+/g, ' ').trim();
+}
+
+function categoryLabel(c: WortDesTages['category']): string {
+  return c === 'noun' ? 'Substantiv (Nomen)' : c === 'verb' ? 'Verb' : c === 'adjective' ? 'Adjektiv' : 'Ausdruck';
+}
 
 export default function Home() {
   const wortDesTages = getWortDesTages();
@@ -253,7 +263,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Quick reference — German word of the day */}
+      {/* Quick reference — Wort des Tages — full grammar */}
       <section style={{
         marginTop: 28,
         background: t.cardBg,
@@ -265,18 +275,66 @@ export default function Home() {
         <div style={{ fontSize: '0.75rem', color: t.textMuted, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 8 }}>
           Wort des Tages · {new Date().toLocaleDateString('de-DE', { weekday: 'long', day: 'numeric', month: 'long' })}
         </div>
-        <div style={{ fontFamily: FONTS.display, fontSize: '2.4rem', fontWeight: 600, color: t.accent, marginBottom: 4 }}>
-          {wortDesTages.word}
+
+        {/* Word head */}
+        <div style={{ display: 'flex', alignItems: 'baseline', flexWrap: 'wrap', gap: 8, marginBottom: 6 }}>
+          <div style={{ fontFamily: FONTS.display, fontSize: '2.4rem', fontWeight: 600, color: t.accent, lineHeight: 1.1 }}>
+            {wortDesTages.category === 'noun' && wortDesTages.gender ? getArticle(wortDesTages.gender) + ' ' : ''}{wortDesTages.word}
+          </div>
+          <div style={{ fontSize: '0.7rem', color: t.textFaint, padding: '2px 8px', background: t.bg || '#f5f0e1', borderRadius: 4, border: '1px solid ' + t.border, textTransform: 'uppercase', letterSpacing: '0.08em', fontWeight: 600 }}>
+            {categoryLabel(wortDesTages.category)}
+          </div>
         </div>
-        <div style={{ fontSize: '0.8rem', color: t.textFaint, fontFamily: FONTS.mono, letterSpacing: '0.05em', marginBottom: 6 }}>
-          {wortDesTages.pos} · /{wortDesTages.pronunciation}/
+
+        {/* Pronunciation */}
+        <div style={{ fontSize: '0.85rem', color: t.textFaint, fontFamily: FONTS.mono, letterSpacing: '0.05em', marginBottom: 10 }}>
+          {wortDesTages.pronunciation}
+          {wortDesTages.category === 'noun' && wortDesTages.plural && wortDesTages.plural !== '(keine Plural)' && (
+            <span>  ·  Pl: {wortDesTages.plural}</span>
+          )}
         </div>
-        <div style={{ fontFamily: FONTS.reading, fontSize: '1.05rem', color: t.text, fontStyle: 'italic', marginBottom: 8 }}>
+
+        {/* Grammar box */}
+        {wortDesTages.category === 'noun' && wortDesTages.gender && (
+          <div style={{ fontSize: '0.85rem', color: t.text, marginBottom: 12, fontFamily: FONTS.mono, padding: '10px 12px', background: t.bg || '#f5f0e1', borderRadius: 6, border: '1px solid ' + t.border, lineHeight: 1.6 }}>
+            <div><strong style={{ color: t.accent }}>{formatNounDeclension(wortDesTages)}</strong></div>
+            {wortDesTages.genitive && <div style={{ color: t.textMuted, fontSize: '0.8rem' }}>Genitiv: {wortDesTages.genitive}</div>}
+          </div>
+        )}
+
+        {wortDesTages.category === 'adjective' && wortDesTages.comparative && (
+          <div style={{ fontSize: '0.85rem', color: t.text, marginBottom: 12, fontFamily: FONTS.mono, padding: '10px 12px', background: t.bg || '#f5f0e1', borderRadius: 6, border: '1px solid ' + t.border, lineHeight: 1.6 }}>
+            <div><strong style={{ color: t.accent }}>Positiv:</strong> {wortDesTages.word}</div>
+            <div><strong style={{ color: t.accent }}>Komparativ:</strong> {wortDesTages.comparative}</div>
+            <div><strong style={{ color: t.accent }}>Superlativ:</strong> {wortDesTages.superlative}</div>
+          </div>
+        )}
+
+        {/* Meaning — German primary */}
+        <div style={{ fontFamily: FONTS.reading, fontSize: '1.1rem', color: t.text, fontStyle: 'italic', marginBottom: 6 }}>
+          <span style={{ fontSize: '0.7rem', fontWeight: 700, fontStyle: 'normal', color: t.accent, textTransform: 'uppercase', letterSpacing: '0.08em', marginRight: 6 }}>DE</span>
           {wortDesTages.meaning}
         </div>
-        <div style={{ fontSize: '0.85rem', color: t.textMuted }}>
-          <span style={{ fontFamily: FONTS.reading, color: t.text }}>“{wortDesTages.word}”</span> — {wortDesTages.example.replace(wortDesTages.word, '').replace('Wanderlust', '')}
+        {/* Meaning — English when available */}
+        {wortDesTages.meaningEn && (
+          <div style={{ fontSize: '0.95rem', color: t.textMuted, marginBottom: 14, fontFamily: FONTS.reading }}>
+            <span style={{ fontSize: '0.7rem', fontWeight: 700, color: t.accent, textTransform: 'uppercase', letterSpacing: '0.08em', marginRight: 6 }}>EN</span>
+            {wortDesTages.meaningEn}
+          </div>
+        )}
+
+        {/* Example — German */}
+        <div style={{ fontSize: '0.95rem', color: t.text, marginBottom: 6, fontFamily: FONTS.reading, lineHeight: 1.5 }}>
+          <span style={{ fontSize: '0.7rem', fontWeight: 700, color: t.accent, textTransform: 'uppercase', letterSpacing: '0.08em', marginRight: 6 }}>DE</span>
+          <span style={{ fontFamily: FONTS.reading, color: t.accent, fontWeight: 600 }}>{wortDesTages.word}</span> — {stripWord(wortDesTages.example, wortDesTages.word)}
         </div>
+        {/* Example — English */}
+        {wortDesTages.exampleEn && (
+          <div style={{ fontSize: '0.85rem', color: t.textMuted, fontFamily: FONTS.reading, fontStyle: 'italic', marginBottom: 12, lineHeight: 1.5 }}>
+            <span style={{ fontSize: '0.7rem', fontWeight: 700, color: t.accent, textTransform: 'uppercase', letterSpacing: '0.08em', marginRight: 6, fontStyle: 'normal' }}>EN</span>
+            {stripWord(wortDesTages.exampleEn, wortDesTages.word)}
+          </div>
+        )}
       </section>
     </div>
   );
