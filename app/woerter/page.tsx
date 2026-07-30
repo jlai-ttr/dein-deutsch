@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { FONTS, getTheme, CEFR_LEVELS } from '../lib/theme';
 import { trackEvent } from '../lib/activity';
 import { TOPIC_BUSINESS } from '../lib/topic-business';
+import { useSheetVocab, mergeSheetIntoLocal } from '../lib/use-sheet-vocab';
 
 // SM-2 Spaced Repetition Algorithm
 // Based on SuperMemo SM-2: https://super-memory.com/english/ol/sm2.htm
@@ -1267,6 +1268,9 @@ export default function WoerterPage() {
   const [activeLevel, setActiveLevel] = useState<'all' | 'A1' | 'A2' | 'B1' | 'B2' | 'C1'>('all');
   const [activeTopic, setActiveTopic] = useState<'all' | 'freq' | 'business'>('all');
 
+  // Load Sheet vocab (returns rows from /api/vocab when Sheet is configured)
+  const { sheetCards } = useSheetVocab();
+
   useEffect(() => {
     setMounted(true);
     const savedTheme = localStorage.getItem('dein-deutsch-theme');
@@ -1303,6 +1307,18 @@ export default function WoerterPage() {
       setCards(SEED_VOCAB.map(newCard));
     }
   }, []);
+
+  // Merge Sheet-supplied cards into localStorage (only adds new ids, keeps SRS state)
+  useEffect(() => {
+    if (sheetCards.length === 0) return;
+    const saved = localStorage.getItem(STORAGE_KEY);
+    let baseCards: VocabCard[] = saved ? JSON.parse(saved) : SEED_VOCAB.map(newCard);
+    const merged = mergeSheetIntoLocal(baseCards, sheetCards);
+    if (merged.length > baseCards.length) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(merged));
+      setCards(merged);
+    }
+  }, [sheetCards]);
 
   function save(next: VocabCard[]) {
     setCards(next);
