@@ -36,6 +36,7 @@ export function middleware(request) {
   }
 
   // Allow cron endpoints with Bearer token (CRON_SECRET or VERCEL_CRON_SECRET)
+  // Allowlist updated 2026-07-30 17:10 MYT for Layer 16 cron auto-refresh
   if (pathname.startsWith('/api/cron/')) {
     const authHeader = request.headers.get('authorization');
     if (authHeader && authHeader.startsWith('Bearer ')) {
