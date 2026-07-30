@@ -1,8 +1,11 @@
 {
   "crons": [
     {
-      "path": "/api/cron/refresh-vocab?source=vercel-cron",
-      "schedule": "0 */6 * * *"
+      "path": "/api/admin/cache/refresh?source=vercel-cron",
+      "schedule": "0 */6 * * *",
+      "headers": {
+        "Authorization": "Bearer ${CRON_SECRET}"
+      }
     }
   ]
 }

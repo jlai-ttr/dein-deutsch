@@ -1,12 +1,14 @@
-// app/api/cron/refresh-vocab/route.ts
-// POST /api/cron/refresh-vocab — force-refresh the vocab cache
+// app/api/admin/cache/refresh/route.ts
+// POST /api/admin/cache/refresh — force-refresh the Sheet-backed vocab cache
 // Accepts Authorization header from:
 //   - User CRON_SECRET (manual POST or external cron)
 //   - Vercel's VERCEL_CRON_SECRET (automatic cron from vercel.json)
+// MOVED from /api/cron/refresh-vocab on 2026-07-30 — the /api/cron/* middleware
+// allowlist wasn't deploying, so the route lives under /api/admin/* instead.
 
 import { NextResponse } from 'next/server';
 import { revalidatePath } from 'next/cache';
-import { fetchVocabMaster, fetchWortDesTages } from '../../../lib/sheet-client';
+import { fetchVocabMaster, fetchWortDesTages } from '../../../../lib/sheet-client';
 
 const USER_SECRET = process.env.CRON_SECRET;
 const VERCEL_SECRET = process.env.VERCEL_CRON_SECRET;
@@ -44,8 +46,6 @@ export async function POST(request: Request) {
   }
 }
 
-// GET variant for testing — only allowed with USER_SECRET (so debug GETs from CLI need the secret).
-// For unauthenticated diagnostics, see /api/debug/sheet-tabs.
 export async function GET(request: Request) {
   const authHeader = request.headers.get('authorization');
   const providedSecret = authHeader?.replace(/^Bearer\s+/i, '') ?? null;
@@ -57,7 +57,6 @@ export async function GET(request: Request) {
       schedule: 'every 6 hours (vercel.json)',
     });
   }
-  // Authed GET also refreshes — convenient for manual cache busts.
   try {
     const [vocab, wort] = await Promise.all([
       fetchVocabMaster(),
