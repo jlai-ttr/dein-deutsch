@@ -141,3 +141,19 @@ export async function listTabs(): Promise<string[]> {
   });
   return (res.data.sheets || []).map(s => s.properties?.title || '').filter(Boolean);
 }
+
+// Test helper: dump first N rows of each tab
+export async function dumpTabSamples(perTab: number = 3): Promise<Record<string, string[][]>> {
+  if (!SHEET_ID) return {};
+  const sheets = getSheetsClient();
+  const tabs = await listTabs();
+  const out: Record<string, string[][]> = {};
+  for (const tab of tabs) {
+    const res = await sheets.spreadsheets.values.get({
+      spreadsheetId: SHEET_ID,
+      range: `${tab}!A1:Z${perTab}`,
+    });
+    out[tab] = (res.data.values || []) as string[][];
+  }
+  return out;
+}

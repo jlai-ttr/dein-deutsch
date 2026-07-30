@@ -27,10 +27,9 @@ const auth = new google.auth.JWT({
 const sheets = google.sheets({ version: 'v4', auth });
 
 const POS_MAP = {
-  noun: 'noun',
-  adj: 'adjective',
-  adverb: 'adverb',
-  verbs: 'verb',
+  'German Vocabulary - Nouns (Die Nomen)': { pos: 'noun', table: 'noun' },
+  'German Vocabulary - Adjectives, Adverbs & Others': { pos: 'mixed', table: 'mixed' },
+  'German Vocabulary - Verbs (Die Verben)': { pos: 'verb', table: 'verb' },
 };
 
 const HEADERS = [
@@ -71,7 +70,7 @@ async function main() {
   let totalRows = 0;
   const seenByTab = {};
 
-  for (const [tabName, pos] of Object.entries(POS_MAP)) {
+  for (const [tabName, { pos, table }] of Object.entries(POS_MAP)) {
     if (!allTabs.includes(tabName)) {
       console.log(`Skip: tab "${tabName}" not found in Sheet`);
       continue;
@@ -83,31 +82,27 @@ async function main() {
     for (let i = 0; i < dataRows.length; i++) {
       const row = dataRows[i];
       if (!row || row.length === 0) continue;
-      // Heuristic: assume col A is German word, col B is English (since we don't know exact schema)
-      // We'll map to vocab_master with everything in 'en' column
+      // Heuristic for now: col A = German word, col B = English
+      // Will be refined once we see actual samples
       const de = (row[0] || '').trim();
       const en = (row[1] || '').trim();
       if (!de) continue;
-      const id = `${tabName}-${String(i + 1).padStart(3, '0')}`;
-      // New schema-aligned row
+      const id = `${table}-${String(i + 1).padStart(4, '0')}`;
       const newRow = [
-        id,        // id
-        'A1',      // level (default; user updates)
-        tabName,   // topic
-        'TRUE',    // is_active
-        de,        // de
-        pos,       // pos
-        en,        // en
-        '',        // pronunciation
-        '',        // ipa
-        pos === 'noun' && row[2] ? row[2] : '', // gender (if 3rd col exists on noun tab)
-        '', '',    // plural, genitive
-        '', '', pos === 'verb' ? 'haben' : '', '', '', // verb fields
-        '', '', '', '', '', '', // conjugation 6
-        '', '',    // comparative, superlative
-        '', '',    // example_de, example_en
-        '',        // notes
-        '2026-07-30', // updated_at
+        id,
+        'A1', // level default — user updates later
+        table,
+        'TRUE',
+        de,
+        pos === 'mixed' ? '' : pos, // pos — leave blank for mixed tab, user fills
+        en,
+        '', '', '', '', '',
+        '', '', pos === 'verb' ? 'haben' : '', '', '',
+        '', '', '', '', '', '',
+        '', '',
+        '', '',
+        '',
+        '2026-07-30',
       ];
       outRows.push(newRow);
       count++;
