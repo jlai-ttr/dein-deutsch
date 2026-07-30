@@ -18,6 +18,19 @@ export function middleware(request) {
     return NextResponse.next();
   }
 
+  // Allow GET requests on debug endpoints (diagnostic tools, no session needed)
+  if (pathname.startsWith('/api/debug/') && request.method === 'GET') {
+    return NextResponse.next();
+  }
+
+  // Allow admin endpoints with Bearer token (CRON_SECRET) — they self-authenticate
+  if (pathname.startsWith('/api/admin/')) {
+    const authHeader = request.headers.get('authorization');
+    if (authHeader && authHeader.startsWith('Bearer ')) {
+      return NextResponse.next();
+    }
+  }
+
   // Check session cookie
   const cookie = request.cookies.get(COOKIE_NAME);
 
