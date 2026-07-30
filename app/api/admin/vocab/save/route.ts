@@ -6,6 +6,7 @@ import { NextResponse } from 'next/server';
 import { upsertVocabRow } from '../../../../lib/sheet-write';
 import { isAdminRequest } from '../../../../lib/admin-auth';
 import { validateVocabRow, VocabMasterRow } from '../../../../lib/vocab-schema';
+import { bustSheetCaches } from '../../../../lib/cache-bust';
 
 export const dynamic = 'force-dynamic';
 
@@ -31,7 +32,8 @@ export async function POST(request: Request) {
 
   try {
     const result = await upsertVocabRow(body as VocabMasterRow);
-    return NextResponse.json({ ok: true, ...result, id: body.id });
+    const cache = bustSheetCaches();
+    return NextResponse.json({ ok: true, ...result, id: body.id, cache });
   } catch (e: unknown) {
     const msg = e instanceof Error ? e.message : String(e);
     return NextResponse.json({ ok: false, error: msg }, { status: 500 });

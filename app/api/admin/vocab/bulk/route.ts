@@ -8,6 +8,7 @@ import { bulkInsertVocab, parseTSV, nextId } from '../../../../lib/sheet-write';
 import { isAdminRequest } from '../../../../lib/admin-auth';
 import { fetchVocabMaster } from '../../../../lib/sheet-client';
 import { VOCAB_MASTER_HEADERS, VocabMasterRow } from '../../../../lib/vocab-schema';
+import { bustSheetCaches } from '../../../../lib/cache-bust';
 
 export const dynamic = 'force-dynamic';
 
@@ -48,7 +49,8 @@ export async function POST(request: Request) {
 
   try {
     const result = await bulkInsertVocab(processed);
-    return NextResponse.json({ ok: true, ...result });
+    const cache = bustSheetCaches();
+    return NextResponse.json({ ok: true, ...result, cache });
   } catch (e: unknown) {
     const msg = e instanceof Error ? e.message : String(e);
     return NextResponse.json({ ok: false, error: msg }, { status: 500 });

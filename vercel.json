@@ -1,0 +1,8 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/refresh-vocab?source=vercel-cron",
+      "schedule": "0 */6 * * *"
+    }
+  ]
+}

@@ -4,6 +4,7 @@
 import { NextResponse } from 'next/server';
 import { deleteVocabRow } from '../../../../lib/sheet-write';
 import { isAdminRequest } from '../../../../lib/admin-auth';
+import { bustSheetCaches } from '../../../../lib/cache-bust';
 
 export const dynamic = 'force-dynamic';
 
@@ -13,7 +14,8 @@ export async function DELETE(request: Request, { params }: { params: { id: strin
 
   try {
     const result = await deleteVocabRow(params.id);
-    return NextResponse.json({ ok: true, ...result, id: params.id });
+    const cache = bustSheetCaches();
+    return NextResponse.json({ ok: true, ...result, id: params.id, cache });
   } catch (e: unknown) {
     const msg = e instanceof Error ? e.message : String(e);
     return NextResponse.json({ ok: false, error: msg }, { status: 500 });

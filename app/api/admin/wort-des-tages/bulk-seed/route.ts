@@ -6,6 +6,7 @@ import { NextResponse } from 'next/server';
 import { seedWortDesTages } from '../../../../lib/sheet-write';
 import { isAdminRequest } from '../../../../lib/admin-auth';
 import { fetchVocabMaster } from '../../../../lib/sheet-client';
+import { bustSheetCaches } from '../../../../lib/cache-bust';
 
 export const dynamic = 'force-dynamic';
 
@@ -24,7 +25,8 @@ export async function POST(request: Request) {
   try {
     const vocab = await fetchVocabMaster();
     const result = await seedWortDesTages(count, vocab);
-    return NextResponse.json({ ok: true, ...result, requested: count });
+    const cache = bustSheetCaches();
+    return NextResponse.json({ ok: true, ...result, requested: count, cache });
   } catch (e: unknown) {
     const msg = e instanceof Error ? e.message : String(e);
     return NextResponse.json({ ok: false, error: msg }, { status: 500 });
