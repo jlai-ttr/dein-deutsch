@@ -2,37 +2,71 @@
 
 > Dein Deutsch, dein Tempo, dein Haus.
 
-A German learning platform for polyglot professionals who want B2 fluency in 24 months — built around the "Master House" UX with 5 core modules.
+A German learning platform for polyglot professionals targeting B2 fluency in 24 months — built around the **Master House** UX with 5 core modules.
 
 ## Status
 
-**Phase 1.0 MVP** — Daily lessons + SM-2 Vocabulary + Progress tracking
+**Phase 1.5 (live)** — Daily lessons + SM-2 Vocabulary + Sheet-backed editor + Progress
+
+| Layer | Status | What |
+|-------|--------|------|
+| Layer 14 | ✅ Live | Google Sheets read API (`/api/vocab`, `/api/wort-des-tages`) + client hook |
+| Layer 15 | ✅ Live | `/admin/vocab` editor — table view, filters, edit/save/delete, bulk paste |
+| Layer 16.1 | ⏸ Deferred | Vercel Cron (requires Pro plan — Hobby free tier blocks cron config) |
+| Layer 16.2 | ✅ Live | Cache invalidation on every admin write (`revalidatePath`) |
+| Layer 17.A | 🚧 This release | Meta + polish — error/404/loading pages, sitemap, robots, OG tags, README refresh |
 
 ## Stack
 
-- **Frontend:** Next.js 14 (App Router) + Tailwind CSS
+- **Frontend:** Next.js 14.2.5 (App Router) + React 18.3 + Tailwind CSS 3.4
 - **Mobile:** PWA (installable to home screen) — React Native later
-- **Storage:** LocalStorage (Phase 1) → Supabase (Phase 5)
-- **Backend:** Next.js API routes
-- **Hosting:** Local dev now → Vercel for production
+- **Storage:** localStorage (UI state) + Google Sheets (vocab content, 204 rows live)
+- **Backend:** Next.js API routes + Google Sheets API v4 (service account auth)
+- **Hosting:** Vercel (free/Hobby tier)
+- **Auth:** Custom session cookies + Bearer secret (`CRON_SECRET`) for admin endpoints
+
+## Routes (live)
+
+**17 pages**
+- `/` Home (Master House dashboard)
+- `/heute` Daily lesson + Wort des Tages
+- `/woerter` Vocab editor + SM-2 SRS (204 cards from Sheet)
+- `/ueben` Practice modes
+- `/hoeren` Listen
+- `/sprechen` Speak
+- `/lesen` Read
+- `/schreiben` Write
+- `/grammatik` Grammar
+- `/kultur` Culture
+- `/translate` Translator
+- `/fortschritt` Progress + charts (recharts)
+- `/profile` Profile
+- `/settings` Settings
+- `/login` Login (cookie session)
+- `/admin/vocab` Vocab editor (Bearer or cookie-gated)
+
+**14 API routes**
+- Public: `/api/vocab`, `/api/wort-des-tages`, `/api/debug/sheet-tabs`, `/api/debug/sheet-samples`
+- Auth: `/api/auth/login`, `/api/auth/logout`, `/api/auth/me`
+- Admin (Bearer `CRON_SECRET` or cookie): `/api/admin/vocab/{list,save,bulk,[id]}`, `/api/admin/wort-des-tages/bulk-seed`, `/api/admin/sheet-migrate`
 
 ## Modules
 
 | Module | Status | Description |
 |---|---|---|
-| Heute (Daily) | ✅ Done | Loads `german_dayN.txt` from `workspace-dialga/scripts/` |
-| Wörter (Vocab) | ✅ Done | 50 seed cards + SM-2 spaced repetition + custom add |
-| Üben (Practice) | ⏳ Phase 1.3 | Quiz modes, fill-in-blank, multiple choice |
-| Hören (Listen) | ⏳ Phase 1.4 | Podcast player, dictation |
-| Sprechen (Speak) | ⏳ Phase 2 | AI conversation partner |
-| Fortschritt (Progress) | ✅ Done | Streak, level, milestones |
+| Heute (Daily) | ✅ Live | Loads `german_dayN.txt` from `/app/lessons/` — Days 1–30 available |
+| Wörter (Vocab) | ✅ Live | 204 Sheet cards + SM-2 spaced repetition + custom add/edit/delete |
+| Üben (Practice) | 🚧 Phase 1.3 | Quiz modes, fill-in-blank, multiple choice |
+| Hören (Listen) | 🚧 WIP | Podcast/dictation placeholder |
+| Sprechen (Speak) | 🚧 Phase 2 | AI conversation partner |
+| Schreiben (Write) | 🚧 WIP | Guided writing prompts |
+| Fortschritt (Progress) | ✅ Live | Streak, level, milestones, charts |
 
 ## Brand
 
-- **Black + Gold + Cream** — premium, minimal, professional
-- **Display font:** Playfair Display (serif)
-- **Body font:** Inter (sans-serif)
-- **No crown emojis, no Duolingo-owl** — this is for adults building careers
+- **Forest + Parchment + Ink** — premium, minimal, professional ("Old book in a cabin")
+- **Light + Dark mode** — toggle in app shell, persisted to localStorage
+- **No crown emojis, no Duolingo-owl** — built for adults building careers
 
 ## Getting Started
 
@@ -43,38 +77,22 @@ npm run dev
 
 Visit `http://localhost:3000`.
 
-## Structure
-
+For production / Sheet access, set these env vars in Vercel:
 ```
-dein-deutsch/
-├── app/
-│   ├── page.tsx              # Home (Master House dashboard)
-│   ├── heute/page.tsx        # Daily lesson
-│   ├── woerter/page.tsx      # Vocab (Anki-style)
-│   ├── ueben/page.tsx        # Practice (WIP)
-│   ├── hoeren/page.tsx       # Listen (WIP)
-│   ├── sprechen/page.tsx     # Speak (WIP)
-│   ├── fortschritt/page.tsx  # Progress
-│   ├── api/lesson/[day]/route.ts  # Lesson content API
-│   ├── layout.tsx
-│   └── globals.css
-├── package.json
-├── next.config.mjs
-├── tailwind.config.js
-├── tsconfig.json
-└── README.md
+GOOGLE_SHEET_ID=1EPUGRPSsvRHvMlREA-UgykfvwCHNMyemBiOplju5u1I
+GOOGLE_SERVICE_ACCOUNT_KEY=<base64-encoded service account JSON>
+CRON_SECRET=dd-2026-migrate-9x8y7z
 ```
 
 ## Daily Lesson Files
 
-Lessons are loaded from `C:\Users\user\.openclaw\workspace-dialga\scripts\german_dayN.txt`.
-Currently Days 1–7 exist. Will be expanded to 90 (A1) → 180 (A2) → 90 (B1) → ... across the 730-day plan.
+Lessons live in `app/lessons/german_dayN.txt`. Currently Days 1–30 exist. Roadmap: 90 A1 + 180 A2 + 270 B1 + ... across a 730-day plan.
 
 ## Roadmap
 
-- **Phase 1.0** (current): Daily lessons + Vocab + Progress — single user, web-only
-- **Phase 1.1**: Add Üben module (quiz variations)
-- **Phase 1.2**: Add Hören module (audio lessons + dictation)
+- **Phase 1.5** (current): Sheet-backed vocab + admin editor
+- **Phase 1.6**: Mobile responsive pass + empty/loading states
+- **Phase 1.7**: External cron via cron-job.org (free, no Vercel Pro needed)
 - **Phase 2 (8 weeks)**: Conversation Studio (AI role-play)
 - **Phase 3 (12 weeks)**: Pronunciation Lab
 - **Phase 4 (16 weeks)**: React Native mobile app
@@ -83,8 +101,8 @@ Currently Days 1–7 exist. Will be expanded to 90 (A1) → 180 (A2) → 90 (B1)
 
 ## Spec
 
-See `dein_deutsch_spec.md` in `workspace-dialga/scripts/` for full architecture doc.
+Architecture notes in `dein_deutsch_spec.md` (workspace-dialga). Sheet setup in `SHEET_SETUP.md`. Deployment in `DEPLOY.md`.
 
 ---
 
-Built by Dialga 🐉 for Jasper Lai.
+Built by **Alakazam** (Alakazam dY) for **Jasper Lai** — Group Finance Director @ TTRacing.
