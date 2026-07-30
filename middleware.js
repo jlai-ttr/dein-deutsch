@@ -67,5 +67,5 @@ export function middleware(request) {
 
 export const config = {
   // Run on all paths except static assets and Next.js internals
-  matcher: ['/((?!_next/static|_next/image|favicon.ico|icons|manifest.json|audio).*)'],
+  matcher: ['/((?!_next/static|_next/image|favicon.ico|icons|manifest.json|audio|sitemap.xml|robots.txt).*)'],
 };
