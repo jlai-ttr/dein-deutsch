@@ -36,6 +36,14 @@ export function middleware(request) {
     }
   }
 
+  // Allow cron endpoints with Bearer token (CRON_SECRET or VERCEL_CRON_SECRET)
+  if (pathname.startsWith('/api/cron/')) {
+    const authHeader = request.headers.get('authorization');
+    if (authHeader && authHeader.startsWith('Bearer ')) {
+      return NextResponse.next();
+    }
+  }
+
   // Check session cookie
   const cookie = request.cookies.get(COOKIE_NAME);
 
