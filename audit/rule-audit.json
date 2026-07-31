@@ -1,0 +1,2595 @@
+{
+  "spec_entries": 65,
+  "engine_rules": 60,
+  "coverage": [
+    {
+      "spec_id": 7,
+      "category": "Structural (Fem)",
+      "indicator": "-in",
+      "dictated_gender": "Feminine (die)",
+      "dictated_gender_norm": "die",
+      "plural": "Add -nen (double n)",
+      "engine_match": {
+        "index": 6,
+        "suffix_display": "in$",
+        "gender": "die",
+        "plural": "nen",
+        "score": 85,
+        "note": "-in (Fem, human)"
+      },
+      "agrees": true
+    },
+    {
+      "spec_id": 9,
+      "category": "Structural (Fem)",
+      "indicator": "-e",
+      "dictated_gender": "Feminine (die)",
+      "dictated_gender_norm": "die",
+      "plural": "Add -n",
+      "engine_match": {
+        "index": 10,
+        "suffix_display": "e$",
+        "gender": "die",
+        "plural": "n",
+        "score": 60,
+        "note": "-e (Fem, with many exceptions)"
+      },
+      "agrees": true
+    },
+    {
+      "spec_id": 14,
+      "category": "Structural (Masc)",
+      "indicator": "-ig",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e",
+      "engine_match": {
+        "index": 18,
+        "suffix_display": "ig$",
+        "gender": "der",
+        "plural": "e",
+        "score": 80,
+        "note": "-ig (Masc)"
+      },
+      "agrees": true
+    },
+    {
+      "spec_id": 26,
+      "category": "Phonetic (-f)",
+      "indicator": "-iff, -af",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -e",
+      "engine_match": {
+        "index": 31,
+        "suffix_display": "iff$|af$",
+        "gender": "das",
+        "plural": "e",
+        "score": 85,
+        "note": "-iff/-af (Neut)"
+      },
+      "agrees": true
+    },
+    {
+      "spec_id": 27,
+      "category": "Phonetic (-d)",
+      "indicator": "-und",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e (+ Umlaut)",
+      "engine_match": {
+        "index": 32,
+        "suffix_display": "und$",
+        "gender": "der",
+        "plural": "e",
+        "score": 80,
+        "note": "-und (Masc)"
+      },
+      "agrees": true
+    },
+    {
+      "spec_id": 62,
+      "category": "Phonetic (-z)",
+      "indicator": "-atz, -itz, -utz, -z",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e (+ Umlaut)",
+      "engine_match": {
+        "index": 56,
+        "suffix_display": "atz$|itz$|utz$|z$",
+        "gender": "der",
+        "plural": "e",
+        "score": 75,
+        "note": "-atz/-itz/-utz/-z (Masc, often Umlaut)"
+      },
+      "agrees": true
+    }
+  ],
+  "gaps": [],
+  "overlaps": [
+    {
+      "spec_id": 1,
+      "category": "Supreme Structural",
+      "indicator": "-chen, -lein (Diminutives)",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "No change",
+      "engine_matches": [
+        {
+          "index": 0,
+          "suffix_display": "chen$|lein$",
+          "gender": "das",
+          "score": 100,
+          "note": "Diminutive (Supreme)"
+        },
+        {
+          "index": 6,
+          "suffix_display": "in$",
+          "gender": "die",
+          "score": 85,
+          "note": "-in (Fem, human)"
+        },
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 26,
+          "suffix_display": "iv$",
+          "gender": "das",
+          "score": 90,
+          "note": "-iv (Neut, Latin)"
+        },
+        {
+          "index": 40,
+          "suffix_display": "h$",
+          "gender": "der",
+          "score": 55,
+          "note": "Silent -h (root-dependent, often Masc)"
+        },
+        {
+          "index": 43,
+          "suffix_display": "l$",
+          "gender": "root",
+          "score": 45,
+          "note": "monosyllabic -l (root-dependent)"
+        },
+        {
+          "index": 58,
+          "suffix_display": "c$|j$|w$|x$|y$",
+          "gender": "root",
+          "score": 50,
+          "note": "Loanwords ending in -c/-j/-w/-x/-y (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 2,
+      "category": "Supreme Semantic",
+      "indicator": "Male Humans & Animals",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -en / -n",
+      "engine_matches": [
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 22,
+          "suffix_display": "um$",
+          "gender": "das",
+          "score": 85,
+          "note": "-um (Neut, Latin)"
+        },
+        {
+          "index": 25,
+          "suffix_display": "ma$",
+          "gender": "das",
+          "score": 90,
+          "note": "-ma (Neut, Greek)"
+        },
+        {
+          "index": 40,
+          "suffix_display": "h$",
+          "gender": "der",
+          "score": 55,
+          "note": "Silent -h (root-dependent, often Masc)"
+        },
+        {
+          "index": 43,
+          "suffix_display": "l$",
+          "gender": "root",
+          "score": 45,
+          "note": "monosyllabic -l (root-dependent)"
+        },
+        {
+          "index": 52,
+          "suffix_display": "eis$|uss$|rs$|ls$",
+          "gender": "der",
+          "score": 80,
+          "note": "-eis/-uss/-rs/-ls (Masc, often Umlaut)"
+        }
+      ]
+    },
+    {
+      "spec_id": 3,
+      "category": "Supreme Semantic",
+      "indicator": "Metals & Chemical Elements",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Uncountable / Rare",
+      "engine_matches": [
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 14,
+          "suffix_display": "ent$|and$",
+          "gender": "der",
+          "score": 75,
+          "note": "-ent/-and (Masc, human)"
+        },
+        {
+          "index": 24,
+          "suffix_display": "ment$",
+          "gender": "das",
+          "score": 95,
+          "note": "-ment (Neut, Latin)"
+        },
+        {
+          "index": 40,
+          "suffix_display": "h$",
+          "gender": "der",
+          "score": 55,
+          "note": "Silent -h (root-dependent, often Masc)"
+        },
+        {
+          "index": 43,
+          "suffix_display": "l$",
+          "gender": "root",
+          "score": 45,
+          "note": "monosyllabic -l (root-dependent)"
+        },
+        {
+          "index": 52,
+          "suffix_display": "eis$|uss$|rs$|ls$",
+          "gender": "der",
+          "score": 80,
+          "note": "-eis/-uss/-rs/-ls (Masc, often Umlaut)"
+        },
+        {
+          "index": 58,
+          "suffix_display": "c$|j$|w$|x$|y$",
+          "gender": "root",
+          "score": 50,
+          "note": "Loanwords ending in -c/-j/-w/-x/-y (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 4,
+      "category": "Structural (Fem)",
+      "indicator": "-ung, -heit, -keit, -schaft",
+      "dictated_gender": "Feminine (die)",
+      "dictated_gender_norm": "die",
+      "plural": "Add -en",
+      "engine_matches": [
+        {
+          "index": 1,
+          "suffix_display": "ung$",
+          "gender": "die",
+          "score": 100,
+          "note": "-ung (Fem)"
+        },
+        {
+          "index": 2,
+          "suffix_display": "heit$|keit$",
+          "gender": "die",
+          "score": 100,
+          "note": "-heit/-keit (Fem)"
+        },
+        {
+          "index": 3,
+          "suffix_display": "schaft$",
+          "gender": "die",
+          "score": 100,
+          "note": "-schaft (Fem)"
+        },
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 31,
+          "suffix_display": "iff$|af$",
+          "gender": "das",
+          "score": 85,
+          "note": "-iff/-af (Neut)"
+        },
+        {
+          "index": 40,
+          "suffix_display": "h$",
+          "gender": "der",
+          "score": 55,
+          "note": "Silent -h (root-dependent, often Masc)"
+        },
+        {
+          "index": 58,
+          "suffix_display": "c$|j$|w$|x$|y$",
+          "gender": "root",
+          "score": 50,
+          "note": "Loanwords ending in -c/-j/-w/-x/-y (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 5,
+      "category": "Structural (Fem)",
+      "indicator": "-ion, -tur, -sur, -ik, -is",
+      "dictated_gender": "Feminine (die)",
+      "dictated_gender_norm": "die",
+      "plural": "Add -en",
+      "engine_matches": [
+        {
+          "index": 4,
+          "suffix_display": "ion$|tur$|sur$|ik$",
+          "gender": "die",
+          "score": 95,
+          "note": "-ion/-tur/-sur/-ik (Fem, Latin/Greek)"
+        },
+        {
+          "index": 5,
+          "suffix_display": "is$",
+          "gender": "die",
+          "score": 90,
+          "note": "-is (Fem, Latin/Greek)"
+        },
+        {
+          "index": 51,
+          "suffix_display": "r$",
+          "gender": "root",
+          "score": 40,
+          "note": "monosyllabic -r (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 6,
+      "category": "Structural (Fem)",
+      "indicator": "-ei (Occupations/Places)",
+      "dictated_gender": "Feminine (die)",
+      "dictated_gender_norm": "die",
+      "plural": "Add -en",
+      "engine_matches": [
+        {
+          "index": 4,
+          "suffix_display": "ion$|tur$|sur$|ik$",
+          "gender": "die",
+          "score": 95,
+          "note": "-ion/-tur/-sur/-ik (Fem, Latin/Greek)"
+        },
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 43,
+          "suffix_display": "l$",
+          "gender": "root",
+          "score": 45,
+          "note": "monosyllabic -l (root-dependent)"
+        },
+        {
+          "index": 58,
+          "suffix_display": "c$|j$|w$|x$|y$",
+          "gender": "root",
+          "score": 50,
+          "note": "Loanwords ending in -c/-j/-w/-x/-y (root-dependent)"
+        },
+        {
+          "index": 59,
+          "suffix_display": "p$",
+          "gender": "root",
+          "score": 40,
+          "note": "Loanwords ending in -p (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 8,
+      "category": "Structural (Fem)",
+      "indicator": "Action + t / st / ft",
+      "dictated_gender": "Feminine (die)",
+      "dictated_gender_norm": "die",
+      "plural": "Varies (-en or -e+Umlaut)",
+      "engine_matches": [
+        {
+          "index": 4,
+          "suffix_display": "ion$|tur$|sur$|ik$",
+          "gender": "die",
+          "score": 95,
+          "note": "-ion/-tur/-sur/-ik (Fem, Latin/Greek)"
+        },
+        {
+          "index": 58,
+          "suffix_display": "c$|j$|w$|x$|y$",
+          "gender": "root",
+          "score": 50,
+          "note": "Loanwords ending in -c/-j/-w/-x/-y (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 10,
+      "category": "Structural (Masc)",
+      "indicator": "be-, ent-, er-, ver- (Stems)",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e (+ Umlaut)",
+      "engine_matches": [
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 14,
+          "suffix_display": "ent$|and$",
+          "gender": "der",
+          "score": 75,
+          "note": "-ent/-and (Masc, human)"
+        },
+        {
+          "index": 29,
+          "suffix_display": "b$",
+          "gender": "der",
+          "score": 30,
+          "note": "Native -b (Masc, low confidence)"
+        },
+        {
+          "index": 50,
+          "suffix_display": "er$",
+          "gender": "der",
+          "score": 55,
+          "note": "-er (Masc, with many neuter exceptions)"
+        },
+        {
+          "index": 51,
+          "suffix_display": "r$",
+          "gender": "root",
+          "score": 40,
+          "note": "monosyllabic -r (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 11,
+      "category": "Structural (Masc)",
+      "indicator": "-ismus, -us, -os",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Drop suffix, add -en",
+      "engine_matches": [
+        {
+          "index": 5,
+          "suffix_display": "is$",
+          "gender": "die",
+          "score": 90,
+          "note": "-is (Fem, Latin/Greek)"
+        },
+        {
+          "index": 11,
+          "suffix_display": "ismus$",
+          "gender": "der",
+          "score": 95,
+          "note": "-ismus (Masc)"
+        },
+        {
+          "index": 12,
+          "suffix_display": "us$",
+          "gender": "der",
+          "score": 70,
+          "note": "-us (Masc)"
+        },
+        {
+          "index": 13,
+          "suffix_display": "os$",
+          "gender": "der",
+          "score": 80,
+          "note": "-os (Masc, Greek)"
+        }
+      ]
+    },
+    {
+      "spec_id": 12,
+      "category": "Structural (Masc)",
+      "indicator": "-ent, -ant, -ist",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -en",
+      "engine_matches": [
+        {
+          "index": 5,
+          "suffix_display": "is$",
+          "gender": "die",
+          "score": 90,
+          "note": "-is (Fem, Latin/Greek)"
+        },
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 14,
+          "suffix_display": "ent$|and$",
+          "gender": "der",
+          "score": 75,
+          "note": "-ent/-and (Masc, human)"
+        },
+        {
+          "index": 15,
+          "suffix_display": "ant$",
+          "gender": "der",
+          "score": 85,
+          "note": "-ant (Masc, human)"
+        },
+        {
+          "index": 16,
+          "suffix_display": "ist$",
+          "gender": "der",
+          "score": 80,
+          "note": "-ist (Masc, human)"
+        }
+      ]
+    },
+    {
+      "spec_id": 13,
+      "category": "Structural (Masc)",
+      "indicator": "-or",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Varies by type",
+      "engine_matches": [
+        {
+          "index": 17,
+          "suffix_display": "or$",
+          "gender": "der",
+          "score": 65,
+          "note": "-or (Masc, professions or abstract)"
+        },
+        {
+          "index": 51,
+          "suffix_display": "r$",
+          "gender": "root",
+          "score": 40,
+          "note": "monosyllabic -r (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 15,
+      "category": "Structural (Masc)",
+      "indicator": "-el, -er, -en (Tools/Birds)",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "No change (+ Umlaut)",
+      "engine_matches": [
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 29,
+          "suffix_display": "b$",
+          "gender": "der",
+          "score": 30,
+          "note": "Native -b (Masc, low confidence)"
+        },
+        {
+          "index": 37,
+          "suffix_display": "rd$",
+          "gender": "root",
+          "score": 70,
+          "note": "-rd (root-dependent)"
+        },
+        {
+          "index": 43,
+          "suffix_display": "l$",
+          "gender": "root",
+          "score": 45,
+          "note": "monosyllabic -l (root-dependent)"
+        },
+        {
+          "index": 50,
+          "suffix_display": "er$",
+          "gender": "der",
+          "score": 55,
+          "note": "-er (Masc, with many neuter exceptions)"
+        },
+        {
+          "index": 51,
+          "suffix_display": "r$",
+          "gender": "root",
+          "score": 40,
+          "note": "monosyllabic -r (root-dependent)"
+        },
+        {
+          "index": 52,
+          "suffix_display": "eis$|uss$|rs$|ls$",
+          "gender": "der",
+          "score": 80,
+          "note": "-eis/-uss/-rs/-ls (Masc, often Umlaut)"
+        }
+      ]
+    },
+    {
+      "spec_id": 16,
+      "category": "Structural (Neut)",
+      "indicator": "-el, -er, -en (Abstracts)",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "No change",
+      "engine_matches": [
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 27,
+          "suffix_display": "ab$|alb$",
+          "gender": "das",
+          "score": 75,
+          "note": "-ab/-alb (Neut)"
+        },
+        {
+          "index": 29,
+          "suffix_display": "b$",
+          "gender": "der",
+          "score": 30,
+          "note": "Native -b (Masc, low confidence)"
+        },
+        {
+          "index": 43,
+          "suffix_display": "l$",
+          "gender": "root",
+          "score": 45,
+          "note": "monosyllabic -l (root-dependent)"
+        },
+        {
+          "index": 50,
+          "suffix_display": "er$",
+          "gender": "der",
+          "score": 55,
+          "note": "-er (Masc, with many neuter exceptions)"
+        },
+        {
+          "index": 51,
+          "suffix_display": "r$",
+          "gender": "root",
+          "score": 40,
+          "note": "monosyllabic -r (root-dependent)"
+        },
+        {
+          "index": 58,
+          "suffix_display": "c$|j$|w$|x$|y$",
+          "gender": "root",
+          "score": 50,
+          "note": "Loanwords ending in -c/-j/-w/-x/-y (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 17,
+      "category": "Structural (Masc)",
+      "indicator": "-ar, -ier (Masc Roots)",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e",
+      "engine_matches": [
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 19,
+          "suffix_display": "ar$",
+          "gender": "der",
+          "score": 70,
+          "note": "-ar (Masc, root-dependent)"
+        },
+        {
+          "index": 20,
+          "suffix_display": "ier$",
+          "gender": "root",
+          "score": 65,
+          "note": "-ier (root-dependent)"
+        },
+        {
+          "index": 25,
+          "suffix_display": "ma$",
+          "gender": "das",
+          "score": 90,
+          "note": "-ma (Neut, Greek)"
+        },
+        {
+          "index": 50,
+          "suffix_display": "er$",
+          "gender": "der",
+          "score": 55,
+          "note": "-er (Masc, with many neuter exceptions)"
+        },
+        {
+          "index": 51,
+          "suffix_display": "r$",
+          "gender": "root",
+          "score": 40,
+          "note": "monosyllabic -r (root-dependent)"
+        },
+        {
+          "index": 58,
+          "suffix_display": "c$|j$|w$|x$|y$",
+          "gender": "root",
+          "score": 50,
+          "note": "Loanwords ending in -c/-j/-w/-x/-y (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 18,
+      "category": "Structural (Neut)",
+      "indicator": "-ar, -ier (Neut Roots)",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -e",
+      "engine_matches": [
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 19,
+          "suffix_display": "ar$",
+          "gender": "der",
+          "score": 70,
+          "note": "-ar (Masc, root-dependent)"
+        },
+        {
+          "index": 20,
+          "suffix_display": "ier$",
+          "gender": "root",
+          "score": 65,
+          "note": "-ier (root-dependent)"
+        },
+        {
+          "index": 50,
+          "suffix_display": "er$",
+          "gender": "der",
+          "score": 55,
+          "note": "-er (Masc, with many neuter exceptions)"
+        },
+        {
+          "index": 51,
+          "suffix_display": "r$",
+          "gender": "root",
+          "score": 40,
+          "note": "monosyllabic -r (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 19,
+      "category": "Structural (Neut)",
+      "indicator": "-nis",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -se",
+      "engine_matches": [
+        {
+          "index": 5,
+          "suffix_display": "is$",
+          "gender": "die",
+          "score": 90,
+          "note": "-is (Fem, Latin/Greek)"
+        },
+        {
+          "index": 21,
+          "suffix_display": "nis$",
+          "gender": "das",
+          "score": 95,
+          "note": "-nis (Neut)"
+        }
+      ]
+    },
+    {
+      "spec_id": 20,
+      "category": "Structural (Neut)",
+      "indicator": "-um, -tum, -ment, -ma",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Varies by suffix",
+      "engine_matches": [
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 14,
+          "suffix_display": "ent$|and$",
+          "gender": "der",
+          "score": 75,
+          "note": "-ent/-and (Masc, human)"
+        },
+        {
+          "index": 22,
+          "suffix_display": "um$",
+          "gender": "das",
+          "score": 85,
+          "note": "-um (Neut, Latin)"
+        },
+        {
+          "index": 23,
+          "suffix_display": "tum$",
+          "gender": "das",
+          "score": 90,
+          "note": "-tum (Neut, abstract)"
+        },
+        {
+          "index": 24,
+          "suffix_display": "ment$",
+          "gender": "das",
+          "score": 95,
+          "note": "-ment (Neut, Latin)"
+        },
+        {
+          "index": 25,
+          "suffix_display": "ma$",
+          "gender": "das",
+          "score": 90,
+          "note": "-ma (Neut, Greek)"
+        }
+      ]
+    },
+    {
+      "spec_id": 21,
+      "category": "Structural (Neut)",
+      "indicator": "-iv (Latin Suffix)",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -e",
+      "engine_matches": [
+        {
+          "index": 6,
+          "suffix_display": "in$",
+          "gender": "die",
+          "score": 85,
+          "note": "-in (Fem, human)"
+        },
+        {
+          "index": 26,
+          "suffix_display": "iv$",
+          "gender": "das",
+          "score": 90,
+          "note": "-iv (Neut, Latin)"
+        },
+        {
+          "index": 30,
+          "suffix_display": "of$|uf$|ief$",
+          "gender": "der",
+          "score": 85,
+          "note": "-of/-uf/-ief (Masc)"
+        },
+        {
+          "index": 43,
+          "suffix_display": "l$",
+          "gender": "root",
+          "score": 45,
+          "note": "monosyllabic -l (root-dependent)"
+        },
+        {
+          "index": 58,
+          "suffix_display": "c$|j$|w$|x$|y$",
+          "gender": "root",
+          "score": 50,
+          "note": "Loanwords ending in -c/-j/-w/-x/-y (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 22,
+      "category": "Phonetic (-b, -f)",
+      "indicator": "-ab, -alb",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -er + Umlaut",
+      "engine_matches": [
+        {
+          "index": 27,
+          "suffix_display": "ab$|alb$",
+          "gender": "das",
+          "score": 75,
+          "note": "-ab/-alb (Neut)"
+        },
+        {
+          "index": 29,
+          "suffix_display": "b$",
+          "gender": "der",
+          "score": 30,
+          "note": "Native -b (Masc, low confidence)"
+        },
+        {
+          "index": 43,
+          "suffix_display": "l$",
+          "gender": "root",
+          "score": 45,
+          "note": "monosyllabic -l (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 23,
+      "category": "Phonetic (-b, -f)",
+      "indicator": "-ieb",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -e",
+      "engine_matches": [
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 28,
+          "suffix_display": "ieb$",
+          "gender": "das",
+          "score": 90,
+          "note": "-ieb (Neut)"
+        },
+        {
+          "index": 29,
+          "suffix_display": "b$",
+          "gender": "der",
+          "score": 30,
+          "note": "Native -b (Masc, low confidence)"
+        }
+      ]
+    },
+    {
+      "spec_id": 24,
+      "category": "Phonetic (-b, -f)",
+      "indicator": "Native -b",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e (+ Umlaut)",
+      "engine_matches": [
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 26,
+          "suffix_display": "iv$",
+          "gender": "das",
+          "score": 90,
+          "note": "-iv (Neut, Latin)"
+        },
+        {
+          "index": 29,
+          "suffix_display": "b$",
+          "gender": "der",
+          "score": 30,
+          "note": "Native -b (Masc, low confidence)"
+        }
+      ]
+    },
+    {
+      "spec_id": 25,
+      "category": "Phonetic (-f)",
+      "indicator": "-of, -uf, -ief",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e",
+      "engine_matches": [
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 30,
+          "suffix_display": "of$|uf$|ief$",
+          "gender": "der",
+          "score": 85,
+          "note": "-of/-uf/-ief (Masc)"
+        }
+      ]
+    },
+    {
+      "spec_id": 28,
+      "category": "Phonetic (-d)",
+      "indicator": "-ild, -eld",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -er",
+      "engine_matches": [
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 33,
+          "suffix_display": "ild$|eld$",
+          "gender": "das",
+          "score": 80,
+          "note": "-ild/-eld (Neut)"
+        },
+        {
+          "index": 43,
+          "suffix_display": "l$",
+          "gender": "root",
+          "score": 45,
+          "note": "monosyllabic -l (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 29,
+      "category": "Phonetic (-d)",
+      "indicator": "-and, -ind, -ad (Masc)",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e",
+      "engine_matches": [
+        {
+          "index": 6,
+          "suffix_display": "in$",
+          "gender": "die",
+          "score": 85,
+          "note": "-in (Fem, human)"
+        },
+        {
+          "index": 14,
+          "suffix_display": "ent$|and$",
+          "gender": "der",
+          "score": 75,
+          "note": "-ent/-and (Masc, human)"
+        },
+        {
+          "index": 25,
+          "suffix_display": "ma$",
+          "gender": "das",
+          "score": 90,
+          "note": "-ma (Neut, Greek)"
+        },
+        {
+          "index": 34,
+          "suffix_display": "ad$|ind$",
+          "gender": "der",
+          "score": 60,
+          "note": "-ad/-ind (Masc)"
+        },
+        {
+          "index": 35,
+          "suffix_display": "and$",
+          "gender": "der",
+          "score": 55,
+          "note": "-and (Masc)"
+        },
+        {
+          "index": 58,
+          "suffix_display": "c$|j$|w$|x$|y$",
+          "gender": "root",
+          "score": 50,
+          "note": "Loanwords ending in -c/-j/-w/-x/-y (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 30,
+      "category": "Phonetic (-d)",
+      "indicator": "-and, -ind, -ad (Neut)",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -er",
+      "engine_matches": [
+        {
+          "index": 6,
+          "suffix_display": "in$",
+          "gender": "die",
+          "score": 85,
+          "note": "-in (Fem, human)"
+        },
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 14,
+          "suffix_display": "ent$|and$",
+          "gender": "der",
+          "score": 75,
+          "note": "-ent/-and (Masc, human)"
+        },
+        {
+          "index": 34,
+          "suffix_display": "ad$|ind$",
+          "gender": "der",
+          "score": 60,
+          "note": "-ad/-ind (Masc)"
+        },
+        {
+          "index": 35,
+          "suffix_display": "and$",
+          "gender": "der",
+          "score": 55,
+          "note": "-and (Masc)"
+        }
+      ]
+    },
+    {
+      "spec_id": 31,
+      "category": "Phonetic (-d)",
+      "indicator": "-end (Masc)",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e",
+      "engine_matches": [
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 25,
+          "suffix_display": "ma$",
+          "gender": "das",
+          "score": 90,
+          "note": "-ma (Neut, Greek)"
+        },
+        {
+          "index": 36,
+          "suffix_display": "end$",
+          "gender": "root",
+          "score": 60,
+          "note": "-end (root-dependent)"
+        },
+        {
+          "index": 58,
+          "suffix_display": "c$|j$|w$|x$|y$",
+          "gender": "root",
+          "score": 50,
+          "note": "Loanwords ending in -c/-j/-w/-x/-y (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 32,
+      "category": "Phonetic (-d)",
+      "indicator": "-end (Neut)",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -e",
+      "engine_matches": [
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 36,
+          "suffix_display": "end$",
+          "gender": "root",
+          "score": 60,
+          "note": "-end (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 33,
+      "category": "Phonetic (-d)",
+      "indicator": "-rd (Masc)",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e",
+      "engine_matches": [
+        {
+          "index": 25,
+          "suffix_display": "ma$",
+          "gender": "das",
+          "score": 90,
+          "note": "-ma (Neut, Greek)"
+        },
+        {
+          "index": 37,
+          "suffix_display": "rd$",
+          "gender": "root",
+          "score": 70,
+          "note": "-rd (root-dependent)"
+        },
+        {
+          "index": 51,
+          "suffix_display": "r$",
+          "gender": "root",
+          "score": 40,
+          "note": "monosyllabic -r (root-dependent)"
+        },
+        {
+          "index": 58,
+          "suffix_display": "c$|j$|w$|x$|y$",
+          "gender": "root",
+          "score": 50,
+          "note": "Loanwords ending in -c/-j/-w/-x/-y (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 34,
+      "category": "Phonetic (-d)",
+      "indicator": "-rd (Neut)",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -e",
+      "engine_matches": [
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 37,
+          "suffix_display": "rd$",
+          "gender": "root",
+          "score": 70,
+          "note": "-rd (root-dependent)"
+        },
+        {
+          "index": 51,
+          "suffix_display": "r$",
+          "gender": "root",
+          "score": 40,
+          "note": "monosyllabic -r (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 35,
+      "category": "Phonetic (-ee)",
+      "indicator": "-ee (Substances/Plants)",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -s",
+      "engine_matches": [
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 15,
+          "suffix_display": "ant$",
+          "gender": "der",
+          "score": 85,
+          "note": "-ant (Masc, human)"
+        },
+        {
+          "index": 29,
+          "suffix_display": "b$",
+          "gender": "der",
+          "score": 30,
+          "note": "Native -b (Masc, low confidence)"
+        },
+        {
+          "index": 43,
+          "suffix_display": "l$",
+          "gender": "root",
+          "score": 45,
+          "note": "monosyllabic -l (root-dependent)"
+        },
+        {
+          "index": 58,
+          "suffix_display": "c$|j$|w$|x$|y$",
+          "gender": "root",
+          "score": 50,
+          "note": "Loanwords ending in -c/-j/-w/-x/-y (root-dependent)"
+        },
+        {
+          "index": 59,
+          "suffix_display": "p$",
+          "gender": "root",
+          "score": 40,
+          "note": "Loanwords ending in -p (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 36,
+      "category": "Phonetic (-ee)",
+      "indicator": "-ee (Abstract/French)",
+      "dictated_gender": "Feminine (die)",
+      "dictated_gender_norm": "die",
+      "plural": "Add -n",
+      "engine_matches": [
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 27,
+          "suffix_display": "ab$|alb$",
+          "gender": "das",
+          "score": 75,
+          "note": "-ab/-alb (Neut)"
+        },
+        {
+          "index": 29,
+          "suffix_display": "b$",
+          "gender": "der",
+          "score": 30,
+          "note": "Native -b (Masc, low confidence)"
+        },
+        {
+          "index": 40,
+          "suffix_display": "h$",
+          "gender": "der",
+          "score": 55,
+          "note": "Silent -h (root-dependent, often Masc)"
+        },
+        {
+          "index": 51,
+          "suffix_display": "r$",
+          "gender": "root",
+          "score": 40,
+          "note": "monosyllabic -r (root-dependent)"
+        },
+        {
+          "index": 58,
+          "suffix_display": "c$|j$|w$|x$|y$",
+          "gender": "root",
+          "score": 50,
+          "note": "Loanwords ending in -c/-j/-w/-x/-y (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 37,
+      "category": "Phonetic (-g)",
+      "indicator": "-ag, -eg, -og, -ug",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e (+ Umlaut)",
+      "engine_matches": [
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 38,
+          "suffix_display": "ag$|eg$|og$",
+          "gender": "der",
+          "score": 80,
+          "note": "-ag/-eg/-og (Masc, gravity)"
+        },
+        {
+          "index": 39,
+          "suffix_display": "ug$",
+          "gender": "der",
+          "score": 80,
+          "note": "-ug (Masc, often Umlaut)"
+        }
+      ]
+    },
+    {
+      "spec_id": 38,
+      "category": "Phonetic (-h)",
+      "indicator": "Silent -h (Masc)",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e",
+      "engine_matches": [
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 14,
+          "suffix_display": "ent$|and$",
+          "gender": "der",
+          "score": 75,
+          "note": "-ent/-and (Masc, human)"
+        },
+        {
+          "index": 25,
+          "suffix_display": "ma$",
+          "gender": "das",
+          "score": 90,
+          "note": "-ma (Neut, Greek)"
+        },
+        {
+          "index": 40,
+          "suffix_display": "h$",
+          "gender": "der",
+          "score": 55,
+          "note": "Silent -h (root-dependent, often Masc)"
+        },
+        {
+          "index": 43,
+          "suffix_display": "l$",
+          "gender": "root",
+          "score": 45,
+          "note": "monosyllabic -l (root-dependent)"
+        },
+        {
+          "index": 58,
+          "suffix_display": "c$|j$|w$|x$|y$",
+          "gender": "root",
+          "score": 50,
+          "note": "Loanwords ending in -c/-j/-w/-x/-y (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 39,
+      "category": "Phonetic (-h)",
+      "indicator": "Silent -h (Neut)",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -e",
+      "engine_matches": [
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 14,
+          "suffix_display": "ent$|and$",
+          "gender": "der",
+          "score": 75,
+          "note": "-ent/-and (Masc, human)"
+        },
+        {
+          "index": 40,
+          "suffix_display": "h$",
+          "gender": "der",
+          "score": 55,
+          "note": "Silent -h (root-dependent, often Masc)"
+        },
+        {
+          "index": 43,
+          "suffix_display": "l$",
+          "gender": "root",
+          "score": 45,
+          "note": "monosyllabic -l (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 40,
+      "category": "Phonetic (-h)",
+      "indicator": "Silent -h (Fem)",
+      "dictated_gender": "Feminine (die)",
+      "dictated_gender_norm": "die",
+      "plural": "Add -e + Umlaut",
+      "engine_matches": [
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 14,
+          "suffix_display": "ent$|and$",
+          "gender": "der",
+          "score": 75,
+          "note": "-ent/-and (Masc, human)"
+        },
+        {
+          "index": 40,
+          "suffix_display": "h$",
+          "gender": "der",
+          "score": 55,
+          "note": "Silent -h (root-dependent, often Masc)"
+        },
+        {
+          "index": 43,
+          "suffix_display": "l$",
+          "gender": "root",
+          "score": 45,
+          "note": "monosyllabic -l (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 41,
+      "category": "Phonetic (-k)",
+      "indicator": "-ack, -ock, -uck",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e (+ Umlaut)",
+      "engine_matches": [
+        {
+          "index": 41,
+          "suffix_display": "ack$|ock$|uck$",
+          "gender": "der",
+          "score": 85,
+          "note": "-ack/-ock/-uck (Masc, gravity)"
+        },
+        {
+          "index": 58,
+          "suffix_display": "c$|j$|w$|x$|y$",
+          "gender": "root",
+          "score": 50,
+          "note": "Loanwords ending in -c/-j/-w/-x/-y (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 42,
+      "category": "Phonetic (-k)",
+      "indicator": "-eck, -ück",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -e",
+      "engine_matches": [
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 42,
+          "suffix_display": "eck$|ück$",
+          "gender": "das",
+          "score": 80,
+          "note": "-eck/-ück (Neut)"
+        },
+        {
+          "index": 58,
+          "suffix_display": "c$|j$|w$|x$|y$",
+          "gender": "root",
+          "score": 50,
+          "note": "Loanwords ending in -c/-j/-w/-x/-y (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 43,
+      "category": "Phonetic (-l)",
+      "indicator": "-l, -ll (Masc)",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e (+ Umlaut)",
+      "engine_matches": [
+        {
+          "index": 25,
+          "suffix_display": "ma$",
+          "gender": "das",
+          "score": 90,
+          "note": "-ma (Neut, Greek)"
+        },
+        {
+          "index": 43,
+          "suffix_display": "l$",
+          "gender": "root",
+          "score": 45,
+          "note": "monosyllabic -l (root-dependent)"
+        },
+        {
+          "index": 44,
+          "suffix_display": "ll$",
+          "gender": "der",
+          "score": 60,
+          "note": "-ll (Masc)"
+        },
+        {
+          "index": 58,
+          "suffix_display": "c$|j$|w$|x$|y$",
+          "gender": "root",
+          "score": 50,
+          "note": "Loanwords ending in -c/-j/-w/-x/-y (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 44,
+      "category": "Phonetic (-l)",
+      "indicator": "-l, -ll (Neut)",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -e",
+      "engine_matches": [
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 43,
+          "suffix_display": "l$",
+          "gender": "root",
+          "score": 45,
+          "note": "monosyllabic -l (root-dependent)"
+        },
+        {
+          "index": 44,
+          "suffix_display": "ll$",
+          "gender": "der",
+          "score": 60,
+          "note": "-ll (Masc)"
+        }
+      ]
+    },
+    {
+      "spec_id": 45,
+      "category": "Phonetic (-m)",
+      "indicator": "-aum, -amm, -urm, -elm",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e (+ Umlaut)",
+      "engine_matches": [
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 22,
+          "suffix_display": "um$",
+          "gender": "das",
+          "score": 85,
+          "note": "-um (Neut, Latin)"
+        },
+        {
+          "index": 43,
+          "suffix_display": "l$",
+          "gender": "root",
+          "score": 45,
+          "note": "monosyllabic -l (root-dependent)"
+        },
+        {
+          "index": 45,
+          "suffix_display": "aum$|amm$|urm$|elm$",
+          "gender": "der",
+          "score": 85,
+          "note": "-aum/-amm/-urm/-elm (Masc, often Umlaut)"
+        },
+        {
+          "index": 51,
+          "suffix_display": "r$",
+          "gender": "root",
+          "score": 40,
+          "note": "monosyllabic -r (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 46,
+      "category": "Phonetic (-m)",
+      "indicator": "-m (Neut Roots)",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -er + Umlaut",
+      "engine_matches": [
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 51,
+          "suffix_display": "r$",
+          "gender": "root",
+          "score": 40,
+          "note": "monosyllabic -r (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 47,
+      "category": "Phonetic (-m)",
+      "indicator": "-orm (Loanwords)",
+      "dictated_gender": "Feminine (die)",
+      "dictated_gender_norm": "die",
+      "plural": "Add -en",
+      "engine_matches": [
+        {
+          "index": 17,
+          "suffix_display": "or$",
+          "gender": "der",
+          "score": 65,
+          "note": "-or (Masc, professions or abstract)"
+        },
+        {
+          "index": 37,
+          "suffix_display": "rd$",
+          "gender": "root",
+          "score": 70,
+          "note": "-rd (root-dependent)"
+        },
+        {
+          "index": 43,
+          "suffix_display": "l$",
+          "gender": "root",
+          "score": 45,
+          "note": "monosyllabic -l (root-dependent)"
+        },
+        {
+          "index": 46,
+          "suffix_display": "orm$",
+          "gender": "die",
+          "score": 75,
+          "note": "-orm (Fem, loanwords)"
+        },
+        {
+          "index": 51,
+          "suffix_display": "r$",
+          "gender": "root",
+          "score": 40,
+          "note": "monosyllabic -r (root-dependent)"
+        },
+        {
+          "index": 58,
+          "suffix_display": "c$|j$|w$|x$|y$",
+          "gender": "root",
+          "score": 50,
+          "note": "Loanwords ending in -c/-j/-w/-x/-y (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 48,
+      "category": "Phonetic (-pf)",
+      "indicator": "-opf, -umpf, -ampf",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e (+ Umlaut)",
+      "engine_matches": [
+        {
+          "index": 22,
+          "suffix_display": "um$",
+          "gender": "das",
+          "score": 85,
+          "note": "-um (Neut, Latin)"
+        },
+        {
+          "index": 47,
+          "suffix_display": "opf$|umpf$|ampf$",
+          "gender": "der",
+          "score": 90,
+          "note": "-opf/-umpf/-ampf (Masc, gravity)"
+        },
+        {
+          "index": 59,
+          "suffix_display": "p$",
+          "gender": "root",
+          "score": 40,
+          "note": "Loanwords ending in -p (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 49,
+      "category": "Phonetic (-r)",
+      "indicator": "-wur, -lur (Native)",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e (+ Umlaut)",
+      "engine_matches": [
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 26,
+          "suffix_display": "iv$",
+          "gender": "das",
+          "score": 90,
+          "note": "-iv (Neut, Latin)"
+        },
+        {
+          "index": 43,
+          "suffix_display": "l$",
+          "gender": "root",
+          "score": 45,
+          "note": "monosyllabic -l (root-dependent)"
+        },
+        {
+          "index": 48,
+          "suffix_display": "wur$|lur$",
+          "gender": "der",
+          "score": 80,
+          "note": "-wur/-lur (Masc)"
+        },
+        {
+          "index": 51,
+          "suffix_display": "r$",
+          "gender": "root",
+          "score": 40,
+          "note": "monosyllabic -r (root-dependent)"
+        },
+        {
+          "index": 58,
+          "suffix_display": "c$|j$|w$|x$|y$",
+          "gender": "root",
+          "score": 50,
+          "note": "Loanwords ending in -c/-j/-w/-x/-y (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 50,
+      "category": "Phonetic (-r)",
+      "indicator": "-pur, -nur (Native)",
+      "dictated_gender": "Feminine (die)",
+      "dictated_gender_norm": "die",
+      "plural": "Varies",
+      "engine_matches": [
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 26,
+          "suffix_display": "iv$",
+          "gender": "das",
+          "score": 90,
+          "note": "-iv (Neut, Latin)"
+        },
+        {
+          "index": 49,
+          "suffix_display": "pur$|nur$",
+          "gender": "die",
+          "score": 75,
+          "note": "-pur/-nur (Fem)"
+        },
+        {
+          "index": 51,
+          "suffix_display": "r$",
+          "gender": "root",
+          "score": 40,
+          "note": "monosyllabic -r (root-dependent)"
+        },
+        {
+          "index": 59,
+          "suffix_display": "p$",
+          "gender": "root",
+          "score": 40,
+          "note": "Loanwords ending in -p (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 51,
+      "category": "Phonetic (-r)",
+      "indicator": "1-Syllable -r (Neut)",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -e",
+      "engine_matches": [
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 27,
+          "suffix_display": "ab$|alb$",
+          "gender": "das",
+          "score": 75,
+          "note": "-ab/-alb (Neut)"
+        },
+        {
+          "index": 29,
+          "suffix_display": "b$",
+          "gender": "der",
+          "score": 30,
+          "note": "Native -b (Masc, low confidence)"
+        },
+        {
+          "index": 43,
+          "suffix_display": "l$",
+          "gender": "root",
+          "score": 45,
+          "note": "monosyllabic -l (root-dependent)"
+        },
+        {
+          "index": 44,
+          "suffix_display": "ll$",
+          "gender": "der",
+          "score": 60,
+          "note": "-ll (Masc)"
+        },
+        {
+          "index": 51,
+          "suffix_display": "r$",
+          "gender": "root",
+          "score": 40,
+          "note": "monosyllabic -r (root-dependent)"
+        },
+        {
+          "index": 58,
+          "suffix_display": "c$|j$|w$|x$|y$",
+          "gender": "root",
+          "score": 50,
+          "note": "Loanwords ending in -c/-j/-w/-x/-y (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 52,
+      "category": "Phonetic (-r)",
+      "indicator": "1-Syllable -r (Fem)",
+      "dictated_gender": "Feminine (die)",
+      "dictated_gender_norm": "die",
+      "plural": "Add -en",
+      "engine_matches": [
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 27,
+          "suffix_display": "ab$|alb$",
+          "gender": "das",
+          "score": 75,
+          "note": "-ab/-alb (Neut)"
+        },
+        {
+          "index": 29,
+          "suffix_display": "b$",
+          "gender": "der",
+          "score": 30,
+          "note": "Native -b (Masc, low confidence)"
+        },
+        {
+          "index": 43,
+          "suffix_display": "l$",
+          "gender": "root",
+          "score": 45,
+          "note": "monosyllabic -l (root-dependent)"
+        },
+        {
+          "index": 44,
+          "suffix_display": "ll$",
+          "gender": "der",
+          "score": 60,
+          "note": "-ll (Masc)"
+        },
+        {
+          "index": 51,
+          "suffix_display": "r$",
+          "gender": "root",
+          "score": 40,
+          "note": "monosyllabic -r (root-dependent)"
+        },
+        {
+          "index": 58,
+          "suffix_display": "c$|j$|w$|x$|y$",
+          "gender": "root",
+          "score": 50,
+          "note": "Loanwords ending in -c/-j/-w/-x/-y (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 53,
+      "category": "Phonetic (-s)",
+      "indicator": "-eis, -uss, -ess, -rs, -ls",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e (+ Umlaut)",
+      "engine_matches": [
+        {
+          "index": 5,
+          "suffix_display": "is$",
+          "gender": "die",
+          "score": 90,
+          "note": "-is (Fem, Latin/Greek)"
+        },
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 12,
+          "suffix_display": "us$",
+          "gender": "der",
+          "score": 70,
+          "note": "-us (Masc)"
+        },
+        {
+          "index": 43,
+          "suffix_display": "l$",
+          "gender": "root",
+          "score": 45,
+          "note": "monosyllabic -l (root-dependent)"
+        },
+        {
+          "index": 51,
+          "suffix_display": "r$",
+          "gender": "root",
+          "score": 40,
+          "note": "monosyllabic -r (root-dependent)"
+        },
+        {
+          "index": 52,
+          "suffix_display": "eis$|uss$|rs$|ls$",
+          "gender": "der",
+          "score": 80,
+          "note": "-eis/-uss/-rs/-ls (Masc, often Umlaut)"
+        }
+      ]
+    },
+    {
+      "spec_id": 54,
+      "category": "Phonetic (-s)",
+      "indicator": "-ass, -oss (Masc)",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e",
+      "engine_matches": [
+        {
+          "index": 13,
+          "suffix_display": "os$",
+          "gender": "der",
+          "score": 80,
+          "note": "-os (Masc, Greek)"
+        },
+        {
+          "index": 25,
+          "suffix_display": "ma$",
+          "gender": "das",
+          "score": 90,
+          "note": "-ma (Neut, Greek)"
+        },
+        {
+          "index": 53,
+          "suffix_display": "ass$|oss$",
+          "gender": "root",
+          "score": 70,
+          "note": "-ass/-oss (root-dependent)"
+        },
+        {
+          "index": 58,
+          "suffix_display": "c$|j$|w$|x$|y$",
+          "gender": "root",
+          "score": 50,
+          "note": "Loanwords ending in -c/-j/-w/-x/-y (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 55,
+      "category": "Phonetic (-s)",
+      "indicator": "-ass, -oss (Neut)",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -er + Umlaut",
+      "engine_matches": [
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 13,
+          "suffix_display": "os$",
+          "gender": "der",
+          "score": 80,
+          "note": "-os (Masc, Greek)"
+        },
+        {
+          "index": 53,
+          "suffix_display": "ass$|oss$",
+          "gender": "root",
+          "score": 70,
+          "note": "-ass/-oss (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 56,
+      "category": "Phonetic (-t)",
+      "indicator": "-ast, -ost, -ust",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e (+ Umlaut)",
+      "engine_matches": [
+        {
+          "index": 12,
+          "suffix_display": "us$",
+          "gender": "der",
+          "score": 70,
+          "note": "-us (Masc)"
+        },
+        {
+          "index": 13,
+          "suffix_display": "os$",
+          "gender": "der",
+          "score": 80,
+          "note": "-os (Masc, Greek)"
+        },
+        {
+          "index": 54,
+          "suffix_display": "ast$|ost$|ust$",
+          "gender": "der",
+          "score": 85,
+          "note": "-ast/-ost/-ust (Masc, physical)"
+        }
+      ]
+    },
+    {
+      "spec_id": 57,
+      "category": "Phonetic (-t)",
+      "indicator": "-est, -elt, -ert",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -e",
+      "engine_matches": [
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 43,
+          "suffix_display": "l$",
+          "gender": "root",
+          "score": 45,
+          "note": "monosyllabic -l (root-dependent)"
+        },
+        {
+          "index": 50,
+          "suffix_display": "er$",
+          "gender": "der",
+          "score": 55,
+          "note": "-er (Masc, with many neuter exceptions)"
+        },
+        {
+          "index": 51,
+          "suffix_display": "r$",
+          "gender": "root",
+          "score": 40,
+          "note": "monosyllabic -r (root-dependent)"
+        },
+        {
+          "index": 55,
+          "suffix_display": "est$|elt$|ert$",
+          "gender": "das",
+          "score": 80,
+          "note": "-est/-elt/-ert (Neut, physical)"
+        }
+      ]
+    },
+    {
+      "spec_id": 58,
+      "category": "Phonetic (-ort)",
+      "indicator": "-port, -ort (Loans)",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e",
+      "engine_matches": [
+        {
+          "index": 17,
+          "suffix_display": "or$",
+          "gender": "der",
+          "score": 65,
+          "note": "-or (Masc, professions or abstract)"
+        },
+        {
+          "index": 43,
+          "suffix_display": "l$",
+          "gender": "root",
+          "score": 45,
+          "note": "monosyllabic -l (root-dependent)"
+        },
+        {
+          "index": 51,
+          "suffix_display": "r$",
+          "gender": "root",
+          "score": 40,
+          "note": "monosyllabic -r (root-dependent)"
+        },
+        {
+          "index": 59,
+          "suffix_display": "p$",
+          "gender": "root",
+          "score": 40,
+          "note": "Loanwords ending in -p (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 59,
+      "category": "Phonetic (-ort)",
+      "indicator": "Native -ort (Masc)",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e",
+      "engine_matches": [
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 17,
+          "suffix_display": "or$",
+          "gender": "der",
+          "score": 65,
+          "note": "-or (Masc, professions or abstract)"
+        },
+        {
+          "index": 25,
+          "suffix_display": "ma$",
+          "gender": "das",
+          "score": 90,
+          "note": "-ma (Neut, Greek)"
+        },
+        {
+          "index": 26,
+          "suffix_display": "iv$",
+          "gender": "das",
+          "score": 90,
+          "note": "-iv (Neut, Latin)"
+        },
+        {
+          "index": 51,
+          "suffix_display": "r$",
+          "gender": "root",
+          "score": 40,
+          "note": "monosyllabic -r (root-dependent)"
+        },
+        {
+          "index": 58,
+          "suffix_display": "c$|j$|w$|x$|y$",
+          "gender": "root",
+          "score": 50,
+          "note": "Loanwords ending in -c/-j/-w/-x/-y (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 60,
+      "category": "Phonetic (-ort)",
+      "indicator": "Native -ort (Neut)",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -er + Umlaut",
+      "engine_matches": [
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 17,
+          "suffix_display": "or$",
+          "gender": "der",
+          "score": 65,
+          "note": "-or (Masc, professions or abstract)"
+        },
+        {
+          "index": 26,
+          "suffix_display": "iv$",
+          "gender": "das",
+          "score": 90,
+          "note": "-iv (Neut, Latin)"
+        },
+        {
+          "index": 51,
+          "suffix_display": "r$",
+          "gender": "root",
+          "score": 40,
+          "note": "monosyllabic -r (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 61,
+      "category": "Phonetic (-ort)",
+      "indicator": "Antwort (Compound)",
+      "dictated_gender": "Feminine (die)",
+      "dictated_gender_norm": "die",
+      "plural": "Add -en",
+      "engine_matches": [
+        {
+          "index": 15,
+          "suffix_display": "ant$",
+          "gender": "der",
+          "score": 85,
+          "note": "-ant (Masc, human)"
+        },
+        {
+          "index": 17,
+          "suffix_display": "or$",
+          "gender": "der",
+          "score": 65,
+          "note": "-or (Masc, professions or abstract)"
+        },
+        {
+          "index": 32,
+          "suffix_display": "und$",
+          "gender": "der",
+          "score": 80,
+          "note": "-und (Masc)"
+        },
+        {
+          "index": 51,
+          "suffix_display": "r$",
+          "gender": "root",
+          "score": 40,
+          "note": "monosyllabic -r (root-dependent)"
+        },
+        {
+          "index": 58,
+          "suffix_display": "c$|j$|w$|x$|y$",
+          "gender": "root",
+          "score": 50,
+          "note": "Loanwords ending in -c/-j/-w/-x/-y (root-dependent)"
+        },
+        {
+          "index": 59,
+          "suffix_display": "p$",
+          "gender": "root",
+          "score": 40,
+          "note": "Loanwords ending in -p (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 63,
+      "category": "Phonetic (-z)",
+      "indicator": "-etz",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -e",
+      "engine_matches": [
+        {
+          "index": 10,
+          "suffix_display": "e$",
+          "gender": "die",
+          "score": 60,
+          "note": "-e (Fem, with many exceptions)"
+        },
+        {
+          "index": 56,
+          "suffix_display": "atz$|itz$|utz$|z$",
+          "gender": "der",
+          "score": 75,
+          "note": "-atz/-itz/-utz/-z (Masc, often Umlaut)"
+        },
+        {
+          "index": 57,
+          "suffix_display": "etz$",
+          "gender": "das",
+          "score": 90,
+          "note": "-etz (Neut)"
+        }
+      ]
+    },
+    {
+      "spec_id": 64,
+      "category": "Foreign Loans",
+      "indicator": "-c, -j, -w, -x, -y, -p",
+      "dictated_gender": "Root Dependent",
+      "dictated_gender_norm": "root",
+      "plural": "Add -s",
+      "engine_matches": [
+        {
+          "index": 58,
+          "suffix_display": "c$|j$|w$|x$|y$",
+          "gender": "root",
+          "score": 50,
+          "note": "Loanwords ending in -c/-j/-w/-x/-y (root-dependent)"
+        },
+        {
+          "index": 59,
+          "suffix_display": "p$",
+          "gender": "root",
+          "score": 40,
+          "note": "Loanwords ending in -p (root-dependent)"
+        }
+      ]
+    },
+    {
+      "spec_id": 65,
+      "category": "Semantic",
+      "indicator": "Komposita (Compounds)",
+      "dictated_gender": "Dictated by Word B",
+      "dictated_gender_norm": null,
+      "plural": "Dictated by Word B",
+      "engine_matches": [
+        {
+          "index": 13,
+          "suffix_display": "os$",
+          "gender": "der",
+          "score": 80,
+          "note": "-os (Masc, Greek)"
+        },
+        {
+          "index": 32,
+          "suffix_display": "und$",
+          "gender": "der",
+          "score": 80,
+          "note": "-und (Masc)"
+        },
+        {
+          "index": 58,
+          "suffix_display": "c$|j$|w$|x$|y$",
+          "gender": "root",
+          "score": 50,
+          "note": "Loanwords ending in -c/-j/-w/-x/-y (root-dependent)"
+        },
+        {
+          "index": 59,
+          "suffix_display": "p$",
+          "gender": "root",
+          "score": 40,
+          "note": "Loanwords ending in -p (root-dependent)"
+        }
+      ]
+    }
+  ],
+  "contradictions": [],
+  "weak_rules": [
+    {
+      "index": 29,
+      "suffix_display": "b$",
+      "gender": "der",
+      "score": 30,
+      "note": "Native -b (Masc, low confidence)",
+      "exception_count": 8
+    },
+    {
+      "index": 35,
+      "suffix_display": "and$",
+      "gender": "der",
+      "score": 55,
+      "note": "-and (Masc)",
+      "exception_count": 7
+    },
+    {
+      "index": 50,
+      "suffix_display": "er$",
+      "gender": "der",
+      "score": 55,
+      "note": "-er (Masc, with many neuter exceptions)",
+      "exception_count": 24
+    }
+  ],
+  "over_fire_risks": [],
+  "unmapped_engine_rules": [
+    {
+      "index": 7,
+      "suffix_display": "fahrt$",
+      "gender": "die",
+      "score": 80,
+      "note": "-fahrt (Fem)"
+    },
+    {
+      "index": 8,
+      "suffix_display": "kunst$",
+      "gender": "die",
+      "score": 80,
+      "note": "-kunst (Fem, Umlaut)"
+    },
+    {
+      "index": 9,
+      "suffix_display": "ernte$",
+      "gender": "die",
+      "score": 80,
+      "note": "-ernte (Fem)"
+    }
+  ],
+  "coverage_pct": "9.2",
+  "coverage_exact": 6,
+  "coverage_partial": 0,
+  "coverage_disagree": 0,
+  "gap_count": 0,
+  "overlap_count": 59,
+  "weak_rule_count": 3,
+  "over_fire_risk_count": 0,
+  "unmapped_engine_count": 3
+}

@@ -1,0 +1,4331 @@
+{
+  "stats": {
+    "spec_entries": 65,
+    "engine_rules": 60,
+    "spec_entries_with_examples": 64,
+    "spec_entries_without_examples": 1,
+    "total_example_words_tested": 206,
+    "engine_word_agrees": 107,
+    "engine_word_disagrees": 99,
+    "engine_word_unknown": 49,
+    "entries_with_engine_match": 28,
+    "entries_without_engine_match": 37,
+    "entries_with_disagreeing_engine_match": 8
+  },
+  "entries": [
+    {
+      "spec_id": 1,
+      "category": "Supreme Structural",
+      "indicator": "-chen, -lein (Diminutives)",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "No change",
+      "plural_norm": "nochange",
+      "exceptions": "Overrides ALL rules, even biology (das Mädchen).",
+      "examples": [
+        {
+          "word": "Overrides",
+          "plural": null
+        },
+        {
+          "word": "Mädchen",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": null
+    },
+    {
+      "spec_id": 2,
+      "category": "Supreme Semantic",
+      "indicator": "Male Humans & Animals",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -en / -n",
+      "plural_norm": "en",
+      "exceptions": "Overrides all phonetics (Held → Helden).",
+      "examples": [
+        {
+          "word": "Held",
+          "plural": "Held → Helden"
+        },
+        {
+          "word": "Overrides",
+          "plural": null
+        },
+        {
+          "word": "Helden",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": null
+    },
+    {
+      "spec_id": 3,
+      "category": "Supreme Semantic",
+      "indicator": "Metals & Chemical Elements",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Uncountable / Rare",
+      "plural_norm": "uncountable",
+      "exceptions": "Gold, Silber, Eisen, Blei, Kupfer. Traps: der Stahl (Masc), die Bronze (Fem).",
+      "examples": [
+        {
+          "word": "Gold",
+          "plural": null
+        },
+        {
+          "word": "Silber",
+          "plural": null
+        },
+        {
+          "word": "Eisen",
+          "plural": null
+        },
+        {
+          "word": "Blei",
+          "plural": null
+        },
+        {
+          "word": "Kupfer",
+          "plural": null
+        },
+        {
+          "word": "Stahl",
+          "plural": null
+        },
+        {
+          "word": "Masc",
+          "plural": null
+        },
+        {
+          "word": "Bronze",
+          "plural": null
+        },
+        {
+          "word": "Fem",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": null
+    },
+    {
+      "spec_id": 4,
+      "category": "Structural (Fem)",
+      "indicator": "-ung, -heit, -keit, -schaft",
+      "dictated_gender": "Feminine (die)",
+      "dictated_gender_norm": "die",
+      "plural": "Add -en",
+      "plural_norm": "en",
+      "exceptions": "100% consistent.",
+      "examples": [],
+      "best_engine_rule": {
+        "index": 1,
+        "endings": [
+          "ung"
+        ],
+        "gender": "die",
+        "plural": "en",
+        "score": 100,
+        "note": "-ung (Fem)",
+        "matched_ending": "ung"
+      }
+    },
+    {
+      "spec_id": 5,
+      "category": "Structural (Fem)",
+      "indicator": "-ion, -tur, -sur, -ik, -is",
+      "dictated_gender": "Feminine (die)",
+      "dictated_gender_norm": "die",
+      "plural": "Add -en",
+      "plural_norm": "en",
+      "exceptions": "Greek/Latin multi-syllable disciplines (die Musik, die Politik). Traps: Abitur, Futur (Neut). Trap: 1-syllable English loans take Masc (der Streik → Streiks).",
+      "examples": [
+        {
+          "word": "Streik",
+          "plural": "Streik → Streiks"
+        },
+        {
+          "word": "Latin",
+          "plural": null
+        },
+        {
+          "word": "Musik",
+          "plural": null
+        },
+        {
+          "word": "Politik",
+          "plural": null
+        },
+        {
+          "word": "Abitur",
+          "plural": null
+        },
+        {
+          "word": "Futur",
+          "plural": null
+        },
+        {
+          "word": "Neut",
+          "plural": null
+        },
+        {
+          "word": "English",
+          "plural": null
+        },
+        {
+          "word": "Masc",
+          "plural": null
+        },
+        {
+          "word": "Streiks",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": {
+        "index": 5,
+        "endings": [
+          "is"
+        ],
+        "gender": "die",
+        "plural": "en",
+        "score": 90,
+        "note": "-is (Fem, Latin/Greek)",
+        "matched_ending": "is"
+      }
+    },
+    {
+      "spec_id": 6,
+      "category": "Structural (Fem)",
+      "indicator": "-ei (Occupations/Places)",
+      "dictated_gender": "Feminine (die)",
+      "dictated_gender_norm": "die",
+      "plural": "Add -en",
+      "plural_norm": "en",
+      "exceptions": "Bäckerei, Druckerei, Sklaverei.",
+      "examples": [
+        {
+          "word": "Bäckerei",
+          "plural": null
+        },
+        {
+          "word": "Druckerei",
+          "plural": null
+        },
+        {
+          "word": "Sklaverei",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": null
+    },
+    {
+      "spec_id": 7,
+      "category": "Structural (Fem)",
+      "indicator": "-in",
+      "dictated_gender": "Feminine (die)",
+      "dictated_gender_norm": "die",
+      "plural": "Add -nen (double n)",
+      "plural_norm": "en",
+      "exceptions": "Must be human. Scientific -in = Neuter.",
+      "examples": [
+        {
+          "word": "Must",
+          "plural": null
+        },
+        {
+          "word": "Scientific",
+          "plural": null
+        },
+        {
+          "word": "Neuter",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": {
+        "index": 6,
+        "endings": [
+          "in"
+        ],
+        "gender": "die",
+        "plural": "nen",
+        "score": 85,
+        "note": "-in (Fem, human)",
+        "matched_ending": "in"
+      }
+    },
+    {
+      "spec_id": 8,
+      "category": "Structural (Fem)",
+      "indicator": "Action + t / st / ft",
+      "dictated_gender": "Feminine (die)",
+      "dictated_gender_norm": "die",
+      "plural": "Varies (-en or -e+Umlaut)",
+      "plural_norm": "varies",
+      "exceptions": "Derived from verbs. Fahrt → Fahrten, Kunst → Künste.",
+      "examples": [
+        {
+          "word": "Fahrt",
+          "plural": "Fahrt → Fahrten,"
+        },
+        {
+          "word": "Kunst",
+          "plural": "Kunst → Künste"
+        },
+        {
+          "word": "Derived",
+          "plural": null
+        },
+        {
+          "word": "Fahrten",
+          "plural": null
+        },
+        {
+          "word": "Künste",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": null
+    },
+    {
+      "spec_id": 9,
+      "category": "Structural (Fem)",
+      "indicator": "-e",
+      "dictated_gender": "Feminine (die)",
+      "dictated_gender_norm": "die",
+      "plural": "Add -n",
+      "plural_norm": "en",
+      "exceptions": "Trap: Masculine weak nouns, Ge- prefix.",
+      "examples": [
+        {
+          "word": "Masculine",
+          "plural": null
+        },
+        {
+          "word": "Ge-",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": null
+    },
+    {
+      "spec_id": 10,
+      "category": "Structural (Masc)",
+      "indicator": "be-, ent-, er-, ver- (Stems)",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e (+ Umlaut)",
+      "plural_norm": "e_umlaut",
+      "exceptions": "Drops -en. Traps: -o shift (Verbot = Neut).",
+      "examples": [
+        {
+          "word": "Drops",
+          "plural": null
+        },
+        {
+          "word": "Verbot",
+          "plural": null
+        },
+        {
+          "word": "Neut",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": {
+        "index": 50,
+        "endings": [
+          "er"
+        ],
+        "gender": "der",
+        "plural": "nochange",
+        "score": 55,
+        "note": "-er (Masc, with many neuter exceptions)",
+        "matched_ending": "er"
+      }
+    },
+    {
+      "spec_id": 11,
+      "category": "Structural (Masc)",
+      "indicator": "-ismus, -us, -os",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Drop suffix, add -en",
+      "plural_norm": "en",
+      "exceptions": "Mythos → Mythen. Trap: das Virus.",
+      "examples": [
+        {
+          "word": "Mythos",
+          "plural": "Mythos → Mythen"
+        },
+        {
+          "word": "Mythen",
+          "plural": null
+        },
+        {
+          "word": "Virus",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": {
+        "index": 11,
+        "endings": [
+          "ismus"
+        ],
+        "gender": "der",
+        "plural": "nochange",
+        "score": 95,
+        "note": "-ismus (Masc)",
+        "matched_ending": "ismus"
+      }
+    },
+    {
+      "spec_id": 12,
+      "category": "Structural (Masc)",
+      "indicator": "-ent, -ant, -ist",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -en",
+      "plural_norm": "en",
+      "exceptions": "Must be human. Inanimate = Neuter.",
+      "examples": [
+        {
+          "word": "Must",
+          "plural": null
+        },
+        {
+          "word": "Inanimate",
+          "plural": null
+        },
+        {
+          "word": "Neuter",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": {
+        "index": 15,
+        "endings": [
+          "ant"
+        ],
+        "gender": "der",
+        "plural": "en",
+        "score": 85,
+        "note": "-ant (Masc, human)",
+        "matched_ending": "ant"
+      }
+    },
+    {
+      "spec_id": 13,
+      "category": "Structural (Masc)",
+      "indicator": "-or",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Varies by type",
+      "plural_norm": "varies",
+      "exceptions": "Professions add -en, Abstract adds -e. Trap: Truncated Latin -atorium loans are Neuter (das Labor → Labors).",
+      "examples": [
+        {
+          "word": "Labor",
+          "plural": "Labor → Labors"
+        },
+        {
+          "word": "Professions",
+          "plural": null
+        },
+        {
+          "word": "Abstract",
+          "plural": null
+        },
+        {
+          "word": "Truncated",
+          "plural": null
+        },
+        {
+          "word": "Neuter",
+          "plural": null
+        },
+        {
+          "word": "Labors",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": {
+        "index": 17,
+        "endings": [
+          "or"
+        ],
+        "gender": "der",
+        "plural": "en",
+        "score": 65,
+        "note": "-or (Masc, professions or abstract)",
+        "matched_ending": "or"
+      }
+    },
+    {
+      "spec_id": 14,
+      "category": "Structural (Masc)",
+      "indicator": "-ig",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e",
+      "plural_norm": "e",
+      "exceptions": "Structural suffix. König → Könige.",
+      "examples": [
+        {
+          "word": "König",
+          "plural": "König → Könige"
+        },
+        {
+          "word": "Structural",
+          "plural": null
+        },
+        {
+          "word": "Könige",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": {
+        "index": 18,
+        "endings": [
+          "ig"
+        ],
+        "gender": "der",
+        "plural": "e",
+        "score": 80,
+        "note": "-ig (Masc)",
+        "matched_ending": "ig"
+      }
+    },
+    {
+      "spec_id": 15,
+      "category": "Structural (Masc)",
+      "indicator": "-el, -er, -en (Tools/Birds)",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "No change (+ Umlaut)",
+      "plural_norm": "nochange",
+      "exceptions": "Apfel → Äpfel.",
+      "examples": [
+        {
+          "word": "Apfel",
+          "plural": null
+        },
+        {
+          "word": "Äpfel",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": {
+        "index": 50,
+        "endings": [
+          "er"
+        ],
+        "gender": "der",
+        "plural": "nochange",
+        "score": 55,
+        "note": "-er (Masc, with many neuter exceptions)",
+        "matched_ending": "er"
+      }
+    },
+    {
+      "spec_id": 16,
+      "category": "Structural (Neut)",
+      "indicator": "-el, -er, -en (Abstracts)",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "No change",
+      "plural_norm": "nochange",
+      "exceptions": "Mittel → Mittel.",
+      "examples": [
+        {
+          "word": "Mittel",
+          "plural": "Mittel → Mittel"
+        }
+      ],
+      "best_engine_rule": {
+        "index": 50,
+        "endings": [
+          "er"
+        ],
+        "gender": "der",
+        "plural": "nochange",
+        "score": 55,
+        "note": "-er (Masc, with many neuter exceptions)",
+        "matched_ending": "er"
+      }
+    },
+    {
+      "spec_id": 17,
+      "category": "Structural (Masc)",
+      "indicator": "-ar, -ier (Masc Roots)",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e",
+      "plural_norm": "e",
+      "exceptions": "Notar → Notare.",
+      "examples": [
+        {
+          "word": "Notar",
+          "plural": "Notar → Notare"
+        },
+        {
+          "word": "Notare",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": {
+        "index": 19,
+        "endings": [
+          "ar"
+        ],
+        "gender": "der",
+        "plural": "e",
+        "score": 70,
+        "note": "-ar (Masc, root-dependent)",
+        "matched_ending": "ar"
+      }
+    },
+    {
+      "spec_id": 18,
+      "category": "Structural (Neut)",
+      "indicator": "-ar, -ier (Neut Roots)",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -e",
+      "plural_norm": "e",
+      "exceptions": "Klavier → Klaviere.",
+      "examples": [
+        {
+          "word": "Klavier",
+          "plural": "Klavier → Klaviere"
+        },
+        {
+          "word": "Klaviere",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": {
+        "index": 19,
+        "endings": [
+          "ar"
+        ],
+        "gender": "der",
+        "plural": "e",
+        "score": 70,
+        "note": "-ar (Masc, root-dependent)",
+        "matched_ending": "ar"
+      }
+    },
+    {
+      "spec_id": 19,
+      "category": "Structural (Neut)",
+      "indicator": "-nis",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -se",
+      "plural_norm": "s",
+      "exceptions": "Geheimnis → Geheimnisse. Trap: Abstract cognitive/deverbal nouns derived from verbs are Feminine (die Erkenntnis, die Erlaubnis, die Empfängnis).",
+      "examples": [
+        {
+          "word": "Geheimnis",
+          "plural": "Geheimnis → Geheimnisse"
+        },
+        {
+          "word": "Geheimnisse",
+          "plural": null
+        },
+        {
+          "word": "Abstract",
+          "plural": null
+        },
+        {
+          "word": "Feminine",
+          "plural": null
+        },
+        {
+          "word": "Erkenntnis",
+          "plural": null
+        },
+        {
+          "word": "Erlaubnis",
+          "plural": null
+        },
+        {
+          "word": "Empfängnis",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": {
+        "index": 21,
+        "endings": [
+          "nis"
+        ],
+        "gender": "das",
+        "plural": "se",
+        "score": 95,
+        "note": "-nis (Neut)",
+        "matched_ending": "nis"
+      }
+    },
+    {
+      "spec_id": 20,
+      "category": "Structural (Neut)",
+      "indicator": "-um, -tum, -ment, -ma",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Varies by suffix",
+      "plural_norm": "varies",
+      "exceptions": "Drops -um / adds -er / adds -e / adds -men / takes Latin -a or -ien (Praktikum → Praktika, Museum → Museen).",
+      "examples": [
+        {
+          "word": "Praktikum",
+          "plural": "Praktikum → Praktika,"
+        },
+        {
+          "word": "Museum",
+          "plural": "Museum → Museen"
+        },
+        {
+          "word": "Drops",
+          "plural": null
+        },
+        {
+          "word": "Latin",
+          "plural": null
+        },
+        {
+          "word": "Praktika",
+          "plural": null
+        },
+        {
+          "word": "Museen",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": {
+        "index": 24,
+        "endings": [
+          "ment"
+        ],
+        "gender": "das",
+        "plural": "e",
+        "score": 95,
+        "note": "-ment (Neut, Latin)",
+        "matched_ending": "ment"
+      }
+    },
+    {
+      "spec_id": 21,
+      "category": "Structural (Neut)",
+      "indicator": "-iv (Latin Suffix)",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -e",
+      "plural_norm": "e",
+      "exceptions": "Motiv → Motive.",
+      "examples": [
+        {
+          "word": "Motiv",
+          "plural": "Motiv → Motive"
+        },
+        {
+          "word": "Motive",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": {
+        "index": 26,
+        "endings": [
+          "iv"
+        ],
+        "gender": "das",
+        "plural": "e",
+        "score": 90,
+        "note": "-iv (Neut, Latin)",
+        "matched_ending": "iv"
+      }
+    },
+    {
+      "spec_id": 22,
+      "category": "Phonetic (-b, -f)",
+      "indicator": "-ab, -alb",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -er + Umlaut",
+      "plural_norm": "e_umlaut",
+      "exceptions": "Grab → Gräber.",
+      "examples": [
+        {
+          "word": "Grab",
+          "plural": "Grab → Gräber"
+        },
+        {
+          "word": "Gräber",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": null
+    },
+    {
+      "spec_id": 23,
+      "category": "Phonetic (-b, -f)",
+      "indicator": "-ieb",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -e",
+      "plural_norm": "e",
+      "exceptions": "Sieb → Siebe.",
+      "examples": [
+        {
+          "word": "Sieb",
+          "plural": "Sieb → Siebe"
+        },
+        {
+          "word": "Siebe",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": {
+        "index": 28,
+        "endings": [
+          "ieb"
+        ],
+        "gender": "das",
+        "plural": "e",
+        "score": 90,
+        "note": "-ieb (Neut)",
+        "matched_ending": "ieb"
+      }
+    },
+    {
+      "spec_id": 24,
+      "category": "Phonetic (-b, -f)",
+      "indicator": "Native -b",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e (+ Umlaut)",
+      "plural_norm": "e_umlaut",
+      "exceptions": "Betrieb → Betriebe, Stab → Stäbe.",
+      "examples": [
+        {
+          "word": "Betrieb",
+          "plural": "Betrieb → Betriebe,"
+        },
+        {
+          "word": "Stab",
+          "plural": "Stab → Stäbe"
+        },
+        {
+          "word": "Betriebe",
+          "plural": null
+        },
+        {
+          "word": "Stäbe",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": null
+    },
+    {
+      "spec_id": 25,
+      "category": "Phonetic (-f)",
+      "indicator": "-of, -uf, -ief",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e",
+      "plural_norm": "e",
+      "exceptions": "Hof → Höfe, Brief → Briefe.",
+      "examples": [
+        {
+          "word": "Hof",
+          "plural": "Hof → Höfe,"
+        },
+        {
+          "word": "Brief",
+          "plural": "Brief → Briefe"
+        },
+        {
+          "word": "Höfe",
+          "plural": null
+        },
+        {
+          "word": "Briefe",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": null
+    },
+    {
+      "spec_id": 26,
+      "category": "Phonetic (-f)",
+      "indicator": "-iff, -af",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -e",
+      "plural_norm": "e",
+      "exceptions": "Schiff → Schiffe.",
+      "examples": [
+        {
+          "word": "Schiff",
+          "plural": "Schiff → Schiffe"
+        },
+        {
+          "word": "Schiffe",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": null
+    },
+    {
+      "spec_id": 27,
+      "category": "Phonetic (-d)",
+      "indicator": "-und",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e (+ Umlaut)",
+      "plural_norm": "e_umlaut",
+      "exceptions": "Hund, Mund, Grund.",
+      "examples": [
+        {
+          "word": "Hund",
+          "plural": null
+        },
+        {
+          "word": "Mund",
+          "plural": null
+        },
+        {
+          "word": "Grund",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": {
+        "index": 32,
+        "endings": [
+          "und"
+        ],
+        "gender": "der",
+        "plural": "e",
+        "score": 80,
+        "note": "-und (Masc)",
+        "matched_ending": "und"
+      }
+    },
+    {
+      "spec_id": 28,
+      "category": "Phonetic (-d)",
+      "indicator": "-ild, -eld",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -er",
+      "plural_norm": "e",
+      "exceptions": "Bild, Schild. Trap: Held (Masc).",
+      "examples": [
+        {
+          "word": "Bild",
+          "plural": null
+        },
+        {
+          "word": "Schild",
+          "plural": null
+        },
+        {
+          "word": "Held",
+          "plural": null
+        },
+        {
+          "word": "Masc",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": null
+    },
+    {
+      "spec_id": 29,
+      "category": "Phonetic (-d)",
+      "indicator": "-and, -ind, -ad (Masc)",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e",
+      "plural_norm": "e",
+      "exceptions": "Pfad → Pfade. Trap: Hand (Fem).",
+      "examples": [
+        {
+          "word": "Pfad",
+          "plural": "Pfad → Pfade"
+        },
+        {
+          "word": "Pfade",
+          "plural": null
+        },
+        {
+          "word": "Hand",
+          "plural": null
+        },
+        {
+          "word": "Fem",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": {
+        "index": 35,
+        "endings": [
+          "and"
+        ],
+        "gender": "der",
+        "plural": "e",
+        "score": 55,
+        "note": "-and (Masc)",
+        "matched_ending": "and"
+      }
+    },
+    {
+      "spec_id": 30,
+      "category": "Phonetic (-d)",
+      "indicator": "-and, -ind, -ad (Neut)",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -er",
+      "plural_norm": "e",
+      "exceptions": "Rad → Räder, Band → Bänder.",
+      "examples": [
+        {
+          "word": "Rad",
+          "plural": "Rad → Räder,"
+        },
+        {
+          "word": "Band",
+          "plural": "Band → Bänder"
+        },
+        {
+          "word": "Räder",
+          "plural": null
+        },
+        {
+          "word": "Bänder",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": {
+        "index": 35,
+        "endings": [
+          "and"
+        ],
+        "gender": "der",
+        "plural": "e",
+        "score": 55,
+        "note": "-and (Masc)",
+        "matched_ending": "and"
+      }
+    },
+    {
+      "spec_id": 31,
+      "category": "Phonetic (-d)",
+      "indicator": "-end (Masc)",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e",
+      "plural_norm": "e",
+      "exceptions": "Abend → Abende.",
+      "examples": [
+        {
+          "word": "Abend",
+          "plural": "Abend → Abende"
+        },
+        {
+          "word": "Abende",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": {
+        "index": 36,
+        "endings": [
+          "end"
+        ],
+        "gender": "root",
+        "plural": "e",
+        "score": 60,
+        "note": "-end (root-dependent)",
+        "matched_ending": "end"
+      }
+    },
+    {
+      "spec_id": 32,
+      "category": "Phonetic (-d)",
+      "indicator": "-end (Neut)",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -e",
+      "plural_norm": "e",
+      "exceptions": "Dutzend → Dutzende.",
+      "examples": [
+        {
+          "word": "Dutzend",
+          "plural": "Dutzend → Dutzende"
+        },
+        {
+          "word": "Dutzende",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": {
+        "index": 36,
+        "endings": [
+          "end"
+        ],
+        "gender": "root",
+        "plural": "e",
+        "score": 60,
+        "note": "-end (root-dependent)",
+        "matched_ending": "end"
+      }
+    },
+    {
+      "spec_id": 33,
+      "category": "Phonetic (-d)",
+      "indicator": "-rd (Masc)",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e",
+      "plural_norm": "e",
+      "exceptions": "Herd → Herde.",
+      "examples": [
+        {
+          "word": "Herd",
+          "plural": "Herd → Herde"
+        },
+        {
+          "word": "Herde",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": {
+        "index": 37,
+        "endings": [
+          "rd"
+        ],
+        "gender": "root",
+        "plural": "e",
+        "score": 70,
+        "note": "-rd (root-dependent)",
+        "matched_ending": "rd"
+      }
+    },
+    {
+      "spec_id": 34,
+      "category": "Phonetic (-d)",
+      "indicator": "-rd (Neut)",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -e",
+      "plural_norm": "e",
+      "exceptions": "Pferd → Pferde.",
+      "examples": [
+        {
+          "word": "Pferd",
+          "plural": "Pferd → Pferde"
+        },
+        {
+          "word": "Pferde",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": {
+        "index": 37,
+        "endings": [
+          "rd"
+        ],
+        "gender": "root",
+        "plural": "e",
+        "score": 70,
+        "note": "-rd (root-dependent)",
+        "matched_ending": "rd"
+      }
+    },
+    {
+      "spec_id": 35,
+      "category": "Phonetic (-ee)",
+      "indicator": "-ee (Substances/Plants)",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -s",
+      "plural_norm": "s",
+      "exceptions": "Imported raw goods. Kaffee, Tee.",
+      "examples": [
+        {
+          "word": "Imported",
+          "plural": null
+        },
+        {
+          "word": "Kaffee",
+          "plural": null
+        },
+        {
+          "word": "Tee",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": null
+    },
+    {
+      "spec_id": 36,
+      "category": "Phonetic (-ee)",
+      "indicator": "-ee (Abstract/French)",
+      "dictated_gender": "Feminine (die)",
+      "dictated_gender_norm": "die",
+      "plural": "Add -n",
+      "plural_norm": "en",
+      "exceptions": "French historical loans. Idee, Allee.",
+      "examples": [
+        {
+          "word": "French",
+          "plural": null
+        },
+        {
+          "word": "Idee",
+          "plural": null
+        },
+        {
+          "word": "Allee",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": null
+    },
+    {
+      "spec_id": 37,
+      "category": "Phonetic (-g)",
+      "indicator": "-ag, -eg, -og, -ug",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e (+ Umlaut)",
+      "plural_norm": "e_umlaut",
+      "exceptions": "Absolute Masc gravity. Tag, Weg, Zug.",
+      "examples": [
+        {
+          "word": "Absolute",
+          "plural": null
+        },
+        {
+          "word": "Tag",
+          "plural": null
+        },
+        {
+          "word": "Weg",
+          "plural": null
+        },
+        {
+          "word": "Zug",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": {
+        "index": 39,
+        "endings": [
+          "ug"
+        ],
+        "gender": "der",
+        "plural": "e",
+        "score": 80,
+        "note": "-ug (Masc, often Umlaut)",
+        "matched_ending": "ug"
+      }
+    },
+    {
+      "spec_id": 38,
+      "category": "Phonetic (-h)",
+      "indicator": "Silent -h (Masc)",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e",
+      "plural_norm": "e",
+      "exceptions": "Schuh → Schuhe.",
+      "examples": [
+        {
+          "word": "Schuh",
+          "plural": "Schuh → Schuhe"
+        },
+        {
+          "word": "Schuhe",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": null
+    },
+    {
+      "spec_id": 39,
+      "category": "Phonetic (-h)",
+      "indicator": "Silent -h (Neut)",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -e",
+      "plural_norm": "e",
+      "exceptions": "Reh → Rehe.",
+      "examples": [
+        {
+          "word": "Reh",
+          "plural": "Reh → Rehe"
+        },
+        {
+          "word": "Rehe",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": null
+    },
+    {
+      "spec_id": 40,
+      "category": "Phonetic (-h)",
+      "indicator": "Silent -h (Fem)",
+      "dictated_gender": "Feminine (die)",
+      "dictated_gender_norm": "die",
+      "plural": "Add -e + Umlaut",
+      "plural_norm": "e_umlaut",
+      "exceptions": "Kuh → Kühe.",
+      "examples": [
+        {
+          "word": "Kuh",
+          "plural": "Kuh → Kühe"
+        },
+        {
+          "word": "Kühe",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": null
+    },
+    {
+      "spec_id": 41,
+      "category": "Phonetic (-k)",
+      "indicator": "-ack, -ock, -uck",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e (+ Umlaut)",
+      "plural_norm": "e_umlaut",
+      "exceptions": "Sack, Stock, Druck.",
+      "examples": [
+        {
+          "word": "Sack",
+          "plural": null
+        },
+        {
+          "word": "Stock",
+          "plural": null
+        },
+        {
+          "word": "Druck",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": null
+    },
+    {
+      "spec_id": 42,
+      "category": "Phonetic (-k)",
+      "indicator": "-eck, -ück",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -e",
+      "plural_norm": "e",
+      "exceptions": "Versteck, Stück.",
+      "examples": [
+        {
+          "word": "Versteck",
+          "plural": null
+        },
+        {
+          "word": "Stück",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": null
+    },
+    {
+      "spec_id": 43,
+      "category": "Phonetic (-l)",
+      "indicator": "-l, -ll (Masc)",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e (+ Umlaut)",
+      "plural_norm": "e_umlaut",
+      "exceptions": "Fall → Fälle.",
+      "examples": [
+        {
+          "word": "Fall",
+          "plural": "Fall → Fälle"
+        },
+        {
+          "word": "Fälle",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": {
+        "index": 44,
+        "endings": [
+          "ll"
+        ],
+        "gender": "der",
+        "plural": "e",
+        "score": 60,
+        "note": "-ll (Masc)",
+        "matched_ending": "ll"
+      }
+    },
+    {
+      "spec_id": 44,
+      "category": "Phonetic (-l)",
+      "indicator": "-l, -ll (Neut)",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -e",
+      "plural_norm": "e",
+      "exceptions": "Spiel → Spiele. Trap: Tal → Täler.",
+      "examples": [
+        {
+          "word": "Spiel",
+          "plural": "Spiel → Spiele"
+        },
+        {
+          "word": "Tal",
+          "plural": "Tal → Täler"
+        },
+        {
+          "word": "Spiele",
+          "plural": null
+        },
+        {
+          "word": "Täler",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": {
+        "index": 44,
+        "endings": [
+          "ll"
+        ],
+        "gender": "der",
+        "plural": "e",
+        "score": 60,
+        "note": "-ll (Masc)",
+        "matched_ending": "ll"
+      }
+    },
+    {
+      "spec_id": 45,
+      "category": "Phonetic (-m)",
+      "indicator": "-aum, -amm, -urm, -elm",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e (+ Umlaut)",
+      "plural_norm": "e_umlaut",
+      "exceptions": "Baum, Stamm, Turm, Helm.",
+      "examples": [
+        {
+          "word": "Baum",
+          "plural": null
+        },
+        {
+          "word": "Stamm",
+          "plural": null
+        },
+        {
+          "word": "Turm",
+          "plural": null
+        },
+        {
+          "word": "Helm",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": null
+    },
+    {
+      "spec_id": 46,
+      "category": "Phonetic (-m)",
+      "indicator": "-m (Neut Roots)",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -er + Umlaut",
+      "plural_norm": "e_umlaut",
+      "exceptions": "Rare native roots. Lamm → Lämmer.",
+      "examples": [
+        {
+          "word": "Lamm",
+          "plural": "Lamm → Lämmer"
+        },
+        {
+          "word": "Rare",
+          "plural": null
+        },
+        {
+          "word": "Lämmer",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": null
+    },
+    {
+      "spec_id": 47,
+      "category": "Phonetic (-m)",
+      "indicator": "-orm (Loanwords)",
+      "dictated_gender": "Feminine (die)",
+      "dictated_gender_norm": "die",
+      "plural": "Add -en",
+      "plural_norm": "en",
+      "exceptions": "Form, Norm.",
+      "examples": [
+        {
+          "word": "Form",
+          "plural": null
+        },
+        {
+          "word": "Norm",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": {
+        "index": 46,
+        "endings": [
+          "orm"
+        ],
+        "gender": "die",
+        "plural": "en",
+        "score": 75,
+        "note": "-orm (Fem, loanwords)",
+        "matched_ending": "orm"
+      }
+    },
+    {
+      "spec_id": 48,
+      "category": "Phonetic (-pf)",
+      "indicator": "-opf, -umpf, -ampf",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e (+ Umlaut)",
+      "plural_norm": "e_umlaut",
+      "exceptions": "100% Masc gravity. Kopf, Kampf.",
+      "examples": [
+        {
+          "word": "Masc",
+          "plural": null
+        },
+        {
+          "word": "Kopf",
+          "plural": null
+        },
+        {
+          "word": "Kampf",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": null
+    },
+    {
+      "spec_id": 49,
+      "category": "Phonetic (-r)",
+      "indicator": "-wur, -lur (Native)",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e (+ Umlaut)",
+      "plural_norm": "e_umlaut",
+      "exceptions": "Schwur → Schwüre, Flur → Flure.",
+      "examples": [
+        {
+          "word": "Schwur",
+          "plural": "Schwur → Schwüre,"
+        },
+        {
+          "word": "Flur",
+          "plural": "Flur → Flure"
+        },
+        {
+          "word": "Schwüre",
+          "plural": null
+        },
+        {
+          "word": "Flure",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": null
+    },
+    {
+      "spec_id": 50,
+      "category": "Phonetic (-r)",
+      "indicator": "-pur, -nur (Native)",
+      "dictated_gender": "Feminine (die)",
+      "dictated_gender_norm": "die",
+      "plural": "Varies",
+      "plural_norm": "varies",
+      "exceptions": "Spur → Spuren.",
+      "examples": [
+        {
+          "word": "Spur",
+          "plural": "Spur → Spuren"
+        },
+        {
+          "word": "Spuren",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": null
+    },
+    {
+      "spec_id": 51,
+      "category": "Phonetic (-r)",
+      "indicator": "1-Syllable -r (Neut)",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -e",
+      "plural_norm": "e",
+      "exceptions": "Jahr, Tor.",
+      "examples": [
+        {
+          "word": "Jahr",
+          "plural": null
+        },
+        {
+          "word": "Tor",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": null
+    },
+    {
+      "spec_id": 52,
+      "category": "Phonetic (-r)",
+      "indicator": "1-Syllable -r (Fem)",
+      "dictated_gender": "Feminine (die)",
+      "dictated_gender_norm": "die",
+      "plural": "Add -en",
+      "plural_norm": "en",
+      "exceptions": "Tür, Uhr.",
+      "examples": [
+        {
+          "word": "Tür",
+          "plural": null
+        },
+        {
+          "word": "Uhr",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": null
+    },
+    {
+      "spec_id": 53,
+      "category": "Phonetic (-s)",
+      "indicator": "-eis, -uss, -ess, -rs, -ls",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e (+ Umlaut)",
+      "plural_norm": "e_umlaut",
+      "exceptions": "Preis, Fluss, Kuss, Prozess, Kurs, Hals. Traps: Eis, Nuss.",
+      "examples": [
+        {
+          "word": "Preis",
+          "plural": null
+        },
+        {
+          "word": "Fluss",
+          "plural": null
+        },
+        {
+          "word": "Kuss",
+          "plural": null
+        },
+        {
+          "word": "Prozess",
+          "plural": null
+        },
+        {
+          "word": "Kurs",
+          "plural": null
+        },
+        {
+          "word": "Hals",
+          "plural": null
+        },
+        {
+          "word": "Eis",
+          "plural": null
+        },
+        {
+          "word": "Nuss",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": null
+    },
+    {
+      "spec_id": 54,
+      "category": "Phonetic (-s)",
+      "indicator": "-ass, -oss (Masc)",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e",
+      "plural_norm": "e",
+      "exceptions": "Pass → Pässe.",
+      "examples": [
+        {
+          "word": "Pass",
+          "plural": "Pass → Pässe"
+        },
+        {
+          "word": "Pässe",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": null
+    },
+    {
+      "spec_id": 55,
+      "category": "Phonetic (-s)",
+      "indicator": "-ass, -oss (Neut)",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -er + Umlaut",
+      "plural_norm": "e_umlaut",
+      "exceptions": "Fass → Fässer, Schloss → Schlösser.",
+      "examples": [
+        {
+          "word": "Fass",
+          "plural": "Fass → Fässer,"
+        },
+        {
+          "word": "Schloss",
+          "plural": "Schloss → Schlösser"
+        },
+        {
+          "word": "Fässer",
+          "plural": null
+        },
+        {
+          "word": "Schlösser",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": null
+    },
+    {
+      "spec_id": 56,
+      "category": "Phonetic (-t)",
+      "indicator": "-ast, -ost, -ust",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e (+ Umlaut)",
+      "plural_norm": "e_umlaut",
+      "exceptions": "Physical roots. Ast, Rost, Verlust.",
+      "examples": [
+        {
+          "word": "Physical",
+          "plural": null
+        },
+        {
+          "word": "Ast",
+          "plural": null
+        },
+        {
+          "word": "Rost",
+          "plural": null
+        },
+        {
+          "word": "Verlust",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": null
+    },
+    {
+      "spec_id": 57,
+      "category": "Phonetic (-t)",
+      "indicator": "-est, -elt, -ert",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -e",
+      "plural_norm": "e",
+      "exceptions": "Physical roots. Fest, Zelt, Schwert.",
+      "examples": [
+        {
+          "word": "Physical",
+          "plural": null
+        },
+        {
+          "word": "Fest",
+          "plural": null
+        },
+        {
+          "word": "Zelt",
+          "plural": null
+        },
+        {
+          "word": "Schwert",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": null
+    },
+    {
+      "spec_id": 58,
+      "category": "Phonetic (-ort)",
+      "indicator": "-port, -ort (Loans)",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e",
+      "plural_norm": "e",
+      "exceptions": "Transport, Export, Import.",
+      "examples": [
+        {
+          "word": "Transport",
+          "plural": null
+        },
+        {
+          "word": "Export",
+          "plural": null
+        },
+        {
+          "word": "Import",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": null
+    },
+    {
+      "spec_id": 59,
+      "category": "Phonetic (-ort)",
+      "indicator": "Native -ort (Masc)",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e",
+      "plural_norm": "e",
+      "exceptions": "der Ort → Orte.",
+      "examples": [
+        {
+          "word": "Ort",
+          "plural": "Ort → Orte"
+        },
+        {
+          "word": "Orte",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": null
+    },
+    {
+      "spec_id": 60,
+      "category": "Phonetic (-ort)",
+      "indicator": "Native -ort (Neut)",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -er + Umlaut",
+      "plural_norm": "e_umlaut",
+      "exceptions": "das Wort → Wörter.",
+      "examples": [
+        {
+          "word": "Wort",
+          "plural": "Wort → Wörter"
+        },
+        {
+          "word": "Wörter",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": null
+    },
+    {
+      "spec_id": 61,
+      "category": "Phonetic (-ort)",
+      "indicator": "Antwort (Compound)",
+      "dictated_gender": "Feminine (die)",
+      "dictated_gender_norm": "die",
+      "plural": "Add -en",
+      "plural_norm": "en",
+      "exceptions": "die Antwort → Antworten.",
+      "examples": [
+        {
+          "word": "Antwort",
+          "plural": "Antwort → Antworten"
+        },
+        {
+          "word": "Antworten",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": null
+    },
+    {
+      "spec_id": 62,
+      "category": "Phonetic (-z)",
+      "indicator": "-atz, -itz, -utz, -z",
+      "dictated_gender": "Masculine (der)",
+      "dictated_gender_norm": "der",
+      "plural": "Add -e (+ Umlaut)",
+      "plural_norm": "e_umlaut",
+      "exceptions": "Platz, Witz, Blitz, Schatz.",
+      "examples": [
+        {
+          "word": "Platz",
+          "plural": null
+        },
+        {
+          "word": "Witz",
+          "plural": null
+        },
+        {
+          "word": "Blitz",
+          "plural": null
+        },
+        {
+          "word": "Schatz",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": null
+    },
+    {
+      "spec_id": 63,
+      "category": "Phonetic (-z)",
+      "indicator": "-etz",
+      "dictated_gender": "Neuter (das)",
+      "dictated_gender_norm": "das",
+      "plural": "Add -e",
+      "plural_norm": "e",
+      "exceptions": "Netz, Gesetz.",
+      "examples": [
+        {
+          "word": "Netz",
+          "plural": null
+        },
+        {
+          "word": "Gesetz",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": {
+        "index": 57,
+        "endings": [
+          "etz"
+        ],
+        "gender": "das",
+        "plural": "e",
+        "score": 90,
+        "note": "-etz (Neut)",
+        "matched_ending": "etz"
+      }
+    },
+    {
+      "spec_id": 64,
+      "category": "Foreign Loans",
+      "indicator": "-c, -j, -w, -x, -y, -p",
+      "dictated_gender": "Root Dependent",
+      "dictated_gender_norm": "root",
+      "plural": "Add -s",
+      "plural_norm": "s",
+      "exceptions": "Macs, Shows, Partys, Babys, Shops.",
+      "examples": [
+        {
+          "word": "Macs",
+          "plural": null
+        },
+        {
+          "word": "Shows",
+          "plural": null
+        },
+        {
+          "word": "Partys",
+          "plural": null
+        },
+        {
+          "word": "Babys",
+          "plural": null
+        },
+        {
+          "word": "Shops",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": null
+    },
+    {
+      "spec_id": 65,
+      "category": "Semantic",
+      "indicator": "Komposita (Compounds)",
+      "dictated_gender": "Dictated by Word B",
+      "dictated_gender_norm": null,
+      "plural": "Dictated by Word B",
+      "plural_norm": null,
+      "exceptions": "The last word governs everything.",
+      "examples": [
+        {
+          "word": "The",
+          "plural": null
+        }
+      ],
+      "best_engine_rule": null
+    }
+  ],
+  "engine_results": [
+    {
+      "spec_id": 1,
+      "category": "Supreme Structural",
+      "indicator": "-chen, -lein (Diminutives)",
+      "word": "Overrides",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "unknown",
+      "engine_tier": "none",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 1,
+      "category": "Supreme Structural",
+      "indicator": "-chen, -lein (Diminutives)",
+      "word": "Mädchen",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "das",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 2,
+      "category": "Supreme Semantic",
+      "indicator": "Male Humans & Animals",
+      "word": "Held",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 2,
+      "category": "Supreme Semantic",
+      "indicator": "Male Humans & Animals",
+      "word": "Overrides",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "unknown",
+      "engine_tier": "none",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 2,
+      "category": "Supreme Semantic",
+      "indicator": "Male Humans & Animals",
+      "word": "Helden",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "unknown",
+      "engine_tier": "none",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 3,
+      "category": "Supreme Semantic",
+      "indicator": "Metals & Chemical Elements",
+      "word": "Gold",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "das",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 3,
+      "category": "Supreme Semantic",
+      "indicator": "Metals & Chemical Elements",
+      "word": "Silber",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "das",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 3,
+      "category": "Supreme Semantic",
+      "indicator": "Metals & Chemical Elements",
+      "word": "Eisen",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "das",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 3,
+      "category": "Supreme Semantic",
+      "indicator": "Metals & Chemical Elements",
+      "word": "Blei",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "unknown",
+      "engine_tier": "none",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 3,
+      "category": "Supreme Semantic",
+      "indicator": "Metals & Chemical Elements",
+      "word": "Kupfer",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.55,
+      "engine_note": "-er (Masc, with many neuter exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 3,
+      "category": "Supreme Semantic",
+      "indicator": "Metals & Chemical Elements",
+      "word": "Stahl",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "unknown",
+      "engine_tier": "root-dep",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 3,
+      "category": "Supreme Semantic",
+      "indicator": "Metals & Chemical Elements",
+      "word": "Masc",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "unknown",
+      "engine_tier": "root-dep",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 3,
+      "category": "Supreme Semantic",
+      "indicator": "Metals & Chemical Elements",
+      "word": "Bronze",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.6,
+      "engine_note": "-e (Fem, with many exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 3,
+      "category": "Supreme Semantic",
+      "indicator": "Metals & Chemical Elements",
+      "word": "Fem",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "unknown",
+      "engine_tier": "none",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 5,
+      "category": "Structural (Fem)",
+      "indicator": "-ion, -tur, -sur, -ik, -is",
+      "word": "Streik",
+      "expected_gender_from_spec": "die",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.95,
+      "engine_note": "-ion/-tur/-sur/-ik (Fem, Latin/Greek)",
+      "agrees": true
+    },
+    {
+      "spec_id": 5,
+      "category": "Structural (Fem)",
+      "indicator": "-ion, -tur, -sur, -ik, -is",
+      "word": "Latin",
+      "expected_gender_from_spec": "die",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.85,
+      "engine_note": "-in (Fem, human)",
+      "agrees": true
+    },
+    {
+      "spec_id": 5,
+      "category": "Structural (Fem)",
+      "indicator": "-ion, -tur, -sur, -ik, -is",
+      "word": "Musik",
+      "expected_gender_from_spec": "die",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.95,
+      "engine_note": "-ion/-tur/-sur/-ik (Fem, Latin/Greek)",
+      "agrees": true
+    },
+    {
+      "spec_id": 5,
+      "category": "Structural (Fem)",
+      "indicator": "-ion, -tur, -sur, -ik, -is",
+      "word": "Politik",
+      "expected_gender_from_spec": "die",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.95,
+      "engine_note": "-ion/-tur/-sur/-ik (Fem, Latin/Greek)",
+      "agrees": true
+    },
+    {
+      "spec_id": 5,
+      "category": "Structural (Fem)",
+      "indicator": "-ion, -tur, -sur, -ik, -is",
+      "word": "Abitur",
+      "expected_gender_from_spec": "die",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.95,
+      "engine_note": "-ion/-tur/-sur/-ik (Fem, Latin/Greek)",
+      "agrees": true
+    },
+    {
+      "spec_id": 5,
+      "category": "Structural (Fem)",
+      "indicator": "-ion, -tur, -sur, -ik, -is",
+      "word": "Futur",
+      "expected_gender_from_spec": "die",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.95,
+      "engine_note": "-ion/-tur/-sur/-ik (Fem, Latin/Greek)",
+      "agrees": true
+    },
+    {
+      "spec_id": 5,
+      "category": "Structural (Fem)",
+      "indicator": "-ion, -tur, -sur, -ik, -is",
+      "word": "Neut",
+      "expected_gender_from_spec": "die",
+      "engine_gender": "unknown",
+      "engine_tier": "none",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 5,
+      "category": "Structural (Fem)",
+      "indicator": "-ion, -tur, -sur, -ik, -is",
+      "word": "English",
+      "expected_gender_from_spec": "die",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.55,
+      "engine_note": "Silent -h (root-dependent, often Masc)",
+      "agrees": false
+    },
+    {
+      "spec_id": 5,
+      "category": "Structural (Fem)",
+      "indicator": "-ion, -tur, -sur, -ik, -is",
+      "word": "Masc",
+      "expected_gender_from_spec": "die",
+      "engine_gender": "unknown",
+      "engine_tier": "root-dep",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 5,
+      "category": "Structural (Fem)",
+      "indicator": "-ion, -tur, -sur, -ik, -is",
+      "word": "Streiks",
+      "expected_gender_from_spec": "die",
+      "engine_gender": "unknown",
+      "engine_tier": "none",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 6,
+      "category": "Structural (Fem)",
+      "indicator": "-ei (Occupations/Places)",
+      "word": "Bäckerei",
+      "expected_gender_from_spec": "die",
+      "engine_gender": "unknown",
+      "engine_tier": "none",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 6,
+      "category": "Structural (Fem)",
+      "indicator": "-ei (Occupations/Places)",
+      "word": "Druckerei",
+      "expected_gender_from_spec": "die",
+      "engine_gender": "unknown",
+      "engine_tier": "none",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 6,
+      "category": "Structural (Fem)",
+      "indicator": "-ei (Occupations/Places)",
+      "word": "Sklaverei",
+      "expected_gender_from_spec": "die",
+      "engine_gender": "unknown",
+      "engine_tier": "none",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 7,
+      "category": "Structural (Fem)",
+      "indicator": "-in",
+      "word": "Must",
+      "expected_gender_from_spec": "die",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.85,
+      "engine_note": "-ast/-ost/-ust (Masc, physical)",
+      "agrees": false
+    },
+    {
+      "spec_id": 7,
+      "category": "Structural (Fem)",
+      "indicator": "-in",
+      "word": "Scientific",
+      "expected_gender_from_spec": "die",
+      "engine_gender": "unknown",
+      "engine_tier": "root-dep",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 7,
+      "category": "Structural (Fem)",
+      "indicator": "-in",
+      "word": "Neuter",
+      "expected_gender_from_spec": "die",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.55,
+      "engine_note": "-er (Masc, with many neuter exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 8,
+      "category": "Structural (Fem)",
+      "indicator": "Action + t / st / ft",
+      "word": "Fahrt",
+      "expected_gender_from_spec": "die",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.8,
+      "engine_note": "-fahrt (Fem)",
+      "agrees": true
+    },
+    {
+      "spec_id": 8,
+      "category": "Structural (Fem)",
+      "indicator": "Action + t / st / ft",
+      "word": "Kunst",
+      "expected_gender_from_spec": "die",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.8,
+      "engine_note": "-kunst (Fem, Umlaut)",
+      "agrees": true
+    },
+    {
+      "spec_id": 8,
+      "category": "Structural (Fem)",
+      "indicator": "Action + t / st / ft",
+      "word": "Derived",
+      "expected_gender_from_spec": "die",
+      "engine_gender": "unknown",
+      "engine_tier": "none",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 8,
+      "category": "Structural (Fem)",
+      "indicator": "Action + t / st / ft",
+      "word": "Fahrten",
+      "expected_gender_from_spec": "die",
+      "engine_gender": "unknown",
+      "engine_tier": "none",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 8,
+      "category": "Structural (Fem)",
+      "indicator": "Action + t / st / ft",
+      "word": "Künste",
+      "expected_gender_from_spec": "die",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.6,
+      "engine_note": "-e (Fem, with many exceptions)",
+      "agrees": true
+    },
+    {
+      "spec_id": 9,
+      "category": "Structural (Fem)",
+      "indicator": "-e",
+      "word": "Masculine",
+      "expected_gender_from_spec": "die",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.6,
+      "engine_note": "-e (Fem, with many exceptions)",
+      "agrees": true
+    },
+    {
+      "spec_id": 9,
+      "category": "Structural (Fem)",
+      "indicator": "-e",
+      "word": "Ge-",
+      "expected_gender_from_spec": "die",
+      "engine_gender": "unknown",
+      "engine_tier": "none",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 10,
+      "category": "Structural (Masc)",
+      "indicator": "be-, ent-, er-, ver- (Stems)",
+      "word": "Drops",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "unknown",
+      "engine_tier": "none",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 10,
+      "category": "Structural (Masc)",
+      "indicator": "be-, ent-, er-, ver- (Stems)",
+      "word": "Verbot",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "unknown",
+      "engine_tier": "none",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 10,
+      "category": "Structural (Masc)",
+      "indicator": "be-, ent-, er-, ver- (Stems)",
+      "word": "Neut",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "unknown",
+      "engine_tier": "none",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 11,
+      "category": "Structural (Masc)",
+      "indicator": "-ismus, -us, -os",
+      "word": "Mythos",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.8,
+      "engine_note": "-os (Masc, Greek)",
+      "agrees": true
+    },
+    {
+      "spec_id": 11,
+      "category": "Structural (Masc)",
+      "indicator": "-ismus, -us, -os",
+      "word": "Mythen",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "unknown",
+      "engine_tier": "none",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 11,
+      "category": "Structural (Masc)",
+      "indicator": "-ismus, -us, -os",
+      "word": "Virus",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "unknown",
+      "engine_tier": "none",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 12,
+      "category": "Structural (Masc)",
+      "indicator": "-ent, -ant, -ist",
+      "word": "Must",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.85,
+      "engine_note": "-ast/-ost/-ust (Masc, physical)",
+      "agrees": true
+    },
+    {
+      "spec_id": 12,
+      "category": "Structural (Masc)",
+      "indicator": "-ent, -ant, -ist",
+      "word": "Inanimate",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.6,
+      "engine_note": "-e (Fem, with many exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 12,
+      "category": "Structural (Masc)",
+      "indicator": "-ent, -ant, -ist",
+      "word": "Neuter",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.55,
+      "engine_note": "-er (Masc, with many neuter exceptions)",
+      "agrees": true
+    },
+    {
+      "spec_id": 13,
+      "category": "Structural (Masc)",
+      "indicator": "-or",
+      "word": "Labor",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "unknown",
+      "engine_tier": "root-dep",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 13,
+      "category": "Structural (Masc)",
+      "indicator": "-or",
+      "word": "Professions",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "unknown",
+      "engine_tier": "none",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 13,
+      "category": "Structural (Masc)",
+      "indicator": "-or",
+      "word": "Abstract",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "unknown",
+      "engine_tier": "none",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 13,
+      "category": "Structural (Masc)",
+      "indicator": "-or",
+      "word": "Truncated",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "unknown",
+      "engine_tier": "none",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 13,
+      "category": "Structural (Masc)",
+      "indicator": "-or",
+      "word": "Neuter",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.55,
+      "engine_note": "-er (Masc, with many neuter exceptions)",
+      "agrees": true
+    },
+    {
+      "spec_id": 13,
+      "category": "Structural (Masc)",
+      "indicator": "-or",
+      "word": "Labors",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.8,
+      "engine_note": "-eis/-uss/-rs/-ls (Masc, often Umlaut)",
+      "agrees": true
+    },
+    {
+      "spec_id": 14,
+      "category": "Structural (Masc)",
+      "indicator": "-ig",
+      "word": "König",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.8,
+      "engine_note": "-ig (Masc)",
+      "agrees": true
+    },
+    {
+      "spec_id": 14,
+      "category": "Structural (Masc)",
+      "indicator": "-ig",
+      "word": "Structural",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "unknown",
+      "engine_tier": "root-dep",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 14,
+      "category": "Structural (Masc)",
+      "indicator": "-ig",
+      "word": "Könige",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.6,
+      "engine_note": "-e (Fem, with many exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 15,
+      "category": "Structural (Masc)",
+      "indicator": "-el, -er, -en (Tools/Birds)",
+      "word": "Apfel",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 15,
+      "category": "Structural (Masc)",
+      "indicator": "-el, -er, -en (Tools/Birds)",
+      "word": "Äpfel",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "unknown",
+      "engine_tier": "root-dep",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 16,
+      "category": "Structural (Neut)",
+      "indicator": "-el, -er, -en (Abstracts)",
+      "word": "Mittel",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "unknown",
+      "engine_tier": "root-dep",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 17,
+      "category": "Structural (Masc)",
+      "indicator": "-ar, -ier (Masc Roots)",
+      "word": "Notar",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.7,
+      "engine_note": "-ar (Masc, root-dependent)",
+      "agrees": true
+    },
+    {
+      "spec_id": 17,
+      "category": "Structural (Masc)",
+      "indicator": "-ar, -ier (Masc Roots)",
+      "word": "Notare",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.6,
+      "engine_note": "-e (Fem, with many exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 18,
+      "category": "Structural (Neut)",
+      "indicator": "-ar, -ier (Neut Roots)",
+      "word": "Klavier",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.55,
+      "engine_note": "-er (Masc, with many neuter exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 18,
+      "category": "Structural (Neut)",
+      "indicator": "-ar, -ier (Neut Roots)",
+      "word": "Klaviere",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.6,
+      "engine_note": "-e (Fem, with many exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 19,
+      "category": "Structural (Neut)",
+      "indicator": "-nis",
+      "word": "Geheimnis",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "das",
+      "engine_tier": "Suffix",
+      "engine_score": 0.95,
+      "engine_note": "-nis (Neut)",
+      "agrees": true
+    },
+    {
+      "spec_id": 19,
+      "category": "Structural (Neut)",
+      "indicator": "-nis",
+      "word": "Geheimnisse",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.6,
+      "engine_note": "-e (Fem, with many exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 19,
+      "category": "Structural (Neut)",
+      "indicator": "-nis",
+      "word": "Abstract",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "unknown",
+      "engine_tier": "none",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 19,
+      "category": "Structural (Neut)",
+      "indicator": "-nis",
+      "word": "Feminine",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.6,
+      "engine_note": "-e (Fem, with many exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 19,
+      "category": "Structural (Neut)",
+      "indicator": "-nis",
+      "word": "Erkenntnis",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "das",
+      "engine_tier": "Compound(ntnis)",
+      "engine_score": 0.855,
+      "agrees": true
+    },
+    {
+      "spec_id": 19,
+      "category": "Structural (Neut)",
+      "indicator": "-nis",
+      "word": "Erlaubnis",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.9,
+      "engine_note": "-is (Fem, Latin/Greek)",
+      "agrees": false
+    },
+    {
+      "spec_id": 19,
+      "category": "Structural (Neut)",
+      "indicator": "-nis",
+      "word": "Empfängnis",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "das",
+      "engine_tier": "Compound(gnis)",
+      "engine_score": 0.855,
+      "agrees": true
+    },
+    {
+      "spec_id": 20,
+      "category": "Structural (Neut)",
+      "indicator": "-um, -tum, -ment, -ma",
+      "word": "Praktikum",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "das",
+      "engine_tier": "Suffix",
+      "engine_score": 0.85,
+      "engine_note": "-um (Neut, Latin)",
+      "agrees": true
+    },
+    {
+      "spec_id": 20,
+      "category": "Structural (Neut)",
+      "indicator": "-um, -tum, -ment, -ma",
+      "word": "Museum",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "das",
+      "engine_tier": "Suffix",
+      "engine_score": 0.85,
+      "engine_note": "-um (Neut, Latin)",
+      "agrees": true
+    },
+    {
+      "spec_id": 20,
+      "category": "Structural (Neut)",
+      "indicator": "-um, -tum, -ment, -ma",
+      "word": "Drops",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "unknown",
+      "engine_tier": "none",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 20,
+      "category": "Structural (Neut)",
+      "indicator": "-um, -tum, -ment, -ma",
+      "word": "Latin",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.85,
+      "engine_note": "-in (Fem, human)",
+      "agrees": false
+    },
+    {
+      "spec_id": 20,
+      "category": "Structural (Neut)",
+      "indicator": "-um, -tum, -ment, -ma",
+      "word": "Praktika",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "unknown",
+      "engine_tier": "none",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 20,
+      "category": "Structural (Neut)",
+      "indicator": "-um, -tum, -ment, -ma",
+      "word": "Museen",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "unknown",
+      "engine_tier": "none",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 21,
+      "category": "Structural (Neut)",
+      "indicator": "-iv (Latin Suffix)",
+      "word": "Motiv",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "das",
+      "engine_tier": "Suffix",
+      "engine_score": 0.9,
+      "engine_note": "-iv (Neut, Latin)",
+      "agrees": true
+    },
+    {
+      "spec_id": 21,
+      "category": "Structural (Neut)",
+      "indicator": "-iv (Latin Suffix)",
+      "word": "Motive",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.6,
+      "engine_note": "-e (Fem, with many exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 22,
+      "category": "Phonetic (-b, -f)",
+      "indicator": "-ab, -alb",
+      "word": "Grab",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "das",
+      "engine_tier": "Suffix",
+      "engine_score": 0.75,
+      "engine_note": "-ab/-alb (Neut)",
+      "agrees": true
+    },
+    {
+      "spec_id": 22,
+      "category": "Phonetic (-b, -f)",
+      "indicator": "-ab, -alb",
+      "word": "Gräber",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.55,
+      "engine_note": "-er (Masc, with many neuter exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 23,
+      "category": "Phonetic (-b, -f)",
+      "indicator": "-ieb",
+      "word": "Sieb",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "das",
+      "engine_tier": "Suffix",
+      "engine_score": 0.9,
+      "engine_note": "-ieb (Neut)",
+      "agrees": true
+    },
+    {
+      "spec_id": 23,
+      "category": "Phonetic (-b, -f)",
+      "indicator": "-ieb",
+      "word": "Siebe",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.6,
+      "engine_note": "-e (Fem, with many exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 24,
+      "category": "Phonetic (-b, -f)",
+      "indicator": "Native -b",
+      "word": "Betrieb",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "Sheet",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 24,
+      "category": "Phonetic (-b, -f)",
+      "indicator": "Native -b",
+      "word": "Stab",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.3,
+      "engine_note": "Native -b (Masc, low confidence)",
+      "agrees": true
+    },
+    {
+      "spec_id": 24,
+      "category": "Phonetic (-b, -f)",
+      "indicator": "Native -b",
+      "word": "Betriebe",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.6,
+      "engine_note": "-e (Fem, with many exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 24,
+      "category": "Phonetic (-b, -f)",
+      "indicator": "Native -b",
+      "word": "Stäbe",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.6,
+      "engine_note": "-e (Fem, with many exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 25,
+      "category": "Phonetic (-f)",
+      "indicator": "-of, -uf, -ief",
+      "word": "Hof",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.85,
+      "engine_note": "-of/-uf/-ief (Masc)",
+      "agrees": true
+    },
+    {
+      "spec_id": 25,
+      "category": "Phonetic (-f)",
+      "indicator": "-of, -uf, -ief",
+      "word": "Brief",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 25,
+      "category": "Phonetic (-f)",
+      "indicator": "-of, -uf, -ief",
+      "word": "Höfe",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.6,
+      "engine_note": "-e (Fem, with many exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 25,
+      "category": "Phonetic (-f)",
+      "indicator": "-of, -uf, -ief",
+      "word": "Briefe",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.6,
+      "engine_note": "-e (Fem, with many exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 26,
+      "category": "Phonetic (-f)",
+      "indicator": "-iff, -af",
+      "word": "Schiff",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "das",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 26,
+      "category": "Phonetic (-f)",
+      "indicator": "-iff, -af",
+      "word": "Schiffe",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.6,
+      "engine_note": "-e (Fem, with many exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 27,
+      "category": "Phonetic (-d)",
+      "indicator": "-und",
+      "word": "Hund",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 27,
+      "category": "Phonetic (-d)",
+      "indicator": "-und",
+      "word": "Mund",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 27,
+      "category": "Phonetic (-d)",
+      "indicator": "-und",
+      "word": "Grund",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.8,
+      "engine_note": "-und (Masc)",
+      "agrees": true
+    },
+    {
+      "spec_id": 28,
+      "category": "Phonetic (-d)",
+      "indicator": "-ild, -eld",
+      "word": "Bild",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "das",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 28,
+      "category": "Phonetic (-d)",
+      "indicator": "-ild, -eld",
+      "word": "Schild",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "das",
+      "engine_tier": "Suffix",
+      "engine_score": 0.8,
+      "engine_note": "-ild/-eld (Neut)",
+      "agrees": true
+    },
+    {
+      "spec_id": 28,
+      "category": "Phonetic (-d)",
+      "indicator": "-ild, -eld",
+      "word": "Held",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "der",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": false
+    },
+    {
+      "spec_id": 28,
+      "category": "Phonetic (-d)",
+      "indicator": "-ild, -eld",
+      "word": "Masc",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "unknown",
+      "engine_tier": "root-dep",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 29,
+      "category": "Phonetic (-d)",
+      "indicator": "-and, -ind, -ad (Masc)",
+      "word": "Pfad",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.6,
+      "engine_note": "-ad/-ind (Masc)",
+      "agrees": true
+    },
+    {
+      "spec_id": 29,
+      "category": "Phonetic (-d)",
+      "indicator": "-and, -ind, -ad (Masc)",
+      "word": "Pfade",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.6,
+      "engine_note": "-e (Fem, with many exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 29,
+      "category": "Phonetic (-d)",
+      "indicator": "-and, -ind, -ad (Masc)",
+      "word": "Hand",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "die",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": false
+    },
+    {
+      "spec_id": 29,
+      "category": "Phonetic (-d)",
+      "indicator": "-and, -ind, -ad (Masc)",
+      "word": "Fem",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "unknown",
+      "engine_tier": "none",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 30,
+      "category": "Phonetic (-d)",
+      "indicator": "-and, -ind, -ad (Neut)",
+      "word": "Rad",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "das",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 30,
+      "category": "Phonetic (-d)",
+      "indicator": "-and, -ind, -ad (Neut)",
+      "word": "Band",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "das",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 30,
+      "category": "Phonetic (-d)",
+      "indicator": "-and, -ind, -ad (Neut)",
+      "word": "Räder",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.55,
+      "engine_note": "-er (Masc, with many neuter exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 30,
+      "category": "Phonetic (-d)",
+      "indicator": "-and, -ind, -ad (Neut)",
+      "word": "Bänder",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.55,
+      "engine_note": "-er (Masc, with many neuter exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 31,
+      "category": "Phonetic (-d)",
+      "indicator": "-end (Masc)",
+      "word": "Abend",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "Sheet",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 31,
+      "category": "Phonetic (-d)",
+      "indicator": "-end (Masc)",
+      "word": "Abende",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.6,
+      "engine_note": "-e (Fem, with many exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 32,
+      "category": "Phonetic (-d)",
+      "indicator": "-end (Neut)",
+      "word": "Dutzend",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "das",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 32,
+      "category": "Phonetic (-d)",
+      "indicator": "-end (Neut)",
+      "word": "Dutzende",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.6,
+      "engine_note": "-e (Fem, with many exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 33,
+      "category": "Phonetic (-d)",
+      "indicator": "-rd (Masc)",
+      "word": "Herd",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 33,
+      "category": "Phonetic (-d)",
+      "indicator": "-rd (Masc)",
+      "word": "Herde",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.6,
+      "engine_note": "-e (Fem, with many exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 34,
+      "category": "Phonetic (-d)",
+      "indicator": "-rd (Neut)",
+      "word": "Pferd",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "das",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 34,
+      "category": "Phonetic (-d)",
+      "indicator": "-rd (Neut)",
+      "word": "Pferde",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.6,
+      "engine_note": "-e (Fem, with many exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 35,
+      "category": "Phonetic (-ee)",
+      "indicator": "-ee (Substances/Plants)",
+      "word": "Imported",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "unknown",
+      "engine_tier": "none",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 35,
+      "category": "Phonetic (-ee)",
+      "indicator": "-ee (Substances/Plants)",
+      "word": "Kaffee",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 35,
+      "category": "Phonetic (-ee)",
+      "indicator": "-ee (Substances/Plants)",
+      "word": "Tee",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 36,
+      "category": "Phonetic (-ee)",
+      "indicator": "-ee (Abstract/French)",
+      "word": "French",
+      "expected_gender_from_spec": "die",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.55,
+      "engine_note": "Silent -h (root-dependent, often Masc)",
+      "agrees": false
+    },
+    {
+      "spec_id": 36,
+      "category": "Phonetic (-ee)",
+      "indicator": "-ee (Abstract/French)",
+      "word": "Idee",
+      "expected_gender_from_spec": "die",
+      "engine_gender": "die",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 36,
+      "category": "Phonetic (-ee)",
+      "indicator": "-ee (Abstract/French)",
+      "word": "Allee",
+      "expected_gender_from_spec": "die",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.6,
+      "engine_note": "-e (Fem, with many exceptions)",
+      "agrees": true
+    },
+    {
+      "spec_id": 37,
+      "category": "Phonetic (-g)",
+      "indicator": "-ag, -eg, -og, -ug",
+      "word": "Absolute",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.6,
+      "engine_note": "-e (Fem, with many exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 37,
+      "category": "Phonetic (-g)",
+      "indicator": "-ag, -eg, -og, -ug",
+      "word": "Tag",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "Sheet",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 37,
+      "category": "Phonetic (-g)",
+      "indicator": "-ag, -eg, -og, -ug",
+      "word": "Weg",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "Sheet",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 37,
+      "category": "Phonetic (-g)",
+      "indicator": "-ag, -eg, -og, -ug",
+      "word": "Zug",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 38,
+      "category": "Phonetic (-h)",
+      "indicator": "Silent -h (Masc)",
+      "word": "Schuh",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 38,
+      "category": "Phonetic (-h)",
+      "indicator": "Silent -h (Masc)",
+      "word": "Schuhe",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.6,
+      "engine_note": "-e (Fem, with many exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 39,
+      "category": "Phonetic (-h)",
+      "indicator": "Silent -h (Neut)",
+      "word": "Reh",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "das",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 39,
+      "category": "Phonetic (-h)",
+      "indicator": "Silent -h (Neut)",
+      "word": "Rehe",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.6,
+      "engine_note": "-e (Fem, with many exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 40,
+      "category": "Phonetic (-h)",
+      "indicator": "Silent -h (Fem)",
+      "word": "Kuh",
+      "expected_gender_from_spec": "die",
+      "engine_gender": "die",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 40,
+      "category": "Phonetic (-h)",
+      "indicator": "Silent -h (Fem)",
+      "word": "Kühe",
+      "expected_gender_from_spec": "die",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.6,
+      "engine_note": "-e (Fem, with many exceptions)",
+      "agrees": true
+    },
+    {
+      "spec_id": 41,
+      "category": "Phonetic (-k)",
+      "indicator": "-ack, -ock, -uck",
+      "word": "Sack",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.85,
+      "engine_note": "-ack/-ock/-uck (Masc, gravity)",
+      "agrees": true
+    },
+    {
+      "spec_id": 41,
+      "category": "Phonetic (-k)",
+      "indicator": "-ack, -ock, -uck",
+      "word": "Stock",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.85,
+      "engine_note": "-ack/-ock/-uck (Masc, gravity)",
+      "agrees": true
+    },
+    {
+      "spec_id": 41,
+      "category": "Phonetic (-k)",
+      "indicator": "-ack, -ock, -uck",
+      "word": "Druck",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.85,
+      "engine_note": "-ack/-ock/-uck (Masc, gravity)",
+      "agrees": true
+    },
+    {
+      "spec_id": 42,
+      "category": "Phonetic (-k)",
+      "indicator": "-eck, -ück",
+      "word": "Versteck",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "das",
+      "engine_tier": "Suffix",
+      "engine_score": 0.8,
+      "engine_note": "-eck/-ück (Neut)",
+      "agrees": true
+    },
+    {
+      "spec_id": 42,
+      "category": "Phonetic (-k)",
+      "indicator": "-eck, -ück",
+      "word": "Stück",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "das",
+      "engine_tier": "Suffix",
+      "engine_score": 0.8,
+      "engine_note": "-eck/-ück (Neut)",
+      "agrees": true
+    },
+    {
+      "spec_id": 43,
+      "category": "Phonetic (-l)",
+      "indicator": "-l, -ll (Masc)",
+      "word": "Fall",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.6,
+      "engine_note": "-ll (Masc)",
+      "agrees": true
+    },
+    {
+      "spec_id": 43,
+      "category": "Phonetic (-l)",
+      "indicator": "-l, -ll (Masc)",
+      "word": "Fälle",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.6,
+      "engine_note": "-e (Fem, with many exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 44,
+      "category": "Phonetic (-l)",
+      "indicator": "-l, -ll (Neut)",
+      "word": "Spiel",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "das",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 44,
+      "category": "Phonetic (-l)",
+      "indicator": "-l, -ll (Neut)",
+      "word": "Tal",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "das",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 44,
+      "category": "Phonetic (-l)",
+      "indicator": "-l, -ll (Neut)",
+      "word": "Spiele",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.6,
+      "engine_note": "-e (Fem, with many exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 44,
+      "category": "Phonetic (-l)",
+      "indicator": "-l, -ll (Neut)",
+      "word": "Täler",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.55,
+      "engine_note": "-er (Masc, with many neuter exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 45,
+      "category": "Phonetic (-m)",
+      "indicator": "-aum, -amm, -urm, -elm",
+      "word": "Baum",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 45,
+      "category": "Phonetic (-m)",
+      "indicator": "-aum, -amm, -urm, -elm",
+      "word": "Stamm",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.85,
+      "engine_note": "-aum/-amm/-urm/-elm (Masc, often Umlaut)",
+      "agrees": true
+    },
+    {
+      "spec_id": 45,
+      "category": "Phonetic (-m)",
+      "indicator": "-aum, -amm, -urm, -elm",
+      "word": "Turm",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 45,
+      "category": "Phonetic (-m)",
+      "indicator": "-aum, -amm, -urm, -elm",
+      "word": "Helm",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 46,
+      "category": "Phonetic (-m)",
+      "indicator": "-m (Neut Roots)",
+      "word": "Lamm",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "das",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 46,
+      "category": "Phonetic (-m)",
+      "indicator": "-m (Neut Roots)",
+      "word": "Rare",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.6,
+      "engine_note": "-e (Fem, with many exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 46,
+      "category": "Phonetic (-m)",
+      "indicator": "-m (Neut Roots)",
+      "word": "Lämmer",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.55,
+      "engine_note": "-er (Masc, with many neuter exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 47,
+      "category": "Phonetic (-m)",
+      "indicator": "-orm (Loanwords)",
+      "word": "Form",
+      "expected_gender_from_spec": "die",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.75,
+      "engine_note": "-orm (Fem, loanwords)",
+      "agrees": true
+    },
+    {
+      "spec_id": 47,
+      "category": "Phonetic (-m)",
+      "indicator": "-orm (Loanwords)",
+      "word": "Norm",
+      "expected_gender_from_spec": "die",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.75,
+      "engine_note": "-orm (Fem, loanwords)",
+      "agrees": true
+    },
+    {
+      "spec_id": 48,
+      "category": "Phonetic (-pf)",
+      "indicator": "-opf, -umpf, -ampf",
+      "word": "Masc",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "unknown",
+      "engine_tier": "root-dep",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 48,
+      "category": "Phonetic (-pf)",
+      "indicator": "-opf, -umpf, -ampf",
+      "word": "Kopf",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 48,
+      "category": "Phonetic (-pf)",
+      "indicator": "-opf, -umpf, -ampf",
+      "word": "Kampf",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.9,
+      "engine_note": "-opf/-umpf/-ampf (Masc, gravity)",
+      "agrees": true
+    },
+    {
+      "spec_id": 49,
+      "category": "Phonetic (-r)",
+      "indicator": "-wur, -lur (Native)",
+      "word": "Schwur",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.8,
+      "engine_note": "-wur/-lur (Masc)",
+      "agrees": true
+    },
+    {
+      "spec_id": 49,
+      "category": "Phonetic (-r)",
+      "indicator": "-wur, -lur (Native)",
+      "word": "Flur",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.8,
+      "engine_note": "-wur/-lur (Masc)",
+      "agrees": true
+    },
+    {
+      "spec_id": 49,
+      "category": "Phonetic (-r)",
+      "indicator": "-wur, -lur (Native)",
+      "word": "Schwüre",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.6,
+      "engine_note": "-e (Fem, with many exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 49,
+      "category": "Phonetic (-r)",
+      "indicator": "-wur, -lur (Native)",
+      "word": "Flure",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.6,
+      "engine_note": "-e (Fem, with many exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 50,
+      "category": "Phonetic (-r)",
+      "indicator": "-pur, -nur (Native)",
+      "word": "Spur",
+      "expected_gender_from_spec": "die",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.75,
+      "engine_note": "-pur/-nur (Fem)",
+      "agrees": true
+    },
+    {
+      "spec_id": 50,
+      "category": "Phonetic (-r)",
+      "indicator": "-pur, -nur (Native)",
+      "word": "Spuren",
+      "expected_gender_from_spec": "die",
+      "engine_gender": "unknown",
+      "engine_tier": "none",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 51,
+      "category": "Phonetic (-r)",
+      "indicator": "1-Syllable -r (Neut)",
+      "word": "Jahr",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "das",
+      "engine_tier": "Sheet",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 51,
+      "category": "Phonetic (-r)",
+      "indicator": "1-Syllable -r (Neut)",
+      "word": "Tor",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "das",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 52,
+      "category": "Phonetic (-r)",
+      "indicator": "1-Syllable -r (Fem)",
+      "word": "Tür",
+      "expected_gender_from_spec": "die",
+      "engine_gender": "die",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 52,
+      "category": "Phonetic (-r)",
+      "indicator": "1-Syllable -r (Fem)",
+      "word": "Uhr",
+      "expected_gender_from_spec": "die",
+      "engine_gender": "die",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 53,
+      "category": "Phonetic (-s)",
+      "indicator": "-eis, -uss, -ess, -rs, -ls",
+      "word": "Preis",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.8,
+      "engine_note": "-eis/-uss/-rs/-ls (Masc, often Umlaut)",
+      "agrees": true
+    },
+    {
+      "spec_id": 53,
+      "category": "Phonetic (-s)",
+      "indicator": "-eis, -uss, -ess, -rs, -ls",
+      "word": "Fluss",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 53,
+      "category": "Phonetic (-s)",
+      "indicator": "-eis, -uss, -ess, -rs, -ls",
+      "word": "Kuss",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.8,
+      "engine_note": "-eis/-uss/-rs/-ls (Masc, often Umlaut)",
+      "agrees": true
+    },
+    {
+      "spec_id": 53,
+      "category": "Phonetic (-s)",
+      "indicator": "-eis, -uss, -ess, -rs, -ls",
+      "word": "Prozess",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "Sheet",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 53,
+      "category": "Phonetic (-s)",
+      "indicator": "-eis, -uss, -ess, -rs, -ls",
+      "word": "Kurs",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.8,
+      "engine_note": "-eis/-uss/-rs/-ls (Masc, often Umlaut)",
+      "agrees": true
+    },
+    {
+      "spec_id": 53,
+      "category": "Phonetic (-s)",
+      "indicator": "-eis, -uss, -ess, -rs, -ls",
+      "word": "Hals",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 53,
+      "category": "Phonetic (-s)",
+      "indicator": "-eis, -uss, -ess, -rs, -ls",
+      "word": "Eis",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "das",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": false
+    },
+    {
+      "spec_id": 53,
+      "category": "Phonetic (-s)",
+      "indicator": "-eis, -uss, -ess, -rs, -ls",
+      "word": "Nuss",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "die",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": false
+    },
+    {
+      "spec_id": 54,
+      "category": "Phonetic (-s)",
+      "indicator": "-ass, -oss (Masc)",
+      "word": "Pass",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 54,
+      "category": "Phonetic (-s)",
+      "indicator": "-ass, -oss (Masc)",
+      "word": "Pässe",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.6,
+      "engine_note": "-e (Fem, with many exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 55,
+      "category": "Phonetic (-s)",
+      "indicator": "-ass, -oss (Neut)",
+      "word": "Fass",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "das",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 55,
+      "category": "Phonetic (-s)",
+      "indicator": "-ass, -oss (Neut)",
+      "word": "Schloss",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "das",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 55,
+      "category": "Phonetic (-s)",
+      "indicator": "-ass, -oss (Neut)",
+      "word": "Fässer",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.55,
+      "engine_note": "-er (Masc, with many neuter exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 55,
+      "category": "Phonetic (-s)",
+      "indicator": "-ass, -oss (Neut)",
+      "word": "Schlösser",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.55,
+      "engine_note": "-er (Masc, with many neuter exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 56,
+      "category": "Phonetic (-t)",
+      "indicator": "-ast, -ost, -ust",
+      "word": "Physical",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "unknown",
+      "engine_tier": "root-dep",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 56,
+      "category": "Phonetic (-t)",
+      "indicator": "-ast, -ost, -ust",
+      "word": "Ast",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.85,
+      "engine_note": "-ast/-ost/-ust (Masc, physical)",
+      "agrees": true
+    },
+    {
+      "spec_id": 56,
+      "category": "Phonetic (-t)",
+      "indicator": "-ast, -ost, -ust",
+      "word": "Rost",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.85,
+      "engine_note": "-ast/-ost/-ust (Masc, physical)",
+      "agrees": true
+    },
+    {
+      "spec_id": 56,
+      "category": "Phonetic (-t)",
+      "indicator": "-ast, -ost, -ust",
+      "word": "Verlust",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.85,
+      "engine_note": "-ast/-ost/-ust (Masc, physical)",
+      "agrees": true
+    },
+    {
+      "spec_id": 57,
+      "category": "Phonetic (-t)",
+      "indicator": "-est, -elt, -ert",
+      "word": "Physical",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "unknown",
+      "engine_tier": "root-dep",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 57,
+      "category": "Phonetic (-t)",
+      "indicator": "-est, -elt, -ert",
+      "word": "Fest",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "das",
+      "engine_tier": "Suffix",
+      "engine_score": 0.8,
+      "engine_note": "-est/-elt/-ert (Neut, physical)",
+      "agrees": true
+    },
+    {
+      "spec_id": 57,
+      "category": "Phonetic (-t)",
+      "indicator": "-est, -elt, -ert",
+      "word": "Zelt",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "das",
+      "engine_tier": "Suffix",
+      "engine_score": 0.8,
+      "engine_note": "-est/-elt/-ert (Neut, physical)",
+      "agrees": true
+    },
+    {
+      "spec_id": 57,
+      "category": "Phonetic (-t)",
+      "indicator": "-est, -elt, -ert",
+      "word": "Schwert",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "das",
+      "engine_tier": "Suffix",
+      "engine_score": 0.8,
+      "engine_note": "-est/-elt/-ert (Neut, physical)",
+      "agrees": true
+    },
+    {
+      "spec_id": 58,
+      "category": "Phonetic (-ort)",
+      "indicator": "-port, -ort (Loans)",
+      "word": "Transport",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "unknown",
+      "engine_tier": "none",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 58,
+      "category": "Phonetic (-ort)",
+      "indicator": "-port, -ort (Loans)",
+      "word": "Export",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "unknown",
+      "engine_tier": "none",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 58,
+      "category": "Phonetic (-ort)",
+      "indicator": "-port, -ort (Loans)",
+      "word": "Import",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "unknown",
+      "engine_tier": "none",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 59,
+      "category": "Phonetic (-ort)",
+      "indicator": "Native -ort (Masc)",
+      "word": "Ort",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 59,
+      "category": "Phonetic (-ort)",
+      "indicator": "Native -ort (Masc)",
+      "word": "Orte",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.6,
+      "engine_note": "-e (Fem, with many exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 60,
+      "category": "Phonetic (-ort)",
+      "indicator": "Native -ort (Neut)",
+      "word": "Wort",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "das",
+      "engine_tier": "Sheet",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 60,
+      "category": "Phonetic (-ort)",
+      "indicator": "Native -ort (Neut)",
+      "word": "Wörter",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "der",
+      "engine_tier": "Suffix",
+      "engine_score": 0.55,
+      "engine_note": "-er (Masc, with many neuter exceptions)",
+      "agrees": false
+    },
+    {
+      "spec_id": 61,
+      "category": "Phonetic (-ort)",
+      "indicator": "Antwort (Compound)",
+      "word": "Antwort",
+      "expected_gender_from_spec": "die",
+      "engine_gender": "die",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 61,
+      "category": "Phonetic (-ort)",
+      "indicator": "Antwort (Compound)",
+      "word": "Antworten",
+      "expected_gender_from_spec": "die",
+      "engine_gender": "unknown",
+      "engine_tier": "none",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 62,
+      "category": "Phonetic (-z)",
+      "indicator": "-atz, -itz, -utz, -z",
+      "word": "Platz",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 62,
+      "category": "Phonetic (-z)",
+      "indicator": "-atz, -itz, -utz, -z",
+      "word": "Witz",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 62,
+      "category": "Phonetic (-z)",
+      "indicator": "-atz, -itz, -utz, -z",
+      "word": "Blitz",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 62,
+      "category": "Phonetic (-z)",
+      "indicator": "-atz, -itz, -utz, -z",
+      "word": "Schatz",
+      "expected_gender_from_spec": "der",
+      "engine_gender": "der",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 63,
+      "category": "Phonetic (-z)",
+      "indicator": "-etz",
+      "word": "Netz",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "das",
+      "engine_tier": "A1/A2",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 63,
+      "category": "Phonetic (-z)",
+      "indicator": "-etz",
+      "word": "Gesetz",
+      "expected_gender_from_spec": "das",
+      "engine_gender": "das",
+      "engine_tier": "Sheet",
+      "engine_score": 1,
+      "agrees": true
+    },
+    {
+      "spec_id": 64,
+      "category": "Foreign Loans",
+      "indicator": "-c, -j, -w, -x, -y, -p",
+      "word": "Macs",
+      "expected_gender_from_spec": "root",
+      "engine_gender": "unknown",
+      "engine_tier": "none",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 64,
+      "category": "Foreign Loans",
+      "indicator": "-c, -j, -w, -x, -y, -p",
+      "word": "Shows",
+      "expected_gender_from_spec": "root",
+      "engine_gender": "unknown",
+      "engine_tier": "none",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 64,
+      "category": "Foreign Loans",
+      "indicator": "-c, -j, -w, -x, -y, -p",
+      "word": "Partys",
+      "expected_gender_from_spec": "root",
+      "engine_gender": "unknown",
+      "engine_tier": "none",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 64,
+      "category": "Foreign Loans",
+      "indicator": "-c, -j, -w, -x, -y, -p",
+      "word": "Babys",
+      "expected_gender_from_spec": "root",
+      "engine_gender": "unknown",
+      "engine_tier": "none",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 64,
+      "category": "Foreign Loans",
+      "indicator": "-c, -j, -w, -x, -y, -p",
+      "word": "Shops",
+      "expected_gender_from_spec": "root",
+      "engine_gender": "unknown",
+      "engine_tier": "none",
+      "engine_score": 0,
+      "agrees": false
+    },
+    {
+      "spec_id": 65,
+      "category": "Semantic",
+      "indicator": "Komposita (Compounds)",
+      "word": "The",
+      "expected_gender_from_spec": null,
+      "engine_gender": "die",
+      "engine_tier": "Suffix",
+      "engine_score": 0.6,
+      "engine_note": "-e (Fem, with many exceptions)",
+      "agrees": false
+    }
+  ]
+}
