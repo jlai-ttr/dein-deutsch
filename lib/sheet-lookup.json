@@ -1,0 +1,386 @@
+{
+  "sohn": {
+    "g": "der",
+    "p": "die Söhne"
+  },
+  "konzept": {
+    "g": "das",
+    "p": "die Konzepte"
+  },
+  "regel": {
+    "g": "die",
+    "p": "die Regeln"
+  },
+  "satz": {
+    "g": "der",
+    "p": "die Sätze"
+  },
+  "ziel": {
+    "g": "das",
+    "p": "die Ziele"
+  },
+  "sprache": {
+    "g": "die",
+    "p": "die Sprachen"
+  },
+  "wort": {
+    "g": "das",
+    "p": "die Wörter"
+  },
+  "fehler": {
+    "g": "der",
+    "p": "die Fehler"
+  },
+  "zeit": {
+    "g": "die",
+    "p": "die Zeiten"
+  },
+  "beispiel": {
+    "g": "das",
+    "p": "die Beispiele"
+  },
+  "gedanke": {
+    "g": "der",
+    "p": "die Gedanken"
+  },
+  "frage": {
+    "g": "die",
+    "p": "die Fragen"
+  },
+  "weg": {
+    "g": "der",
+    "p": "die Wege"
+  },
+  "problem": {
+    "g": "das",
+    "p": "die Probleme"
+  },
+  "struktur": {
+    "g": "die",
+    "p": "die Strukturen"
+  },
+  "schritt": {
+    "g": "der",
+    "p": "die Schritte"
+  },
+  "ding": {
+    "g": "das",
+    "p": "die Dinge"
+  },
+  "buch": {
+    "g": "das",
+    "p": "die Bücher"
+  },
+  "system": {
+    "g": "das",
+    "p": "die Systeme"
+  },
+  "haus": {
+    "g": "das",
+    "p": "die Häuser"
+  },
+  "auto": {
+    "g": "das",
+    "p": "die Autos"
+  },
+  "arbeit": {
+    "g": "die",
+    "p": "die Arbeiten"
+  },
+  "leben": {
+    "g": "das",
+    "p": "die Leben"
+  },
+  "freund": {
+    "g": "der",
+    "p": "die Freunde"
+  },
+  "freundin": {
+    "g": "die",
+    "p": "die Freundinnen"
+  },
+  "familie": {
+    "g": "die",
+    "p": "die Familien"
+  },
+  "wasser": {
+    "g": "das",
+    "p": "die Wässer"
+  },
+  "geld": {
+    "g": "das",
+    "p": "die Gelder"
+  },
+  "tag": {
+    "g": "der",
+    "p": "die Tage"
+  },
+  "nacht": {
+    "g": "die",
+    "p": "die Nächte"
+  },
+  "morgen": {
+    "g": "der",
+    "p": "die Morgen"
+  },
+  "abend": {
+    "g": "der",
+    "p": "die Abende"
+  },
+  "monat": {
+    "g": "der",
+    "p": "die Monate"
+  },
+  "jahr": {
+    "g": "das",
+    "p": "die Jahre"
+  },
+  "stadt": {
+    "g": "die",
+    "p": "die Städte"
+  },
+  "mensch": {
+    "g": "der",
+    "p": "die Menschen"
+  },
+  "kind": {
+    "g": "das",
+    "p": "die Kinder"
+  },
+  "schule": {
+    "g": "die",
+    "p": "die Schulen"
+  },
+  "name": {
+    "g": "der",
+    "p": "die Namen"
+  },
+  "welt": {
+    "g": "die",
+    "p": "die Welten"
+  },
+  "teil": {
+    "g": "der",
+    "p": "die Teile"
+  },
+  "ende": {
+    "g": "das",
+    "p": "die Enden"
+  },
+  "unternehmen": {
+    "g": "das",
+    "p": "die Unternehmen"
+  },
+  "finanzen": {
+    "g": "die",
+    "p": "-"
+  },
+  "steuern": {
+    "g": "die",
+    "p": "-"
+  },
+  "automatisierung": {
+    "g": "die",
+    "p": "die Automatisierungen"
+  },
+  "prozess": {
+    "g": "der",
+    "p": "die Prozesse"
+  },
+  "wolke": {
+    "g": "die",
+    "p": "die Wolken"
+  },
+  "stuhl": {
+    "g": "der",
+    "p": "die Stühle"
+  },
+  "möbel": {
+    "g": "das",
+    "p": "-"
+  },
+  "lager": {
+    "g": "das",
+    "p": "die Lager"
+  },
+  "geschäft": {
+    "g": "das",
+    "p": "die Geschäfte"
+  },
+  "nudeln": {
+    "g": "die",
+    "p": "-"
+  },
+  "restaurant": {
+    "g": "das",
+    "p": "die Restaurants"
+  },
+  "zukunft": {
+    "g": "die",
+    "p": "die Zukünfte"
+  },
+  "projekt": {
+    "g": "das",
+    "p": "die Projekte"
+  },
+  "server": {
+    "g": "der",
+    "p": "die Server"
+  },
+  "update": {
+    "g": "das",
+    "p": "die Updates"
+  },
+  "markt": {
+    "g": "der",
+    "p": "die Märkte"
+  },
+  "büro": {
+    "g": "das",
+    "p": "die Büros"
+  },
+  "manager": {
+    "g": "der",
+    "p": "die Manager"
+  },
+  "team": {
+    "g": "das",
+    "p": "die Teams"
+  },
+  "daten": {
+    "g": "die",
+    "p": "-"
+  },
+  "dashboard": {
+    "g": "das",
+    "p": "die Dashboards"
+  },
+  "aufgabe": {
+    "g": "die",
+    "p": "die Aufgaben"
+  },
+  "bericht": {
+    "g": "der",
+    "p": "die Berichte"
+  },
+  "portfolio": {
+    "g": "das",
+    "p": "die Portfolios"
+  },
+  "konto": {
+    "g": "das",
+    "p": "die Konten"
+  },
+  "bestätigung": {
+    "g": "die",
+    "p": "die Bestätigungen"
+  },
+  "vertrag": {
+    "g": "der",
+    "p": "die Verträge"
+  },
+  "gesetz": {
+    "g": "das",
+    "p": "die Gesetze"
+  },
+  "wachstum": {
+    "g": "das",
+    "p": "-"
+  },
+  "kollege": {
+    "g": "der",
+    "p": "die Kollegen"
+  },
+  "kollegin": {
+    "g": "die",
+    "p": "die Kolleginnen"
+  },
+  "schwager": {
+    "g": "der",
+    "p": "die Schwäger"
+  },
+  "marke": {
+    "g": "die",
+    "p": "die Marken"
+  },
+  "gesellschaft": {
+    "g": "die",
+    "p": "die Gesellschaften"
+  },
+  "netzwerk": {
+    "g": "das",
+    "p": "die Netzwerke"
+  },
+  "hardware": {
+    "g": "die",
+    "p": "die Hardwares"
+  },
+  "prozessor": {
+    "g": "der",
+    "p": "die Prozessoren"
+  },
+  "bildschirm": {
+    "g": "der",
+    "p": "die Bildschirme"
+  },
+  "grundschule": {
+    "g": "die",
+    "p": "die Grundschulen"
+  },
+  "bezirk": {
+    "g": "der",
+    "p": "die Bezirke"
+  },
+  "prüfung": {
+    "g": "die",
+    "p": "die Prüfungen"
+  },
+  "plan": {
+    "g": "der",
+    "p": "die Pläne"
+  },
+  "maskottchen": {
+    "g": "das",
+    "p": "die Maskottchen"
+  },
+  "kreation": {
+    "g": "die",
+    "p": "die Kreationen"
+  },
+  "unternehmer": {
+    "g": "der",
+    "p": "die Unternehmer"
+  },
+  "eltern": {
+    "g": "die",
+    "p": "-"
+  },
+  "vereinbarung": {
+    "g": "die",
+    "p": "die Vereinbarungen"
+  },
+  "smartphone": {
+    "g": "das",
+    "p": "die Smartphones"
+  },
+  "betrieb": {
+    "g": "der",
+    "p": "die Betriebe"
+  },
+  "lösung": {
+    "g": "die",
+    "p": "die Lösungen"
+  },
+  "agent": {
+    "g": "der",
+    "p": "die Agenten"
+  },
+  "boudoir": {
+    "g": "das",
+    "p": "s"
+  },
+  "sessel": {
+    "g": "der",
+    "p": "-"
+  }
+}
