@@ -9,9 +9,13 @@
 // Delete once verb/adjective wiring is sorted.
 
 import { NextResponse } from 'next/server';
-import { getSheetsClient } from '../../../../lib/sheet-client';
+import { getSheetsClient } from '../../../lib/sheet-client';
 
 const DEFAULT_TAB = 'German Vocabulary - Nouns (Die Nomen)';
+
+// (path note: file lives at app/api/debug/noun-matrix/route.ts; sibling
+// app/api/debug/sheet-samples/route.ts uses the same `../../../lib/sheet-client`
+// import — three levels up reaches app/, then descend into lib/.)
 
 export async function GET(request: Request) {
   const url = new URL(request.url);
