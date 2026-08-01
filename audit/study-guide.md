@@ -1,6 +1,6 @@
 # German Noun Matrix — Master Study Guide
 
-*Generated 2026-08-01T02:00:22.921Z from spec (68 rules) + engine (64 SUFFIX_RULES)*
+*Generated 2026-08-01T02:20:25.117Z from spec (68 rules) + engine (66 SUFFIX_RULES)*
 
 > **dictated gender** = what the rule says. **Engine Rule** = how the engine predicts. ✅ = agree, ⚠️ = conflict, 🚫 = no engine rule.
 
@@ -9,11 +9,11 @@
 | Metric | Value |
 |---|---|
 | Spec entries | 68 |
-| Engine SUFFIX_RULES | 64 |
+| Engine SUFFIX_RULES | 66 |
 | Spec mapped to engine rule | **56/68 (82.4%)** |
 | Spec WITHOUT engine rule | 12 |
 | Rule mismatches | 8 |
-| Word-level agreement | **56.4%** (115/204) |
+| Word-level agreement | **56.9%** (116/204) |
 
 ## Rule Index by Category
 
@@ -116,7 +116,7 @@
 - **Exceptions**: Overrides all phonetics (Held → Helden).
 - **Practice examples**:
   - Held → engine: der (A1/A2)
-  - Helden → engine: unknown (none)
+  - Helden → engine: das (Suffix)
 
 ### 🚫 Rule 3: Metals & Chemical Elements
 
@@ -175,7 +175,7 @@
 - **Exceptions**: French abstract concepts (die Manier → Manieren).
 - **Practice examples**:
   - Manier → engine: die (Suffix)
-  - Manieren → engine: unknown (none)
+  - Manieren → engine: das (Compound(ren))
 
 ### ✅ Rule 8: -in
 
@@ -200,7 +200,7 @@
   - Fahrt → engine: die (Suffix)
   - Kunst → engine: die (Suffix)
   - Derived → engine: unknown (none)
-  - Fahrten → engine: unknown (none)
+  - Fahrten → engine: das (Suffix)
   - Künste → engine: die (Suffix)
 
 ### ✅ Rule 10: -e
@@ -232,7 +232,7 @@
 - **Exceptions**: Mythos → Mythen. Trap: das Virus.
 - **Practice examples**:
   - Mythos → engine: der (Suffix)
-  - Mythen → engine: unknown (none)
+  - Mythen → engine: das (Suffix)
   - Virus → engine: das (Suffix)
 
 ### ✅ Rule 13: -ent, -ant, -ist, -et
@@ -270,7 +270,7 @@
 - **Exceptions**: Non-human concepts (das Abenteuer, das Ungeheuer, das Steuer).
 - **Practice examples**:
   - Non-human → engine: unknown (none)
-  - Abenteuer → engine: das (Suffix)
+  - Abenteuer → engine: das (A1/A2)
   - Ungeheuer → engine: das (Suffix)
   - Steuer → engine: das (Suffix)
 
@@ -375,7 +375,7 @@
   - Praktikum → engine: das (Suffix)
   - Prinzip → engine: das (Suffix)
   - Praktika → engine: unknown (none)
-  - Prinzipien → engine: unknown (none)
+  - Prinzipien → engine: das (Suffix)
   - Synthetic → engine: unknown (root-dep)
 
 ### ✅ Rule 24: -iv (Latin Suffix)
@@ -721,7 +721,7 @@
 - **Exceptions**: Spur → Spuren.
 - **Practice examples**:
   - Spur → engine: die (Suffix)
-  - Spuren → engine: unknown (none)
+  - Spuren → engine: das (Suffix)
 
 ### ✅ Rule 54: 1-Syllable -r (Neut)
 
@@ -847,7 +847,7 @@
 - **Exceptions**: die Antwort → Antworten.
 - **Practice examples**:
   - Antwort → engine: die (A1/A2)
-  - Antworten → engine: unknown (none)
+  - Antworten → engine: das (Suffix)
 
 ### ✅ Rule 65: -atz, -itz, -utz, -z
 
@@ -878,7 +878,7 @@
 - **Category**: Foreign Loans
 - **Dictated gender**: Root Dependent
 - **Plural**: Add -s
-- **Engine rule**: 62:c$|j$|w$|x$|y$→root(50), 63:p$→root(40)
+- **Engine rule**: 64:c$|j$|w$|x$|y$→root(50), 65:p$→root(40)
 - **Exceptions**: Macs, Shows, Partys, Babys, Shops.
 - **Practice examples**:
   - Macs → engine: unknown (none)

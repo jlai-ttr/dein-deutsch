@@ -1,12 +1,12 @@
 {
   "spec_entries": 68,
-  "engine_rules": 64,
+  "engine_rules": 66,
   "spec_with_engine_rule": 56,
   "spec_without_engine_rule": 12,
   "rule_mismatches": 8,
-  "word_level_correct": 115,
+  "word_level_correct": 116,
   "word_level_total": 204,
-  "word_level_agreement": "56.4%",
+  "word_level_agreement": "56.9%",
   "entries": [
     {
       "spec_id": 1,
@@ -2145,12 +2145,12 @@
         }
       ],
       "engine_rule_indices": [
-        62,
-        63
+        64,
+        65
       ],
       "engine_rule_display": [
-        "62:c$|j$|w$|x$|y$→root(50)",
-        "63:p$→root(40)"
+        "64:c$|j$|w$|x$|y$→root(50)",
+        "65:p$→root(40)"
       ]
     },
     {
@@ -2311,8 +2311,8 @@
       "spec_id": 2,
       "word": "Helden",
       "spec_gender": "der",
-      "engine_gender": "unknown",
-      "engine_tier": "none",
+      "engine_gender": "das",
+      "engine_tier": "Suffix",
       "ok": false
     },
     {
@@ -2455,8 +2455,8 @@
       "spec_id": 7,
       "word": "Manieren",
       "spec_gender": "die",
-      "engine_gender": "unknown",
-      "engine_tier": "none",
+      "engine_gender": "das",
+      "engine_tier": "Compound(ren)",
       "ok": false
     },
     {
@@ -2511,8 +2511,8 @@
       "spec_id": 9,
       "word": "Fahrten",
       "spec_gender": "die",
-      "engine_gender": "unknown",
-      "engine_tier": "none",
+      "engine_gender": "das",
+      "engine_tier": "Suffix",
       "ok": false
     },
     {
@@ -2551,8 +2551,8 @@
       "spec_id": 12,
       "word": "Mythen",
       "spec_gender": "der",
-      "engine_gender": "unknown",
-      "engine_tier": "none",
+      "engine_gender": "das",
+      "engine_tier": "Suffix",
       "ok": false
     },
     {
@@ -2656,7 +2656,7 @@
       "word": "Abenteuer",
       "spec_gender": "das",
       "engine_gender": "das",
-      "engine_tier": "Suffix",
+      "engine_tier": "A1/A2",
       "ok": true
     },
     {
@@ -2951,9 +2951,9 @@
       "spec_id": 23,
       "word": "Prinzipien",
       "spec_gender": "das",
-      "engine_gender": "unknown",
-      "engine_tier": "none",
-      "ok": false
+      "engine_gender": "das",
+      "engine_tier": "Suffix",
+      "ok": true
     },
     {
       "spec_id": 23,
@@ -3591,8 +3591,8 @@
       "spec_id": 53,
       "word": "Spuren",
       "spec_gender": "die",
-      "engine_gender": "unknown",
-      "engine_tier": "none",
+      "engine_gender": "das",
+      "engine_tier": "Suffix",
       "ok": false
     },
     {
@@ -3831,8 +3831,8 @@
       "spec_id": 64,
       "word": "Antworten",
       "spec_gender": "die",
-      "engine_gender": "unknown",
-      "engine_tier": "none",
+      "engine_gender": "das",
+      "engine_tier": "Suffix",
       "ok": false
     },
     {
