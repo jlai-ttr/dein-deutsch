@@ -1,5 +1,5 @@
-let SUFFIX_RULES;
-SUFFIX_RULES = [
+// Auto-generated stub from lib/gender-engine.js (do not edit by hand)
+let SUFFIX_RULES = [
   // ===== SUPREME: Overrides ALL other rules =====
   { suffix: /chen$|lein$/, gender: 'das', plural: 'nochange', score: 100, note: 'Diminutive (Supreme)',
     exceptions: [] }, // No exceptions — always wins
@@ -74,15 +74,46 @@ SUFFIX_RULES = [
   // ===== STRUCTURAL (NEUT) =====
   // -el, -er, -en for abstract neuter (very weak rule — mostly -en in -el, -er already covered above)
   // Most -el/-er/-en neuter are already known lemmas; trust lookup or compound
-  
+
+  // -el neuter: Mittel, Viertel, Segel, Möbel, Sessel, Insekt (no), Wurzel (fem)
+  // Spec rule 16: -el, -er, -en (Abstracts/Inanimates) → das
+  // Risk: der Esel, der Apfel, der Kater, der Senffel (rare), der Igel, der Beutel, der Deckel
+  // Strategy: low score + targeted exceptions (mostly trap the masc -el words)
+  { suffix: /el$/, gender: 'das', plural: '', score: 50, note: '-el abstract neut (weak, with masc exceptions)',
+    exceptions: ['der Esel', 'der Apfel', 'der Kater', 'der Igel', 'der Beutel',
+                 'der Deckel', 'der Schlüssel', 'der Zügel', 'der Stempel',
+                  'der Pöbel', 'der Onkel', 'der Pinsel', 'der Hebel', 'der Kessel',
+                  'der Vogel', 'der Mantel', 'der Flügel', 'der Würfel', 'der Spiegel',
+                  'der Schnabel', 'der Nebel', 'der Zettel', 'der Schaufel',
+                  'die Gabel', 'die Nadel', 'die Tafel'] },
+
   { suffix: /ar$/, gender: 'der', plural: 'e', score: 70, note: '-ar (Masc, root-dependent)',
     exceptions: ['das Bar', 'das Formular', 'das Lineal', 'das Quadrat',
                   'das Podium', 'das Visier'] }, // -ar root-dependent
-  { suffix: /ier$/, gender: 'root', plural: 'e', score: 65, note: '-ier (root-dependent)',
-    exceptions: ['das Klavier', 'das Manier', 'das Boudoir', 'das Atelier',
-                  'das Visier', 'das Revier',
+  { suffix: /(ier|oir|eur)$/, gender: 'root', plural: 'e', score: 65, note: '-ier/-oir/-eur (root-dependent, French loans)',
+    exceptions: ['das Klavier', 'das Atelier', 'das Boudoir', 'das Papier', 'das Visier',
+                  'das Revier', 'das Manoir', 'das Interieur',
                   'der Offizier', 'der Bankier', 'der Juwelier',
-                  'der Premier', 'der Passagier'] }, // Masc/Fem/Neut — context-dependent
+                  'der Premier', 'der Passagier',
+                  'die Manier', 'die Idee', 'die Karriere', 'die Prinzipienlosigkeit'] }, // Masc/Fem/Neut — context-dependent
+
+  // -ier French abstract (Spec rule 7): catch-all suffix for common French abstract nouns
+  // Examples: Manier (manner), Idee (idea) — but Idee is -ee, not -ier
+  // This rule fires on words ending in -ier that aren't in the more specific exceptions above
+  { suffix: /ier$/, gender: 'die', plural: 'en', score: 75, note: '-ier French abstract (Fem, defaults die)',
+    exceptions: ['das Klavier', 'das Atelier', 'das Boudoir', 'das Papier', 'das Visier',
+                  'das Revier', 'das Manoir',
+                  'der Offizier', 'der Bankier', 'der Juwelier',
+                  'der Premier', 'der Passagier'] },
+
+  // -eur Human Professions (Spec rule 14): der Friseur, der Ingenieur, der Monteur, der Regisseur
+  { suffix: /eur$/, gender: 'der', plural: 'e', score: 80, note: '-eur (Masc, Human Professions)',
+    exceptions: ['das Abenteuer', 'das Interieur', 'das Manöver', 'das Souffleur (also Masc)',
+                  'das Atelier', 'das Klavier', 'das Papier'] },
+  // -eur, -euer Inanimate (Spec rule 15): das Abenteuer, das Interieur, das Manöver
+  { suffix: /euer$/, gender: 'das', plural: 'nochange', score: 80, note: '-euer (Neut, Inanimate)',
+    exceptions: ['der Steuer (tax/fee)', 'der Feuer (archaic - actually das Feuer)'] },
+
   
   { suffix: /nis$/, gender: 'das', plural: 'se', score: 95, note: '-nis (Neut)',
     exceptions: ['die Erlaubnis', 'die Kenntnis', 'die Besorgnis', 'die Fülle'] },
@@ -218,5 +249,5 @@ SUFFIX_RULES = [
   { suffix: /p$/, gender: 'root', plural: 's', score: 40, note: 'Loanwords ending in -p (root-dependent)',
     exceptions: ['das Restaurant', 'das Prinzip', 'das Klapp',
                   'der Chip', 'der Laptop', 'der Strip'] },
-];
+]
 module.exports = { SUFFIX_RULES };
