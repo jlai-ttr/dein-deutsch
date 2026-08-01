@@ -14,7 +14,8 @@ const https = require('https');
 const args = process.argv.slice(2);
 
 function printHelp() {
-  console.log(`Usage: node sheet-add.cjs --de <german> --en <english> --pos <pos> --level <A1..C2> [--gender m|f|n] [--plural <str>] [--example-de <str>] [--example-en <str>] [--id <id>] [--dry-run] [--url <baseUrl>]`);
+  console.log(`Usage: node sheet-add.cjs --de <german> --en <english> --pos <pos> --level <A1..C2> [--gender m|f|n] [--plural <str>] [--example-de <str>] [--example-en <str>] [--id <id>] [--auto-suggest] [--dry-run] [--url <baseUrl>]`);
+  console.log(`  --auto-suggest: if noun and gender/plural missing, auto-fill via /api/admin/vocab/suggest`);
   process.exit(0);
 }
 
@@ -27,6 +28,7 @@ for (let i = 0; i < args.length; i++) {
   if (a.startsWith('--')) {
     const k = a.slice(2);
     if (k === 'dry-run') { dryRun = true; continue; }
+    if (k === 'auto-suggest') { opts['auto-suggest'] = true; continue; }
     if (k === 'help' || k === 'h') { printHelp(); }
     if (k === 'url') {
       baseUrl = args[++i];
@@ -63,6 +65,39 @@ function fetchMaxId() {
         });
       }
     ).on('error', reject);
+  });
+}
+
+function suggest(word) {
+  return new Promise((resolve, reject) => {
+    const url = new URL('/api/admin/vocab/suggest', baseUrl);
+    const secret = process.env.CRON_SECRET || 'dd-2026-migrate-9x8y7z';
+    const body = JSON.stringify({ word });
+    const req = https.request(
+      {
+        method: 'POST',
+        hostname: url.hostname,
+        path: url.pathname,
+        headers: {
+          'Content-Type': 'application/json',
+          'Content-Length': Buffer.byteLength(body),
+          Authorization: `Bearer ${secret}`,
+        },
+      },
+      (res) => {
+        let data = '';
+        res.on('data', (c) => (data += c));
+        res.on('end', () => {
+          try {
+            const parsed = JSON.parse(data);
+            resolve(parsed.ok ? parsed : null);
+          } catch (e) { reject(e); }
+        });
+      }
+    );
+    req.on('error', reject);
+    req.write(body);
+    req.end();
   });
 }
 
@@ -131,6 +166,22 @@ function saveRow(row) {
   if (opts['example-de']) row.example_de = opts['example-de'];
   if (opts['example-en']) row.example_en = opts['example-en'];
   if (opts.notes) row.notes = opts.notes;
+
+  // Auto-suggest: if noun and missing gender/plural, call /api/admin/vocab/suggest
+  if (opts['auto-suggest'] && row.pos === 'noun' && (!row.gender || !row.plural)) {
+    try {
+      const sug = await suggest(opts.de);
+      if (sug) {
+        if (!row.gender) row.gender = sug.gender;
+        if (!row.plural) row.plural = sug.plural;
+        console.error(`[auto-suggest] ${opts.de} → ${sug.article} (confidence ${sug.confidence}%)`);
+      } else {
+        console.error('[auto-suggest] no prediction available');
+      }
+    } catch (e) {
+      console.error('[auto-suggest] error:', e.message);
+    }
+  }
 
   // Validation
   const errors = [];
