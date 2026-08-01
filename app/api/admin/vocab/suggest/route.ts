@@ -76,8 +76,13 @@ export async function POST(request: Request) {
     } else {
       try {
         const result = predictGender(stem);
-        console.log('[suggest] engine result for', stem, JSON.stringify(result));
-        predicted = (result.gender === 'm' || result.gender === 'f' || result.gender === 'n') ? (result.gender === 'm' ? 'der' : result.gender === 'f' ? 'die' : 'das') : null;
+        // Engine returns 'der'/'die'/'das' for sheet matches but 'm'/'f'/'n' for tier 6.
+        // Normalize to article form.
+        const raw = result.gender;
+        if (raw === 'm' || raw === 'der') predicted = 'der';
+        else if (raw === 'f' || raw === 'die') predicted = 'die';
+        else if (raw === 'n' || raw === 'das') predicted = 'das';
+        else predicted = null;
         confidence = Math.round((result.confidence || 0) * 100);
       } catch (e) {
         console.error('[suggest] engine error:', (e as Error).message);
