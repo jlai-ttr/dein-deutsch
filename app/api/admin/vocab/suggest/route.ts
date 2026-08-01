@@ -5,7 +5,7 @@
 import { NextResponse } from 'next/server';
 
 // eslint-disable-next-line @typescript-eslint/no-require-imports
-const { predict: predictGender } = require('../../../../../lib/gender-engine');
+const { predict: predictGender } = require('@/lib/gender-engine');
 
 export const dynamic = 'force-dynamic';
 
@@ -73,9 +73,14 @@ export async function POST(request: Request) {
       predicted = article;
       confidence = 100; // user provided article
     } else {
-      const result = predictGender(stem);
-      predicted = (result.gender === 'm' || result.gender === 'f' || result.gender === 'n') ? (result.gender === 'm' ? 'der' : result.gender === 'f' ? 'die' : 'das') : null;
-      confidence = Math.round((result.confidence || 0) * 100);
+      try {
+        const result = predictGender(stem);
+        console.log('[suggest] engine result for', stem, JSON.stringify(result));
+        predicted = (result.gender === 'm' || result.gender === 'f' || result.gender === 'n') ? (result.gender === 'm' ? 'der' : result.gender === 'f' ? 'die' : 'das') : null;
+        confidence = Math.round((result.confidence || 0) * 100);
+      } catch (e) {
+        console.error('[suggest] engine error:', (e as Error).message);
+      }
     }
 
     if (!predicted) {
