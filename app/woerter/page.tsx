@@ -1267,6 +1267,7 @@ export default function WoerterPage() {
   const [deVoice, setDeVoice] = useState<string>('');
   const [activeLevel, setActiveLevel] = useState<'all' | 'A1' | 'A2' | 'B1' | 'B2' | 'C1'>('all');
   const [activeTopic, setActiveTopic] = useState<'all' | 'freq' | 'business'>('all');
+  const [viewMode, setViewMode] = useState<'study' | 'browse'>('study');
 
   // Load Sheet vocab (returns rows from /api/vocab when Sheet is configured)
   const { sheetCards } = useSheetVocab();
@@ -1487,6 +1488,20 @@ export default function WoerterPage() {
             </h1>
           </div>
           <div style={{ display: 'flex', gap: 6 }}>
+            <button
+              onClick={() => setViewMode(viewMode === 'study' ? 'browse' : 'study')}
+              title={viewMode === 'study' ? 'Browse all words with meanings & examples' : 'Back to flashcard study mode'}
+              style={{
+                padding: '6px 12px',
+                background: viewMode === 'browse' ? t.accent : t.bg,
+                color: viewMode === 'browse' ? t.onAccent : t.text,
+                border: '1px solid ' + (viewMode === 'browse' ? t.accent : t.border),
+                borderRadius: 6, cursor: 'pointer', fontSize: '0.85rem',
+                fontWeight: viewMode === 'browse' ? 700 : 500,
+              }}
+            >
+              {viewMode === 'study' ? '📖 Browse' : '🎴 Study'}
+            </button>
             <button onClick={() => setShowAddCard(!showAddCard)} style={{
               padding: '6px 12px', background: t.bg, color: t.text,
               border: '1px solid ' + t.border, borderRadius: 6, cursor: 'pointer', fontSize: '0.85rem',
@@ -1689,6 +1704,103 @@ export default function WoerterPage() {
           </button>
         )}
       </div>
+
+      {/* Browse mode grid (shows all words with meaning + example sentence) */}
+      {viewMode === 'browse' && (
+        <div style={{ marginBottom: 16 }}>
+          <div style={{
+            fontSize: '0.75rem', color: t.textMuted, fontWeight: 600,
+            textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 10,
+          }}>
+            📖 Browse {cards.filter(c => (activeLevel === 'all' || c.level === activeLevel) && (activeTopic === 'all' || c.id.startsWith(activeTopic + '-'))).length} words
+          </div>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+            gap: 12,
+          }}>
+            {cards
+              .filter(c => (activeLevel === 'all' || c.level === activeLevel) && (activeTopic === 'all' || c.id.startsWith(activeTopic + '-')))
+              .sort((a, b) => a.word.localeCompare(b.word, 'de'))
+              .map(c => (
+                <div
+                  key={c.id}
+                  style={{
+                    background: t.cardBg,
+                    border: '1px solid ' + t.border,
+                    borderRadius: 10,
+                    padding: 14,
+                    boxShadow: t.shadow,
+                    display: 'flex', flexDirection: 'column', gap: 8,
+                  }}
+                >
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8 }}>
+                    <div style={{
+                      fontFamily: FONTS.display, fontSize: '1.25rem', fontWeight: 700,
+                      color: t.text, letterSpacing: '-0.01em', lineHeight: 1.2,
+                    }}>
+                      {c.word}
+                    </div>
+                    <button
+                      onClick={() => speak(c.word)}
+                      disabled={!supportsTTS || germanVoices.length === 0}
+                      title={germanVoices.length === 0 ? 'No German voice installed' : 'Hear pronunciation'}
+                      style={{
+                        padding: '4px 8px', background: 'transparent',
+                        color: t.accent, border: '1px solid ' + t.accent,
+                        borderRadius: 6, cursor: supportsTTS && germanVoices.length > 0 ? 'pointer' : 'not-allowed',
+                        fontSize: '0.85rem', flexShrink: 0,
+                      }}
+                    >
+                      🔊
+                    </button>
+                  </div>
+
+                  <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', alignItems: 'center' }}>
+                    <span style={{
+                      padding: '2px 8px', background: t.accentSoft, color: t.accent,
+                      borderRadius: 4, fontSize: '0.7rem', fontWeight: 700,
+                    }}>
+                      {c.level}
+                    </span>
+                    <span style={{ fontSize: '0.7rem', color: t.textMuted, fontFamily: FONTS.mono }}>
+                      {c.pos}{c.gender ? ' · ' + (c.gender === 'm' ? 'der' : c.gender === 'f' ? 'die' : 'das') : ''}
+                    </span>
+                  </div>
+
+                  <div style={{
+                    fontFamily: FONTS.display, fontSize: '1rem', fontWeight: 600,
+                    color: t.accent, fontStyle: 'italic',
+                  }}>
+                    {c.translation}
+                  </div>
+
+                  {c.example && c.example.trim() !== '' && (
+                    <div style={{
+                      background: t.bg, border: '1px dashed ' + t.border,
+                      borderRadius: 6, padding: '8px 10px', marginTop: 2,
+                    }}>
+                      <div style={{
+                        fontFamily: FONTS.reading, fontSize: '0.9rem',
+                        color: t.text, lineHeight: 1.4, marginBottom: 2,
+                      }}>
+                        {c.example}
+                      </div>
+                      {c.exampleEn && (
+                        <div style={{
+                          fontSize: '0.78rem', color: t.textMuted, fontStyle: 'italic',
+                          fontFamily: FONTS.reading, lineHeight: 1.3,
+                        }}>
+                          {c.exampleEn}
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </div>
+              ))}
+          </div>
+        </div>
+      )}
 
       {/* Mastery progress bar */}
       <div style={{
