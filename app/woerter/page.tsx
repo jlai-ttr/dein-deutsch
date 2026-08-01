@@ -1633,17 +1633,19 @@ export default function WoerterPage() {
               {currentCard.translation}
             </div>
 
-            <div style={{
-              background: t.bg, border: '1px dashed ' + t.border,
-              borderRadius: 8, padding: 16, marginBottom: 16,
-            }}>
-              <div style={{ fontFamily: FONTS.reading, fontSize: '1rem', color: t.text, marginBottom: 4 }}>
-                {currentCard.example}
+            {currentCard.example && currentCard.exampleEn && (
+              <div style={{
+                background: t.bg, border: '1px dashed ' + t.border,
+                borderRadius: 8, padding: 16, marginBottom: 16,
+              }}>
+                <div style={{ fontFamily: FONTS.reading, fontSize: '1rem', color: t.text, marginBottom: 4 }}>
+                  {currentCard.example}
+                </div>
+                <div style={{ fontSize: '0.85rem', color: t.textMuted, fontStyle: 'italic', fontFamily: FONTS.reading }}>
+                  {currentCard.exampleEn}
+                </div>
               </div>
-              <div style={{ fontSize: '0.85rem', color: t.textMuted, fontStyle: 'italic', fontFamily: FONTS.reading }}>
-                {currentCard.exampleEn}
-              </div>
-            </div>
+            )}
 
             {/* Rating buttons */}
             <div style={{ fontSize: '0.75rem', color: t.textMuted, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 8 }}>
