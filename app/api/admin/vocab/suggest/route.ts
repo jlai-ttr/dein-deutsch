@@ -5,7 +5,7 @@
 import { NextResponse } from 'next/server';
 
 // eslint-disable-next-line @typescript-eslint/no-require-imports
-const { predict: predictGender } = require('../../../../../../lib/gender-engine');
+const { predict: predictGender } = require('../../../../../lib/gender-engine');
 
 export const dynamic = 'force-dynamic';
 
