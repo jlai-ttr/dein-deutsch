@@ -59,6 +59,7 @@ function pluralize(stem: string, gender: 'm' | 'f' | 'n'): string {
 }
 
 export async function POST(request: Request) {
+  console.log('[suggest] POST hit, typeof predictGender:', typeof predictGender);
   try {
     const body = await request.json() as { word?: string };
     if (!body.word || typeof body.word !== 'string') {
@@ -84,7 +85,7 @@ export async function POST(request: Request) {
     }
 
     if (!predicted) {
-      return NextResponse.json({ ok: false, error: 'could not predict gender', stem });
+      return NextResponse.json({ ok: false, error: 'could not predict gender', stem, debug: { predictType: typeof predictGender } });
     }
 
     const gender = articleToGender(predicted);
