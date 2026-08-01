@@ -31,11 +31,11 @@ function pluralize(stem: string, gender: 'm' | 'f' | 'n'): string {
 
   // Feminine: often -en or -n or -s
   if (gender === 'f') {
-    if (/e$/.test(stem) && !/(e|ie|ee)$/.test(stem)) return 'die ' + stem + 'n'; // Lampe → Lampen
     if (/ung$/.test(stem)) return 'die ' + stem + 'en'; // Zeitung → Zeitungen
     if (/tion$/.test(stem)) return 'die ' + stem + 'en'; // Aktion → Aktionen
     if (/heit$|keit$/.test(stem)) return 'die ' + stem + 'en'; // Freiheit → Freiheiten
     if (/ie$/.test(stem)) return 'die ' + stem + 'n'; // Energie → Energien
+    if (/e$/.test(stem)) return 'die ' + stem + 'n'; // Lampe → Lampen, Tasse → Tassen
     return 'die ' + stem + 'en';
   }
 
