@@ -1309,13 +1309,13 @@ export default function WoerterPage() {
     }
   }, []);
 
-  // Merge Sheet-supplied cards into localStorage (only adds new ids, keeps SRS state)
+  // Merge Sheet-supplied cards into localStorage (adds new ids OR refreshes missing fields)
   useEffect(() => {
     if (sheetCards.length === 0) return;
     const saved = localStorage.getItem(STORAGE_KEY);
     let baseCards: VocabCard[] = saved ? JSON.parse(saved) : SEED_VOCAB.map(newCard);
     const merged = mergeSheetIntoLocal(baseCards, sheetCards);
-    if (merged.length > baseCards.length) {
+    if (merged.length > baseCards.length || JSON.stringify(merged) !== JSON.stringify(baseCards)) {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(merged));
       setCards(merged);
     }

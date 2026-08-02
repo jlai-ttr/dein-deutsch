@@ -103,6 +103,22 @@ export function mergeSheetIntoLocal<T extends { id: string }>(
   if (sheetRows.length === 0) return localCards;
   const existingIds = new Set(localCards.map(c => c.id));
   const newOnes: T[] = [];
+  let updatedCount = 0;
+  // Upsert: for each sheet row, either add new card or refresh fields on existing one
+  const result = localCards.map((card) => {
+    const row = sheetRows.find(r => r.id === card.id);
+    if (!row) return card;
+    // Refresh example/exampleEn from Sheet if they were missing locally
+    const updated = { ...card } as T & Partial<VocabCard>;
+    const sample = row.example_de || '';
+    const sampleEn = row.example_en || '';
+    const v = updated as VocabCard;
+    if (sample && !v.example) { v.example = sample; updatedCount++; }
+    if (sampleEn && !v.exampleEn) { v.exampleEn = sampleEn; updatedCount++; }
+    if (row.gender && !v.gender) v.gender = row.gender;
+    if (row.plural && !(v as any).plural) (v as any).plural = row.plural;
+    return updated;
+  });
   for (const row of sheetRows) {
     if (!existingIds.has(row.id)) {
       const partial = newCardFromSheet(row) as unknown as T;
@@ -118,8 +134,8 @@ export function mergeSheetIntoLocal<T extends { id: string }>(
       newOnes.push(card as unknown as T);
     }
   }
-  if (newOnes.length === 0) return localCards;
-  return [...localCards, ...newOnes];
+  if (newOnes.length === 0 && updatedCount === 0) return localCards;
+  return [...result, ...newOnes];
 }
 
 export type { VocabCard as SheetVocabCard };
