@@ -1508,6 +1508,17 @@ export default function WoerterPage() {
             }}>
               + Karte
             </button>
+            <button onClick={() => {
+              if (confirm('Reset all local data? This will clear your study progress and re-fetch vocab from Sheet.')) {
+                localStorage.removeItem(STORAGE_KEY);
+                location.reload();
+              }
+            }} style={{
+              padding: '6px 12px', background: t.bg, color: t.warning,
+              border: '1px solid ' + t.border, borderRadius: 6, cursor: 'pointer', fontSize: '0.85rem',
+            }} title="Clear localStorage and re-fetch vocab from Sheet">
+              ↻ Reset
+            </button>
           </div>
         </div>
 
