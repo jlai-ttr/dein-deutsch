@@ -237,23 +237,6 @@ function LoginForm() {
           </button>
         </form>
 
-        {/* Footer note */}
-        <div style={{
-          marginTop: 24,
-          padding: 12,
-          background: t.bg,
-          borderRadius: 8,
-          fontSize: '0.75rem',
-          color: t.textMuted,
-          fontFamily: FONTS.reading,
-          fontStyle: 'italic',
-          textAlign: 'center',
-          lineHeight: 1.5,
-        }}>
-          Default password: <code style={{ background: t.cardBg, padding: '2px 6px', borderRadius: 3, fontFamily: FONTS.mono }}>dein-deutsch</code><br />
-          <span style={{ fontSize: '0.7rem' }}>Set <code>DEIN_DEUTSCH_PASSWORD</code> in Vercel to change</span>
-        </div>
-
         {/* Brand tagline */}
         <div style={{
           marginTop: 32,
