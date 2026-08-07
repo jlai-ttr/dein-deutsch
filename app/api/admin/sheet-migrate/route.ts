@@ -131,10 +131,19 @@ async function writeTab(sheets: ReturnType<typeof getSheetsClient>, sheetId: str
 
 export async function POST(request: Request) {
   const CRON_SECRET = process.env.CRON_SECRET;
-  const authHeader = request.headers.get('authorization');
-  const provided = authHeader?.replace(/^Bearer\s+/i, '');
-  if (!CRON_SECRET || provided !== CRON_SECRET) {
-    return NextResponse.json({ ok: false, error: 'Unauthorized' }, { status: 401 });
+  // Fail-closed: in production, require CRON_SECRET. Dev fallback removed.
+  if (!CRON_SECRET) {
+    if (process.env.NODE_ENV === 'production') {
+      return NextResponse.json({ ok: false, error: 'CRON_SECRET not configured' }, { status: 503 });
+    }
+    // Dev convenience: keep behavior permissive for local dev, but log a warning
+    console.warn('[admin/sheet-migrate] CRON_SECRET not set — open access in dev mode');
+  } else {
+    const authHeader = request.headers.get('authorization');
+    const provided = authHeader?.replace(/^Bearer\s+/i, '');
+    if (provided !== CRON_SECRET) {
+      return NextResponse.json({ ok: false, error: 'Unauthorized' }, { status: 401 });
+    }
   }
 
   const SHEET_ID = process.env.GOOGLE_SHEET_ID;

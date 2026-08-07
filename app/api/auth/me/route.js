@@ -1,13 +1,14 @@
 // GET /api/auth/me
-// Returns { authenticated: true } if session cookie is valid
-// Returns { authenticated: false } otherwise
+// Returns { authenticated: true } only if the session cookie is a valid
+// signed token (HMAC-SHA256 with SESSION_SECRET) and not expired.
+// Returns { authenticated: false } otherwise — including any unsigned,
+// malformed, or expired tokens.
 
 import { cookies } from 'next/headers';
-
-const COOKIE_NAME = 'dein_session';
+import { verifySessionToken, SESSION_COOKIE_NAME } from '@/app/lib/session';
 
 export async function GET() {
-  const cookie = cookies().get(COOKIE_NAME);
+  const cookie = cookies().get(SESSION_COOKIE_NAME);
 
   if (!cookie || !cookie.value) {
     return new Response(JSON.stringify({ authenticated: false }), {
@@ -16,11 +17,19 @@ export async function GET() {
     });
   }
 
-  // For now, any non-empty cookie = valid session
-  // (Tokens are 64-char random hex, effectively un-guessable)
-  // Future: store session in DB/Redis for revocation support
+  const result = verifySessionToken(cookie.value);
+  if (!result.authenticated) {
+    // Clear the invalid cookie so the client doesn't keep sending it
+    cookies().delete(SESSION_COOKIE_NAME);
+    return new Response(JSON.stringify({ authenticated: false, reason: result.reason }), {
+      status: 401,
+      headers: { 'Content-Type': 'application/json' },
+    });
+  }
+
   return new Response(JSON.stringify({
     authenticated: true,
+    expiresAt: result.expiresAt,
     user: {
       email: 'jasper.lai@ttracing.co', // single-user for now
       name: 'Jasper',
